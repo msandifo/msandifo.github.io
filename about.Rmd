@@ -1,7 +1,7 @@
 ---
 title: "About me"
 description: |
-  possibly irrelevant snippets of a professional life in science
+  some snippets of a professional life in science
 ---
 
 ```{r setup, include=FALSE}
@@ -10,18 +10,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Current Academic position
 
-- Redmond Barry Distringuished Porfessor, University  of Melbourne
-- Chair of Geolog, University of Melbourne
+- Redmond Barry Distinguished Professor, University  of Melbourne, 2016
+- Chair of Geology, University of Melbourne, 2010
 
 # Previous
 
-- Inaugural Diretcor Melbourne Energy Institute, University of Melbourne, 2009-2016
+- Inaugural Director,  Melbourne Energy Institute, University of Melbourne, 2009-2016
 - ARC Professorial Fellow, University of Melbourne, 2000-2004 & 2005-2009
-- Lectures/ Reader, Univesrity of Adleaide, 1987-2000
-- CSIRO Postdoctoral fellow,  Cmbridge University, 2006 
+- Lecturer/ Reader, University of Adelaide, 1987-2000
+- CSIRO Postdoctoral fellow,  Cambridge University, 2006 
 
 # Other things
 
 - Fellow, Australian Academy of Sciences, 2013
-- PhD University of Melbourne, 1985
+- PhD, University of Melbourne, 1985
 - BSc(Hons), University of Melbourne, 1978
