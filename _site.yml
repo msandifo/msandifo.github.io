@@ -6,17 +6,23 @@ output_dir: "."
 google_analytics: "qdYHZTgAAAAJ"
 navbar:
   right:
-    - text: "Home"
+    - text: "home"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "Science"
+    - text: "about"
       menu:
-        - text: "Peer review"
+        - text: short
+          href: about.html
+        - text: context
+          href: context.html
+        - text: c.v.
+          href: cv.full.html
+    - text: "science"
+      menu:
+        - text: "peer review"
           href: pubs.html
-        - text: "Technical"
+        - text: "technical"
           href: tech.html
-    - text: "Popular"
+    - text: "popular"
       href: pop.html
     - icon: fab fa-github
       href: https://github.com/msandifo
