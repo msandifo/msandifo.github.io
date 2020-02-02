@@ -1,7 +1,7 @@
 ---
 title: "About me"
 description: |
-  some snippets of a professional life in science
+  the snippets of a professional life in science
 ---
 
 ```{r setup, include=FALSE}
