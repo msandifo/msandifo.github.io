@@ -19,7 +19,7 @@ title: "Technical reports "
  
  
 
-*[ The Sedimentary Basin Management Initiative](https://www.carltonconnect.com.au/wp-content/uploads/2016/01/SBMI-Position-Analysis.pdf), Howard, W.,  __Sandiford, M.__, Elliott, S.,   Talberg A., Lafleur D., Bice S.,   Rawling, T., Carlton Connect Initiative, 26 p.
+* [The Sedimentary Basin Management Initiative](https://www.carltonconnect.com.au/wp-content/uploads/2016/01/SBMI-Position-Analysis.pdf), Howard, W.,  __Sandiford, M.__, Elliott, S.,   Talberg A., Lafleur D., Bice S.,   Rawling, T., Carlton Connect Initiative, 26 p.
 
 * [Multi basin usage/cumulative impacts](http://www.chiefscientist.nsw.gov.au/__data/assets/pdf_file/0015/31614/Multi-basin-usage-and-cumulative-impact-background-paper_Rawling-and-Sandiford.pdf), Rawling T. \& __Sandiford, M.__,  NSW Chief Scientist CSG Review, 2014, 38  p. 
 
@@ -28,6 +28,6 @@ title: "Technical reports "
 
 * Landslide occurrence in East Timor, Melbourne Energy Institute Technical paper series, Soares, S., Mills, C., Sandiford, M., dos Reis, J., 2011, 38 pp.
 
- *	__Sandiford, M.__, 2010, Victoria's unique geothermal option, Victorian supplement 2010-Victoria's Energy Resources, 12-13.
-*	__Sandiford, M.__, 2010, A slow divorce: tectonic signals in an ancient continent, The Australian Geologist, 157, 29-31.
+ *	 Victoria's unique geothermal option, __Sandiford, M.__, 2010, Victorian supplement 2010-Victoria's Energy Resources, 12-13.
+*	 A slow divorce: tectonic signals in an ancient continent, __Sandiford, M.__, 2010, The Australian Geologist, 157, 29-31.
  

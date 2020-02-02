@@ -15,18 +15,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### The Tampa
 
-Who are we\
-who cannot say sorry?\
-so afraid of what? 
+Who are we who\
+will not say sorry?\
+so afraid for what? 
 
 
-For what we have?\
-or of those that have\
+Of what we have or\
+those that have\
 what we have not?
 
 
-So should we not\
-give willing to say our sorry\
-and be not afraid
+So could we not\
+will to our sorrow\
+and be not afraid 
 
-Of being?	
+of being?	

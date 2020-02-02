@@ -9,13 +9,16 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
-    - text: "Peer review"
-      href: pubs.html
-    - text: "Technical"
-      href: tech.html
-    - text: "Popular"
-      href: pop.html
-
+    - text: "Writings"
+      menu:
+        - text: "Peer review"
+          href: pubs.html
+        - text: "Technical"
+          href: tech.html
+        - text: "Popular"
+          href: pop.html
+    - icon: fab fa-github
+      href: https://github.com/msandifo
 
 
 output:
