@@ -2,7 +2,7 @@ name: "msandifo"
 title: "what on earth"
 description: |
   some science, art and relfections 
-output_dir: "_site"
+output_dir: "."
 navbar:
   right:
     - text: "Home"
