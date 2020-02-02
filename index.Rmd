@@ -16,16 +16,16 @@ knitr::opts_chunk$set(echo = FALSE)
 ### The Tampa
 
 Who are we\
-who dare not say sorry?\
+who cannot say sorry?\
 so afraid of what? 
 
 
 For what we have?\
-Or for those that have what\
-we have not?
+or of those that have\
+what we have not?
 
 
-Could we not\
+So should we not\
 give willing to say our sorry\
 and be not afraid
 
