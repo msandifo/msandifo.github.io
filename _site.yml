@@ -3,22 +3,25 @@ title: "What on earth ..."
 description: |
   some science, art, reflections ...
 output_dir: "."
+google_analytics: "qdYHZTgAAAAJ"
 navbar:
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
-    - text: "Writings"
+    - text: "Science"
       menu:
         - text: "Peer review"
           href: pubs.html
         - text: "Technical"
           href: tech.html
-        - text: "Popular"
-          href: pop.html
+    - text: "Popular"
+      href: pop.html
     - icon: fab fa-github
       href: https://github.com/msandifo
+    - icon: fab fa-twitter
+      href: https://twitter.com/reprosci
 
 
 output:
