@@ -1,5 +1,5 @@
 ---
-title: "Reports, unpblished papers, "
+title: "Technical reports "
 ---
 
 # Technical reports
@@ -7,19 +7,19 @@ title: "Reports, unpblished papers, "
 
 * [Victorian geothermal Assessment Report](https://www.researchgate.net/profile/Graeme_Beardsmore/publication/333773876_Victorian_Geothermal_Assessment_Report_2016/links/5d0322c092851c874c650614/Victorian-Geothermal-Assessment-Report-2016.pdf), Beardmore, G, Dumetriscu, I., Harrison, B., Sandiford, M., Webster, R.,  Melbourne Energy Insitute, November 2016. 62 p., http://dx.doi.org/10.13140/RG.2.2.28610.43200
 
-* [Energy for Australia in the 21st Century: The central role of electricity](https://www.science.org.au/files/userfiles/support/reports-and-plans/2016/future-science-energy-report.pdf), Australian Academy of Science,  Sandiford, M., Watt, M.,  Vassallo, A. (working group chairs), September 2016, 61 p.
+* [Energy for Australia in the 21st Century: The central role of electricity](https://www.science.org.au/files/userfiles/support/reports-and-plans/2016/future-science-energy-report.pdf), Australian Academy of Science,  __Sandiford, M.__, Watt, M.,  Vassallo, A. (working group chairs), September 2016, 61 p.
 
-* [The risk of migratory emissions from the devlopment of Queensland Coal seam gas](http://climatecollege.unimelb.edu.au/risk-migratory-methane-emissions-resulting-development-queensland-coal-seam-gas). Lafleur, D., Sandiford, M.,  elbourne Energy Institute, September 2016, 30 p.
+* [The risk of migratory emissions from the devlopment of Queensland Coal seam gas](http://climatecollege.unimelb.edu.au/risk-migratory-methane-emissions-resulting-development-queensland-coal-seam-gas). Lafleur, D., __Sandiford, M.__,  Melbourne Energy Institute, September 2016, 30 p.
 
-* [A review of current and future methane emissions from Australian unconventional oil and gas production](http://www.tai.org.au/sites/defualt/files/MEI%20Review%20of%20Methane%20Emissions%20-%2026%20October%202016.pdf), Lafleur, D., Forcey. T., Saddler, H., Sandiford, M., Melbourne Energy Institute, September 2016,  89 p.
+* [A review of current and future methane emissions from Australian unconventional oil and gas production](https://www.tai.org.au/content/review-current-and-future-methane-emissions-australian-unconventional-oil-and-gas-production), Lafleur, D., Forcey. T., Saddler, H., __Sandiford, M.__, Melbourne Energy Institute, September 2016,  89 p.
 
-* Winds of Change - An analysis of recent changes in the South Australian electricity market, McConnell, D., Sandiford, M.,   Melbourne Energy Institute, 
+* Winds of Change - An analysis of recent changes in the South Australian electricity market, McConnell, D., __Sandiford, M.__,   Melbourne Energy Institute, 
  August 2016, 55 p.,  doi:10.4225/49/57A0A5C1373F9
  
  
  
 
-*[ The Sedimentary Basin Management Initiative](https://www.carltonconnect.com.au/wp-content/uploads/2016/01/SBMI-Position-Analysis.pdf), Howard, W.,  Sandiford, M., Elliott, S.,   Talberg A., Lafleur D., Bice S.,   Rawling, T., Carlton Connect Initiative, 26 p.
+*[ The Sedimentary Basin Management Initiative](https://www.carltonconnect.com.au/wp-content/uploads/2016/01/SBMI-Position-Analysis.pdf), Howard, W.,  __Sandiford, M.__, Elliott, S.,   Talberg A., Lafleur D., Bice S.,   Rawling, T., Carlton Connect Initiative, 26 p.
 
 * [Multi basin usage/cumulative impacts](http://www.chiefscientist.nsw.gov.au/__data/assets/pdf_file/0015/31614/Multi-basin-usage-and-cumulative-impact-background-paper_Rawling-and-Sandiford.pdf), Rawling T. \& __Sandiford, M.__,  NSW Chief Scientist CSG Review, 2014, 38  p. 
 
