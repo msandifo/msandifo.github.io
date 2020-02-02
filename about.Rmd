@@ -1,7 +1,5 @@
 ---
-title: "apropos"
-description: |
-  the skeleton of a professional life in science
+title: "the skeleton"
 ---
 
 ```{r setup, include=FALSE}

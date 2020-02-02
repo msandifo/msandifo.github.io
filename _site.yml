@@ -10,11 +10,11 @@ navbar:
       href: index.html
     - text: "apropos"
       menu:
-        - text: short
+        - text: skeleton
           href: about.html
         - text: context
           href: context.html
-        - text: c.v.
+        - text: cv
           href: cv.full.html
     - text: "science"
       menu:

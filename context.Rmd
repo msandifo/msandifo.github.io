@@ -1,7 +1,5 @@
 ---
-title: "Abbreviated Curriculum Vitae" 
-author: "Mike Sandiford"
-date: '`r Sys.Date()`'
+title: "context" 
 ---
 
 
