@@ -1,7 +1,7 @@
 ---
 title: "About me"
 description: |
-  possible irrelevant snippets
+  possibly irrelevant snippets of a professional life in science
 ---
 
 ```{r setup, include=FALSE}
