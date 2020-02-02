@@ -1,0 +1,72 @@
+---
+title: "Citation metrics"
+---
+```{r setup, include=FALSE}
+library(tufte)
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+library(stringr)
+ library(scholar)
+gs.id<-"qdYHZTgAAAAJ"
+ my.cites=get_citation_history(gs.id)
+ my.profile <- get_profile(gs.id)
+ my.pubs1 <-get_publications(gs.id)
+ 
+ gs <- function(title.str, pubs=my.pubs1, prefix= "citations "){
+   sum.cites <- sum( pubs$cites[str_detect(str_to_lower(pubs$title), str_to_lower(title.str))])
+   if (sum.cites > 0) paste(prefix,  sum.cites)
+ } 
+ 
+ 
+ tc.articles <- 37
+ tc.readers <- 420000
+# library(RSelenium)
+# appURL <- "https://theconversation.com/profiles/mike-sandiford-228/dashboard"
+# pJS <- phantom() # start phantomjs
+# 
+# remDr <- remoteDriver(browserName = "phantomjs")
+# remDr$open()
+# remDr$navigate(appURL)
+# remDr$findElement("id", "user_email")$sendKeysToElement(list("mikes@unimelb.edu.au"))
+# remDr$findElement("id", "user_password")$sendKeysToElement(list("1dMesH"))
+# remDr$getCurrentUrl()
+# 
+# 
+# webElem <-remDr$findElement(using = "class","primary")
+# 
+# webElem$sendKeysToElement(list("Enter", key = "enter"))
+# 
+# #remDr$screenshot(display = TRUE)
+# 
+# css.sel<-'//*[contains(concat( " ", @class, " " ), concat( " ", "readers", " " ))]//*[contains(concat( " ", @class, " " ), concat( " ", "league-gothic", " " ))]'
+# my.readers <-remDr$findElement(using ='xpath', css.sel)
+# tc.readers <-as.numeric(str_replace(my.readers$getElementText()[[1]], ",",""))
+# 
+# 
+# css.sel<-'//*[contains(concat( " ", @class, " " ), concat( " ", "articles", " " ))]//*[contains(concat( " ", @class, " " ), concat( " ", "league-gothic", " " ))]'
+# my.articles <-remDr$findElement(using ='xpath', css.sel)
+# tc.articles <-as.numeric(str_replace(my.articles$getElementText()[[1]], ",",""))
+# 
+# pJS$stop()
+# 
+#  
+```
+## Citation metrics 
+
+Google Scholar
+
+`r  
+#library(scholar)
+#gs.id<-"qdYHZTgAAAAJ"
+#my.profile <- get_profile(gs.id)
+ paste("Total citations - ", my.profile$total_cites, "\n\n ", "Hirsch-index - ", my.profile$h_index, "\n\n ","i10-index - ", my.profile$i10_index) 
+`
+
+```{r fig-margin1, fig.margin = TRUE,  echo=FALSE ,   fig.align="right"} 
+#library(scholar)
+library(ggplot2)
+#gs.id<-"qdYHZTgAAAAJ"
+ 
+#my.cites=get_citation_history(gs.id)
+ggplot(my.cites, aes (year, cites))+geom_bar(stat="identity" ) +ylab("google scholar cites")+theme_classic()
+```
