@@ -1,7 +1,7 @@
 ---
-title: "Mike Sandiford"
+title: "what on earth ..."
 description: |
-  Some reflections on a life in science,\ some contributions\ and some anecdotes. 
+  Some reflections on a life of science, some contributions and some anecdotes. 
 site: distill::distill_website
 ---
 

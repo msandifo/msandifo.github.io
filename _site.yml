@@ -1,5 +1,5 @@
-name: "msandifo"
-title: "What on earth ..."
+name: "What on earth ..."
+title: "mike sandiford"
 description: |
   some science, art, reflections ...
 output_dir: "."
@@ -25,7 +25,7 @@ navbar:
     - text: "popular"
       href: pop.html
     - icon: fab fa-github
-      href: https://github.com/msandifo
+      href: https://github.com/msandifo/reprosci
     - icon: fab fa-twitter
       href: https://twitter.com/reprosci
 
