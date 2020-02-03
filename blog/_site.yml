@@ -1,12 +1,19 @@
-name: "blog"
-title: "msandifo"
+name: "msandifo"
+title: "what on earth musings"
 description: |
   msandifo
 output_dir: "_site"
 navbar:
   right:
-    - text: "Home"
+    - text: "home"
       href: index.html
-    - text: "About"
+    - text: "about"
       href: about.html
+    - text: "msandifo"
+      href: ../index.html
+    - icon: fab fa-github
+      href: https://github.com/msandifo/reprosci
+    - icon: fab fa-twitter
+      href: https://twitter.com/reprosci
+
 output: distill::distill_article

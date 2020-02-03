@@ -24,6 +24,8 @@ navbar:
           href: tech.html
     - text: "popular"
       href: pop.html
+    - text: "musings"
+      href: ./blog/_site/index.html
     - icon: fab fa-github
       href: https://github.com/msandifo/reprosci
     - icon: fab fa-twitter
