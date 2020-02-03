@@ -1,10 +1,10 @@
 ---
-title: "Popular press"
+title: "engagement"
 ---
 
-# The Conversation
+## the Conversation
 
-Published 58 essays on the academic website [the Conversation]( https://theconversation.com/profiles/mike-sandiford-228/articles). 
+Some 58 essays on the academic website [the Conversation]( https://theconversation.com/profiles/mike-sandiford-228/articles). 
 
 including ...
 
@@ -15,7 +15,7 @@ including ...
 * [The Australian gas market enters the “red zone”, as predicted](https://theconversation.com/the-australian-gas-market-enters-the-red-zone-as-predicted-74314), March 2017
 
 
-# National papers
+## national press op-eds
 
 * [Cherry-picking contrarian geologists tend to obscure scientific truth](https://www.theaustralian.com.au/national-affairs/opinion/cherry-picking-contrarian-geologists-tend-to-obscure-scientific-truth/news-story/62a61871190090050dd59e2f2e0d7b59), The Australian, December  2011.
  

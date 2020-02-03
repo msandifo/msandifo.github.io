@@ -21,10 +21,9 @@ gs.id<-"qdYHZTgAAAAJ"
 ```
 
 
-## Context
  
  
-I am an Australian geoscientist, recongnised for my contributions to the linkages between the thermal and mechanical structure of the continents, including
+I am an Australian geologist intersted in the thermal and mechanical structure of the continents, including
 
 * how the feedbacks between primary tectonic processes (such as deformation, magmatism, erosion and sedimentation) serve to order the chemical structure of the continental crust in ways that determine its long-term thermal and mechanical character (e.g. Sandiford & McLaren 2002).
 *  the  role of gravitational body forces in the evolution of the Earth's major mountain belts (Sandiford & Powell 1990; Sandiford 1988).
@@ -33,33 +32,34 @@ I am an Australian geoscientist, recongnised for my contributions to the linkage
 * the geomorphic response to dynamic processes deep in the Earth's mantle and how it explains many previously enigmatic landscape features such  as Australia's unique record of continental tilting (Sandiford 2007), as well as emblematic landscapes such as the Lake Eyre Basin (Sandiford & Quigley 2008).
 * linking earthquakes,  landslides   and  river incision in a  theoretical perspective (Egholm et al. 2013) that has application to understanding natural hazard vulnerability in settings such as the Indian Himalaya (Morrell et al., 2015) and Timor (Sandiford, 2008). 
 
-My work on human energy systems helping to  quantify the impact of distributed energy technologies in mature energy markets (McConnell et al. 2013).
+My work on human energy systems helps to  quantify the impact of distributed energy technologies in mature energy markets (McConnell et al. 2013).
 
 I am a Fellow of the Australian Academy of Sciences an have received several  honorific awards including the Australian Academy of Sciences Mawson Medal - a career award for "outstanding contributions to earth science in Australia".  I have a strong record of grant success including some $4.4 million in competitive research programs funding and $2.5 million in non-competitive funding since 2000 ^[this is in addition to the ~$23 million he has generated for his discipline, and ~$34 million for the University's interdisciplinary energy programs].   In 2016, the University of Melbourne honoured me as a Redmond Barry Distinguished Professor.
 
 My work on the the thermal structure of the Australian continent contributed the key motivation for the search for geothermal energy in South Australia. My work on active tectonics and earthquake occurrence has been used in hazard assessment and has been used by Geoscience Australia to develop new approaches groundwater resource management. My work on tectonic stress has been used in unconventional resource development and assessment of storage potential for energy wastes. My work on the geomorphic evolution of the continent has seen application in biodiversity assessments. Finally, my work on trends in Australian energy consumption has impacted government policy settings.
 
 
-## National geoscience leadership
+## leadership
 
 In my role as Chair of the Science Advisory Board of AuScope ^[ Auscope administers the federal government's National Collaborative Research Infrastructure Strategy (NCRIS) program for the Earth Sciences], I have played a key role in shaping the national geoscience research  agenda. In 2009, I conceived and led the successful \$23 million Education Investment Fund (EIF) round 3 bid for the Australian Geophysical Observing System, which saw  \$7.5 million invested at the University of Melbourne. In 2012, I was instrumental in putting together the University of Melbourne's \$11 million component of the successful \$51 million CCSNET EIF bid. I was one of two geoscience representatives on the Environmentally Sustainable Australia working group as part of National Research Infrastructure Council (NRIC) framework that contributed to the “2011 strategic roadmap for the Australian research infrastructure - exposure draft”. In 2011,  I led a group of geoscientists to produce the “Australian Earth Observatory - Infrastructure Roadmap” on behalf of AuScope. As the Australian representative on the Exploration Technologies Reference Group for the International Partnership for Geothermal Technologies, I contributed to the “IPGT Exploration Whitepaper” released in June 2011.  
  
 
-## Promotion of interdisciplinary energy research
+## promotion 
 
 In my  role as inaugural director of the Energy Institute (2009-2016) I was responsible for coordination and  facilitation of energy research across the University of Melbourne. In this role I was responsible for building teams and seeding new interdisciplinary programs in areas as diverse as renewable energy integration, energy market design, direct geothermal utilization, geological carbon storage, and sedimentary basin management. The  programs I  initiated as Direcror of the  Institute  secured more than $34 million in external funding.
 
 
-## Science and development
+## development
 
 I have lead significant geological programs in developing regions across Asia, including in Timor-Leste, India, Bhutan, Indonesia   and Tibet, supported in part by Australian Government Department of Foreign Affairs and Trade aid prorgrams. Outcomes include the production of the first detailed geological maps of Timor Leste since its independence, as part of an ongoing program that aims to map the country at a scale of 1:50,000. In 2013, at the invitation of the Indian Government Department of Science and Technology, Ie particpated in a review the 2012 Kedarnath landslide disaster in which as many as 20,000 people may have perished (> 5000 confirmed). In 2011 I co-edited an international publication focused on the 2008 Wenchuan Earthquake in China, in which about 88,000 people perished and more than one million were displaced. IMy collaboration with colleagues from IISc in Bangalore, India, to document the record of great Himalayan earthquakes in the central Himalaya using novel proxies was funded  jointly by the Australian and the Indian Governments. I am currently working with the collagues in Bhutan to document the record of great earthquakes in the eastern sector of the Himalaya.
 
-## Public engagement
+## engagement
 
 I have  contributed extensively to the national debate on environmental and energy policy issues, having contributed over 70 commentaries to major national newspapers (including op-eds in both the Fairfax - the Age and Sydney Morning Herald - and the Murdoch press - the Australian) and on-line venues (the Conversation, RenewEconomy, Business Spectator) . The broad reach of this  commentary is reflected in the statistics for his column on the Conversation website - Energy and the Earth - which have been viewd more than 930,000 times.
 
 
-#  1. Education and Employment History
+## synopsis
+###  history
 * Chair of Geology, University of Melbourne 2010+
 * Director, Melbourne Energy Institute, University of Melbourne 2009+
 * ARC Professorial fellow, University of Melbourne 2000-2009
@@ -68,7 +68,7 @@ I have  contributed extensively to the national debate on environmental and ener
 * PhD, University of Melbourne 1985
 * BSc(Hons), University of Melbourne 1978
 
-#  2. Recognition
+###  recognition
 * Carey Medal, 2014 Geological Society of Australia 
 * Hobbs Medal, 2012 Geological Society of Australia
 * Mawson Medal, 2005  Australian Academy of Sciences
@@ -80,7 +80,7 @@ I have  contributed extensively to the national debate on environmental and ener
 * ARC Professorial Fellow, 2000-2004 Australian Research Council
 * CSIRO Postdoctoral Fellowship,  1986-1987 Cambridge University
 
-# 3. Professional Service
+### service
 * IMAGE project review, Pisa Italy, 2015 EU Commission
 * Review of Geosciences,  2015  Victoria University, New Zealand, 
 * Department Science and Technology, Indian Government Review of Kedarnath landslide disaster, Uttrakhand, India, May 2014. 
@@ -96,8 +96,8 @@ I have  contributed extensively to the national debate on environmental and ener
 * Tectonophysics, Co Editor-in-Chief, 2004-2009
 * PMD*CRC Science Advisory Board, 2000-2002
 
-# 4. Research funding (since 2000)
-__Total funding __ $17,091,000 
+### funding
+
 
 * Competitive Research Program Grants (inc. ARC DP, ARC Linkage,AISRF, NDG)  $4,416,000
 * Infrastructure grants at University of Melbourne (EIF, MNRF) $8,343,000
@@ -105,7 +105,7 @@ __Total funding __ $17,091,000
 * Other non-competitive funding - $2,457,000
 
 
-# 5. Published work 
+### academic 
 
 __Google Scholar__ 
 `r  

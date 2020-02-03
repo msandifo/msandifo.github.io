@@ -16,13 +16,13 @@ navbar:
           href: context.html
         - text: cv
           href: cv.full.html
-    - text: "science"
+    - text: "academic"
       menu:
         - text: "peer review"
           href: pubs.html
         - text: "technical"
           href: tech.html
-    - text: "popular"
+    - text: "engagement"
       href: pop.html
     - text: "musings"
       href: ./blog/_site/index.html
