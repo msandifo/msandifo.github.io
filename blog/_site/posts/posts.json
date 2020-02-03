@@ -1,20 +1,5 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to msandifo",
-    "description": "Welcome to our new blog, msandifo. We hope you enjoy \nreading what we have to say!",
-    "author": [
-      {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2020-02-03",
-    "categories": [],
-    "preview": {},
-    "last_modified": "2020-02-03T10:36:50+11:00"
-  },
-  {
     "path": "posts/2016-04-16-travelling-with-timor-leste/",
     "title": "Travelling with Timor Leste",
     "description": "On the ghosts of _Jakarta dua_ and the shocking realisation hidden in the dark shadows of Timor landscapes.",

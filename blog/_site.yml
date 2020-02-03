@@ -10,7 +10,7 @@ navbar:
     - text: "about"
       href: about.html
     - text: "msandifo"
-      href: ../index.html
+      href: https://msandifo.github.io/
     - icon: fab fa-github
       href: https://github.com/msandifo/reprosci
     - icon: fab fa-twitter
