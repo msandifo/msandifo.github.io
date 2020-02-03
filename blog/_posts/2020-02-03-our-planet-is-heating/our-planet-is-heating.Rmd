@@ -1,7 +1,7 @@
 ---
 title: "Our planet is heating"
 description: |
-  The crust beneath our feet contains an undeniable reocrd of the warming of the atmopshere over the last century.
+  The crust beneath our feet contains an undeniable record of surface  warming over the last century, and a bet for the "deniars".
 date: 08-16-2016
 output:
   distill::distill_article:
