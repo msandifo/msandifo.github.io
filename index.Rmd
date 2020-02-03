@@ -12,8 +12,8 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/website.html
 
 ```
-
-... a geologist whose works on landscapes and earth energetics has taken me to many remote parts of the planet including in Antarctica, Australia, Timor, Tibet and Bhutan, where I have been privileged to meet and work amongst communities that have lived for millennia in some of the most dynamic parts of our planet. A Redmond Barry Distinguished Professor at the University of Melbourne and a Fellow of the Australian Academy of Sciences. A  regular contributor to popular press on geological and energy issues. This website provides a synopsis of my work, along with some skeletons and musings.
+I am a geologist who studies landscapes and earth energetics. As part of my work, I have travelled in many remote regions, including in Antarctica, Australia, Bhutan, Timor, and Tibet, where it has been my privilege to work amongst communities that have lived for millennia in some of the most dynamic parts of our planet.
+I am a Redmond Barry Distinguished Professor at the University of Melbourne and a Fellow of the Australian Academy of Sciences, and a regular contributor to popular press on geological and energy issues. This website provides a synopsis of my work, along with some skeletons and musings.
 
 
 ### Tampa^[written while working in the Pilbara at the time of the Tampa crisis. It was an event that had a profound impact on me - a "geological fault line" of shame on the Australian psyche that demonstrated our diminished humanity. We continue to live in the shadow of this awful event, for which we owe the world an apology.]
