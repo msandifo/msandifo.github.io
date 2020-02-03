@@ -9,7 +9,7 @@ Published 58 essays on the academic website [the Conversation]( https://theconve
 including ...
 
 * [A precarious geological bargain](https://theconversation.com/a-precarious-geological-bargain-57903), April 2016.
-* [Travelling with Timor Leste](./blog/posts/2016-04-16-travelling-with-timor-leste/), April 2016.
+* [Travelling with Timor Leste](./blog/_site/posts/2016-04-16-travelling-with-timor-leste/index.html), April 2016.
 * [Anatomy of an energy crisis - a pictorial guide, Part 1](https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-1-71789), February 2017.
 
 * [The Australian gas market enters the “red zone”, as predicted](https://theconversation.com/the-australian-gas-market-enters-the-red-zone-as-predicted-74314), March 2017

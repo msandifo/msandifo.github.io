@@ -1,14 +1,12 @@
-name: "msandifo"
-title: "what on earth musings"
+name: "what on earth ..."
+title: "sandiford musings"
 description: |
   msandifo
 output_dir: "_site"
 navbar:
   right:
-    - text: "home"
+    - text: "musings"
       href: index.html
-    - text: "about"
-      href: about.html
     - text: "msandifo"
       href: https://msandifo.github.io/
     - icon: fab fa-github
