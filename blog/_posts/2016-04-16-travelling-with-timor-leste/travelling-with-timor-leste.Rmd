@@ -1,7 +1,7 @@
 ---
 title: "Travelling with Timor Leste"
 description:  On the ghosts of _Jakarta dua_ and the shocking realisation hidden in the dark shadows of Timor landscapes.
-date: 04-16-2016
+date: 04-15-2016
 output:
   distill::distill_article:
     self_contained: false

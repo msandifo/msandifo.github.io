@@ -1,0 +1,86 @@
+---
+title: "Our planet is heating"
+description: |
+  The crust beneath our feet contains an undeniable reocrd of the warming of the atmopshere over the last century.
+date: 08-16-2016
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+In an entertaining and somewhat chaotic   episode of ABC's Q&A (Monday 15th August) pitting science superstar Brian Cox against climate contrarian and global conspiracy theorist and now senator Malcolm Roberts, the question of cause and effect and empirical data  was raised repeatedly in regard to  climate change.
+
+Watching I pondered the question - _what would I need to change my mind?_ After all,  I should  dearly love to be convinced that climate was not changing,  or if it were,  it were not due to human emissions of CO2 and other greenhouse gases. That would make things just so much easier, all round. 
+
+So  what  would make me change my mind? 
+
+There are two elements to this question. The first is the observational basis, and the question of empirical data, of a changing climate.  The second relates to cause and effect, and the question of the  greenhouse effect.  
+
+
+On the second, I will only add that the history  of our planet is  not  easily reconciled without  recourse to a strong greenhouse effect. If you have any doubt then you simply need to read my former colleague Ian Plimer.  
+As I have [pointed out before](http://www.theaustralian.com.au/national-affairs/opinion/cherry-picking-contrarian-geologists-tend-to-obscure-scientific-truth/story-e6frgd0x-1226233605954), in his 2001 award-winning book "A Short History of Planet Earth", Ian has numerous references to the greenhouse effect especially in relation to what all young geologists learn as the _faint young sun paradox_:
+
+"The early sun had a luminosity of some 30 per cent less than now and, over time, luminosity has increased in a steady state."
+
+"The low luminosity of the early sun was such that the Earth's average surface temperature would have been below 0C from 4500 to 2000 million years ago. But there is evidence of running water and oceans as far back as 3800 million years ago."
+
+The question is, what kept the early Earth from freezing over?
+
+Plimer goes on to explain: "This paradox is solved if the Earth had an enhanced greenhouse with an atmosphere of a lot of carbon dioxide and methane." 
+
+With Ian Plimer often touted as one of the grand priests of  climate contrarians, I doubt that Malcolm Roberts would consider him part of a cabal of global climate change conspiracists, though that would be ironic.
+
+As a geologist, I need to be able to reconcile the  geological record of a watery planet from time immemorial with the faint young sun hypothesis. And, as Ian  points out, with nothing else  on the menu,  the greenhouse effect is all we have.  
+
+If the menu changes, then I will reconsider.
+
+How about the  empirical data?
+
+Along with Brian Cox, I find it implausible that an organisation like NASA, with a record of putting a man on the moon, could or would fabricate data to the extent Malcolm Roberts insinuates.  It sounds such palpable nonsense, it is something you might expect from an  [anti-vaxer](http://rationalwiki.org/wiki/Anti-vaccination_movement).
+
+However, a clear message from the Q&A episode is there is no way to convince Malcolm  Roberts that the meteorological temperature data has  not been manipulated to achieve a predetermined outcome.  So he simply is not going to accept those data as being empirical.
+
+However, 
+the relevant data does not just include the records taken by meteorological authorities. It also includes the the record  preserved beneath our feet in  the temperature logs from many  thousands of boreholes across all inhabited continents.  And  the importance of those logs is that they are reproducible. In fact Malcolm can go out an re-measure them himself, if he needs convincing they are "empirical".
+
+The idea that the subsurface is an effective palaeo-thermometer is a simple one that we use in our every day life, or used to at least prior to refrigeration, as it provides the logic for the cellar. 
+
+When we  perturb the  temperature at the surface of the earth, for example as the air temperature rises during the  day, it sends a heat pulse downwards into the earth. The distance the pulse travels is  related to its duration.  As the day turns to night and the surface cools,  a cooling pulse will follow, lagging behind, but eventually cancelling,  the daily heating.  The diurnal surface temperature perturbations produce a wave like train of heating and cooling that can be felt with diminishing amplitude down  to a  _skin depth_  less than a metre beneath the surface before all information is cancelled out, and the extremes of both day and night are lost.   
+
+Surface temperatures also change on a seasonal basis from summer to winter and back again, and those temperatures propagate even further to depths of around 10 metres before completely cancelling [1]. 
+
+On even longer cycles the temperature anomalies propagate much further, 
+and may reach down to a kilometre or more.  For example, we know that over the last  million years the  temperature on the earth  has cycled in and out of numerous ice ages,  with a period of about 100,000 years.  Cycles of that duration can propagate more than one kilometre  into the earth, as we see in deep boreholes, such as the Blanche borehole near the giant  Olympic Dam mine in South Australia. From  our analysis of the Blanche temperature logs we infer a surface temperature amplitude of around 8°C over the glacial cycle.
+
+
+So what do we see in the depth  range of 20-100 metres that is sensitive to the last 100 years, and most relevant to the question of changing climate?
+
+The image below  shows the temperature log from a borehole that we purpose drilled in Gippsland as part of [AuScope AGOS program](http://www.auscope.org.au/australian-geophysical-observing-system-agos/).
+
+<image id="134200" align="centre" caption="Temperature log in the upper 70 metres of the Tynong AGOS borehole drilled and cored to a depth of 500 metres.  The temperature logs shown here were obtained by Kate Gordon, as a student at the University of Melbourne." />
+
+
+The temperature profile shows various stages. Above the water table at about 15 metres depth, due to infiltration of groundwater in the vadose zone, the temperatures in the borehole rapidly equilibrate to seasonal surface temperature changes. In the winter,  when this temperature log was obtained, the temperatures in this shallow zone trend towards the ambient temperature around 12°C. In summer, they rise to over 20°C. Beneath the vadose zone, the temperature in the borehole  responds to the conduction of heat influenced by two dominant factors, the changing surface temperature on time-scales of decades to many hundred of years, and the heat flow from the deeper hot interior of the earth. During a rapid surface warming cycle lasting more than several decades the normal temperature  gradient in which temperatures increase with depth can be reversed, so that we get a  characteristic rollover (with a minimum here seen at about 30 metres depth). 
+
+<image id="134201" align="centre" caption="Inversion of the Tynong temperature log for surface temperature change over the last 700 years, with uncertainties at the 95% confidence interval.  The inversion, which is based on Fourier's law of heat conduction, shows that we can be confident that the Tynong AGOS borehole temperature record is responding to a  long-term heating cycle of 0.3-1.3°C over the last century at the 95% confidence level. The inversion shown here was performed by Kate Gordon." />
+
+
+In geophysics we use the  techniques of inversion to identify causative signals, and their uncertainties, in records such as the Tynong borehole log, as well as in the estimation of the value of buried ore bodies and hydrocarbon resources. As shown in the second image, the inversion of the Tynong temperature log for surface temperature change over the last 700 years, with uncertainties at the 95% confidence interval, is compelling. Not surprisingly as we go back in time the uncertainties become larger. However, the inversion, which is based on Fourier's law of heat conduction, shows that we can be confident that the Tynong AGOS borehole temperature record is responding to a  long-term heating cycle of 0.3-1.3°C over the last century at the 95% confidence level.
+
+If there were just one borehole that showed this record, it would not mean much. However  the characteristic shallow rollover is present in all the boreholes we have explored, and has been reported in many thousands of boreholes from all around the world. 
+
+ The only way we know to sensibly interpret such empirical evidence is that ground beneath our feet, down to a depth of around 50 metres or so is now heating from above. The physics that  explains these observations dates back to Joseph Fourier, over 200 years ago,  so its not exactly new or even contentious. In effect the solid earth below is now absorbing heat from the atmosphere above, counter to the normal process of losing heat to it. However, if Malcolm can bring to the table an alternative physics to  explain these observations, while not falling foul of all the other empirical observations that  Fourier's law of heat conduction admits, then I am happy to consider, and put it to the test. (I suspect Brian Cox would be too, since all good physicists  would relish the  discovery of a new law  of such importance as Fourier's law).
+
+Perhaps  the  hyper-skeptical Malcolm  thinks that somehow the global cabal of climate scientists has got into all these thousands of boreholes with an electrical heater to propagate the heat signal that artificially simulates surface heating.  More fool me.
+
+But, if he does, then I am perfectly happy to arrange to drill a new borehole and, along with him, measure the temperature profile, making sure we don't let those pesky climate scientists get at the hole with their heating coils before we have done so. 
+
+And I'll bet him we can reproduce the signal from Tynong shown above. 
+
+But I'll only do it on the condition that Malcolm agrees, that when we do (reproduce the signal), he will  publicly acknowledge the empirical evidence of a warming world entirely consistent with NASA's surface temperature record. 
+
+Malcolm, are you on?  Will you take on my bet, and use the Earth's crust as the arbiter? Perhaps Brian will stream live to the BBC?
