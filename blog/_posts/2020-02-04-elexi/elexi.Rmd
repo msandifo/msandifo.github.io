@@ -1,0 +1,31 @@
+---
+title: "ELEXI - the Electron Export Industry"
+description: |
+  an MEI position paper written around November, 2009.
+date: 11-01-2009
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Australia is a global resource powerhouse - dig it up and ship it out has been the motto for Minerals Australia. With so much of the stuff we don’t need to worry about running out. Why bother with the hassle of adding value. Let the buyers bother with that, while we go watch the cricket. And, by the way, we can let them deal with any issues to do with using our resources, like wastes. They bought the stuff, its their problem.
+
+But there is another model. A model where we focus more on shipping value added products rather than the raw material. We do some value adding; bauxite to alumina and iron ore to steel. But we could do more. But to do so means we would have to use a whole lot more locally produced energy. In a way it means we end up shipping concentrated energy! So why not also think about shipping the ultimate value added resource - electricity!
+
+The energy business model is built on resources being transported to the site of production, and so we ship our resources like coal, uranium-ore and natural gas to where the energy is needed. Until recently there has been little thought of exporting electricity. But as demand for renewables grow, the model will have to change. For renewables, the energy production has to go to the resource. We will need to rethink the business model.
+
+With the greatest solar resource in the world located in our own deserts, our potential for renewable energy production is vast. Australia’s electric power consumption equates to the annual solar energy falling on a 10 km square patch of our deserts. But our best solar resource is in the northwest of the country - a long, long way from Australia’s power consumption heartland in the southeast. In fact Broome is just as close to Singapore as it is to Melbourne. Shipping electricity from our deserts in the northwest to Asia would make just as much sense as shipping it across the continent.
+
+Shipping electricity is not trivial, or cheap. But increasingly the idea of energy superhighways enabled by high voltage DC grids are seen as the future to meeting energy distribution. HVDC lines can transport electrons at up to 4 GW capacity great distances with losses as little as 3% per 1000 kms. And unlike the AC lines of our domestic grids, HVDC lines like BassLink can be laid beneath the sea. These electron superhighways would be expensive, about two million dollars per kilometer of cable under the sea. But the 5000 km connect from Australia to India would cost no more than the supertanker fleet needed to ship LNG!
+
+Electron superhighways could also prove a key to more equitable energy distribution. Over half the world’s population has no access to electrical power. East Timor has an installed energy infrastructure capacity of just 20 MW. That is a per capita capacity of about 1% of our own! Moreover, countries like East Timor have virtually no way to distribute power to where energy services are most urgently needed, such as in rural clinics, schools and businesses. Building capacity will require immense expenditure in both power generation and distribution infrastructure. Energy superhighways could offset the requirement for investing in generation, allowing energy-starved countries like East Timor to concentrate their own resources on moving the electricity to where it is needed.
+
+Providing affordable electricity to countries like East Timor would go a long way to making them more economically and politically viable, and we Australian’s proud of the way we use our extraordinary abundance of resources to deliver beneficial energy services to the world.
+
+And for the economic rationalists - it could be the smartest way of adding value to our own, already fortunate, circumstances!
+
+Maybe now is the time to rethink how we service the energy needs of our region.

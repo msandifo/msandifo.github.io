@@ -1,0 +1,40 @@
+---
+title: "Solar and wind power crucial for climate future"
+description: |
+  Solar and wind power crucial for climate future, Op-ed published in the Canberra Times, February, 2011.
+date: 02-11-2011
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+Today at Parliament House, the Gillard Government's Multi-Party Climate Change Committee will meet to continue its work developing a national carbon- pricing policy. Given that Australia's carbon emissions are heading in the wrong direction, these efforts are of increased importance. Recently released analysis from the Department of Climate Change estimates that in 2020, our economy will emit 24 per cent more carbon than in 2000.
+Australia needs a coherent climate and energy policy to arrest its ballooning carbon emissions. It was encouraging to see the Gillard Government quickly assemble the Multi-Party Climate Change Committee. Achieving a price on carbon is an important tool in the policy toolbox and should be implemented.
+
+But a carbon price alone can't solve the enormous challenge of decarbonising Australia. Geology provides awesome testament to the scale of the globe's climate and energy challenges. Plate tectonics, the process that pushes continents around over geological timescales making mountains and earthquakes, releases a vast amount of energy 44trillion Watts is the best estimate.
+
+While that figure is vast, it is only a few times the 16trillion Watts humans use to power civilisation. With human energy use doubling every 34 years, our power consumption is on course to overtake the earth's by about 2060. To decarbonise, Australia must shift from fossil fuel energy sources, such as coal, gas and oil, and move towards renewable energy sources such as solar and wind.
+
+With this in mind, the speed at which our energy system is transformed might be considered the key metric for assessing the effectiveness of national climate change and energy policies. There is, in fact, no shortage of potential renewable energy sources. Effectively converting about 0.06 per cent of the solar energy that hits the global land surface would meet the entire global energy demand.
+
+Australia's geography and arid climate mean we would need to capture only a tenth of that. Wind is in shorter supply, but the land-based resource still exceeds global energy demand by a factor of almost 10. The Zero Carbon Australia Stationary Energy Plan, jointly published by the Melbourne Energy Institute and climate solutions think tank Beyond Zero Emissions, demonstrates the technical feasibility of powering Australia with 100 per cent renewable energy.
+
+This study shows how off-the-shelf technologies could deliver a national renewable energy system, and that such a system could be built on a time-scale of as little as 10 years. Newly appointed Climate Change Commissioner Tim Flannery said the work was ''an ambitious, technically feasible plan that should be looked at seriously''. Concentrating solar thermal power with molten-salt storage forms the backbone of this renewable energy system.
+
+Baseload-electricity producing solar towers and wind farms would be built throughout Australia, using our nation's vast renewable resources to power homes and businesses. Geographically dispersed production spreading out renewable energy farms so as not to rely on weather conditions in one area can improve energy stability and security. And our nation-continent, stretching across climate and time zones, appears ready-made for such a system.
+
+Currently, advanced solar thermal power with storage capable of providing a smooth supply over day and night is about four times more expensive than the cheapest coal-fired power. But the cost for new technologies always  reduces as the scale increases. A 2003 report by United States-based power company Sargent & Lundy anticipated that solar costs would achieve parity with fossil fuels, assuming modest incentives to stimulate market expansion.
+
+A price on carbon will narrow the price gap between fossil fuels and renewables, but any likely carbon price will not yet make large-scale solar competitive. In the interim, additional incentives will be needed to achieve anticipated cost-curve reductions (such as feed in tariffs). It is not clear that Prime Minister Julia Gillard is open to these measures given her latest policy shifts on green technology investments.
+
+Australia has the potential to be the hub of a renewable energy export industry powering the homes, industry and electric car fleets of our region. Technologies already exist to move electricity thousands of kilometres over high- voltage, direct-current grids. An integrated southern Asian renewable energy system could secure an Australian energy export industry for centuries to come, much longer than the decades left in our export coal reserves.
+
+And then there are the potential benefits of exporting clean-tech components and intellectual property. With burgeoning electricity demand across southern Asia, there is growing interest from our neighbours in the renewable energy potential of our deserts. The Zero Carbon Australia plan provides a big vision for Australia as a renewable energy superpower.
+
+But a big vision is precisely what is needed. I hope today's discussions on climate policy start the conversation about how to make this vision a reality. 

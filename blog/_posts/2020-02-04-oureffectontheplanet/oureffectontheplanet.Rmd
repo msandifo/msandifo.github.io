@@ -1,0 +1,147 @@
+---
+title: "Our effect on the planet is real"
+description: |
+  A tribute to Roberst Sherlock, and an early reference to the "hiro", Published by the Conversation, June 2011.
+
+date: 06-16-2011
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Aren’t we too puny to rival the great forces of nature that shape our planet?
+
+Certainly some prominent Australian geologists sceptical of our ability to impact our climate have said as much.
+
+But the facts show that we are fundamentally impacting planet Earth in unprecedented ways, and we’ve known about it for a century.
+
+
+So what are those measures of our geological impact, and how do they compare to the natural energy and material fluxes that shape our planet?
+
+Geologists estimate that on average about 10 billion tonnes of sediment have been moved from mountain to sea each year over geological time by rivers and glaciers.
+
+Since the onset of agriculture, the river sediment flux has increased about threefold, to about 28 billion tonnes each year.
+
+Let’s compare that to our own direct activities.
+
+We mine about seven billion tonnes of coal and 2.3 billion tonnes of iron ore each year. We shift several times as much in overburden to access these resources.
+
+Add to this the construction aggregate (2.5 billion tonnes in the USA alone), limestone for the three billion tonnes of cement made each year and other excavations for our infrastructure, and we are clearly the dominant geological agent shaping the Earth’s surface today.
+
+While many of our excavations are local in scale, they are not always so.
+
+In Australia natural erosion removes about 100 million tonnes of sediment each year. With our annual exports of coal and iron ore now at about 600 million tonnes, we have increased the geological erosion rate of the continent by many factors.
+
+And in an extraordinary demonstration of our geological power, the proposed Olympic Dam open cut development plans to extract about 14 billion tonnes of rock over a 40-year period.
+
+With peak extraction rates of about 400 million tonnes a year, it would excavate enough rock over its life to cover metropolitan Melbourne four metres deep.
+
+That’s a lot of rock, even by geological standards.
+
+Frustrated fliers in the eastern states will know that volcanoes vent a lot of gas and particulate matter from the interior of the Earth. Over geological time, that material is returned to the Earth through natural mineralization, but we know that it can and does impact climate.
+
+So how do we compare?
+
+Our best estimates place human industrial emissions of sulfur dioxide and CO₂ at five and 100 times natural volcanic emissions, respectively.
+
+
+Think volcanoes are powerful? Our impact is much greater.
+
+The geochemical fingerprints of human activity are everywhere.
+
+Since the industrial revolution the added CO₂ now dissolved in the oceans has increased acidity by 25%. And it is changing the geological processes operating at the sea floor.
+
+We can see traces of the lead we have mined from Broken Hill in modern sediments all around the globe – a geochemical fingerprint of Homo sapiens to be preserved for time immemorial, like the iridium anomaly that marked the end of the dinosaurs 65 million years ago.
+
+We even make earthquakes.
+
+The largest earthquake in Victoria in the last 30 years was the magnitude five Thomson Dam quake, induced as a direct consequence of the filling of the Thomson dam.
+
+Induced quakes are a common occurrence when we first fill large dams, with the largest record being a magnitude six quake in India.
+
+Anyone who has seen film of a volcano erupt or those horrific scenes of devastation from the recent Japanese earthquake and tsunami can intuitively appreciate the immense energy involved in the natural processes that shape our planet as it vents heat stored deep within its interior.
+
+The rate heat is released from the earth – a measure of its natural “metabolic rate” – is well understood. It’s about 44 trillion watts, and reflects the average rate of energy transferred in moving all the continents, making all the mountains, the earthquakes and the volcanoes on our planet in a process we call plate tectonics.
+
+By way of contrast, the International Energy Agency estimates our human “energy system” operates at a rate of some 16 trillion watts.
+
+So we are already operating at one-third the rate of plate tectonics, and with our energy use doubling every 34 years we are on course to surpass plate tectonics by about 2060.
+
+Climate scientists talk about the climate sensitivity in terms of a “radiative forcing” – an obscure term that accounts for the rate of heat energy gain or loss due to a change in a climate parameter.
+
+The radiative forcing of a doubling of CO₂ is about 1300 trillion watts – or 28 times the energy released by plate tectonics.
+
+And we are well on the way to doubling CO₂. In the past hundred years we have added almost 40%, and warming that can only plausibly be attributed to a greenhouse effect is not only heating the atmosphere, but is also pumping heat into the oceans and the crust at a phenomenal rate.
+
+When my students measure the temperature in boreholes across Australia they invariably see that almost as much heat is now going into the upper 30-50 metres of the Earth’s crust as is trying to get out – a result entirely consistent with the surface temperature rises measured by climate scientists.
+
+Recent measurements suggest the oceans have been heating at 300 trillion watts over the last few decades.
+
+The scale of our energy use is truly mind-boggling. In fact, the sheer size of these numbers makes it difficult for most people to grasp and comprehend their significance; few of us have any useful reference frame for comparison.
+
+A new measure of energy use
+
+To put these numbers into a more human context we need a a new measure for our energy use. The “Hiro” is one. It is the equivalent to the energy released by detonating one Hiroshima “Little Boy” bomb every second. One Hiro equals 60 trillion watts.
+
+In these terms, our human energy system operates at a rate of 0.25 Hiros, or one Hiroshima bomb every four seconds. That is the equivalent of more than eight million Hiroshima bombs going off each year.
+
+And we are on a trajectory towards the one Hiro mark by 2100, equivalent to the energy release of one bomb each year for every five-square kilometre patch of land on the planet.
+
+The ocean heating is at 5 Hiros over the last few decades – the energy equivalent of detonating more than a 150 million Hiroshima bombs in our oceans each year.
+
+And the radiative forcing of the CO2 we have already put in the atmosphere in the last century is a staggering 13 Hiros. The equivalent in energy terms to almost half a billion Hiroshima bombs each year.
+
+The world’s human population has grown so much and so fast – trebling in one century and still rising by more than 70 million a year – that it’s perhaps not surprising that the vast scale of our geological impact is yet to sink in.
+
+But it should not be a surprise because the realisation is not new.
+
+
+“Most interesting of all, perhaps, is the question whether man, by his prodigious combustion of coal … is producing more [carbon dioxide] than can be eliminated by ordinary natural processes. If this production is excessive, the result eventually may be an unwelcome change in his atmospheric surroundings.”
+
+One can imagine our shock jocks rolling their eyes at this quote, proclaiming yet more “warmist” propaganda as part of an organised climate science “swindle” hell bent on undermining the modern industrial world, or securing more government largesse.
+
+But it only sounds like it might have been written in recent times because I have altered the wording to fit the modern context.
+
+In reality, the author did not use “carbon dioxide”. Rather he used “carbonic acid”, a term in vogue generations ago, and a dead giveaway as to its ancestry.
+
+And I bet our shock jocks would never guess it originates from one of the most celebrated geologists of his time.
+
+The quote is from Arthur Woodward, “keeper of geology in the British Museum”, Fellow of the Royal Society, President of the Royal Linnean society.
+
+Woodward’s comments appeared as preface to a classic geological text by Robert Sherlock – “Man as a geological agent” – published in 1923.
+
+Intriguingly, Woodward’s quote followed with the suggestion that, “Man … may be approaching a stage when he should pause to consider whether his use and alteration of the crust of the earth itself are for future as well as for present advantage.”
+
+Though he didn’t use the term, Woodward was probing the implication of man’s potential to “geo-engineer” the planet, almost 90 years ago.
+
+
+Geologists have been measuring our effect on the planet for almost a century.
+An old story retold
+
+Why was a really famous geologist writing this when human population was just one third, and CO₂ emissions from burning fossil fuel just 10%, of today’s rates?
+
+For one thing Woodward was aware of the work of another giant of science – the Swedish chemist and Nobel Laureate Svante Arrhenius whose name is still part of the everyday chemistry vernacular.
+
+Arrhenius demonstrated the greenhouse effect of CO₂ in 1896 estimating that a doubling of atmospheric CO₂ would lead to a temperature rise of 5-6°C. A few years later he settled on a 1.6°C warming, not far off the current consensus of 2-4.5°C.
+
+The scientific basis for the CO₂ greenhouse effect was established over 100 years ago, before Einstein and relativity, before the Curies and radioactivity, and before Fleming and antibiotics, not to mention DNA, quantum mechanics and plate tectonics.
+
+In fact it precedes just about everything we think of as modern science, not to mention Leninism.
+
+In his 1923 book, Sherlock commented “Man’s work is … as worthy of a place in geological text-books as are the actions of the sea or the rivers”.
+
+The dawning of a new geological era
+
+It would be no surprise to Sherlock or Woodward that the international geological community is now considering inaugurating a new geological epoch – named the Anthropocene – in recognition of the geological impact of our own species.
+
+While climate sceptics are surely not alone in having a sense of disbelief in the immense scale of human activity, these figures speak for themselves.
+
+We are indeed a geological agent of unprecedented power.
+
+Faced with that stark reality now, it would be folly at best to maintain the fiction that we are too puny to impact the planet – at worst, it is just plain reckless.
+
+Whether we like it or not, for better or for worse, we are already engineering our planet.

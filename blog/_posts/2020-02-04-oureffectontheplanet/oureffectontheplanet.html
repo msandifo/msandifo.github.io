@@ -19,366 +19,38 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>mike sandiford: what on earth ...</title>
+  <title>Our effect on the planet is real</title>
+
+  <meta property="description" itemprop="description" content="Published by the Conversation, June 2011."/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2011-06-16"/>
+  <meta property="article:created" itemprop="dateCreated" content="2011-06-16"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="mike sandiford: what on earth ..."/>
+  <meta property="og:title" content="Our effect on the planet is real"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Published by the Conversation, June 2011."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="mike sandiford"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="mike sandiford: what on earth ..."/>
+  <meta property="twitter:title" content="Our effect on the planet is real"/>
+  <meta property="twitter:description" content="Published by the Conversation, June 2011."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["what on earth ..."]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Our effect on the planet is real"]},{"type":"character","attributes":{},"value":["Published by the Conversation, June 2011.\n"]},{"type":"character","attributes":{},"value":["06-16-2011"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["oureffectontheplanet_files/bowser-1.9.3/bowser.min.js","oureffectontheplanet_files/distill-2.2.21/template.v2.js","oureffectontheplanet_files/header-attrs-2.1/header-attrs.js","oureffectontheplanet_files/jquery-1.11.3/jquery.min.js","oureffectontheplanet_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #455a64;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative;}
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  </style>
-
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -1254,513 +926,102 @@
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="oureffectontheplanet_files/header-attrs-2.1/header-attrs.js"></script>
+  <script src="oureffectontheplanet_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="oureffectontheplanet_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="oureffectontheplanet_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="oureffectontheplanet_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"what on earth ...","authors":[]}
+{"title":"Our effect on the planet is real","description":"Published by the Conversation, June 2011.","authors":[],"publishedDate":"2011-06-16T00:00:00.000+10:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">mike sandiford</a>
-</div>
-<div class="nav-right">
-<a href="index.html">musings</a>
-<a href="https://msandifo.github.io/">msandifo</a>
-<a href="https://github.com/msandifo/reprosci">
-<i class="fab fa-github"></i>
-</a>
-<a href="https://twitter.com/reprosci">
-<i class="fab fa-twitter"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-<style type="text/css">
-
-/* Styles for listing layout (hide title) */
-.layout-listing d-title, .layout-listing .d-title {
-  display: none;
-}
-
-/* Styles for posts lists (not auto-injected) */
-
-
-.posts-with-sidebar {
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-.posts-list .description h2,
-.posts-list .description p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.posts-list .description h2 {
-  font-weight: 700;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.posts-list h2.post-tag {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 12px;
-}
-.posts-list {
-  margin-top: 60px;
-  margin-bottom: 24px;
-}
-
-.posts-list .post-preview {
-  text-decoration: none;
-  overflow: hidden;
-  display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 24px 0;
-}
-
-.post-preview-last {
-  border-bottom: none !important;
-}
-
-.posts-list .posts-list-caption {
-  grid-column: screen;
-  font-weight: 400;
-}
-
-.posts-list .post-preview h2 {
-  margin: 0 0 6px 0;
-  line-height: 1.2em;
-  font-style: normal;
-  font-size: 24px;
-}
-
-.posts-list .post-preview p {
-  margin: 0 0 12px 0;
-  line-height: 1.4em;
-  font-size: 16px;
-}
-
-.posts-list .post-preview .thumbnail {
-  box-sizing: border-box;
-  margin-bottom: 24px;
-  position: relative;
-  max-width: 500px;
-}
-.posts-list .post-preview img {
-  width: 100%;
-  display: block;
-}
-
-.posts-list .metadata {
-  font-size: 12px;
-  line-height: 1.4em;
-  margin-bottom: 18px;
-}
-
-.posts-list .metadata > * {
-  display: inline-block;
-}
-
-.posts-list .metadata .publishedDate {
-  margin-right: 1em;
-}
-
-.posts-list .metadata .tags {
-  margin-top: 1em;
-}
-
-.posts-list .tags .tag {
-  color: rgba(0,0,0,0.67);
-  padding: 0.3em 0.5em;
-  margin: 0;
-  font-size: 80%;
-  border: 1px solid rgba(0,0,0,0.4);
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.posts-list img {
-  opacity: 1;
-}
-
-.posts-list img[data-src] {
-  opacity: 0;
-}
-
-.posts-more {
-  clear: both;
-}
-
-
-.posts-sidebar {
-  font-size: 16px;
-}
-
-.posts-sidebar h3 {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.sidebar-section {
-  margin-bottom: 30px;
-}
-
-.categories ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.categories li {
-  color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 0;
-}
-
-.categories li>a {
-  border-bottom: none;
-}
-
-.categories li>a:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.categories .active {
-  font-weight: 600;
-}
-
-.categories .category-count {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-
-@media(min-width: 768px) {
-  .posts-list .post-preview h2 {
-    font-size: 26px;
-  }
-  .posts-list .post-preview .thumbnail {
-    float: right;
-    width: 35%;
-    margin-bottom: 0;
-  }
-  .posts-list .post-preview .description {
-    float: left;
-    width: 45%;
-  }
-  .posts-list .post-preview .metadata {
-    float: left;
-    width: 15%;
-    margin-top: 8px;
-  }
-  .posts-list .post-preview p {
-    margin: 0 0 12px 0;
-    line-height: 1.5em;
-    font-size: 16px;
-  }
-  .posts-with-sidebar .posts-list {
-    float: left;
-    width: 72%;
-  }
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 20%;
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-.downlevel .posts-list .post-preview {
-  color: inherit;
-}
-
-</style>
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace("#", "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if (category == page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption">what on earth ...</h1>
-<a href="posts/2020-02-03-our-planet-is-heating/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 16, 2016</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Our planet is heating</h2>
-<p>The crust beneath our feet contains an undeniable reocrd of surface  warming over the last century, and a bet for the "deniars".</p>
-</div>
-</a>
-<a href="posts/2020-02-03-a-precarious-geological-bargain/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2016</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>A precarious geological bargain</h2>
-<p>The ancient Silk Roads skirting  the great mountains and deserts of central Asia, weave a magic thread through a region that has played a special role in history, in a land shaped by tremendous geological forces.</p>
-</div>
-</a>
-<a href="posts/2016-04-16-travelling-with-timor-leste/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 15, 2016</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Travelling with Timor Leste</h2>
-<p>On the ghosts of "Jakarta dua" and the shocking realisation hidden in the dark shadows of Timor landscapes.</p>
-</div>
-</a>
-<a href="posts/2020-02-04-cherrypickingcontrarian/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 31, 2011</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Cherry picking contrarian geologists</h2>
-<p>Title says it all - as originally published in the Australian, December, 2011</p>
-</div>
-</a>
-<a href="posts/2020-02-04-oureffectontheplanet/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">June 16, 2011</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Our effect on the planet is real</h2>
-<p>Published by the Conversation, June 2011.</p>
-</div>
-</a>
-<a href="posts/2020-02-04-fossilfuelrunout/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">March 22, 2011</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Fossil fuels will run out of gas when the solar revolution arrives</h2>
-<p>Op-ed published in the Age, March 2011</p>
-</div>
-</a>
-<a href="posts/2020-02-04-solarandwindpower/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 11, 2011</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Solar and wind power crucial for climate future</h2>
-<p>Solar and wind power crucial for climate future, Op-ed published in the Canberra Times, February, 2011.</p>
-</div>
-</a>
-<a href="posts/2020-02-04-renewableenergybythenumbers/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">June 24, 2010</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Do renewable energy by the numbers, and it all adds up</h2>
-<p>Op-ed originally published in the Age, June, 2010.</p>
-</div>
-</a>
-<a href="posts/2020-02-04-elexi/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 1, 2009</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>ELEXI - the Electron Export Industry</h2>
-<p>an MEI position paper written around November, 2009.</p>
-</div>
-</a>
-<a href="posts/2020-02-04-geologypointstodangers/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">May 6, 2009</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Geology points to dangers ahead</h2>
-<p>A differnce of opinion with a predecessor - Op-ed originally published in the Australian, May 6th 2009</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>what on earth …</h1>
-
+<h1>Our effect on the planet is real</h1>
+<p><p>Published by the Conversation, June 2011.</p></p>
 </div>
 
 
 <div class="d-article">
-
+<p>Aren’t we too puny to rival the great forces of nature that shape our planet?</p>
+<p>Certainly some prominent Australian geologists sceptical of our ability to impact our climate have said as much.</p>
+<p>But the facts show that we are fundamentally impacting planet Earth in unprecedented ways, and we’ve known about it for a century.</p>
+<p>So what are those measures of our geological impact, and how do they compare to the natural energy and material fluxes that shape our planet?</p>
+<p>Geologists estimate that on average about 10 billion tonnes of sediment have been moved from mountain to sea each year over geological time by rivers and glaciers.</p>
+<p>Since the onset of agriculture, the river sediment flux has increased about threefold, to about 28 billion tonnes each year.</p>
+<p>Let’s compare that to our own direct activities.</p>
+<p>We mine about seven billion tonnes of coal and 2.3 billion tonnes of iron ore each year. We shift several times as much in overburden to access these resources.</p>
+<p>Add to this the construction aggregate (2.5 billion tonnes in the USA alone), limestone for the three billion tonnes of cement made each year and other excavations for our infrastructure, and we are clearly the dominant geological agent shaping the Earth’s surface today.</p>
+<p>While many of our excavations are local in scale, they are not always so.</p>
+<p>In Australia natural erosion removes about 100 million tonnes of sediment each year. With our annual exports of coal and iron ore now at about 600 million tonnes, we have increased the geological erosion rate of the continent by many factors.</p>
+<p>And in an extraordinary demonstration of our geological power, the proposed Olympic Dam open cut development plans to extract about 14 billion tonnes of rock over a 40-year period.</p>
+<p>With peak extraction rates of about 400 million tonnes a year, it would excavate enough rock over its life to cover metropolitan Melbourne four metres deep.</p>
+<p>That’s a lot of rock, even by geological standards.</p>
+<p>Frustrated fliers in the eastern states will know that volcanoes vent a lot of gas and particulate matter from the interior of the Earth. Over geological time, that material is returned to the Earth through natural mineralization, but we know that it can and does impact climate.</p>
+<p>So how do we compare?</p>
+<p>Our best estimates place human industrial emissions of sulfur dioxide and CO₂ at five and 100 times natural volcanic emissions, respectively.</p>
+<p>Think volcanoes are powerful? Our impact is much greater.</p>
+<p>The geochemical fingerprints of human activity are everywhere.</p>
+<p>Since the industrial revolution the added CO₂ now dissolved in the oceans has increased acidity by 25%. And it is changing the geological processes operating at the sea floor.</p>
+<p>We can see traces of the lead we have mined from Broken Hill in modern sediments all around the globe – a geochemical fingerprint of Homo sapiens to be preserved for time immemorial, like the iridium anomaly that marked the end of the dinosaurs 65 million years ago.</p>
+<p>We even make earthquakes.</p>
+<p>The largest earthquake in Victoria in the last 30 years was the magnitude five Thomson Dam quake, induced as a direct consequence of the filling of the Thomson dam.</p>
+<p>Induced quakes are a common occurrence when we first fill large dams, with the largest record being a magnitude six quake in India.</p>
+<p>Anyone who has seen film of a volcano erupt or those horrific scenes of devastation from the recent Japanese earthquake and tsunami can intuitively appreciate the immense energy involved in the natural processes that shape our planet as it vents heat stored deep within its interior.</p>
+<p>The rate heat is released from the earth – a measure of its natural “metabolic rate” – is well understood. It’s about 44 trillion watts, and reflects the average rate of energy transferred in moving all the continents, making all the mountains, the earthquakes and the volcanoes on our planet in a process we call plate tectonics.</p>
+<p>By way of contrast, the International Energy Agency estimates our human “energy system” operates at a rate of some 16 trillion watts.</p>
+<p>So we are already operating at one-third the rate of plate tectonics, and with our energy use doubling every 34 years we are on course to surpass plate tectonics by about 2060.</p>
+<p>Climate scientists talk about the climate sensitivity in terms of a “radiative forcing” – an obscure term that accounts for the rate of heat energy gain or loss due to a change in a climate parameter.</p>
+<p>The radiative forcing of a doubling of CO₂ is about 1300 trillion watts – or 28 times the energy released by plate tectonics.</p>
+<p>And we are well on the way to doubling CO₂. In the past hundred years we have added almost 40%, and warming that can only plausibly be attributed to a greenhouse effect is not only heating the atmosphere, but is also pumping heat into the oceans and the crust at a phenomenal rate.</p>
+<p>When my students measure the temperature in boreholes across Australia they invariably see that almost as much heat is now going into the upper 30-50 metres of the Earth’s crust as is trying to get out – a result entirely consistent with the surface temperature rises measured by climate scientists.</p>
+<p>Recent measurements suggest the oceans have been heating at 300 trillion watts over the last few decades.</p>
+<p>The scale of our energy use is truly mind-boggling. In fact, the sheer size of these numbers makes it difficult for most people to grasp and comprehend their significance; few of us have any useful reference frame for comparison.</p>
+<p>A new measure of energy use</p>
+<p>To put these numbers into a more human context we need a a new measure for our energy use. The “Hiro” is one. It is the equivalent to the energy released by detonating one Hiroshima “Little Boy” bomb every second. One Hiro equals 60 trillion watts.</p>
+<p>In these terms, our human energy system operates at a rate of 0.25 Hiros, or one Hiroshima bomb every four seconds. That is the equivalent of more than eight million Hiroshima bombs going off each year.</p>
+<p>And we are on a trajectory towards the one Hiro mark by 2100, equivalent to the energy release of one bomb each year for every five-square kilometre patch of land on the planet.</p>
+<p>The ocean heating is at 5 Hiros over the last few decades – the energy equivalent of detonating more than a 150 million Hiroshima bombs in our oceans each year.</p>
+<p>And the radiative forcing of the CO2 we have already put in the atmosphere in the last century is a staggering 13 Hiros. The equivalent in energy terms to almost half a billion Hiroshima bombs each year.</p>
+<p>The world’s human population has grown so much and so fast – trebling in one century and still rising by more than 70 million a year – that it’s perhaps not surprising that the vast scale of our geological impact is yet to sink in.</p>
+<p>But it should not be a surprise because the realisation is not new.</p>
+<p>“Most interesting of all, perhaps, is the question whether man, by his prodigious combustion of coal … is producing more [carbon dioxide] than can be eliminated by ordinary natural processes. If this production is excessive, the result eventually may be an unwelcome change in his atmospheric surroundings.”</p>
+<p>One can imagine our shock jocks rolling their eyes at this quote, proclaiming yet more “warmist” propaganda as part of an organised climate science “swindle” hell bent on undermining the modern industrial world, or securing more government largesse.</p>
+<p>But it only sounds like it might have been written in recent times because I have altered the wording to fit the modern context.</p>
+<p>In reality, the author did not use “carbon dioxide”. Rather he used “carbonic acid”, a term in vogue generations ago, and a dead giveaway as to its ancestry.</p>
+<p>And I bet our shock jocks would never guess it originates from one of the most celebrated geologists of his time.</p>
+<p>The quote is from Arthur Woodward, “keeper of geology in the British Museum”, Fellow of the Royal Society, President of the Royal Linnean society.</p>
+<p>Woodward’s comments appeared as preface to a classic geological text by Robert Sherlock – “Man as a geological agent” – published in 1923.</p>
+<p>Intriguingly, Woodward’s quote followed with the suggestion that, “Man … may be approaching a stage when he should pause to consider whether his use and alteration of the crust of the earth itself are for future as well as for present advantage.”</p>
+<p>Though he didn’t use the term, Woodward was probing the implication of man’s potential to “geo-engineer” the planet, almost 90 years ago.</p>
+<p>Geologists have been measuring our effect on the planet for almost a century. An old story retold</p>
+<p>Why was a really famous geologist writing this when human population was just one third, and CO₂ emissions from burning fossil fuel just 10%, of today’s rates?</p>
+<p>For one thing Woodward was aware of the work of another giant of science – the Swedish chemist and Nobel Laureate Svante Arrhenius whose name is still part of the everyday chemistry vernacular.</p>
+<p>Arrhenius demonstrated the greenhouse effect of CO₂ in 1896 estimating that a doubling of atmospheric CO₂ would lead to a temperature rise of 5-6°C. A few years later he settled on a 1.6°C warming, not far off the current consensus of 2-4.5°C.</p>
+<p>The scientific basis for the CO₂ greenhouse effect was established over 100 years ago, before Einstein and relativity, before the Curies and radioactivity, and before Fleming and antibiotics, not to mention DNA, quantum mechanics and plate tectonics.</p>
+<p>In fact it precedes just about everything we think of as modern science, not to mention Leninism.</p>
+<p>In his 1923 book, Sherlock commented “Man’s work is … as worthy of a place in geological text-books as are the actions of the sea or the rivers”.</p>
+<p>The dawning of a new geological era</p>
+<p>It would be no surprise to Sherlock or Woodward that the international geological community is now considering inaugurating a new geological epoch – named the Anthropocene – in recognition of the geological impact of our own species.</p>
+<p>While climate sceptics are surely not alone in having a sense of disbelief in the immense scale of human activity, these figures speak for themselves.</p>
+<p>We are indeed a geological agent of unprecedented power.</p>
+<p>Faced with that stark reality now, it would be folly at best to maintain the fiction that we are too puny to impact the planet – at worst, it is just plain reckless.</p>
+<p>Whether we like it or not, for better or for worse, we are already engineering our planet.</p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

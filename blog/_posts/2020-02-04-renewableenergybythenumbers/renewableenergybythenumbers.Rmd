@@ -1,0 +1,51 @@
+---
+title: "Do renewable energy by the numbers, and it all adds up"
+description: |
+  Op-ed originally published in the Age, June, 2010.
+date: 06-24-2010
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Disaster in the Gulf of Mexico may give us the will to shape the future.
+
+Twenty-eight billion is a big number. In tonnes it is a mighty load. It is the sediment eroded globally each year from all our mountains and carried by all our rivers to all our seas. It is also the amount of carbon dioxide pumped into the atmosphere each year from burning fossil fuels. In dollar terms, it is the extra money we would need to spend each year for 10 years to build a zero-emission energy system in Australia.
+
+To make that carbon dioxide, we dig 7 billion tonnes of coal and suck countless litres of oil and gas from the ground. In total, we already excavate more rock from the Earth than nature does. We are almost at the point where oil production will start to decline, and sucking so hard it is creating problems. According to latest estimates, more than one in every 1000 barrels produced each day is now flooding into the Gulf of Mexico from BP's Deepwater Horizon well. At current growth rates, coal will have peaked by mid-century and be largely gone by the end.
+
+Geology provides another awesome testament to the scale of collective human activity. Plate tectonics, the process that pushes continents around over geological timescales making mountains and earthquakes as it goes, releases a vast amount of energy. Our best estimate is about 44 trillion watts. While that is vast, it is only a few times the 16 trillion watts humans use. With human energy use doubling every 34 years, our power consumption will overtake the Earth's by about 2060.
+
+Each year, we are increasing the amount of carbon dioxide in the atmosphere by 1 per cent. The effect of this increase is to trap a tiny extra bit of the incoming solar energy, so we are heating not only the atmosphere, but also the oceans and land, and at a phenomenal rate.
+Advertisement
+
+The scary thing is we have only just begun. With energy use doubling every 34 years, we have an 800 per cent increase in a century. Curtailing energy growth will not be easy, so how will we cater for future energy needs?
+
+There is, in fact, no shortage of potential renewable energy sources. Effectively converting about 0.06 per cent of the solar energy that hits the global land surface would meet the entire global energy demand. Australia's geography and arid climate mean we would need to capture only a tenth of that. Wind is in shorter supply, but the land-based resource still exceeds global energy demand by a factor of almost 10.
+
+There are problems with renewable energy. It comes at a cost, and the sun doesn't always shine. Currently, advanced solar thermal power with storage capable of providing a smooth supply over day and night is about four times more expensive than the cheapest coal-fired power. But the cost for new technologies always reduces as the scale increases. A 2003 report by US-based power company Sargent & Lundy anticipated that solar costs would achieve parity with fossil fuels, assuming modest incentives to stimulate market expansion.
+
+So far, there has not been even modest stimulus. The global financial crisis is partly to blame, but political will would seem to be the resource in shortest supply. BP's Gulf of Mexico disaster may have changed that.
+
+Geographically dispersed production - spreading out renewable energy farms so as not to rely on weather conditions in one area - is one way to improve energy stability and security. And our nation-continent, stretching across climate and time zones, appears ready-made for that.
+
+Two new studies published by the Melbourne Energy Institute look at just these issues.
+
+Peter Seligman's Australian Sustainable Energy - by the numbers shows how a national renewable energy system can be stabilised by integrating solar, wind and, when available, geothermal energy. Seligman shows how linking it all up with a new super grid, and adding a fraction of pumped hydroelectric storage, would secure supply.
+
+Seligman puts the cost at about \$1.40 per person per day - a fraction of our national gambling habit if built over the next 25 years. But what if we wanted to do it faster, say in 10 years? How could we do it, and what would it cost?
+
+That is the challenge outlined in Australian Sustainable energy: Zero Carbon Australia stationary energy plan, jointly published with the research organisation Beyond Zero Emissions. This study, to be launched on July 14, shows how off-the-shelf technologies could deliver a renewable energy system at cost above business-as-usual of \$26 billion a year. Another big number, but in individual terms it equates to one cup of coffee per person per day.
+
+Both studies expose as myth the argument that we need coal, gas or nuclear to provide baseload energy.
+
+Could Australia be the hub of a renewable energy export industry powering the homes, industry and electric car fleets of our region? In fact, our proportion of the global renewable energy resource is much higher than it is for coal.
+
+Technologies already exist to move electricity thousands of kilometres over high-voltage, direct-current grids. An integrated southern Asian renewable energy system could secure an Australian energy export industry for centuries to come, much longer than the decades left in our export coal reserves.
+
+
+These studies provide a big vision for Australia as a renewable energy superpower. But a big vision is precisely what is needed.

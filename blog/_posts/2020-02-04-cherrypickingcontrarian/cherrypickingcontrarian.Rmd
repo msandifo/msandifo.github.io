@@ -1,7 +1,7 @@
 ---
 title: "Cherry picking contrarian geologists"
 description: |
-  Title says it all - as originally published in the Australian, December, 2011
+  Title says it all - op-ed originally published in the Australian, December 31st 2011
 date: 12-31-2011
 output:
   distill::distill_article:

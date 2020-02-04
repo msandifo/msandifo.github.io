@@ -1,0 +1,46 @@
+---
+title: "Fossil fuels will run out of gas when the solar revolution arrives"
+description: |
+  Op-ed published in the Age, March 2011
+date: 03-22-2011
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+IT'S a sure bet that solar photovoltaics will achieve retail electricity price parity within a few years. When that happens, it will signal the end of the game for fossil fuel baseload power.
+
+Back in 1988, my first hard disk cost me about \$2000. It seemed a risky investment at the time, especially given my existing investments in tape drives, but it was a 20-megabyte marvel of technology. Freeing me from time-consuming tape back-ups, it revolutionised my working life.
+
+Scaled up to a terabyte, that disk would have cost about \$200 million in today's terms. But I can now buy a terabyte disk drive for under \$200.
+
+Demand for disk storage has grown beyond all expectation. Each year, for more than 30 years, costs have been halved, driven in part by the annual doubling in storage density - Kryder's law. Industry analysts expect at least another hundred-fold cost reduction by 2020. Technology-driven cost reductions are typical of industries dependent on advanced material science. The drivers are clear. Innovation provides the technology push and demand pulls the learning.
+
+In information technology, the rate of learning beggars belief, driving a million-fold reduction in the cost of disk storage since 1988.
+Advertisement
+
+In the energy sector, technology-driven learning applies most pertinently to solar photovoltaics (PVs).
+
+The cost of PVs is reducing by about 20 per cent for each doubling in deployment. At present rates, doubling is taking 18 months, so PVs get six times cheaper every 10 years. There is no reason to expect the learning to stop for many decades and deployment rates can be increased to accelerate the learning.
+
+With PV electricity about seven times more expensive than coal-fired power on a levelled-cost basis, we can expect wholesale price parity by 2022. And when we get there, other electricity generation technologies - especially those subject to rising fuel costs - will soon be out of business. Why? Because PV costs will continue to fall.
+
+Financiers and governments should be sensitive to this timeline. It will turn the electricity market on its head. Distinctions like baseload will no longer matter, as coal will not be able to attract investment. Expensive assets will likely be stranded.
+
+With costs still high, the key is to get PVs to the stage where market momentum drives the learning. Since PVs can be distributed on buildings where they compete on retail price terms, we can expect that in just a few years. With retail prices typically more than double the wholesale price, retail parity is expected in 2016. Technology breakthroughs might get us there even sooner.
+
+At the University of Melbourne, scientists in the Victorian Organic Solar Cell Consortium are developing ultra-cheap printable PVs. In a remarkable demonstration, they have already printed them on a substrate similar to the one used to print our $10 bills.
+
+Backed by $11.75 million in Victorian government funding, the Melbourne group has set 2014 as a target for a printable solar cell with 10 per cent efficiency and a lifetime of 12 years suitable for mass production. This would truly revolutionise the world.
+
+With just one printing press costing about $25 million, they could print enough PVs to match Australia's existing electricity generation capacity in just 10 years. Roll over Gutenberg!
+
+To meet all the world's energy needs - about 16 terawatts - would require 350 printing presses costing about $8.5 billion. That is about the same as one new nuclear power station providing less than a hundredth of a per cent of the power.
+
+Sound like the stuff of fantasy? Only if you don't get the power of Kryder's law. The production rates will be challenging, but this is where the market excels - imagine energy companies touting free building materials - think ElectroBond and PVglass - provided they can harvest the energy. When our buildings power our transport system, the green energy revolution will be unstoppable.
+
+Ignoring the PV revolution could be catastrophically expensive. New investment in power generation is desperately needed and gas-fired power is the option of choice at today's prices with a carbon price less than about $50 a tonne. But PV's equivalent of Kryder's law, and the phenomenal work going on in our research labs, is telling us investment in gas will be risky. Falling PV costs are likely to strand such assets way before their use-by date.
