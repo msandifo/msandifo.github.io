@@ -18,6 +18,9 @@ It took several trips before I began to understand the scale of the horror.  It 
 
 A rural centre,  Ainaro is built on a massive conglomerate “fan”, the origins of  which can be traced into a huge head-wall scarp in the Ramelau range. I was convinced the conglomerate was the result of a truly massive landslide - one that just might have  “taken out” a peak even higher than Ramelau. Along with one of my students from Melbourne and a young Timorese geologist, Johnny, we were mapping the geology of the landslide deposit. 
 
+```{r fig.cap="View across the Ainaro fan, with Cablaci in the background." }
+knitr::include_graphics("images/IMG_3457.jpeg")
+```
 
 We knew the deposit couldn’t be very old, in geological terms, since the island of Timor only emerged from the sea  just a few million years ago. Understanding when and why the landslide formed would help us better understand the  risk elsewhere in Timor. That my student was of Timorese extraction, with family connections to Ainaro, made the fieldwork all the more special.
 
@@ -25,6 +28,9 @@ We were driving several kilometres south from Ainaro, to an outcrop I had briefl
 
 As I explained our destination en route, Johnny responded “we must be going to Jakarta dua”  (literally “Jakarta two”).
 
+```{r fig.cap="Jakarts dua, south of Ainaro" }
+knitr::include_graphics("images/P1270627.jpeg")
+```
 Nonplussed, I asked naively  “why Jakarta dua?”
 
 Without hint of recrimination, Johnny responded  “when you go to Jakarta you don’t come back.”
@@ -68,6 +74,10 @@ The initial Australian government response indicates little hope we are prepared
         
  Meanwhile, the ghosts of “Jakarta dua” shout at me “surely you can be better, surely it’s time for you to travel with Timor Leste”.
         
+```{r fig.cap="The crocodile's tail -  Ainaro region." }
+knitr::include_graphics("images/P1300683.jpeg")
+```
+
 ### Postscript
         
 For those interested in the grim details of  “Jakarta dua”, an account of Max Stahl’s visit to the site in 1999  has been [posted](https://lists.riseup.net/www/arc/east-timor/2016-04/msg00096.html). It makes confronting reading and confirms my worst fears. [Max Stahl](https://en.wikipedia.org/wiki/Christopher_Wenner)  has played a pivotal role in documenting the atrocities committed in Timor Leste, including the filming of the [Santa Cruz massacre](ttps://en.wikipedia.org/wiki/Santa_Cruz_massacre) in 1991.  
