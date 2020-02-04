@@ -6,6 +6,10 @@ date: 04-18-2016
 output:
   distill::distill_article:
     self_contained: false
+twitter:
+  site: "@msandifo"
+  creator: "@reprosci"
+preview: https://images.theconversation.com/files/118981/original/image-20160416-11155-4lmc0b.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip
 ---
 
 ```{r setup, include=FALSE}

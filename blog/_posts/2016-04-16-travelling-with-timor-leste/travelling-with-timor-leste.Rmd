@@ -5,6 +5,7 @@ date: 04-15-2016
 output:
   distill::distill_article:
     self_contained: false
+preview:  images/P1300672.jpeg
 ---
 
 ```{r setup, include=FALSE}
