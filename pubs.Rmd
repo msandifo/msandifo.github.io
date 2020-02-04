@@ -75,37 +75,38 @@ gs.id<-"qdYHZTgAAAAJ"
  
 ## Published 
 
+1. __Sandiford, M.__, Lawrie, K., Brodie, R.S., 2020, Hydrogeological implications of active tectonics in the Great Artesian Basin, Australia, Hydrogeological Journal,     28, 57–73 https://doi.org/10.1007/s10040-019-02046-4, `r ( gs("Hydrogeological"))`
+
 1. Beardsmore, G., Egan, S., __Sandiford, M.__,  2020, A Fourier Spectral Method to Measure the Thermal Diffusivity of Soil, Geotechnical Testing Journal,  43,  http://dx.doi.org/10.1520/GTJ20180300,`r ( gs("spectral method"))`
 
 1. Skov, D.S., Egholm,  D.L.,  Jansen, J.D., __Sandiford, M.__, Knudsen, M.F., 2019,  Detecting landscape transience with in situ cosmogenic 14C and 10Be,   Quaternary Geochronology, http://dx.doi.org/10.1016/j.quageo.2019.101008,
       `r ( gs("landscape transience"))`
       
-1. Li, G., __Sandiford, M.__, Fang, A., Kohn, B., Sandiford, D., Fu, B., Zhang; T., Cao, Y., Chen, F., 2019, Multi-stage exhumation history of the West Kunlun orogen and the amalgamation of the Tibetan Plateau, Earth and Planetary Science Letters, 528, http://dx.doi.org/10.1016/j.epsl.2019.115833
+1. Li, G., __Sandiford, M.__, Fang, A., Kohn, B., Sandiford, D., Fu, B., Zhang; T., Cao, Y., Chen, F., 2019, Multi-stage exhumation history of the West Kunlun orogen and the amalgamation of the Tibetan Plateau, Earth and Planetary Science Letters, 528, http://dx.doi.org/10.1016/j.epsl.2019.115833, `r ( gs("amalgamation of the"))`
 
  
-1. Sandiford, D., Moresi, L.N., __Sandiford, M.__, Ting, Y., 2019, Geometric controls on flat slab seismicity Earth and Planetary Science Letters, 527,  http://dx.doi.org/10.1016/j.epsl.2019.115787
+1. Sandiford, D., Moresi, L.N., __Sandiford, M.__, Ting, Y., 2019, Geometric controls on flat slab seismicity, Earth and Planetary Science Letters, 527,  http://dx.doi.org/10.1016/j.epsl.2019.115787, `r ( gs("flat slab"))`
 
  	 
-1. __Sandiford, M.__, Lawrie, K., Brodie, R.S., 2019, Hydrogeological implications of active tectonics in the Great Artesian Basin, Australia, Hydrogeological Journal, online 31st October, http://dx.doi.org/10.1007/s10040-019-02046-4
  
 
 1. Attanayake, J., Sandiford, D., Schleicher, L.S., Jones, A., Gibson, G., __Sandiford, M.__, 2019, Interacting Intraplate Fault Systems in Australia: The 2012 Thorpdale Seismic Sequence,  Journal of Geophysical Research,   124,  4673-4693,  http://dx.doi.org/10.1029/2018JB016945, `r ( gs("Thorpdale"))`
 
 1. Rosenbaum, G., __Sandiford, M.__, Caulfield, J., Garrison, J.M.,   2018, 	 A trapdoor mechanism for slab tearing and melt generation in the northern Andes,   Geology,  47,  23-26,  http://dx.doi.org/10.1130/G45429.1, `r ( gs("Trapdoor"))`
 
-1.  Li, G.,  Kohn, B.,  __Sandiford, M.__, Ma, Z.,  Xu, Z.,   2018,  Post-collisional exhumation of the Indus-Yarlung ure zone and Northern Tethyan Himalaya, Saga, SW Tibet,  Gondwana Research,   64,   1-10,   http://dx.doi.org/10.1016/j.gr.2018.06.006,  `r ( gs("Saga"))`
+1.  Li, G.,  Kohn, B.,  __Sandiford, M.__, Ma, Z.,  Xu, Z.,   2018,  Post-collisional exhumation of the Indus-Yarlung suture zone and Northern Tethyan Himalaya, Saga, SW Tibet,  Gondwana Research,   64,   1-10,   http://dx.doi.org/10.1016/j.gr.2018.06.006,  `r ( gs("suture zone"))`
 
 1.  Beardsmore, G., __Sandiford, M.__, Gordon, K., McLean, M., Egan, S., McLaren, S.N.,  2017,   Heat flow and inferred ground surface temperature history at Tynong North, southeastern Australia,    Australian Journal of Earth Science,   64,   753-767,   http://dx.doi.org/10.1080/08120099.2017.1362663,
-   `r ( gs("Tynong"))`
+   `r ( gs("inferred ground surface"))`
 
  1. Morell, M., __Sandiford, M.__, Kohn, B., Codilean, A., Folup, R., Ahmad, T.,  2017,  Current strain accumulation in the hinterland of the northwest Himalaya,    Tectonophysics,   721,   70-89,  http://dx.doi.org/10.1016/j.tecto.2017.09.007, `r ( gs("Current strain"))`
 
 
-1. Li, G., Kohn, B., __Sandiford, M.__, Xu, Z., 2017,   India-Asia convergence: Insights from burial and exhumation of the Xigaze forearc basin, south Tibet,   Journal of Geophysical Research: Solid Earth,  122,    http://dx.doi.org/10.1002/2017JB014080,  `r ( gs("India-Asia"))`
+1. Li, G., Kohn, B., __Sandiford, M.__, Xu, Z., 2017,   India-Asia convergence: Insights from burial and exhumation of the Xigaze forearc basin, south Tibet,   Journal of Geophysical Research: Solid Earth,  122,    http://dx.doi.org/10.1002/2017JB014080,  `r ( gs("burial and exhumation"))`
    
 1. Hoffman, N., Hardman-Mountford, N.,  Jenkins, C.,   Rayner, P.J.,   Gibson, G., __Sandiford, M.__, 2017,  GipNet - Baseline environmental data gathering and measurement technology validation for nearshore marine bon Storage,  Energy Proceedia,  114,  3729 - 3753,   http://dx.doi.org/10.1016/j.egypro.2017.03.1503. `r ( gs("gipnet"))`
 
-1. Li, G., Kohn, B., __Sandiford, M.__,  Xu ,Z., Tian, Y., Seiler, C., 2016,  Synorogenic morphotectonic evolution of the Gangdese batholith, South Tibet: Insights from low-temperature rmochronology, Geochemistry, Geophysics, Geosystems (G-cubed), A17,  101-112, http://dx.doi.org/ 10.1002/2015GC006047, `r ( gs("Gandese"))`
+1. Li, G., Kohn, B., __Sandiford, M.__,  Xu ,Z., Tian, Y., Seiler, C., 2016,  Synorogenic morphotectonic evolution of the Gangdese batholith, South Tibet: Insights from low-temperature rmochronology, Geochemistry, Geophysics, Geosystems (G-cubed), A17,  101-112, http://dx.doi.org/ 10.1002/2015GC006047, `r ( gs("synorogenic morphotectonic "))`
 1. Li, G.,  Kohn, B., __Sandiford, M.__, Xu ,Z., Seiler, C., Tian, Y., 2016, Synorogenic morphotectonic evolution of the Gangdese batholith, South Tibet: Insights from low-temperature Thermochronology, accepted,  Geochemistry, Geophysics, Geosystems, 17, 101-112.
 1.	Rajendran. C.P., Sanwal, J., Morell, K.D., __Sandiford, M.__, Kotlia, B.S., Hellstrom, J., Rajendran, K., 2016, Stalagmite growth anomalies from central Himalaya as potential earthquake recorders, Journal of Seismology, 20, 579-594. `r ( gs("Stalagmite"))`
 1.	McConnell, D., Forcey, T., __Sandiford, M.__, 2015, Estimating the value of electricity storage in an energy-only wholesale market, Applied Energy, 159, 422-432  http://dx.doi.org/10.1016/j.apenergy.2015.09.006")`
