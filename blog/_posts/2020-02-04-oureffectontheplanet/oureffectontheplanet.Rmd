@@ -1,7 +1,7 @@
 ---
 title: "Our effect on the planet is real"
 description: |
-  A tribute to Roberst Sherlock, and an early reference to the "hiro", Published by the Conversation, June 2011.
+  A tribute to Robert Sherlock, and a reference to a new unit of energy use termed the hiro. First published by the Conversation, June 2011.
 
 date: 06-16-2011
 output:
@@ -19,6 +19,7 @@ Certainly some prominent Australian geologists sceptical of our ability to impac
 
 But the facts show that we are fundamentally impacting planet Earth in unprecedented ways, and we’ve known about it for a century.
 
+### Measuring our impact
 
 So what are those measures of our geological impact, and how do they compare to the natural energy and material fluxes that shape our planet?
 
@@ -50,6 +51,8 @@ Our best estimates place human industrial emissions of sulfur dioxide and CO₂ 
 
 
 Think volcanoes are powerful? Our impact is much greater.
+
+### A geological litmus test
 
 The geochemical fingerprints of human activity are everywhere.
 
@@ -83,22 +86,23 @@ Recent measurements suggest the oceans have been heating at 300 trillion watts o
 
 The scale of our energy use is truly mind-boggling. In fact, the sheer size of these numbers makes it difficult for most people to grasp and comprehend their significance; few of us have any useful reference frame for comparison.
 
-A new measure of energy use
+### A new measure of energy use
 
-To put these numbers into a more human context we need a a new measure for our energy use. The “Hiro” is one. It is the equivalent to the energy released by detonating one Hiroshima “Little Boy” bomb every second. One Hiro equals 60 trillion watts.
+To put these numbers into a more human context we need a a new measure for our energy use. The “hiro” is one. It is the equivalent to the energy released by detonating one Hiroshima “Little Boy” bomb every second. One Hiro equals 60 trillion watts.
 
-In these terms, our human energy system operates at a rate of 0.25 Hiros, or one Hiroshima bomb every four seconds. That is the equivalent of more than eight million Hiroshima bombs going off each year.
+In these terms, our human energy system operates at a rate of 0.25 hiros, or one Hiroshima bomb every four seconds. That is the equivalent of more than eight million Hiroshima bombs going off each year.
 
 And we are on a trajectory towards the one Hiro mark by 2100, equivalent to the energy release of one bomb each year for every five-square kilometre patch of land on the planet.
 
-The ocean heating is at 5 Hiros over the last few decades – the energy equivalent of detonating more than a 150 million Hiroshima bombs in our oceans each year.
+The ocean heating is at 5 hiros over the last few decades – the energy equivalent of detonating more than a 150 million Hiroshima bombs in our oceans each year.
 
-And the radiative forcing of the CO2 we have already put in the atmosphere in the last century is a staggering 13 Hiros. The equivalent in energy terms to almost half a billion Hiroshima bombs each year.
+And the radiative forcing of the CO2 we have already put in the atmosphere in the last century is a staggering 13 hiros. The equivalent in energy terms to almost half a billion Hiroshima bombs each year.
 
 The world’s human population has grown so much and so fast – trebling in one century and still rising by more than 70 million a year – that it’s perhaps not surprising that the vast scale of our geological impact is yet to sink in.
 
 But it should not be a surprise because the realisation is not new.
 
+### Undercover geological agents
 
 “Most interesting of all, perhaps, is the question whether man, by his prodigious combustion of coal … is producing more [carbon dioxide] than can be eliminated by ordinary natural processes. If this production is excessive, the result eventually may be an unwelcome change in his atmospheric surroundings.”
 
@@ -120,7 +124,8 @@ Though he didn’t use the term, Woodward was probing the implication of man’s
 
 
 Geologists have been measuring our effect on the planet for almost a century.
-An old story retold
+
+### An old story retold
 
 Why was a really famous geologist writing this when human population was just one third, and CO₂ emissions from burning fossil fuel just 10%, of today’s rates?
 
@@ -134,7 +139,7 @@ In fact it precedes just about everything we think of as modern science, not to 
 
 In his 1923 book, Sherlock commented “Man’s work is … as worthy of a place in geological text-books as are the actions of the sea or the rivers”.
 
-The dawning of a new geological era
+### The dawning of a new geological era
 
 It would be no surprise to Sherlock or Woodward that the international geological community is now considering inaugurating a new geological epoch – named the Anthropocene – in recognition of the geological impact of our own species.
 
