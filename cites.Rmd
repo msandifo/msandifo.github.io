@@ -12,7 +12,7 @@ gs.id<-"qdYHZTgAAAAJ"
  my.profile <- get_profile(gs.id)
  my.pubs1 <-get_publications(gs.id)
  
- gs <- function(title.str, pubs=my.pubs1, prefix= "citations "){
+ gs <- function(title.str, pubs=my.pubs1, prefix= "#"){
    sum.cites <- sum( pubs$cites[str_detect(str_to_lower(pubs$title), str_to_lower(title.str))])
    if (sum.cites > 0) paste(prefix,  sum.cites)
  } 

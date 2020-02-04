@@ -21,21 +21,22 @@ gs.id<-"qdYHZTgAAAAJ"
 ```
 
 
+## focus
  
- 
-I am an Australian geologist intersted in the thermal and mechanical structure of the continents, including
+My reserch has focussed on the thermal and mechanical structure of the continents, addressing issues such as
 
 * how the feedbacks between primary tectonic processes (such as deformation, magmatism, erosion and sedimentation) serve to order the chemical structure of the continental crust in ways that determine its long-term thermal and mechanical character (e.g. Sandiford & McLaren 2002).
 *  the  role of gravitational body forces in the evolution of the Earth's major mountain belts (Sandiford & Powell 1990; Sandiford 1988).
 * how tectonic stress is sourced at the global scale (Coblentz et al. 1993) in ways that explains the observed natural variability in stress state in our tectonic plates  (Coblentz et al. 1995; Coblentz & Sandiford 1995).
-* dthe links between intraplate earthquakes and geomorphic records  (Sandiford 2003) in ways that allows the development of geologically constrained models for earthquake hazard  (Quigley et al. 2007).
+* the links between intraplate earthquakes and geomorphic records  (Sandiford 2003) in ways that allows the development of geologically constrained models for earthquake hazard  (Quigley et al. 2007).
 * the geomorphic response to dynamic processes deep in the Earth's mantle and how it explains many previously enigmatic landscape features such  as Australia's unique record of continental tilting (Sandiford 2007), as well as emblematic landscapes such as the Lake Eyre Basin (Sandiford & Quigley 2008).
-* linking earthquakes,  landslides   and  river incision in a  theoretical perspective (Egholm et al. 2013) that has application to understanding natural hazard vulnerability in settings such as the Indian Himalaya (Morrell et al., 2015) and Timor (Sandiford, 2008). 
+* the links between earthquakes,  landslides   and  river incision (Egholm et al. 2013) and their application to understanding natural hazard vulnerability in settings such as the Indian Himalaya (Morrell et al., 2015) and Timor (Sandiford, 2008). 
 
-My work on human energy systems helps to  quantify the impact of distributed energy technologies in mature energy markets (McConnell et al. 2013).
+My work on human energy systems helps to  quantify the impact of distributed energy technologies in mature energy markets (McConnell et al. 2013, 2017).
 
+##  research
 I am a Fellow of the Australian Academy of Sciences an have received several  honorific awards including the Australian Academy of Sciences Mawson Medal - a career award for "outstanding contributions to earth science in Australia".  I have a strong record of grant success including some $4.4 million in competitive research programs funding and $2.5 million in non-competitive funding since 2000 ^[this is in addition to the ~$23 million he has generated for his discipline, and ~$34 million for the University's interdisciplinary energy programs].   In 2016, the University of Melbourne honoured me as a Redmond Barry Distinguished Professor.
-
+## impact
 My work on the the thermal structure of the Australian continent contributed the key motivation for the search for geothermal energy in South Australia. My work on active tectonics and earthquake occurrence has been used in hazard assessment and has been used by Geoscience Australia to develop new approaches groundwater resource management. My work on tectonic stress has been used in unconventional resource development and assessment of storage potential for energy wastes. My work on the geomorphic evolution of the continent has seen application in biodiversity assessments. Finally, my work on trends in Australian energy consumption has impacted government policy settings.
 
 

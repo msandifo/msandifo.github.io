@@ -1,0 +1,77 @@
+---
+title: "Cherry picking contrarian geologists"
+description: |
+  Title says it all - as originally published in the Australian, December, 2011
+date: 12-31-2011
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+GINA Rinehart notoriously claims she has never met a geologist who believes "adding more CO2 to the atmosphere will have any significant effect on climate".
+To listen to prominent "contrarian" geologists such as Ian Plimer, you might imagine she never could.
+
+But, despite the bluster, our contrarian geologists are out of kilter with their own community and seem deeply confused about the way the greenhouse effect - by adding more CO2 to the atmosphere, for example - has shaped both the past and the present.
+
+ 
+All geology students learn of the importance of the greenhouse effect. It's simply impossible to understand the geological record without it.
+
+In his 2001 award-winning book A Short History of Planet Earth, Plimer has numerous references to the greenhouse effect.
+
+He explains what all young geologists learn as the faint young sun paradox:
+
+"The early sun had a luminosity of some 30 per cent less than now and, over time, luminosity has increased in a steady state.
+
+"The low luminosity of the early sun was such that the Earth's average surface temperature would have been below 0C from 4500 to 2000 million years ago. But there is evidence of running water and oceans as far back as 3800 million years ago." The question is, what kept the early Earth from freezing over?"
+
+Plimer goes on to explain: "This paradox is solved if the Earth had an enhanced greenhouse with an atmosphere of a lot of carbon dioxide and methane."
+
+Here's another quote from Plimer, referring to a time 100 million years ago when the dinosaurs roamed the planet: "The peak of 6 per cent carbon dioxide was at the time of a protracted greenhouse and maximum sea level. At this time, mean annual surface temperatures were 10C to 15C warmer than now."
+
+The problem is, although his temperature estimate is about right, his CO2 estimate is about 50 times too high. CO2 levels were more like 0.12 per cent. At just three times present levels, this is a target we are on track to reach early next century.
+
+Jump forward to 2009 and in his book Heaven and Earth Plimer seems to have quietly forgotten those geological lessons in stating: "Over geological time there is no observed relationship between global climate and atmospheric CO2."
+
+Exactly which Plimer are we to believe?
+
+Scientists are notoriously sceptical of the data collected by others. But ignoring a respected source is reprehensible. Cherry-picking only the data that fits is borderline. Deliberately misrepresenting data or making it up is just not on.
+
+Here's an example. In a section from his new book, How To Get Expelled from School, as reprinted in The Weekend Australian recently, Plimer claims: "Antarctic ice core (Siple) shows that there were 330 parts per million of carbon dioxide in the air in 1900; Mauna Loa Hawaiian measurements in 1960 show that the air then had 260ppm carbon dioxide."
+
+Plimer goes on to say: "Either the ice core data is wrong, the Hawaiian carbon dioxide measurements are wrong, or the atmospheric carbon dioxide content was decreasing during a period of industrialisation."
+
+The implication is there must be something terribly wrong with the orthodox climate science and we are all being taken for a ride.
+
+The problem is that the primary data sources explicitly state the Hawaiian Mauna Loa CO2 measurements for 1960 were in the range 313-320ppm, and that Siple air of age about 1900 has a CO2 content of 295ppm, with the 330ppm concentrations having an estimated air age of 1962-83, entirely in keeping with Mauna Loa.
+
+Who has been taken for a ride?
+
+Sadly, this is not an isolated case. Plimer has persistently claimed that volcanoes contribute much more CO2 to the Earth's atmosphere than do our own activities, blithely ignoring US Geological Survey reference data showing just the opposite - volcanoes emit CO2 at about 1 per cent of the rate of anthropogenic emissions.
+
+Another common meme promoted by our contrarian geologists is that it is now a fact that the climate is cooling.
+
+But may we ask by whose data is this a fact?
+
+Certainly not NASA's, which showed last year was the hottest on record, followed by 2005, 2007, 2009 and 1998. In fact, NASA ranks nine of the hottest 10 years ever recorded between 2001 and last year. You'd reckon NASA had learned a few lessons about being careful with data.
+
+Variations on decadal timescales are more relevant to climate trends than annual variations. NASA shows the average temperature over the decade 2000-09 was a full 0.2C higher than in the 1990s - the biggest decadal rise in temperature ever recorded.
+
+With an increase of more than 0.5C over the past 40 years, the decadal trend is now warming faster than ever. It beggars belief that any serious scientist could assert the climate is cooling.
+
+Our contrarian geologists also avoid the devil in the detail. NASA's data shows that winters are warming faster than the summers and the Arctic faster than the tropics. While the lower atmosphere is warming, the upper atmosphere is cooling.
+
+These characteristics provide diagnostic fingerprints of the heat trapping expected for a greenhouse effect. They provide the smoking gun that points to rising greenhouse gas levels as the cause, and rule out warming because of additional heat input from the sun.
+
+Could that be why you won't hear our contrarian geologists refer to such data? Could their real agenda be in manufacturing doubt rather than the search for scientific truth?
+
+If so, it wouldn't be a first, as Naomi Oreskes points out in her recent book Merchants of Doubt: How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming.
+
+Now here's a point for those who, like Rinehart, think all geologists toe Plimer's contrarian line.
+
+Oreskes is a noted geologist. Having published groundbreaking research on the origin of the giant South Australian Olympic Dam deposit, she has arguably contributed more to the understanding of Australian mineral wealth than has Plimer.
+
+Now just imagine a meeting between Rinehart and Oreskes - that would be interesting!
