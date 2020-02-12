@@ -1,0 +1,116 @@
+---
+title: "Eastern Australian gas market -domestic reservation"
+description: |
+  An analysis motivated by the question of the amount of reservation of Queensland coal seam gas production needed to preserve domestic supply
+author: [Mike Sandiford]
+date: 02-13-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=F, cache=T}
+extrafont::loadfonts()
+knitr::opts_chunk$set(echo = TRUE)
+ 
+ 
+ 
+```
+
+```{r run, include=F, echo=F,   message=F, cache=F}
+  
+source("r/gather_data.R")
+   
+source("r/plots.R")
+
+ 
+```
+
+## East coast gas supply and domestic reservation
+
+(work in progress)
+
+An analysis motivated by the question of the amount of reservation of Queensland CSG (coal seam) gas production needed to preserve domestic supply at pre-2015 levels (i.e. prior to opening of the LNG export facility at Curtis Island, Gladstone).
+
+Data sourced from  AEMO and  the Gladstone Port Authority (GPA).
+ 
+ 
+### Total gas production by state
+
+Note that in the figures NSW is negelected since it's contribution to east coast gas production is very small.
+
+The key feature is the ramp up of east coast gas production in 2015 \& 2016, from an average of around 1600 TJ/day to ~5000 TJ/day, due to increased production in the Queensland CSG fields.
+
+```{r p1, echo=F, message=F, warning=F}
+#str(gasbb.plots)
+gasbb.plots[[1]]+labs(title=NULL)
+```
+
+also illustrated are
+
+* gas exported as reproted by the GPA (yellow line), and 
+*
+the gas delivered into the Curtis Island demand Zone (white line). Because the GPA exports are reported by month and are "quantised" by cargo departures on a >1 day cycle, monthly averages are approximated by applying a smoothing filter on reported monthly values (namely  *1/6\*previous.month + 2/3\*current.month + 1/6\*subsequent.month*).
+
+Note-
+
+* The ratio of demand to export is about `r round(parasitic,3) ` suggesting a parasitic load of about `r round(parasitic-1,2)*100`\% of LNG processing at Curtis Island. 
+* while QLD production is relatively constant, the exported flows have tended to be high in summer than winter.
+
+
+The changes in gas production are reflected in  percentage contubutions, with QLD increasing from ~20\% in the winter of 2010 to more than ~&5\% of gas production in the winter of 2019. Summer contributions of QLD production are typicallly 5-10\% higher reflecting the larger industrial demand proportion relative to southern states(see below).
+
+```{r p2, echo=F, message=F, warning=F}
+#str(gasbb.plots)
+gasbb.plots[[2]]+labs(title=NULL)
+```
+
+Subtracting the Curtis Island demand from QLD production gives the balance  supplied into the domestic market. 
+
+Note-
+
+* the restricted domestic supply in late 2016.
+
+```{r p3, echo=F, message=F, warning=F}
+#str(gasbb.plots)
+gasbb.plots[[3]]+labs(title=NULL)
+```
+
+Domestic demand shows a stong seasonal variatoon reflecting due to the historical use of gas for winter heating in the southern states, with peak production historically at slightly aove 2000 TJ/day. 
+
+Noted
+
+* steady reduction in the peak supply to < 2000 TJ/day is evident since the winter of 2014, reflecting a significant tightening of the domestic supply.
+* neglible contribution of QLD supply to the domestic markets in late 2016.
+* a stronger seasonalality in QLD domestic supply, due more to variation in exports than to production 
+
+
+
+```{r p4, echo=F, message=F, warning=F}
+#str(gasbb.plots)
+ gasbb.plots[[4]]+labs(title=NULL)
+```
+
+```{r p5, echo=F, message=F, warning=F}
+#str(gasbb.plots)
+ gasbb.plots[[6]]+labs(title=NULL)
+```
+
+```{r p6, echo=F, message=F, warning=F}
+#str(gasbb.plots)
+ gasbb.plots[[5]]+labs(title=NULL)
+```
+
+```{r p8, echo=F, message=F, warning=F}
+#str(gasbb.plots)
+ gasbb.plots[[8]]+labs(title=NULL)
+```
+
+ 
+```{r p9, echo=F, message=F, warning=F}
+#str(gasbb.plots)
+gasbb.plots[[9]]+labs(title=NULL)
+```
+
+ 
