@@ -377,21 +377,26 @@ p4a <-ggplot(total.prod.month.join %>% subset( gasdate< Sys.Date()-days(20)  &  
  
 # ggsave(paste0('figs/auseast_coast_reservaton.png'),  width=8.5, height=4.8)
  
-pr.2 <- ggplot(y.av %>% subset(reservation !="0%"& year>=2014), aes(year,adj.supply.force.maj/ mean( y.av$adj.supply.force.maj[1:4]) , col=reservation ))+
-  geom_line()+
-  geom_line(data=y.av %>% subset(reservation =="0%"), col="black")+
-  #geom_line(data=y.7, col="black")+
-  geom_point(size=2, col="white")+
-  geom_point(size=1.3 )+
-  hrbrthemes::theme_ipsum()+
-   scale_y_continuous(labels=scales::percent)+
+ pr.2 <- ggplot(y.av %>% subset(reservation =="0%" ), 
+                aes(year,adj.supply.force.maj  ))+
+   geom_line()+
+     #geom_line(data=y.7, col="black")+
+   geom_point(size=2, col="white")+
+   geom_point(size=1.3 )+
+   #geom_point(data=y.av %>% subset(reservation =="0%"), col="black",size=1.3)+
+   hrbrthemes::theme_ipsum()+
+   scale_y_continuous(sec.axis = sec_axis(~./mean( y.av$adj.supply.force.maj[1:4]),
+                                          
+                                          labels= scales::label_percent()))+
    scale_x_continuous(breaks= seq(2010,2019,2))+
-   
-   theme(legend.position=c(.15, .2))+
-   labs(title= "Australian east coast gas market -  % 2010-2014 average", 
+   geom_hline(yintercept = mean(y.av$adj.supply.force.maj[1:4])*c(.85, .9,.95, 1), linetype=2,size=.2)+
+   theme(legend.position=c(.15, .2), legend.background = element_rect(colour="white"))+
+   labs(title= "Australian east coast gas market - domestic supply balance", 
         # subtitle="production - TJ/day",
-        y= " ",
-        x=NULL, caption="data sourced from AEMO and Gladstone Port Authority")
+        y= "TJ/day",
+        x=NULL, caption="data sourced from AEMO")+
+   #annotate("text", y=1830,x=2012, label="no reservation - actual")+
+   annotate("text", y=mean(y.av$adj.supply.force.maj[1:4])-10,x=2012, label="2010-2014 average", size= 2)
  
  
  
