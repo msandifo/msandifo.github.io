@@ -1,5 +1,5 @@
 ---
-title: "Eastern Australian gas market -domestic reservation"
+title: "Eastern Australian gas market and the question of domestic reservation"
 description: |
   An analysis motivated by the question of the amount of reservation of Queensland coal seam gas production needed to preserve domestic supply
 author: [Mike Sandiford]
@@ -31,27 +31,31 @@ source("r/plots.R")
 
 (work in progress)
 
-An analysis motivated by the question of the amount of reservation of Queensland CSG (coal seam) gas production needed to preserve domestic supply at pre-2015 levels (i.e. prior to opening of the LNG export facility at Curtis Island, Gladstone).
+An analysis motivated by the question of reservation of Queensland CSG (coal seam) gas production and the amount needed to restore domestic supply to pre-2015 levels (i.e., prior to opening of the LNG export facility at Curtis Island, Gladstone).
 
 Data sourced from  AEMO and  the Gladstone Port Authority (GPA).
  
  
 ### Total gas production by state
 
-Note that in the figures NSW is negelected since it's contribution to east coast gas production is very small.
+Note that NSW is neglected since it's contribution to east coast gas supply is very small, in th order of one percent.
 
-The key feature is the ramp up of east coast gas production in 2015 \& 2016, from an average of around 1600 TJ/day to ~5000 TJ/day, due to increased production in the Queensland CSG fields.
+The key feature of the east coast market dynamics was the increase in  production in 2015 \& 2016, from an average of around 1760 TJ/day to ~5000 TJ/day, due to increased production in the Queensland CSG fields.
 
 ```{r p1, echo=F, message=F, warning=F}
 #str(gasbb.plots)
 gasbb.plots[[1]]+labs(title=NULL)
 ```
 
-also illustrated are
+In the figure above
 
-* gas exported as reproted by the GPA (yellow line), and 
+* the gas export as reported by the GPA  is shown in the yellow line, and 
 *
-the gas delivered into the Curtis Island demand Zone (white line). Because the GPA exports are reported by month and are "quantised" by cargo departures on a >1 day cycle, monthly averages are approximated by applying a smoothing filter on reported monthly values (namely  *1/6\*previous.month + 2/3\*current.month + 1/6\*subsequent.month*).
+the gas delivered into the Curtis Island Demand Zone is shown in the white line. 
+
+Because the GPA exports are reported by month and are "quantised" by cargo departures on a >1 day cycle, monthly averages shown here are approximated by applying a smoothing filter on reported monthly values (namely  *1/6\*previous.month + 2/3\*current.month + 1/6\*subsequent.month*).
+
+Also, the Curtis island pipe deliveries are not aggregated in the AEMO data prior to November 2015. For the period January  2015 to October 2015, I approximate this as the smoothed export volume multplied by  the ratio 1.155. This ratio, which represents  the average of the Curtis Island Demand Zone inflows to exports for the period post October 2015, is the loading factor associated with LNG processing.
 
 Note-
 
