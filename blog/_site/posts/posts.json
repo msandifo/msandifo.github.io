@@ -1,13 +1,23 @@
 [
   {
+    "path": "posts/2020-02-05-anatomyofanenergycrisispart3/",
+    "title": "Anatomy of an energy crisis - Part 3",
+    "description": "First published on the Conversation.",
+    "author": [],
+    "date": "2020-02-05",
+    "categories": [],
+    "preview": "posts/2020-02-05-anatomyofanenergycrisispart3/images/09.png",
+    "last_modified": "2020-02-05T16:00:51+11:00"
+  },
+  {
     "path": "posts/2020-02-03-our-planet-is-heating/",
     "title": "Our planet is heating",
-    "description": "The crust beneath our feet contains an undeniable reocrd of surface  warming over the last century, and a bet for the \"deniars\".",
+    "description": "The crust beneath our feet contains an undeniable record of surface  warming over the last century, and a bet for the \"deniers\".",
     "author": [],
     "date": "2016-08-16",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-02-03T12:42:31+11:00"
+    "last_modified": "2020-02-13T07:13:34+11:00"
   },
   {
     "path": "posts/2020-02-03-a-precarious-geological-bargain/",
@@ -17,7 +27,7 @@
     "date": "2016-04-18",
     "categories": [],
     "preview": "https://images.theconversation.com/files/118981/original/image-20160416-11155-4lmc0b.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip",
-    "last_modified": "2020-02-04T16:08:53+11:00"
+    "last_modified": "2020-02-05T18:08:11+11:00"
   },
   {
     "path": "posts/2016-04-16-travelling-with-timor-leste/",
@@ -27,7 +37,7 @@
     "date": "2016-04-15",
     "categories": [],
     "preview": "posts/2016-04-16-travelling-with-timor-leste/images/P1300672.jpeg",
-    "last_modified": "2020-02-04T21:31:27+11:00"
+    "last_modified": "2020-02-05T15:15:53+11:00"
   },
   {
     "path": "posts/2020-02-04-cherrypickingcontrarian/",

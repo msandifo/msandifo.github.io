@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>mike sandiford: Anatomy of an energy crisis - Part 3</title>
+
+<meta property="description" itemprop="description" content="First published on the Conversation."/>
+
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2020-02-05"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-02-05"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="mike sandiford: Anatomy of an energy crisis - Part 3"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="First published on the Conversation."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="mike sandiford"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="mike sandiford: Anatomy of an energy crisis - Part 3"/>
+<meta property="twitter:description" content="First published on the Conversation."/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Anatomy of an energy crisis - Part 3"]},{"type":"character","attributes":{},"value":["First published on the Conversation."]},{"type":"character","attributes":{},"value":["02-05-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["anatomyofanenergycrisispart3_files/bowser-1.9.3/bowser.min.js","anatomyofanenergycrisispart3_files/distill-2.2.21/template.v2.js","anatomyofanenergycrisispart3_files/header-attrs-2.1/header-attrs.js","anatomyofanenergycrisispart3_files/jquery-1.11.3/jquery.min.js","anatomyofanenergycrisispart3_files/webcomponents-2.0.0/webcomponents.js","images/01.png","images/02.png","images/03.png","images/04.png","images/05.png","images/06.png","images/07.png","images/08.png","images/09.png","images/10.png","images/11.png"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.1/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Anatomy of an energy crisis - Part 3","description":"First published on the Conversation.","authors":[],"publishedDate":"2020-02-05T00:00:00.000+11:00"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">mike sandiford</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">musings</a>
+<a href="https://msandifo.github.io/">msandifo</a>
+<a href="https://github.com/msandifo/reprosci">
+<i class="fab fa-github"></i>
+</a>
+<a href="https://twitter.com/reprosci">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Anatomy of an energy crisis - Part 3</h1>
+<p><p>First published on the Conversation.</p></p>
+</div>
+
+
+<div class="d-article">
+<p><em>In the third in my series on the crisis besetting the National Electricity Market (NEM) in eastern Australia (see <a href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-1-71789">Part 1</a> &amp; <a href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-2-65206">Part 2</a>), I look at some evidence for how the market itself has played a role and specifically market power issues.</em></p>
+<p>The recent troubles in our electricity market are well documented. As described in my earlier pieces in this series, two elements have focused the attention of our political masters and industry groups.</p>
+<p>The first is the question of security, highlighted most dramatically by recent “black outs” in South Australia.</p>
+<p>The second is the question of price, with both wholesale and contract market prices having risen dramatically across most regions in recent times but nowhere quite as dramatically as in Queensland (note that retail prices have also been rising as highlighted by the recent <a href="https://grattan.edu.au/report/price-shock/">Grattan report</a>).</p>
+<p>As discussed in Part 2, the tightening of the demand-supply balance in Queensland in response to an additional ~800 megawatt load from the massive CSG field developments and LNG export processing facilities <a href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-2-65206">partly explains the rise in wholesale or pool prices there</a>, but it is far from the full explanation.</p>
+<p>Lurking in the details are issues to do with the very functioning of the market, and the exercise of market power by large generators who are able to exploit <a href="https://en.wikipedia.org/wiki/Economic_rent#Monopoly_rent"><em>monopoly rents</em></a>.</p>
+<h2 id="concentrated-power">Concentrated power</h2>
+<p>As shown below, ownership of generation assets across the NEM is very concentrated. AGL is the dominant player in New South Wales, Victoria and South Australia, while the state owned Stanwell and CS Energy command almost 70% of Queensland generation capacity.</p>
+<p><image id="161678" align="centre" caption="Percentage market share by participating companies in each of the four mainland regions  in the NEM.  The blue show percentages of both _scheduled_ and _semi-scheduled_ generation, while the red shows percentage share of scheduled generation alone. _Semi-scheduled_ generation includes intermittent generators such as wind generators.  The notional value of the HHI, shown in the title  of each panel for scheduled plus semi-scheduled generation(left), and for scheduled generation alone (right), is a standard measure of market concentration (note that the up-to-date trading rights for generator outputs are  not in the public domain, so the HHI's may in fact be higher than quoted here). Note that in South Australia the market concentration increases appreciably as wind output declines, while in Victoria it declines marginally. Queensland has no wind generators.  Only the five largest generators for each region are shown." zoomable="true" /></p>
+<p>The <a href="https://en.wikipedia.org/wiki/Herfindahl_index">Herfindahl-Hirschman index</a> (HHI) is a commonly used measure of market concentration given by summing the squares of the percentage market shares for all participating firms. A HHI of 10,000 is equivalent to a 100% share, and represents complete monopoly. A HHI of 2000 is used by the Australian Competition and Consumer Commission (ACCC) to flag competition concerns. The UK’s Office of Gas and Electricity Markets (OFGEM) regards an HHI exceeding 1000 as concentrated and above 2000 as very concentrated. With a current HHI value of 1243, the OFGEM considers the UK wholesale electricity market somewhat concentrated.</p>
+<p>With notional HHI’s in the range ~1800-2600, the regions of the NEM vary between somewhat (VIC1) to very (QLD1) concentrated. Queensland is a particular issue since the two dominant generation entities, Stanwell and CS Energy, are both state-owned. As shown below, aggregating them yields an effective HHI of ~5000, which amounts to extreme market power.</p>
+<p><image id="161425" align="centre" caption="Queensland market share, when state owned enterprise (Stanwell and CS Energy) are aggregated. The implied HHI of ~5000 intimates the potential for extreme market power of state-owned assets. " zoomable="true" /></p>
+<p>The impact of intermittent wind generation, or <em>semi-scheduled</em> generation in NEM-speak, on market power depends on the structure of assets held by participants. In South Australia the HHI rises in times of low output because AGL holds a relatively minor proportion of that region’s wind assets. Contrawise, it declines in Victoria because AGL holds a much higher proportion of the total wind assets.</p>
+<p>Interconnection serves to reduce market power, by allowing more competitive pressure. For example, the 650 MW Heywood interconnector between South Australia and Victoria helps ameliorate market concentration issues. This is especially important for the relatively small market of South Australia, though perhaps not as much as might be possible, given AGL holds the dominant market share in both regions.</p>
+<p>As discussed further below, recent and proposed closures of coal fired power stations, such as Alinta’s Northern Power Station in South Australia and Engie’s Hazelwood Power Station in Victoria, have or will effect more concentrated market power.</p>
+<h2 id="a-rule-change">A rule change</h2>
+<p>As described in the Part 1, the NEM is designed to signal changes in the balance of demand and supply via spot prices. But how much the prices respond is very dependant on the level of competition.</p>
+<p>Recent experience of market participants flouting the spirit of the rules shines a light on competition issues and highlights a rather obvious, if somewhat trite, reality. That is, <em>the benefits of competitive markets can only flow if markets are competitive</em>.</p>
+<p>The exercise of market power has been a perennial issue in the NEM. It is the role of the Australian Energy Market Commission (AEMC) to set the rules that allow for safe operation of the electricity network, and efficient operation of the market. It is the job of the Australian Energy Regulator (AER) to do the enforcing, while AEMO operates the market.</p>
+<p>The AEMC periodically adjusts rules so as to minimise the impact of perceived or real anti-competitive behaviour. It did so most recently in December 2015 with the <em><a href="http://www.aemc.gov.au/Rule-Changes/Bidding-in-Good-Faith">Bidding in Good Faith</a></em> rule amendment because, to quote:</p>
+<blockquote>
+<p>… The Commission considers that the current rules do not set adequate boundaries on the ability of some participants to influence price outcomes to the detriment of others. This is not reflective of an efficient market.</p>
+</blockquote>
+<p>The statement “ability … to influence price outcomes” is key. It expresses AEMC’s concern that some participants have sufficient market power to extract so-called <em>monopoly rents</em>.</p>
+<p>To fulfil my aim of providing a <em>pictorial guide</em> to the market power issues that motivated the rule amendment, it’s advisable (but probably not essential) to delve into the details of two intervals on which the market operates more so than discussed in <a href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-1-71789">Part 1</a>. The two intervals are the five minute <em>dispatch interval</em> and the half hour <em>trading interval</em>.</p>
+<h2 id="some-arcane-detail">Some arcane detail</h2>
+<p><em>(Warning, do skip to the next section if you would prefer to pass on the detail, as it is technical! It provides the background to why lines should be horizontal on the graphs discussed below, and the significance when they deviate).</em></p>
+<p>The five minute <em>dispatch interval</em> is where the physics of the power system (balancing supply and demand in real time) meets the economics of the market (serving demand at minimum cost). Functionally, our energy market operates by pooling offers from generators and allocating dispatch for each five minute interval in order of increasing offer price.</p>
+<p>A <em>generator offer</em> specifies the price and quantity of electricity that will be supplied in a given trading interval, if needed. The dispatch price is set by the last (highest-price) offer needed to meet the <em>dispatch interval</em> demand. All generation dispatched receives the same dispatch price, regardless of the offer price. Offers at prices above the dispatch price are not needed and so receive nought. To ensure a slice of action, theory has it that generators will offer the majority of their capacity at their short run marginal cost, at prices like is shown for Victorian generators in the figure below.</p>
+<p><image id="160908" align="centre" caption="Short run marginal cost of Victorian generators, stacked from left to right in _merit order_ of increasing marginal cost. The x-axis shows the cumulative nameplate capacity of the lowest cost power plants in megawatts. Because renewables such as wind have zero fuel cost they stack on the left side of the merit curve. Gas  and diesel generators with high fuel costs stack on the right. Image by Dylan McConnell." zoomable="true"/></p>
+<p>In practice, individual generators apportion their capacity into a range of price bands. They are then allowed to rebid some capacity into different price bands at short notice allowing adjustments to unforeseen circumstances that periodically arise. AEMC’s <em>Bidding in Good Faith</em> rule amendment requires a justification for any late rebidding within 15 minutes of the start of the relevant <em>dispatch interval</em>.</p>
+<p>The second interval is the half-hour <em>trading interval</em> or settlement period, across which dispatch prices are averaged to obtain a spot or settlement price, so called because it is the period on which financial payments are settled.</p>
+<p>Since demand normally varies only slightly across a given half hour <em>trading interval</em> there should be little difference in the dispatch prices across the six corresponding <em>dispatch intervals</em>, especially when averaged over many such intervals. In an efficient market with generators offering the bulk of their capacity at near their short run cost, this <em>trading interval</em> averaging should not materially affect the financial outcomes of the market.</p>
+<p>The figure below provides an illustrative case. It shows the dispatch prices for each dispatch interval averaged across January 2016. The narrow range of variation, and flat trace, meets the expectation of a well functioning market.</p>
+<p><image id="160676" align="centre" caption="Average  prices  for  each of the 5 minute _dispatch intervals_ that make up the half hour settlement price for January, 2016. Prices are relatively constant across all intervals as expected in a well-behaved market, trading in an interval of about $10-15 per megawatt hour, for all four regional markets that define the mainland part of the NEM. Note the period is the month following the _Bidding in Good Faith_ rule amendment by the AEMC in December 2015, The good behaviour of the QLD1 market contrasts strongly with  the same periods in the previous and following years as shown in the following diagrams." zoomable="true" /></p>
+<p>As revenues are the product of price and demand, their graph should similarly trace a flat line across the dispatch intervals, as it did for January 2016.</p>
+<p><image id="161078" align="centre" caption="As for above but showing revenues rather than prices. The lower revenue for SA1 reflects its much smaller dispatch, compared to NSW1, QLD1 and VIC1. The numbers on the right correspond to the total market revenue for the month, and (marked with a +) the anomalous revenue given by the sum of the  differences between the dispatch prices and the lowest average dispatch price." zoomable="true" /></p>
+<p>In a deregulated market like the NEM, optimal bidding is ensured primarily by the discipline of competitive forces. By preventing profiteering or gaming, it is that discipline that should ensure the lines in these figures lie flat. It goes without saying, that without adequate competition, there can be no such insurance, and one of the signals can be found when plots like these deviate from horizontal. Then, the only recourse is to impose rules on the market. The period shown in the figures above are for the first month following AEMC’s <em>bidding in good faith</em> rule amendment.</p>
+<h2 id="why-two-intervals">Why two intervals?</h2>
+<p>While the existence of a five-minute <em>dispatch interval</em> is essential to balance demand and supply in real time, there is no compelling reason for the exercise of a half-hour <em>trading interval</em>, it being something of a historical artefact. Interestingly, judging by <a href="http://www.aemc.gov.au/Rule-Changes/Five-Minute-Settlement">submissions</a> to a current proposed rule change that would dispense the <em>trading interval</em>, operators of our large generators seem to love it.</p>
+<p>Why so? The cynic would say because the existence of the two intervals affords a convenient guise to engage in profiteering. For example, by rebidding capacity into higher price bands late in a <em>trading interval</em>, pool prices can be raised significantly. While such a material distortion of the market would only immediately impact un-contracted customers trading directly on the wholesale market, as explained in <a href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-1-71789">Part 1</a> any sustained price impact will pass through the contract markets thereby eventually affecting all customers.</p>
+<h2 id="so-where-is-the-evidence">So where is the evidence?</h2>
+<p>Do some participants engage in such profiteering? Well the AEMC certainly thought so, enough at least to amend the <em>Bidding in Good Faith Rule</em> in December 2015.</p>
+<p>The AEMC was particularly concerned that such practices were impacting market outcomes in Queensland. The smoking gun lies deeply buried in the gory details of the offers and rebids, as documented in <a href="https://www.aer.gov.au/system/files/State%20of%20the%20energy%20market%202015%20%28A4%20format%29%20–%20last%20updated%204%20February%202016.pdf">AER’s “State of the energy market 2015” report on page 49</a>. But the pointers are quite apparent in the figures below which cover the month of January in 2015, prior to the AEMC’s rule amendment. They show the prices and the revenue by the five minute <em>dispatch interval</em> . The striking feature is the asymmetry in Queensland (QLD1) price and revenue distribution, increasing very substantially across the last two <em>dispatch intervals</em>, compared with the earlier intervals. As explained above, the distribution should be flat, like it is for the other states in January 2015.</p>
+<p><image id="161074" align="centre" caption="Average  prices  for  each of the 5 minute _dispatch intervals_ that make up the half hour settlement price for January, 2015. Note the  elevated and much more skewed distribution for QLD1, with prices in the last two dispatch intervals much higher than the earlier intervals. Their is no such anomalies in the other states which are operating in accordance with expectation." zoomable="true" /></p>
+<p>A crude estimate of the excess revenue generated by the anomalous market behaviour in Queensland is given by the shaded area in the <em>revenue verse dispatch interval</em> plot below. As noted on the right, it amounted to some 30% of total market value, or ~ $200 million across the month.</p>
+<p><image id="161015" align="centre" caption="Average wholesale markets revenues for 5 minute _dispatch intervals_ for January, 2015. The numbers on the right correspond to the total market revenue for the month, and (marked with a +) the anomalous revenue given by the sum of the  differences between the dispatch prices and the lowest average dispatch price, shown by the shaded area. The latter is a guide to distortion that can be attributed to noncompetitive market forces - about $200 million, or 30%, for QLD1 in this case." zoomable="true" /></p>
+<p>By these metrics the magnitude of the Queensland anomaly is astounding, amounting to ~150% of the total revenue in the similarly sized Victorian market and adding as much as $40 per megawatt hour to Queensland spot over the month. The AEMC interest in a rule change is hardly surprising. To my mind they were a little conservative. To quote from AEMC’s rule determination:</p>
+<blockquote>
+<p>… the price volatility that arises from deliberately late rebidding … [is] … estimated to have added around eight dollars per megawatt hour to the price of caps in Queensland in the final quarter of 2014, and around seven dollars per megawatt hour in the first quarter of 2015. Across the market, this represents additional expenditure of approximately $170 million.</p>
+</blockquote>
+<p>Whatever the final accounting, Queensland customers should have been outraged. In conclusion the AEMC noted</p>
+<blockquote>
+<p>… While it is not guaranteed that the changes to the rules will put an immediate stop to the conduct of concern, they are a proportionate response to the issue, and ought to make it easier for the AER compared to the current arrangements to take enforcement action in respect of deliberately late rebidding. At the same time, they should not prevent rebidding in legitimate pursuit of commercial interests.</p>
+</blockquote>
+<p>Should we ask did it do so?</p>
+<p>The answer is shown in the figures below, for January 2017. Essentially they are the mirror image of the January 2015 scenario, seemingly implying Queensland generators are now initially bidding in capacity into elevated price bands in the early dispatch intervals. Whatever the strategy it is achieving an almost identical outcome to 2015. Even if entirely within the rules, it would seem not in the spirit. The substantive result is situation normal for Queensland customers, with a $225 million monopoly rent extraction for this past January accompanying <a href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-2-65206">unprecedented spot price rises</a>.</p>
+<p><image id="161073" align="centre" caption="Average  prices  for  each of the 5 minute _dispatch intervals_ that make up the half hour settlement price for January, 2017." zoomable="true"/></p>
+<p><image id="161017" align="centre" caption="Average wholesale markets revenues for 5 minute _dispatch intervals_ for January, 2017. It is notable that it is almost the mirror image of January 2015  shown above, an example of creative compliance by Queensland generators following AMEC's _Bidding in Good Faith_ rule amendment of December 2015. Note also the almost doubling of January revenues since 2015. The shaded area represents the $225 million monopoly rent extraction foisted in Queensland customers in January. Annualised that amounts to a whopping $2.7 billion." zoomable="true" /></p>
+<h2 id="concentrating-power">Concentrating power</h2>
+<p>There is such a lot to be said about this, and hopefully it will be. Queensland customers should be beyond outrage. The analysis provided above is but one, easily illustrated example of the exercise of market power. There are others, as for example described in the notes below [2]. From the perspective of this discussion it is illustrative of significant deficiencies in the current operation of the NEM. Those deficiencies are exacerbating our current energy crisis. A concentration of market power is adding materially to costs especially, but not only, in Queensland.</p>
+<p>It is worth noting that the <a href="http://www.aemc.gov.au/Rule-Changes/Five-Minute-Settlement">half-hour settlement period is currently under review by AEMC</a> and, against the wishes of most established operators, will likely be scrapped [1]. Whatever is decided by AEMC, the underlying issue of market power cannot be addressed by tinkering with the rules. The concentration of market power is increasing as old power stations such as Alinta’s Northern Power Station in South Australia and Engie’s Hazelwood Power Station in Victoria are closed. For example, following closure of Northern, AGL’s proportion of registered capacity in South Australia increased 5% points, from 36% to 41%, improving its relative market power by more than 10%.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:unnamed-chunk-1"></span>
+<img src="images/09.png" alt="Percentage of registered generation capacity by participant in South Australia, both before (blue) and after (red) the closure of the Alinta's Northern Power Station (NPS). Also shown in green is the effect of mothballing Engie's Pelican Point Power station PPS) as it was in winter 2016. Orange shows the percentages less NPS, PPPS and semi scheduled generators (wind), as applied on July 7th, 2016. In both instances AGL's relative market power  has substantially increased by these events, by over 10% in relative market power terms.  This increases the likelihood of AGL being a necessary or _pivotal_ supplier, as it's was in July 7th in the first of the South Australian energy crises of last year as described briefly in note [2]. Only the largest eight participants are shown." width="300" />
+<p class="caption">
+Figure 1: Percentage of registered generation capacity by participant in South Australia, both before (blue) and after (red) the closure of the Alinta’s Northern Power Station (NPS). Also shown in green is the effect of mothballing Engie’s Pelican Point Power station PPS) as it was in winter 2016. Orange shows the percentages less NPS, PPPS and semi scheduled generators (wind), as applied on July 7th, 2016. In both instances AGL’s relative market power has substantially increased by these events, by over 10% in relative market power terms. This increases the likelihood of AGL being a necessary or <em>pivotal</em> supplier, as it’s was in July 7th in the first of the South Australian energy crises of last year as described briefly in note [2]. Only the largest eight participants are shown.
+</p>
+</div>
+</div>
+<p>Following the closure of Northern, as well as the decision by Engie to <em>mothball</em> the Pelican Point Power Station, AGL played its hand ruthlessly during the first of the South Australian energy crises in July 2016 [2]. With the closure of Hazelwood in a few weeks, AGL will again be the beneficiary of increased market share in Victoria. Although not to the extent it was in South Australia, it will increase the likelihood of AGL being a necessary or <em>pivotal</em> supplier in future high demand events in Victoria. How AGL responds will be a key to how steeply prices rise in Victoria and neighbouring states.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:unnamed-chunk-2"></span>
+<img src="images/10.png" alt="Percentage of registered generation capacity by participant in Victoria ), both before (blue) and after (red) the closure of Engie's  Hazelwood Power Stations (HPS), respectively. Orange shows the percentages less HPS and semi scheduled generators(wind). Note that Hazelwood is still operational at the time of writing, but is scheduled to close at end of this month (March, 2017). AGL's relative market power will be substantially improved by these closures, by over 10% in relative market power terms. In OFGEM's terms the Victorian market power increases from _somewhat concentrated_ to _exceedingly concentrated_. This increases the likelihood of AGL being a necessary or _pivotal_ supplier. Only the largest seven participants are shown." width="500" />
+<p class="caption">
+Figure 2: Percentage of registered generation capacity by participant in Victoria ), both before (blue) and after (red) the closure of Engie’s Hazelwood Power Stations (HPS), respectively. Orange shows the percentages less HPS and semi scheduled generators(wind). Note that Hazelwood is still operational at the time of writing, but is scheduled to close at end of this month (March, 2017). AGL’s relative market power will be substantially improved by these closures, by over 10% in relative market power terms. In OFGEM’s terms the Victorian market power increases from <em>somewhat concentrated</em> to <em>exceedingly concentrated</em>. This increases the likelihood of AGL being a necessary or <em>pivotal</em> supplier. Only the largest seven participants are shown.
+</p>
+</div>
+</div>
+<h2 id="some-reflections">Some reflections</h2>
+<p>A key objective of the NEM’s <em>energy-only</em> market is to bring competitive pressure to bear on wholesale prices. Until recently the NEM was performing quite well in this regard, with wholesale prices and volatility being very low in the period 2009-2014 in historical terms (see <a href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-2-65206">Part 2</a>). But this has changed over the last few years, with a tightening of the market. Like with any industry, our electricity generators have shown adeptness at exploiting the opportunities availed by the market rules. Because of the concentrated nature of the market they have been able to influence price outcomes beyond what would be expected for an <em>efficient market</em> response to such tightening. In so doing they are helped provoke the current energy crisis.</p>
+<p>One could only wish our generators turned such “adeptness” to helping drive our energy system to a place we need it to be, that is <em>secure, affordable and with much, much lower emissions</em>. To be so guided, our market rules will have to be radically reshaped to be more aligned to the national interest, explicitly including all three elements of our <em>energy trilemma</em>, and ensuring adequate levels of competition allow the benefits of the deregulated market flow to all participants.</p>
+<p>Sadly, as our energy crisis has unfolded, partly in response to the need to address its emissions intensity, emissions have begun to rise again. Just by how much we do not know, as I will discuss in the next piece in this series.</p>
+<hr />
+<p>Notes</p>
+<p>[1] As <a href="http://www.aemc.gov.au/getattachment/1d460acc-dbe2-45ea-bb4e-1903161d90f1/Melbourne-Energy-Institute.aspx">Dylan McConnell has shown</a>, the current rules also seriously disadvantage the economics of a number of emerging technologies such as battery storage, hindering innovation that would serve much needed competitive discipline into the market.</p>
+<p>[2] For example, on page 51 of its <a href="https://www.aer.gov.au/system/files/State%20of%20the%20energy%20market%202015%20%28A4%20format%29%20–%20last%20updated%204%20February%202016.pdf">“State of the energy market 2015” report</a>, the AER documents the role of Snowy Hydro’s <em>strategic bidding</em> of its Angaston plant in South Australia on June 10th 2015 to manipulate price. In <a href="http://energy.unimelb.edu.au/library/winds-of-change-an-analysis-of-recent-changes-in-the-south-australian-electricity-market">our analysis</a> of the July 7th event in South Australia, we analysed the extent to which AGL bid capacity to high price bands (typically the market cap price) for the Torrens Island A Power Station. We also looked at the proportion of capacity that was available below and above $300/MWh. In aggregate, Torrens Island A offered its entire capacity to the market at less than $300/MWh 96.5% of time in 2015. For the remaining 3.5% of the year (or about 300 hours) some capacity was pushed into high price bands. Our analysis shows a correlation between periods of high scheduled demand and Torrens Island A’s bidding of capacity into high price bands. The proportion of time when some capacity was priced above $300/MWh is clearly skewed to times of high scheduled demand. In 2015, for the top 10% of scheduled demand periods, the amount of time some capacity was bid into these high price bands was 16.7%. For the top 1% of scheduled demand periods it increased to 35%. On July 7th 2016, it is clear is that Torrens Island had bid an unusually high volume of capacity at the market price cap, at a time it was needed to ensure supply as a <em>pivotal supplier</em>, consistent with exercising market power. While there is nothing in the rules to prevent this, the lack of appropriate <em>competitive discipline</em> means significant market distortion accumulated.</p>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
