@@ -106,8 +106,9 @@ gs.id<-"qdYHZTgAAAAJ"
    
 1. Hoffman, N., Hardman-Mountford, N.,  Jenkins, C.,   Rayner, P.J.,   Gibson, G., __Sandiford, M.__, 2017,  GipNet - Baseline environmental data gathering and measurement technology validation for nearshore marine bon Storage,  Energy Proceedia,  114,  3729 - 3753,   http://dx.doi.org/10.1016/j.egypro.2017.03.1503. `r ( gs("gipnet"))`
 
-1. Li, G., Kohn, B., __Sandiford, M.__,  Xu ,Z., Tian, Y., Seiler, C., 2016,  Synorogenic morphotectonic evolution of the Gangdese batholith, South Tibet: Insights from low-temperature rmochronology, Geochemistry, Geophysics, Geosystems (G-cubed), A17,  101-112, http://dx.doi.org/ 10.1002/2015GC006047, `r ( gs("synorogenic morphotectonic "))`
-1. Li, G.,  Kohn, B., __Sandiford, M.__, Xu ,Z., Seiler, C., Tian, Y., 2016, Synorogenic morphotectonic evolution of the Gangdese batholith, South Tibet: Insights from low-temperature Thermochronology, accepted,  Geochemistry, Geophysics, Geosystems, 17, 101-112.
+1. Li, G., Kohn, B., __Sandiford, M.__,  Xu ,Z., Tian, Y., Seiler, C., 2016,  Synorogenic morphotectonic evolution of the Gangdese batholith, South Tibet: Insights from low-temperature rmochronology, Geochemistry, Geophysics, Geosystems (G-cubed), A17,  101-112, http://dx.doi.org/10.1002/2015GC006047, `r ( gs("synorogenic morphotectonic "))`
+
+
 1.	Rajendran. C.P., Sanwal, J., Morell, K.D., __Sandiford, M.__, Kotlia, B.S., Hellstrom, J., Rajendran, K., 2016, Stalagmite growth anomalies from central Himalaya as potential earthquake recorders, Journal of Seismology, 20, 579-594. `r ( gs("Stalagmite"))`
 1.	McConnell, D., Forcey, T., __Sandiford, M.__, 2015, Estimating the value of electricity storage in an energy-only wholesale market, Applied Energy, 159, 422-432  http://dx.doi.org/10.1016/j.apenergy.2015.09.006")`
 `r (  gs("Estimating the value of electricity storage"))`
