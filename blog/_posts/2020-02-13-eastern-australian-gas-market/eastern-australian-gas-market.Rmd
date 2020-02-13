@@ -29,7 +29,7 @@ source("r/plots.R")
 
 # East coast gas supply and domestic reservation
 
-(awork in progress) 
+(a work in progress) 
 
 Developing the Queensland CSG fields at scale was always going to risk that production would fall short of targets.   As much was acknowledged by the joint Department of Industry and Bureau of Resources and Energy Economics study into  [Eastern Australian gas markets](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwistNeei83nAhXg4zgGHZnJD6AQFjAAegQIARAB&url=https%3A%2F%2Fwww.aph.gov.au%2F~%2Fmedia%2FCommittees%2Feconomics_ctte%2Festimates%2Fadd_1617%2FIndustry%2Fanswers%2FAI-87_Whish-Wilson_Attachment3.pdf&usg=AOvVaw23Fh1haaQCDPujUQ5j6k38)
 
