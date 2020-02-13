@@ -108,9 +108,9 @@ Note-
 gasbb.plots[[3]]+labs(title=NULL)
 ```
 
-Domestic demand shows a stong seasonal variatoon reflecting due to the historical use of gas for winter heating in the southern states, with peak production historically at slightly aove 2000 TJ/day. 
+Domestic demand shows a stong seasonal variation due to the historical use of gas for winter heating in the southern states, with peak production historically at slightly aove 2000 TJ/day. 
 
-Noted
+Note
 
 * steady reduction in the peak supply to < 2000 TJ/day is evident since the winter of 2014, reflecting a significant tightening of the domestic supply.
 * neglible contribution of QLD supply to the domestic markets in late 2016.
@@ -123,21 +123,27 @@ Noted
  gasbb.plots[[4]]+labs(title=NULL)
 ```
 
+The proportional contributions of  supply to the domestic market highlight marked declne from Queensland. 
+
 ```{r p5, echo=F, message=F, warning=F}
 #str(gasbb.plots)
  gasbb.plots[[6]]+labs(title=NULL)
 ```
+The  total contributions with 8\% reservation of exported gas including processing loads.
 
 ```{r p6, echo=F, message=F, warning=F}
 #str(gasbb.plots)
  gasbb.plots[[5]]+labs(title=NULL)
 ```
 
+The proportional contributions with 8\% reservation of exported gas including processing loads.
+
 ```{r p8, echo=F, message=F, warning=F}
 #str(gasbb.plots)
  gasbb.plots[[8]]+labs(title=NULL)
 ```
 
+The reusultant annual supply balance expressed in terms of percentage of reservation of exported gas including processing loads.
  
 ```{r p9, echo=F, message=F, warning=F}
 #str(gasbb.plots)
