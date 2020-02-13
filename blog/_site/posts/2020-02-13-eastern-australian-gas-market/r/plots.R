@@ -383,6 +383,10 @@ p4a <-ggplot(total.prod.month.join %>% subset( gasdate< Sys.Date()-days(20)  &  
      #geom_line(data=y.7, col="black")+
    geom_point(size=2, col="white")+
    geom_point(size=1.3 )+
+   geom_smooth(data=y.av %>% subset(reservation =="0%" ) %>% head(4), colour="black", se=F,
+              size=.4, formula = y~1 , method="lm")+
+   geom_smooth(data=y.av %>% subset(reservation =="0%" ) %>%  tail(4), colour="black", se=F,
+              size=.4, formula =y~1 , method="lm")+  
    #geom_point(data=y.av %>% subset(reservation =="0%"), col="black",size=1.3)+
    hrbrthemes::theme_ipsum()+
    scale_y_continuous(sec.axis = sec_axis(~./mean( y.av$adj.supply.force.maj[1:4]),

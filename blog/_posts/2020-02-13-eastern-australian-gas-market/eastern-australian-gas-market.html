@@ -977,35 +977,52 @@
 <img src="https://github.com/msandifo/reprosci/blob/master/2018/001/figs/p001_01.png?raw=true" alt="" /><figcaption>NEM wholesale prices, and Gladstone LNG export</figcaption>
 </figure>
 <h1 id="so-what-went-wrong">So what went wrong?</h1>
-<p>In a word, the opening of the LNG export market meant domestic supply fell over 10%, from about 1760 TJ/day to around 1550 TJ/day, and has not recovered.</p>
+<p>In a word, the opening of the LNG export market meant domestic supply fell by ~12%, from about 1750 TJ/day in 2014 to 1540 TJ/day from 2016 on, and has not substantially recovered.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p10-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p10"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p10-1.png" alt="Annual average daily supply to the domestic market  neglecting NSW production, 2010-2019" width="624" />
+<p class="caption">
+Figure 1: Annual average daily supply to the domestic market neglecting NSW production, 2010-2019
+</p>
 </div>
-<p>That represents a huge tightening of domestic supply which has seen a dramatic incresse in gas prices, that has flowed through the economy including into the electricity markets, as predicted by Department of Industry and Bureau of Resources and Energy Economics back in 2013.</p>
-<p>The question that motivates the analysis here is what amount of reservation of Queensland CSG (coal seam) gas production would have been needed to presreve domestic supply at pre-2015 levels (i.e., prior to opening of the LNG export facility at Curtis Island, Gladstone).</p>
-<p>The short answer is about 7% of the total gas that now flows to Gladstone’s Curtis Island to be exported or used in th processing of that exported gas.</p>
-<p>Data sourced from AEMO and the Gladstone Port Authority (GPA).</p>
+</div>
+<p>That represents a profound change in domestic supply driven in large part by a dramatic increase in domestic gas prices. That has flowed through associated sectors of the economy including the electricity market, pretty much as feared by the Department of Industry and Bureau of Resources and Energy Economics back in 2013 as cited above.</p>
+<p>The question that motivates the analysis here is</p>
+<blockquote>
+<p>what amount of reservation of Queensland CSG (coal seam) gas production would have been needed to preserve domestic supply at pre-2015 levels? (i.e., prior to opening of the LNG export facility at Curtis Island in Gladstone).</p>
+</blockquote>
+<p>The short answer is about 7% of the total gas that now flows to the Curtis Island Demand Zone at Gladstone destined for export or for use in the processing of that exported gas.</p>
+<p>Data used in this analysis is sourced from AEMO and the Gladstone Port Authority (GPA).</p>
 <h3 id="total-gas-production-by-state">Total gas production by state</h3>
-<p>Note that NSW is neglected since it’s contribution to east coast gas supply is very small, in th order of one percent.</p>
-<p>The key feature of the east coast market dynamics was the increase in production in 2015 &amp; 2016, from an average of around 1760 TJ/day to ~5000 TJ/day, due to increased production in the Queensland CSG fields.</p>
+<p>Note that NSW is neglected here since the contribution to east coast gas supply is only in the order of one percent.</p>
+<p>The key feature of the east coast market dynamic is the increase in production from an average of around 1760 TJ/day prior to 2015 to ~5000 TJ/day from 2017 on. All the new gas is due to increased production in the Queensland CSG fields.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p1-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p1"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p1-1.png" alt="East coast gas market daily production data aggregated by the main producing states." width="624" />
+<p class="caption">
+Figure 2: East coast gas market daily production data aggregated by the main producing states.
+</p>
+</div>
 </div>
 <p>In the figure above</p>
 <ul>
 <li>the gas export as reported by the GPA is shown in the yellow line, and</li>
-<li>the gas delivered into the Curtis Island Demand Zone is shown in the white line.</li>
+<li>the gas delivered into the Curtis Island Demand Zone (CIDZ) is shown in the white line.</li>
 </ul>
 <p>Because the GPA exports are reported by month and are “quantised” by cargo departures on a &gt;1 day cycle, monthly averages shown here are approximated by applying a smoothing filter on reported monthly values (namely <em>1/6*previous.month + 2/3*current.month + 1/6*subsequent.month</em>).</p>
-<p>Also, the Curtis island pipe deliveries are not aggregated in the AEMO data prior to November 2015. For the period January 2015 to October 2015, I approximate this as the smoothed export volume multplied by the ratio 1.155. This ratio, which represents the average of the Curtis Island Demand Zone inflows to exports for the period post October 2015, is the loading factor associated with LNG processing.</p>
+<p>Also note that the CIDZ deliveries are not aggregated in the AEMO data prior to November 2015. For the period January 2015 to October 2015, I approximate this as the smoothed export volume multplied by the ratio 1.155. This ratio, which represents the average of the CIDZ delivery to LNG exports for the period post October 2015, is the loading factor associated with LNG processing.</p>
 <p>Note-</p>
 <ul>
-<li>The ratio of demand to export is about 1.155 suggesting a parasitic load of about 16% of LNG processing at Curtis Island.</li>
-<li>while QLD production is relatively constant, the exported flows have tended to be high in summer than winter.</li>
+<li>while QLD production is relatively constant, the exported LNG volumes have tended to be somewhat higher in summer than winter. Consequently, that the contribution of the (residual) QLD CSG production to domestic supply is higher in winter.</li>
 </ul>
-<p>The changes in gas production are reflected in percentage contubutions, with QLD increasing from ~20% in the winter of 2010 to more than ~&amp;5% of gas production in the winter of 2019. Summer contributions of QLD production are typicallly 5-10% higher reflecting the larger industrial demand proportion relative to southern states(see below).</p>
+<p>The changes in gas production are reflected in percentage contubutions, with QLD increasing from ~20% in the winter of 2010 to more than ~75% of gas production in the winter of 2019. Summer contributions of QLD production are typicallly 5-10% higher reflecting the larger industrial demand proportion relative to southern states(see below).</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p2-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p2"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p2-1.png" alt="East coast gas market daily production data aggregated by the main producing states as percenatge of the total." width="624" />
+<p class="caption">
+Figure 3: East coast gas market daily production data aggregated by the main producing states as percenatge of the total.
+</p>
+</div>
 </div>
 <p>Subtracting the Curtis Island demand from QLD production gives the balance supplied into the domestic market.</p>
 <p>Note-</p>
@@ -1013,7 +1030,12 @@
 <li>the restricted domestic supply in late 2016.</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p3-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p3"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p3-1.png" alt="East coast gas market daily production data balance to local supply (+ve) and expert (-ve) aggregated by the main producing states." width="624" />
+<p class="caption">
+Figure 4: East coast gas market daily production data balance to local supply (+ve) and expert (-ve) aggregated by the main producing states.
+</p>
+</div>
 </div>
 <p>Domestic demand shows a stong seasonal variation due to the historical use of gas for winter heating in the southern states, with peak production historically at slightly aove 2000 TJ/day.</p>
 <p>Note</p>
@@ -1023,23 +1045,48 @@
 <li>a stronger seasonalality in QLD domestic supply, due more to variation in exports than to production</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p4-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p4"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p4-1.png" alt="Supply to the non-LNG domestic market (i.e. less the gas supplied to the Curtis Isand Demand Zone destined for export)." width="624" />
+<p class="caption">
+Figure 5: Supply to the non-LNG domestic market (i.e. less the gas supplied to the Curtis Isand Demand Zone destined for export).
+</p>
+</div>
 </div>
 <p>The proportional contributions of supply to the domestic market highlight marked declne from Queensland.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p5-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p5"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p5-1.png" alt="Supply to the   non-LNG domestic market (i.e. less the gas supplied to the Curtis Isand Demand Zone destined for export) as perecnatge of total." width="624" />
+<p class="caption">
+Figure 6: Supply to the non-LNG domestic market (i.e. less the gas supplied to the Curtis Isand Demand Zone destined for export) as perecnatge of total.
+</p>
+</div>
 </div>
 <p>The total contributions with 8% reservation of exported gas including processing loads.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p6-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p6"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p6-1.png" alt="Projected supply to the   non-LNG domestic market with an 8% reservation of the  Curtis Isand Demand Zone gas." width="624" />
+<p class="caption">
+Figure 7: Projected supply to the non-LNG domestic market with an 8% reservation of the Curtis Isand Demand Zone gas.
+</p>
+</div>
 </div>
 <p>The proportional contributions with 8% reservation of exported gas including processing loads.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p8-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p8"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p8-1.png" alt="Projected supply to the   non-LNG domestic market with an 8% reservation of the  Curtis Isand Demand Zone gas  as the  percentage of total." width="624" />
+<p class="caption">
+Figure 8: Projected supply to the non-LNG domestic market with an 8% reservation of the Curtis Isand Demand Zone gas as the percentage of total.
+</p>
 </div>
-<p>The reusultant annual supply balance expressed in terms of percentage of reservation of exported gas including processing loads.</p>
+</div>
+<p>The resultant annual supply balance expressed in terms of percentage of reservation of exported gas including processing loads.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="eastern-australian-gas-market_files/figure-html5/p9-1.png" width="624" /></p>
+<div class="figure"><span id="fig:p9"></span>
+<img src="eastern-australian-gas-market_files/figure-html5/p9-1.png" alt="Projected average daily east coast gas market domestic supply with reservation levels 0%, 4%, 8% &amp; 12%." width="624" />
+<p class="caption">
+Figure 9: Projected average daily east coast gas market domestic supply with reservation levels 0%, 4%, 8% &amp; 12%.
+</p>
+</div>
 </div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

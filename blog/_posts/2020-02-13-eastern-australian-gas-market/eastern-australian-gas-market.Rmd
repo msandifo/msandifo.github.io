@@ -44,32 +44,34 @@ The  implication for the [electricity markets has been profound](https://github.
 
 # So what went wrong?
 
-In a word, the opening of the LNG export market meant domestic supply fell over 10%, from about 1760 TJ/day to around 1550 TJ/day, and has not recovered. 
+In a word, the opening of the LNG export market meant domestic supply fell by ~12%, from about 1750 TJ/day in 2014 to 1540 TJ/day from 2016 on, and has not substantially recovered. 
 
-```{r p10, echo=F, message=F, warning=F}
+```{r p10, echo=F, message=F, warning=F,fig.cap="Annual average daily supply to the domestic market  neglecting NSW production, 2010-2019"}
 #str(gasbb.plots)
 gasbb.plots[[10]]+labs(title=NULL)
 ```
 
-That represents a huge tightening of domestic supply which has seen a dramatic incresse in gas prices, that has flowed through the economy including into the electricity markets, as predicted by Department of Industry and Bureau of Resources and Energy Economics back in 2013.
+That represents a profound change in domestic supply driven in large part by a dramatic increase in domestic gas prices. That has flowed through associated sectors of the economy including the electricity market, pretty much as feared by the Department of Industry and Bureau of Resources and Energy Economics back in 2013 as cited above.
 
 The question that 
- motivates the analysis here is  what amount of reservation of Queensland CSG (coal seam) gas production would have been needed to presreve domestic supply at  pre-2015 levels (i.e., prior to opening of the LNG export facility at Curtis Island, Gladstone).
+ motivates the analysis here is  
  
- The short answer is about 7\% of the total gas that now flows to Gladstone's  Curtis Island to be exported or used in th processing of that exported gas.
+> what amount of reservation of Queensland CSG (coal seam) gas production would have been needed to preserve domestic supply at  pre-2015 levels? (i.e., prior to opening of the LNG export facility at Curtis Island in Gladstone).
+ 
+ The short answer is about 7\% of the total gas that now flows to the Curtis Island Demand Zone at Gladstone destined for export or for use in the processing of that exported gas.
 
-Data sourced from  AEMO and  the Gladstone Port Authority (GPA).
+Data used in this analysis is sourced from  AEMO and  the Gladstone Port Authority (GPA).
  
  
  
  
 ### Total gas production by state
 
-Note that NSW is neglected since it's contribution to east coast gas supply is very small, in th order of one percent.
+Note that NSW is neglected here since the  contribution to east coast gas supply is only in the order of one percent.
 
-The key feature of the east coast market dynamics was the increase in  production in 2015 \& 2016, from an average of around 1760 TJ/day to ~5000 TJ/day, due to increased production in the Queensland CSG fields.
+The key feature of the east coast market dynamic is the increase in  production from an average of around 1760 TJ/day prior to 2015 to ~5000 TJ/day from 2017 on. All the new gas is due to increased production in the Queensland CSG fields.
 
-```{r p1, echo=F, message=F, warning=F}
+```{r p1, echo=F, message=F, warning=F, fig.cap="East coast gas market daily production data aggregated by the main producing states."}
 #str(gasbb.plots)
 gasbb.plots[[1]]+labs(title=NULL)
 ```
@@ -77,22 +79,20 @@ gasbb.plots[[1]]+labs(title=NULL)
 In the figure above
 
 * the gas export as reported by the GPA  is shown in the yellow line, and 
-*
-the gas delivered into the Curtis Island Demand Zone is shown in the white line. 
+* the gas delivered into the Curtis Island Demand Zone (CIDZ) is shown in the white line. 
 
 Because the GPA exports are reported by month and are "quantised" by cargo departures on a >1 day cycle, monthly averages shown here are approximated by applying a smoothing filter on reported monthly values (namely  *1/6\*previous.month + 2/3\*current.month + 1/6\*subsequent.month*).
 
-Also, the Curtis island pipe deliveries are not aggregated in the AEMO data prior to November 2015. For the period January  2015 to October 2015, I approximate this as the smoothed export volume multplied by  the ratio 1.155. This ratio, which represents  the average of the Curtis Island Demand Zone inflows to exports for the period post October 2015, is the loading factor associated with LNG processing.
+Also note that the CIDZ deliveries are not aggregated in the AEMO data prior to November 2015. For the period January 2015 to October 2015, I approximate this as the smoothed export volume multplied by the ratio `r round(parasitic,3) `. This ratio, which represents  the average of the CIDZ delivery to LNG exports for the period post October 2015, is the loading factor associated with LNG processing.
 
 Note-
 
-* The ratio of demand to export is about `r round(parasitic,3) ` suggesting a parasitic load of about `r round(parasitic-1,2)*100`\% of LNG processing at Curtis Island. 
-* while QLD production is relatively constant, the exported flows have tended to be high in summer than winter.
+* while QLD production is relatively constant, the exported LNG volumes have tended to be somewhat higher in summer than winter. Consequently, that the contribution of the (residual) QLD CSG production to domestic supply is higher in winter.
 
 
-The changes in gas production are reflected in  percentage contubutions, with QLD increasing from ~20\% in the winter of 2010 to more than ~&5\% of gas production in the winter of 2019. Summer contributions of QLD production are typicallly 5-10\% higher reflecting the larger industrial demand proportion relative to southern states(see below).
+The changes in gas production are reflected in  percentage contubutions, with QLD increasing from ~20\% in the winter of 2010 to more than ~75\% of gas production in the winter of 2019. Summer contributions of QLD production are typicallly 5-10\% higher reflecting the larger industrial demand proportion relative to southern states(see below).
 
-```{r p2, echo=F, message=F, warning=F}
+```{r p2, echo=F, message=F, warning=F, fig.cap="East coast gas market daily production data aggregated by the main producing states as percenatge of the total."}
 #str(gasbb.plots)
 gasbb.plots[[2]]+labs(title=NULL)
 ```
@@ -103,7 +103,7 @@ Note-
 
 * the restricted domestic supply in late 2016.
 
-```{r p3, echo=F, message=F, warning=F}
+```{r p3, echo=F, message=F, warning=F, fig.cap ="East coast gas market daily production data balance to local supply (+ve) and expert (-ve) aggregated by the main producing states."}
 #str(gasbb.plots)
 gasbb.plots[[3]]+labs(title=NULL)
 ```
@@ -118,34 +118,34 @@ Note
 
 
 
-```{r p4, echo=F, message=F, warning=F}
+```{r p4, echo=F, message=F, warning=F,  fig.cap ="Supply to the non-LNG domestic market (i.e. less the gas supplied to the Curtis Isand Demand Zone destined for export)."}
 #str(gasbb.plots)
  gasbb.plots[[4]]+labs(title=NULL)
 ```
 
 The proportional contributions of  supply to the domestic market highlight marked declne from Queensland. 
 
-```{r p5, echo=F, message=F, warning=F}
+```{r p5, echo=F, message=F, warning=F,fig.cap ="Supply to the   non-LNG domestic market (i.e. less the gas supplied to the Curtis Isand Demand Zone destined for export) as perecnatge of total."}
 #str(gasbb.plots)
  gasbb.plots[[6]]+labs(title=NULL)
 ```
 The  total contributions with 8\% reservation of exported gas including processing loads.
 
-```{r p6, echo=F, message=F, warning=F}
+```{r p6, echo=F, message=F, warning=F, fig.cap ="Projected supply to the   non-LNG domestic market with an 8% reservation of the  Curtis Isand Demand Zone gas."}
 #str(gasbb.plots)
  gasbb.plots[[5]]+labs(title=NULL)
 ```
 
 The proportional contributions with 8\% reservation of exported gas including processing loads.
 
-```{r p8, echo=F, message=F, warning=F}
+```{r p8, echo=F, message=F, warning=F, fig.cap ="Projected supply to the   non-LNG domestic market with an 8% reservation of the  Curtis Isand Demand Zone gas  as the  percentage of total."}
 #str(gasbb.plots)
  gasbb.plots[[8]]+labs(title=NULL)
 ```
 
-The reusultant annual supply balance expressed in terms of percentage of reservation of exported gas including processing loads.
+The resultant annual supply balance expressed in terms of percentage of reservation of exported gas including processing loads.
  
-```{r p9, echo=F, message=F, warning=F}
+```{r p9, echo=F, message=F, warning=F, fig.cap ="Projected average daily east coast gas market domestic supply with reservation levels 0%, 4%, 8% & 12%."}
 #str(gasbb.plots)
 gasbb.plots[[9]]+labs(title=NULL)
 ```
