@@ -68,16 +68,19 @@ gs.id<-"qdYHZTgAAAAJ"
 - Schofield, R., Utembe, S., Gionfriddo, C., Tate, M., Krabbenhoft, D., Adeloju, M., Dundek, M., Keywood, M., Dargaville, R., __Sandiford, M.__, Atmospheric mercury in the La Trobe Valley, Australia: case study June 2013, submitted to Elementa, 6th November, 2019.
 
  
-- Sandiford, D., Moresi, L.N. __Sandiford, M.__, Farrington, R., Ting, Y., The fingerprints of flexure in slab seismicity. Tectonics, submitted 22nd September, 2019, doi: 10.31223/osf.io/b7rj9, 
-
- 
-- Attanayake, J., King, T., Quigley, M., Gibson, G., Clark, D., Jones, A., Brennand, S., __Sandiford, M.__,Rupture Characteristics and the Structural Control of the 2016 Mwp 6.1 Intraplate Earthquake in the Petermann Ranges, Australia, Bulletin of the Seismological Society of America, submitted June, 2019
  
 ## Published 
 
-1. __Sandiford, M.__, Lawrie, K., Brodie, R.S., 2020, Hydrogeological implications of active tectonics in the Great Artesian Basin, Australia, Hydrogeological Journal,     28, 57–73 https://doi.org/10.1007/s10040-019-02046-4, `r ( gs("Hydrogeological"))`
+1. Sandiford, D., Moresi, L.N. __Sandiford, M.__, Farrington, R., Ting, Y., 2020, The fingerprints of flexure in slab seismicity. Tectonics, accepted June 14th 2020.`r ( gs("fingerprints"))`
 
-1. Beardsmore, G., Egan, S., __Sandiford, M.__,  2020, A Fourier Spectral Method to Measure the Thermal Diffusivity of Soil, Geotechnical Testing Journal,  43,  http://dx.doi.org/10.1520/GTJ20180300,`r ( gs("spectral method"))`
+ 
+1. Attanayake, J., King, T., Quigley, M., Gibson, G., Clark, D., Jones, A., Brennand, S., __Sandiford, M.__, 2020, Rupture Characteristics and the Structural Control of the 2016 Mwp 6.1 Intraplate Earthquake in the Petermann Ranges, Australia, Bulletin of the Seismological Society of America, 110, 
+1037-1045, https://doi.org/10.1785/0120190266, `r ( gs("Rupture Characteristics"))`
+ 
+
+1. __Sandiford, M.__, Lawrie, K., Brodie, R.S., 2020, Hydrogeological implications of active tectonics in the Great Artesian Basin, Australia, Hydrogeological Journal,     28, 57–73, https://doi.org/10.1007/s10040-019-02046-4, `r ( gs("Hydrogeological"))`
+
+1. Beardsmore, G., Egan, S., __Sandiford, M.__,  2020, A Fourier Spectral Method to Measure the Thermal Diffusivity of Soil, Geotechnical Testing Journal,  43, Geotechnical Testing Journal 43,   565-587, https://doi.org/10.1520/GTJ20180300, `r ( gs("spectral method"))`
 
 1. Skov, D.S., Egholm,  D.L.,  Jansen, J.D., __Sandiford, M.__, Knudsen, M.F., 2019,  Detecting landscape transience with in situ cosmogenic 14C and 10Be,   Quaternary Geochronology, http://dx.doi.org/10.1016/j.quageo.2019.101008,
       `r ( gs("landscape transience"))`
@@ -104,101 +107,102 @@ gs.id<-"qdYHZTgAAAAJ"
 
 1. Li, G., Kohn, B., __Sandiford, M.__, Xu, Z., 2017,   India-Asia convergence: Insights from burial and exhumation of the Xigaze forearc basin, south Tibet,   Journal of Geophysical Research: Solid Earth,  122,    http://dx.doi.org/10.1002/2017JB014080,  `r ( gs("burial and exhumation"))`
    
-1. Hoffman, N., Hardman-Mountford, N.,  Jenkins, C.,   Rayner, P.J.,   Gibson, G., __Sandiford, M.__, 2017,  GipNet - Baseline environmental data gathering and measurement technology validation for nearshore marine bon Storage,  Energy Proceedia,  114,  3729 - 3753,   http://dx.doi.org/10.1016/j.egypro.2017.03.1503. `r ( gs("gipnet"))`
+1. Hoffman, N., Hardman-Mountford, N.,  Jenkins, C.,   Rayner, P.J.,   Gibson, G., __Sandiford, M.__, 2017,  GipNet - Baseline environmental data gathering and measurement technology validation for nearshore marine bon Storage,  Energy Proceedia,  114,  3729 - 3753,   http://dx.doi.org/10.1016/j.egypro.2017.03.1503, `r ( gs("gipnet"))`
 
 1. Li, G., Kohn, B., __Sandiford, M.__,  Xu ,Z., Tian, Y., Seiler, C., 2016,  Synorogenic morphotectonic evolution of the Gangdese batholith, South Tibet: Insights from low-temperature rmochronology, Geochemistry, Geophysics, Geosystems (G-cubed), A17,  101-112, http://dx.doi.org/10.1002/2015GC006047, `r ( gs("synorogenic morphotectonic "))`
 
 
-1.	Rajendran. C.P., Sanwal, J., Morell, K.D., __Sandiford, M.__, Kotlia, B.S., Hellstrom, J., Rajendran, K., 2016, Stalagmite growth anomalies from central Himalaya as potential earthquake recorders, Journal of Seismology, 20, 579-594. `r ( gs("Stalagmite"))`
-1.	McConnell, D., Forcey, T., __Sandiford, M.__, 2015, Estimating the value of electricity storage in an energy-only wholesale market, Applied Energy, 159, 422-432  http://dx.doi.org/10.1016/j.apenergy.2015.09.006")`
+1.	Rajendran. C.P., Sanwal, J., Morell, K.D., __Sandiford, M.__, Kotlia, B.S., Hellstrom, J., Rajendran, K., 2016, Stalagmite growth anomalies from central Himalaya as potential earthquake recorders, Journal of Seismology, 20, 579-594, https://doi.org/10.1007/s10950-015-9545-5,`r ( gs("Stalagmite"))`
+1.	McConnell, D., Forcey, T., __Sandiford, M.__, 2015, Estimating the value of electricity storage in an energy-only wholesale market, Applied Energy, 159, 422-432  http://dx.doi.org/10.1016/j.apenergy.2015.09.006,
 `r (  gs("Estimating the value of electricity storage"))`
-1.	Coblentz, D., van Wijk, J., Richardson, R.M., __Sandiford, M.__, 2015, The Upper Mantle Geoid: Implications for Continental Structure and the Intraplate Stress Field. The Interdisciplinary Earth: A volume in honor of Don L. Anderson, GSA Special Paper 514, ed. G.R. Foulger, M. Lustrino and S. King.  http://dx.doi.org/10.1130/2015.2514(13) `r (  gs("Uppe mantle geoid"))`  
-1.	__Sandiford, M.__, Forcey, T., Pears, A., McConnell, D., 2015, Five years of declining annual consumption of grid-supplied electricity in eastern Australia: causes and consequences, The Electricity Journal, 28, 96-117, http://dx.doi.org/10.1016/j.tej.2015.07.007 `r ( gs("Five years"))`
-1.	Li, G., Kohn, B., __Sandiford, M.__, Xu, Z., We, L., 2015, Constraining the age of Liuqu Conglomerate, southern Tibet: Implications for evolution of the India-Asia collision zone. Earth and Planetary Science Letters, 426, 259-266, http://dx.doi.org/10.1016/j.epsl.2015.06.010 `r ( gs("Liuqu"))`
-1.	Li, G., Tian, Y., Kohn, B.P., __Sandiford, M.__, Xu, Z.,Ca, Z., 2015, Cenozoic low temperature cooling history of the Northern Tethyan Himalaya in Zedang, SE Tibet and its implications, Tectonophysics, http://dx.doi.org/10.1016/j.tecto.2014.12.014 `r ( gs("Zedang"))` 
-1.	Li., G., __Sandiford, M.__, Boger, S., Liu, X.., Wei, L., 2015,Provenance of the Upper-Cretaceous to Lower Tertiary sedimentary relicts in the Renbu mélange zone, within the Indus-Yarlung suture zone, Journal of Geology, 123, 39–54, http://dx.doi.org/10.1086/680207  `r ( gs("Renbu"))`
-1.	Morell, K.D., __Sandiford, M.__, Rajendran, C.P., Rajendran, K., Fink, D., Alimanovic, A., Sanwal, J., 2015, Geomorphology reveals active decollement geometry in the central Himalayan seismic gap, Lithosphere, 7, 247-256, http://dx.doi.org/10.1130/L407.1  `r ( gs("geometry in the central"))`
-1.	Ely, K.S., __Sandiford, M.__, Phillips, D., Boger, S.D., 2014, Detrital zircon U-Pb and 40Ar/39Ar hornblende ages from the Aileu Complex, Timor-Leste: provenance and metamorphic cooling history, Journal of the Geological Society of London, http://dx.doi.org/ 10.1144/jgs2012-065 `r ( gs("Aileu Complex"))`
-1.	Holford, S., Tuitt, A., Hillis, R., Green, P., Stoker, M., Duddy, I., __Sandiford, M.__, Tassone, D., 2014, Cenozoic deformation in the Otway Basin, southern Australian margin: implications for the origin and nature of post-breakup compression at rifted margins, Basin Research, 26, 10–37, http://dx.doi.org/ 10.1111/bre.12035  `r ( gs("deformation in the Otway Basin"))`
-1.	Li, G., __Sandiford, M.__, Liu, X., Xu, Z., We, L., Li. H., 2014, Provenance of the Late Triassic sediments in Central Lhasa terrane, Tibet, and its implication, Gondwana Research, http://dx.doi.org/10.1016/j.gr.2013.06.019 
+1.	Coblentz, D., van Wijk, J., Richardson, R.M., __Sandiford, M.__, 2015, The Upper Mantle Geoid: Implications for Continental Structure and the Intraplate Stress Field. The Interdisciplinary Earth: A volume in honor of Don L. Anderson, GSA Special Paper 514, ed. G.R. Foulger, M. Lustrino and S. King.  http://dx.doi.org/10.1130/2015.2514(13), `r (  gs("Upper mantle geoid"))`  
+1.	__Sandiford, M.__, Forcey, T., Pears, A., McConnell, D., 2015, Five years of declining annual consumption of grid-supplied electricity in eastern Australia: causes and consequences, The Electricity Journal, 28, 96-117, http://dx.doi.org/10.1016/j.tej.2015.07.007, `r ( gs("Five years"))`
+1.	Li, G., Kohn, B., __Sandiford, M.__, Xu, Z., We, L., 2015, Constraining the age of Liuqu Conglomerate, southern Tibet: Implications for evolution of the India-Asia collision zone. Earth and Planetary Science Letters, 426, 259-266, http://dx.doi.org/10.1016/j.epsl.2015.06.010, `r ( gs("Liuqu"))`
+1.	Li, G., Tian, Y., Kohn, B.P., __Sandiford, M.__, Xu, Z.,Ca, Z., 2015, Cenozoic low temperature cooling history of the Northern Tethyan Himalaya in Zedang, SE Tibet and its implications, Tectonophysics, http://dx.doi.org/10.1016/j.tecto.2014.12.014, `r ( gs("Zedang"))` 
+1.	Li., G., __Sandiford, M.__, Boger, S., Liu, X.., Wei, L., 2015,Provenance of the Upper-Cretaceous to Lower Tertiary sedimentary relicts in the Renbu mélange zone, within the Indus-Yarlung suture zone, Journal of Geology, 123, 39–54, http://dx.doi.org/10.1086/680207,  `r ( gs("Renbu"))`
+1.	Morell, K.D., __Sandiford, M.__, Rajendran, C.P., Rajendran, K., Fink, D., Alimanovic, A., Sanwal, J., 2015, Geomorphology reveals active decollement geometry in the central Himalayan seismic gap, Lithosphere, 7, 247-256, http://dx.doi.org/10.1130/L407.1,  `r ( gs("geometry in the central"))`
+1.	Ely, K.S., __Sandiford, M.__, Phillips, D., Boger, S.D., 2014, Detrital zircon U-Pb and 40Ar/39Ar hornblende ages from the Aileu Complex, Timor-Leste: provenance and metamorphic cooling history, Journal of the Geological Society of London, http://dx.doi.org/ 10.1144/jgs2012-065, `r ( gs("Aileu Complex"))`
+1.	Holford, S., Tuitt, A., Hillis, R., Green, P., Stoker, M., Duddy, I., __Sandiford, M.__, Tassone, D., 2014, Cenozoic deformation in the Otway Basin, southern Australian margin: implications for the origin and nature of post-breakup compression at rifted margins, Basin Research, 26, 10–37, http://dx.doi.org/ 10.1111/bre.12035,  `r ( gs("deformation in the Otway Basin"))`
+1.	Li, G., __Sandiford, M.__, Liu, X., Xu, Z., We, L., Li. H., 2014, Provenance of the Late Triassic sediments in Central Lhasa terrane, Tibet, and its implication, Gondwana Research, http://dx.doi.org/10.1016/j.gr.2013.06.019,
 `r ( gs("Central Lhasa terrane"))`
-1.	Rawling, T.J., __Sandiford, M.__, Beardsmore, G.R., Quenette, S., Goyen, S.H., Harrison, B., Thermal insulation and geothermal targeting, with specific reference to coal-bearing basins, Australian Journal of Earth Sciences, 60, 817-830, http://dx.doi.org/10.1080/08120099.2013.864999 `r ( gs("Thermal insulation"))`
-1.	Rajendran, C.P., Rajendran, K., Sanwal, J., __Sandiford, M.__, 2013, Archeological and historical database on the medieval earthquakes of the central Himalaya: Ambiguities and Inferences, Seismological Research Letters, 84, 1098-1108, http://dx.doi.org/ 10.1785/0220130077 `r ( gs("Archeological and historical"))` 
+1.	Rawling, T.J., __Sandiford, M.__, Beardsmore, G.R., Quenette, S., Goyen, S.H., Harrison, B., Thermal insulation and geothermal targeting, with specific reference to coal-bearing basins, Australian Journal of Earth Sciences, 60, 817-830, http://dx.doi.org/10.1080/08120099.2013.864999, `r ( gs("Thermal insulation"))`
+1.	Rajendran, C.P., Rajendran, K., Sanwal, J., __Sandiford, M.__, 2013, Archeological and historical database on the medieval earthquakes of the central Himalaya: Ambiguities and Inferences, Seismological Research Letters, 84, 1098-1108, http://dx.doi.org/10.1785/0220130077, `r ( gs("Archeological and historical"))` 
 1.	Egholm, D., Knusden, M.F., __Sandiford, M.__, 2013, Lifespan of mountain ranges scaled by feedbacks between landsliding and erosion by rivers, Nature, 498, 475–478, http://dx.doi.org/10:1038/nature12218 
 `r ( gs("Lifespan of mountain ranges"))` 
-1.	Sanwal, J., Kotlia, B.S., Rajendran, C.P., Ahmad, S., Rajendran, K., and __Sandiford, M.__, 2013, Climate variability in Central Indian Himalaya during the last ~1,800 years: Evidence from high resolution speleothem record, Quaternary International, 304, 183–192, http://dx.doi.org//10.1016/j.quaint.2013.03.029  `r ( gs("Central Indian"))`
-1.	McConnell, D., Hearps, P., Eales, D., __Sandiford, M.__, Dunn, R., Wright, M., Bateman, L., 2013, Retrospective modeling of the merit-order effect on wholesale electricity prices from distributed photovoltaic generation in the Australian National Electricity Market, Energy Policy, 58,17-27, http://dx.doi.org/10.1016/j.enpol.2013.01.052 
+1.	Sanwal, J., Kotlia, B.S., Rajendran, C.P., Ahmad, S., Rajendran, K., and __Sandiford, M.__, 2013, Climate variability in Central Indian Himalaya during the last ~1,800 years: Evidence from high resolution speleothem record, Quaternary International, 304, 183–192, http://dx.doi.org//10.1016/j.quaint.2013.03.029,  `r ( gs("Central Indian"))`
+1.	McConnell, D., Hearps, P., Eales, D., __Sandiford, M.__, Dunn, R., Wright, M., Bateman, L., 2013, Retrospective modeling of the merit-order effect on wholesale electricity prices from distributed photovoltaic generation in the Australian National Electricity Market, Energy Policy, 58,17-27, http://dx.doi.org/10.1016/j.enpol.2013.01.052, 
 `r (  gs("Retrospective modeling of the"))`
 1.	Shin, J., __Sandiford, M.__, 2012, Neogene uplift in the Korean peninsula linked to small-scale mantle convection at sinking slab edge. Journal of Korean Geographical Society, 47(3), 328-346 
-1.	Turner, S., Caulfield, J., Turner, M., van Keken, P., Maury, R., __Sandiford, M.__, Prouteau, G., 2012, Recent contribution of sediments and fluids to the mantle’s volatile budget, Nature geoscience, 5, 50-54, http://dx.doi.org/10.1038/ngeo1325 `r ( gs("Recent contribution of sediments"))`
+1.	Turner, S., Caulfield, J., Turner, M., van Keken, P., Maury, R., __Sandiford, M.__, Prouteau, G., 2012, Recent contribution of sediments and fluids to the mantle’s volatile budget, Nature geoscience, 5, 50-54, http://dx.doi.org/10.1038/ngeo1325, `r ( gs("Recent contribution of sediments"))`
 20.	Long, A., Budd, A., Gurgenci,H., Hand,M., Huddlestone-Holmes, C., Leary ,P., Malin, P., Moghtaderi,B., Regenauer-Lieb,K., __Sandiford, M.__, Webster, R., 2011, Australian geothermal research 2011, Proceedings, Thirty-Sixth Workshop on Geothermal Reservoir Engineering, Stanford University, Stanford, California, January 31 - February 2, 2011, SGP-TR-191
-1.	Clark, D., Cupper, M., __Sandiford, M.__, Kiernan, K., 2011, Style and timing of late Quaternary faulting on the lake Edgar Fault, southwest Tasmania, Australia: implications for hazard assessment in intracratonic areas, In: \\$emard, F., Michetti, A., Macalpin, J. (eds) Geological criteria for evaluating seismicity revisited: 40 years of paleoseismic investigations and the natural record of past earthquakes, Geological Society of AmericaSpecial Papers, 479, 109-131, http://dx.doi.org/10.1130/2011.2479(05) 
+1.	Clark, D., Cupper, M., __Sandiford, M.__, Kiernan, K., 2011, Style and timing of late Quaternary faulting on the lake Edgar Fault, southwest Tasmania, Australia: implications for hazard assessment in intracratonic areas, In: \\$emard, F., Michetti, A., Macalpin, J. (eds) Geological criteria for evaluating seismicity revisited: 40 years of paleoseismic investigations and the natural record of past earthquakes, Geological Society of AmericaSpecial Papers, 479, 109-131, http://dx.doi.org/10.1130/2011.2479(05), 
 `r (  gs("Edgar Fault"))`
-1.	Ely, K.S., __Sandiford, M.__, Hawke, M.L., Phillips, D., Quigley, M., dos Reis, J.E., Evolution of Ataúro Island: temporal constraints on subduction processes beneath the Wetar Zone, Banda Arc , Journal of Asian Earth sciences, http://dx.doi.org/10.1016/j.jseaes.2011.01.019 `r ( gs("temporal constraints on subduction processes"))`
-1.	Holford, S.P., Hillis, R.R., Hand, M. and __Sandiford, M.__, 2011, Thermal weakening localizes intraplate deformation along the southern Australian continental margin, Earth and Planetary Science Letters, 305, 217-214, http://dx.doi.org/10.1016/j.epsl.2011.02.056 `r ( gs("Thermal weakening localizes intraplate deformation along the southern"))`
+1.	Ely, K.S., __Sandiford, M.__, Hawke, M.L., Phillips, D., Quigley, M., dos Reis, J.E., Evolution of Ataúro Island: temporal constraints on subduction processes beneath the Wetar Zone, Banda Arc , Journal of Asian Earth sciences, http://dx.doi.org/10.1016/j.jseaes.2011.01.019,, `r ( gs("temporal constraints on subduction processes"))`
+1.	Holford, S.P., Hillis, R.R., Hand, M. and __Sandiford, M.__, 2011, Thermal weakening localizes intraplate deformation along the southern Australian continental margin, Earth and Planetary Science Letters, 305, 217-214, http://dx.doi.org/10.1016/j.epsl.2011.02.056, `r ( gs("Thermal weakening localizes intraplate deformation along the southern"))`
 1.	Fu,B., Walker, R., __Sandiford, M.__, 2011, The 2008 Wenchuan earthquake and active tectonics of Asia, Journal of Asian Earth Sciences, 40, 797-804 
 `r (  gs("Wenchuan"))`
-1.	Jakica, S, Quigley, M., __Sandiford, M.__, Clark, D., Fifield, L.K., Alimanovic, A., 2011, Geomorphic and cosmogenic nuclide constraints on escarpment evolution in an intraplate setting, Darling Escarpment, Western Australia,  Earth Surface Processes and Landforms, 36, 449-459, http://dx.doi.org/10.1002/esp.2058 `r ( gs("constraints on escarpment evolution"))`
-1.	Turner, S., __Sandiford, M.__, Regan, M., Hawkesworth, C., Hildreth, W., 2010, The origins of large volume, compositionally-zoned volcanic eruptions - new constraints from U-series isotopes and numerical thermal modeling for the 1912 Katmai-Novarupta eruption, Journal of Geophysical Research, 115, B12201, http://dx.doi.org/10.1029/2009JB007195 `r ( gs("Katmai"))`
+1.	Jakica, S, Quigley, M., __Sandiford, M.__, Clark, D., Fifield, L.K., Alimanovic, A., 2011, Geomorphic and cosmogenic nuclide constraints on escarpment evolution in an intraplate setting, Darling Escarpment, Western Australia,  Earth Surface Processes and Landforms, 36, 449-459, http://dx.doi.org/10.1002/esp.2058, `r ( gs("constraints on escarpment evolution"))`
+1.	Turner, S., __Sandiford, M.__, Regan, M., Hawkesworth, C., Hildreth, W., 2010, The origins of large volume, compositionally-zoned volcanic eruptions - new constraints from U-series isotopes and numerical thermal modeling for the 1912 Katmai-Novarupta eruption, Journal of Geophysical Research, 115, B12201, http://dx.doi.org/10.1029/2009JB007195, `r ( gs("Katmai"))`
 29.	Quigley, M.C., Clark, D., __Sandiford, M.__, 2010, Tectonic geomorphology of Australia, In: Bishop, P., Pillans, B. (eds) Australian Landscapes. Geological Society, London, Special Publications, 346, 243-265 
 `r ( gs("Tectonic geomorphology of Australia"))`
 
  
 
-30.	Quigley, M., Horton, T., Hellstrom, J., Cupper, M., __Sandiford, M.__, 2010, Holocene precipitation variability in arid Australia from speleothem and alluvial records, The Holocene, http://dx.doi.org/10.1177/0959683610369508
+30.	Quigley, M., Horton, T., Hellstrom, J., Cupper, M., __Sandiford, M.__, 2010, Holocene precipitation variability in arid Australia from speleothem and alluvial records, The Holocene, http://dx.doi.org/10.1177/0959683610369508,
 `r ( gs("arid Australia"))`
-31.	__Sandiford, M.__, 2010, Complex Subduction, Nature Geoscience, 3, 518-520, http://dx.doi.org/10.1038/ngeo928
+31.	__Sandiford, M.__, 2010, Complex Subduction, Nature Geoscience, 3, 518-520, http://dx.doi.org/10.1038/ngeo928,
 `r (  gs("Complex Subduction"))`
-32.	Brown, M., White, R.W., __Sandiford, M.__, 2010, On the importance of minding one's Ps and Ts: Metamorphic processes and quantitative petrology, Journal of Metamorphic Geology, 28, 561–567, http://dx.doi.org/10.1111/j.1525-1314.2010.00892.x  `r ( gs("On the importance of minding"))`", 
-33.	__Sandiford, M.__, 2010, Why are the continents just so ...?, Journal of Metamorphic Geology, 28, 569–577  http://dx.doi.org/10.1111/j.1525-1314.2010.00888.x 
+32.	Brown, M., White, R.W., __Sandiford, M.__, 2010, On the importance of minding one's Ps and Ts: Metamorphic processes and quantitative petrology, Journal of Metamorphic Geology, 28, 561–567, http://dx.doi.org/10.1111/j.1525-1314.2010.00892.x,
+`r ( gs("On the importance of minding"))`", 
+33.	__Sandiford, M.__, 2010, Why are the continents just so ...?, Journal of Metamorphic Geology, 28, 569–577  http://dx.doi.org/10.1111/j.1525-1314.2010.00888.x, 
 `r (  gs("Why are the continents just so"))`
-34.	Farrington, R., Stegman, D., Moresi, L.N., __Sandiford, M.__, May, D., 2010, Interactions of 3D mantle flow and continental lithosphere near passive margins, Tectonophysics, 483, 20-28  http://dx.doi.org/10.1016/j.tecto.2009.10.008
+34.	Farrington, R., Stegman, D., Moresi, L.N., __Sandiford, M.__, May, D., 2010, Interactions of 3D mantle flow and continental lithosphere near passive margins, Tectonophysics, 483, 20-28  http://dx.doi.org/10.1016/j.tecto.2009.10.008,
 `r (  gs("Interactions of 3D mantle flow"))`
 35.	Ely, K., __Sandiford, M.__, 2010, Seismic response to slab rupture and variation in lithospheric structure beneath the Savu Sea, Indonesia, Tectonophysics, 483, 112-124, http://dx.doi.org/10.1016/j.tecto.2009.08.027
 `r (  gs("Seismic response to slab rupture"))`
-36.	Woodhead, J., Hergt, J., __Sandiford, M.__, Johnson, W., 2010, The big crunch: physical and chemical expressions of arc/continent collision in the western Bismarck arc, Journal of Volcanology and Geothermal Research, 190, 11-24  http://dx.doi.org/10.1016/j.jvolgeores.2009.03.003 
+36.	Woodhead, J., Hergt, J., __Sandiford, M.__, Johnson, W., 2010, The big crunch: physical and chemical expressions of arc/continent collision in the western Bismarck arc, Journal of Volcanology and Geothermal Research, 190, 11-24  http://dx.doi.org/10.1016/j.jvolgeores.2009.03.003,
 `r (  gs("The big crunch"))`
 37.	Quigley M. C., __Sandiford, M.__, Clark, D., 2009, Neotectonics and landscape evolution of southeastern Australia: establishing a geologic context for contemporary seismicity, In: Clark, D., (ed), Potential geologic sources of seismic hazard in the Sydney Basin. Geoscience Australia Record 2009/11, 1-6 
-38.	__Sandiford, M.__, Quigley, M., de Broekert, P., Jakica, S., 2009, Tectonic framework for the Cenozoic cratonic basins of Australia, Australian Journal of Earth Sciences, 56, S5-S18, http://dx.doi.org/10.1080/08120090902870764 
+38.	__Sandiford, M.__, Quigley, M., de Broekert, P., Jakica, S., 2009, Tectonic framework for the Cenozoic cratonic basins of Australia, Australian Journal of Earth Sciences, 56, S5-S18, http://dx.doi.org/10.1080/08120090902870764,
 `r ( gs("Tectonic framework for the Cenozoic cratonic basins of Australia"))`
-39.	Turner,S., Haines, P., Foster, D, Powell R., __Sandiford, M.__, Offler, R.,2009, Did the Delamerian Orogeny start in the Neoproterozoic? Journal of Geology, 117, 575-583 
+39.	Turner,S., Haines, P., Foster, D, Powell R., __Sandiford, M.__, Offler, R.,2009, Did the Delamerian Orogeny start in the Neoproterozoic? Journal of Geology, 117, 575-583, 
 `r ( gs("Did the Delamerian Orogeny start in the Neoproterozoic? Journal of Geology"))`
-40.	Braun, J., Burbidge, D.R., Gesto, F.N., __Sandiford, M.__, Gleadow, A.J.W., Kohn, B.P., Cummins, P.R., 2009, Constraints on the current rate of deformation and surface uplift of the Australian continent from a new seismic database and low-T thermochronological data. Australian Journal of Earth Sciences, 56, 99-110  http://dx.doi.org/10.1080/08120090802546977 
+40.	Braun, J., Burbidge, D.R., Gesto, F.N., __Sandiford, M.__, Gleadow, A.J.W., Kohn, B.P., Cummins, P.R., 2009, Constraints on the current rate of deformation and surface uplift of the Australian continent from a new seismic database and low-T thermochronological data. Australian Journal of Earth Sciences, 56, 99-110,  http://dx.doi.org/10.1080/08120090802546977, 
 `r ( gs("current rate of deformation and surface uplift"))`
-41.	McLaren, S., __Sandiford, M.__, Dunlap, W.J., Scrimgeour, I., Close, D. and Edgoose, C., 2009, Distribution of Palaeozoic reworking in the Western Arunta province and northwestern Amadeus Basin from 40Ar/39Ar thermochronology: implications for the evolution of intracratonic basins, Basin Research, 21, 315-334  http://dx.doi.org/10.1111/j.1365-2117.2008.00385.x 
+41.	McLaren, S., __Sandiford, M.__, Dunlap, W.J., Scrimgeour, I., Close, D. and Edgoose, C., 2009, Distribution of Palaeozoic reworking in the Western Arunta province and northwestern Amadeus Basin from 40Ar/39Ar thermochronology: implications for the evolution of intracratonic basins, Basin Research, 21, 315-334,  http://dx.doi.org/10.1111/j.1365-2117.2008.00385.x, 
 `r (  gs("Western Arunta"))
 ` 
-42.	__Sandiford, M.__, Quigley,M.C., 2009, TOPO-OZ: insights into the various modes of intraplate deformation in the Australian continent, Tectonophysics, 474, 405-416  http://dx.doi.org/10.1016/j.tecto.2009.01.028 
+42.	__Sandiford, M.__, Quigley,M.C., 2009, TOPO-OZ: insights into the various modes of intraplate deformation in the Australian continent, Tectonophysics, 474, 405-416,  http://dx.doi.org/10.1016/j.tecto.2009.01.028, 
 `r (  gs( "TOPO-OZ"))`
 43.	Somerville, P., Quijada, P., Hong Kie Thio, __Sandiford, M.__, Quigley, M., 2008, Contribution of identified active faults to near fault seismic hazard in the Flinders Ranges, Australian Earthquake Engineering Society Conference Proceedings, Paper 45, 1-9.
-1.	Egholm, D.L., Clausen, O.R., __Sandiford, M.__, Kristensen, M.B., Korstgard, J.A., 2008, The mechanics of clay smearing along faults, Geology, 36, 787–790  http://dx.doi.org/0.1130/G24975A.1 
+1.	Egholm, D.L., Clausen, O.R., __Sandiford, M.__, Kristensen, M.B., Korstgard, J.A., 2008, The mechanics of clay smearing along faults, Geology, 36, 787–790,  http://dx.doi.org/0.1130/G24975A.1, 
 `r ( gs("mechanics of clay smearing"))`
-1.	Hillis, R.R., __Sandiford, M.__, Reynolds, S.D. and Quigley, M.C., 2008, Present-day stresses, seismicity and Neogene-to-Recent tectonics of Australia’s ‘passive’ margins: intraplate deformation controlled by plate boundary forces. In: Johnson, H., Dore, A. G., Gatliff, R. W., Holdsworth, R., Lundin, E. and Ritchie, J. D. (eds) The Nature and Origin of Compression in Passive Margins. Geological Society, London, Special Publications, 306, 71–89  http://dx.doi.org/10.1144/SP306.3 
+1.	Hillis, R.R., __Sandiford, M.__, Reynolds, S.D. and Quigley, M.C., 2008, Present-day stresses, seismicity and Neogene-to-Recent tectonics of Australia’s ‘passive’ margins: intraplate deformation controlled by plate boundary forces. In: Johnson, H., Dore, A. G., Gatliff, R. W., Holdsworth, R., Lundin, E. and Ritchie, J. D. (eds) The Nature and Origin of Compression in Passive Margins. Geological Society, London, Special Publications, 306, 71–89,  http://dx.doi.org/10.1144/SP306.3, 
 `r (  gs("intraplate deformation controlled by plate boundary forces"))`
-1.	__Sandiford, M.__, Egholm, D.L., 2008, Enhanced intraplate seismicity along continental margins: some causes and consequences, Tectonophysics, 457, 197–208, http://dx.doi.org/10.1016/j.tecto.2008.06.004 
+1.	__Sandiford, M.__, Egholm, D.L., 2008, Enhanced intraplate seismicity along continental margins: some causes and consequences, Tectonophysics, 457, 197–208, http://dx.doi.org/10.1016/j.tecto.2008.06.004, 
 `r (  gs("Enhanced intraplate seismicity along"))`
-1.	Quigley, M.C., Yu Liangjun, Gregory, C., Corvino, A., __Sandiford, M.__, Wilson, C.J.L., Liu Xiaohan, 2008, U-Pb SHRIMP zircon geochronology and T-t-d history of the Kampa Dome, southern Tibet, Tectonophysics, 446, 97-113  http://dx.doi.org/10.1016/j.tecto.2007.11.004 
+1.	Quigley, M.C., Yu Liangjun, Gregory, C., Corvino, A., __Sandiford, M.__, Wilson, C.J.L., Liu Xiaohan, 2008, U-Pb SHRIMP zircon geochronology and T-t-d history of the Kampa Dome, southern Tibet, Tectonophysics, 446, 97-113,  http://dx.doi.org/10.1016/j.tecto.2007.11.004, 
 `r (  gs("history of the Kampa Dome"))`
-1.	Dosseto, A., Turner, S.P., __Sandiford, M.__, Davidson, J., 2008, Uranium-series isotope and thermal constraints on the rate and depth of silicic magma genesis, In: Dynamics of Crustal Magma Transfer, Storage and Differentiation, Annen C. and Zellmer, G.F. (eds). Geological Society of London Special Publication, 304, 169-181 
+1.	Dosseto, A., Turner, S.P., __Sandiford, M.__, Davidson, J., 2008, Uranium-series isotope and thermal constraints on the rate and depth of silicic magma genesis, In: Dynamics of Crustal Magma Transfer, Storage and Differentiation, Annen C. and Zellmer, G.F. (eds). Geological Society of London Special Publication, 304, 169-181, 
 `r (  gs("depth of silicic magma genesis"))
 ` 
-1.	Hou, B., Frakes, L.A., __Sandiford, M.__, Worrall, L., Keeling, J., Alley, N.F., 2008, Cenozoic Eucla Basin and associated palaeovalleys, southern Australia - climatic and tectonic influences on landscape evolution, sedimentation and heavy mineral accumulation, Sedimentary Geology, 203, 112-130  http://dx.doi.org/ 10.1016/j.sedgeo.2007.11.005 
+1.	Hou, B., Frakes, L.A., __Sandiford, M.__, Worrall, L., Keeling, J., Alley, N.F., 2008, Cenozoic Eucla Basin and associated palaeovalleys, southern Australia - climatic and tectonic influences on landscape evolution, sedimentation and heavy mineral accumulation, Sedimentary Geology, 203, 112-130,  http://dx.doi.org/ 10.1016/j.sedgeo.2007.11.005, 
 `r (  gs("Cenozoic Eucla Basin"))`
-1.	__Sandiford, M.__, 2008, Seismic moment release during slab rupture beneath the Banda Sea, Geophysical Journal International, 174, 659–671  http://dx.doi.org/ 10.1111/j.1365-246X.2008.03838.x 
+1.	__Sandiford, M.__, 2008, Seismic moment release during slab rupture beneath the Banda Sea, Geophysical Journal International, 174, 659–671,  http://dx.doi.org/ 10.1111/j.1365-246X.2008.03838.x, 
 `r (  gs("slab rupture beneath the Banda Sea"))`
 1.	Bowler, J.M., __Sandiford, M.__, 2007, Dynamic Antarctic Ice: agent for Mid-Pleistocene Transition, PAGESnews, 15, 16-18
 `r (  gs("Dynamic Antarctic"))
 ` 
-1.	Quigley, M., __Sandiford, M.__, Cupper, M., 2007, Distinguishing tectonic from climatic controls on range-front sedimentation, Flinders Ranges, South Australia. Basin Research, 19, 491–505  http://dx.doi.org/ 10.1111/j.1365-2117.2007.00336.x 
+1.	Quigley, M., __Sandiford, M.__, Cupper, M., 2007, Distinguishing tectonic from climatic controls on range-front sedimentation, Flinders Ranges, South Australia. Basin Research, 19, 491–505,  http://dx.doi.org/ 10.1111/j.1365-2117.2007.00336.x, 
 `r (  gs("Distinguishing tectonic from climatic"))`
-1.	Demidjuk, Z., Turner, S., __Sandiford, M.__, George, R., Foden, J., Etheridge, M., 2007, U-series isotope and geodynamic constraints on mantle melting processes beneath the Newer Volcanic Province in South Australia, Earth and Planetary Science Letters, 261, 517–533  http://dx.doi.org/ 10.1016/j.epsl.2007.07.006 
+1.	Demidjuk, Z., Turner, S., __Sandiford, M.__, George, R., Foden, J., Etheridge, M., 2007, U-series isotope and geodynamic constraints on mantle melting processes beneath the Newer Volcanic Province in South Australia, Earth and Planetary Science Letters, 261, 517–533,  http://dx.doi.org/ 10.1016/j.epsl.2007.07.006, 
 `r (  gs("isotope and geodynamic constraints on mantle melting processes beneath the Newer Volcanic Province in South Australia"))` 
-1.	__Sandiford, M.__, 2007, The tilting continent: a new constraint on the dynamic topographic field from Australia, Earth and Planetary Science Letters, 261, 152-163  http://dx.doi.org/ 10.1016/j.epsl.2007.06.023 
+1.	__Sandiford, M.__, 2007, The tilting continent: a new constraint on the dynamic topographic field from Australia, Earth and Planetary Science Letters, 261, 152-163,  http://dx.doi.org/ 10.1016/j.epsl.2007.06.023, 
 `r (  gs("The tilting continent"))` 
-1.	Quigley, M., __Sandiford, M.__, Alimanovic, A., Fifield, L.K., 2007, Landscape responses to intraplate tectonism in the Flinders Ranges, South Australia: quantitative constraints from 10Be abundances, Earth and Planetary Science Letters, 261,120-133  http://dx.doi.org/10.1016/j.epsl.2007.06.020
+1.	Quigley, M., __Sandiford, M.__, Alimanovic, A., Fifield, L.K., 2007, Landscape responses to intraplate tectonism in the Flinders Ranges, South Australia: quantitative constraints from 10Be abundances, Earth and Planetary Science Letters, 261,120-133,  http://dx.doi.org/10.1016/j.epsl.2007.06.020,
 `r (  gs( "Landscape responses to intraplate tectonism"))` 
-1.	Egholm, D.L., __Sandiford, M.__, Clausen, O.L., Nielsen, S.B., 2007, A new strategy for discrete element numerical models Part II: Sandbox applications, Journal of Geophysical Research, 112, B05204  http://dx.doi.org/10.1029/2006JB004558 `r (  gs( "A new strategy for discrete element"))` 
-1.	Quigley, M., __Sandiford, M.__, Fifield, K., Alimanovic A., 2007, Bedrock erosion and relief production in the northern Flinders Ranges, Australia. Earth Surface Processes and Landforms, 32, 929-944  http://dx.doi.org/ 10.1002/esp.1459 
+1.	Egholm, D.L., __Sandiford, M.__, Clausen, O.L., Nielsen, S.B., 2007, A new strategy for discrete element numerical models Part II: Sandbox applications, Journal of Geophysical Research, 112, B05204,  http://dx.doi.org/10.1029/2006JB004558, `r (  gs( "A new strategy for discrete element"))` 
+1.	Quigley, M., __Sandiford, M.__, Fifield, K., Alimanovic A., 2007, Bedrock erosion and relief production in the northern Flinders Ranges, Australia. Earth Surface Processes and Landforms, 32, 929-944,  http://dx.doi.org/ 10.1002/esp.1459, 
 `r (  gs("Bedrock erosion and relief production"))` 
 1.	McLaren, S., __Sandiford, M.__, Powell, R., Neumann, N., Woodhead, J., 2006, Palaeozoic intraplate crustal anatexis in the Mount Painter province, South Australia: timing, thermal budgets and the role of crustal heat production, Journal of Petrology, 47, 2281-2302  http://dx.doi.org/10.1093/petrology/egl044 
 `r (  gs("Palaeozoic intraplate crustal anatexis"))` 
