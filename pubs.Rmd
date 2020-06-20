@@ -71,7 +71,7 @@ gs.id<-"qdYHZTgAAAAJ"
  
 ## Published 
 
-1. Sandiford, D., Moresi, L.N. __Sandiford, M.__, Farrington, R., Ting, Y., 2020, The fingerprints of flexure in slab seismicity. Tectonics, accepted June 14th 2020.`r ( gs("fingerprints"))`
+1. Sandiford, D., Moresi, L.N. __Sandiford, M.__, Farrington, R., Ting, Y., 2020, The fingerprints of flexure in slab seismicity. Tectonics, https://doi.org/10.1029/2019TC005894, accepted June 14th 2020.`r ( gs("fingerprints"))`
 
  
 1. Attanayake, J., King, T., Quigley, M., Gibson, G., Clark, D., Jones, A., Brennand, S., __Sandiford, M.__, 2020, Rupture Characteristics and the Structural Control of the 2016 Mwp 6.1 Intraplate Earthquake in the Petermann Ranges, Australia, Bulletin of the Seismological Society of America, 110, 
