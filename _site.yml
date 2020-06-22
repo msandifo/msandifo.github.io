@@ -30,6 +30,8 @@ navbar:
       href: https://github.com/msandifo/reprosci
     - icon: fab fa-twitter
       href: https://twitter.com/reprosci
+    - image: ./mini-icon.png
+      href: https://orcid.org/0000-0002-9757-745X
 
 
 output:
