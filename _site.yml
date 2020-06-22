@@ -22,6 +22,12 @@ navbar:
           href: pubs.html
         - text: "technical"
           href: tech.html
+        - image: ./mini-icon.png
+          href: https://orcid.org/0000-0002-9757-745X
+        - image: ./icons8-google-scholar-100.png
+          href: https://scholar.google.com/citations?user=qdYHZTgAAAAJ&hl=en
+        - image: www.scopus.com.ico
+          href: https://www.scopus.com/authid/detail.uri?authorId=7005120626
     - text: "engagement"
       href: pop.html
     - text: "musings"
@@ -30,8 +36,6 @@ navbar:
       href: https://github.com/msandifo/reprosci
     - icon: fab fa-twitter
       href: https://twitter.com/reprosci
-    - image: ./mini-icon.png
-      href: https://orcid.org/0000-0002-9757-745X
 
 
 output:
