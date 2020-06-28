@@ -1,6 +1,5 @@
 ---
 title: "Peer reviewed publications"
-
 ---
  
 ```{r setup, include=FALSE}
@@ -78,7 +77,7 @@ gs.id<-"qdYHZTgAAAAJ"
 1037-1045, https://doi.org/10.1785/0120190266, `r ( gs("Rupture Characteristics"))`
  
 
-1. __Sandiford, M.__, Lawrie, K., Brodie, R.S., 2020, Hydrogeological implications of active tectonics in the Great Artesian Basin, Australia, Hydrogeological Journal,     28, 57–73, https://doi.org/10.1007/s10040-019-02046-4, `r ( gs("Hydrogeological"))`
+1. __Sandiford, M.__, Lawrie, K., Brodie, R.S., 2020, Hydrogeological implications of active tectonics in the Great Artesian Basin, Australia, Hydrogeological Journal,     28, 57–73, https://doi.org/10.1007/s10040-019-02046-4, `r ( gs("Hydrogeological implications of active tectonics"))`
 
 1. Beardsmore, G., Egan, S., __Sandiford, M.__,  2020, A Fourier Spectral Method to Measure the Thermal Diffusivity of Soil, Geotechnical Testing Journal,  43, Geotechnical Testing Journal 43,   565-587, https://doi.org/10.1520/GTJ20180300, `r ( gs("spectral method"))`
 
@@ -413,7 +412,7 @@ gs.id<-"qdYHZTgAAAAJ"
 `r (  gs("retrograde shear zones"))`  
 1.	Grew, E.S., __Sandiford, M.__, 1985, Staurolite in a garnet-hornblende-biotite schist from the Lanterman Range, northern Victoria Land, Antarctica, Neues Jarbuch Mineralogie, Heft, 9, 396-410.
 `r (  gs("Staurolite in a garnet–hornblende–biotite schist from the Lanterman Range"))`  
-1.	__Sandiford, M.__, Wilson, C.J.L., 1984, The structural evolution of the Fyfe Hills - Khmara Bay region, Enderby Land, East Antarctica, Australian Journal of Earth Sciences, 31, 403- 426. `r (  gs("Khmara Bay"))` 
+1.	__Sandiford, M.__, Wilson, C.J.L., 1984, The structural evolution of the Fyfe Hills - Khmara Bay region, Enderby Land, East Antarctica, Australian Journal of Earth Sciences, 31, 403- 426. `r (  gs("structural evolution of the Fyfe Hills"))` 
 1.	Grew, E.S., __Sandiford, M.__, 1984, A staurolite-talc assemblage in tourmaline-phlogopite- chlorite schist from Northern Victoria Land, Antarctica and its petrogenetic significance. Contributions to Mineralogy and Petrology, 87, 337-350. `r (gs("A staurolite-talc assemblage in tourmaline-phlogopite-chlorite schist"))`  
 1.	Grew, E.S., Manton, W.I., __Sandiford, M.__, 1983, Geochronologic studies in East Antarctica: age of pegmatites in Casey Bay, Enderby Land. Antarctic Journal of the United States, 17, 1-2. `r (  gs("Casey"))` 
 1.	Grew, E.S., __Sandiford, M.__, 1983, Field studies of the Wilson and Rennick Groups, Rennick Glacier area, northern Victoria Land. Antarctic Journal of the United States, 17, 7-8. `r (  gs("Rennick"))` 
