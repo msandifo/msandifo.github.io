@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/2020-09-05-gas-fired-recovery/",
+    "title": "Gas fired recovery",
+    "description": "If gas is so crucial for industry why do we waste so much of it heating houses?.",
+    "author": [
+      {
+        "name": "Mike Sandiford and Dylan McConnell",
+        "url": {}
+      }
+    ],
+    "date": "2020-09-05",
+    "categories": [],
+    "preview": "posts/2020-09-05-gas-fired-recovery/images/domestic.png",
+    "last_modified": "2020-09-05T21:18:42+10:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2020-02-13-eastern-australian-gas-market/",
     "title": "Eastern Australian gas market and the question of domestic reservation",
     "description": "An analysis motivated by the question of the amount of reservation of Queensland coal seam gas production needed to preserve domestic supply",
@@ -12,7 +28,7 @@
     "date": "2020-02-13",
     "categories": [],
     "preview": "posts/2020-02-13-eastern-australian-gas-market/eastern-australian-gas-market_files/figure-html5/p10-1.png",
-    "last_modified": "2020-09-05T16:12:18+10:00",
+    "last_modified": "2020-09-05T21:07:06+10:00",
     "input_file": {}
   },
   {
