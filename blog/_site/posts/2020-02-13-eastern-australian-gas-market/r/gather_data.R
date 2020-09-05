@@ -2,7 +2,7 @@ library(tidyverse)
 library(readxl)
 library(magrittr)
 library(lubridate)
-source('/Volumes/data/Dropbox/msandifo/documents/programming/r/2020/gasbb/gasbb/r/funcs.R')
+source('~/Dropbox/msandifo/documents/programming/r/2020/gasbb/r/data_funcs.R')
 
 load("data/gladstoneLNG.Rdata")
 

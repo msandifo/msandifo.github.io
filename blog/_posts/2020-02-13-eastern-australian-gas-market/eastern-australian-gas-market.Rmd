@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r run, include=F, echo=F,   message=F, cache=F}
-  
+source("r/funcs.R") 
 source("r/gather_data.R")
    
 source("r/plots.R")
