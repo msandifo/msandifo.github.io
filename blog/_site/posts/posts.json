@@ -1,8 +1,8 @@
 [
   {
     "path": "posts/2020-09-05-gas-fired-recovery/",
-    "title": "On the  gas fired recovery",
-    "description": "If gas is so crucial for industry why do we waste so much  heating houses?",
+    "title": "On the gas fired recovery",
+    "description": "If gas is so crucial for industry why waste it  heating houses?",
     "author": [
       {
         "name": "Mike Sandiford and Dylan McConnell",
@@ -12,8 +12,8 @@
     "date": "2020-09-05",
     "categories": [],
     "preview": "posts/2020-09-05-gas-fired-recovery/images/domestic.png",
-    "last_modified": "2020-09-06T11:00:01+10:00",
-    "input_file": {}
+    "last_modified": "2020-09-06T11:03:46+10:00",
+    "input_file": "gas-fired-recovery.utf8.md"
   },
   {
     "path": "posts/2020-02-13-eastern-australian-gas-market/",
