@@ -1,7 +1,7 @@
 ---
 title: "On the  gas fired recovery"
 description: |
-   If gas is so crucial for industry why do we waste so much of it heating houses?.
+   If gas is so crucial for industry why do we waste so much  heating houses?
 author:
   - name: Mike Sandiford and Dylan McConnell
     url: {}
