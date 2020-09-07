@@ -156,4 +156,4 @@ knitr::include_graphics('images/p001_01.png')
 4. LNG processing demand is measured as the total Curtis Island demand, less LNG exports assuming an energy content of LNG of 54.8 GJ/tonne, and amounts to ~9% of LNG export volume.
 5. assuming a gas heat efficiency of 75% and a heat pump  COP~3
 5. _Peak day adequacy_ issues are forecast in AEMO's March 2020 [Victorian Gas Planning Report Update](https://aemo.com.au/en/energy-systems/gas/gas-forecasting-and-planning/victorian-gas-planning-report)
-6. the exercise of market power through _shadowing the gas price_  impacted the wholesale electricity price in 2017 by as much as ~$14 billion.
+6. the exercise of market power through _shadowing the gas price_  impacted the wholesale electricity price in 2017 by as much as ~$14 billion [see preprint](https://msandifo.github.io/pdfs/gas_competition.pdf)
