@@ -612,7 +612,7 @@ https://doi.org/10.1046/j.1365-2117.2003.00196.x,
 `r ( gs("Regional geochemistry and continental heat flow"))
 ` 
 1.	Fraser, G., Worley, B., __Sandiford, M.__, 2000, High precision geothermobarometry across the High Himalayan metamorphic sequence, Langtang Valley, Nepal. Journal of metamorphic Geology, 18, 665 - 682
-`r ( gs("Langtang Valley"))
+`r ( gs("Langtang"))
 ` 
 1.	McLaren, S., __Sandiford, M.__, Hand, M., 2000, High radiogenic heat producing granites and metamorphism - an example from the western Mount Isa Inlier, Australia, reply to comment, Geology, 28, 672
 `r ( gs( "western Mount Isa Inlier"))
