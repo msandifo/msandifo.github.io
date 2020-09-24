@@ -68,7 +68,6 @@ gs.id<-"qdYHZTgAAAAJ"
  
 - Schofield, R., Utembe, S., Gionfriddo, C., Tate, M., Krabbenhoft, D., Adeloju, M., Dundek, M., Keywood, M., Dargaville, R., __Sandiford, M.__, Atmospheric mercury in the La Trobe Valley, Australia: case study June 2013, submitted to Elementa, 6th November, 2019.
 
-- McConnell, D., __Sandiford, M.__, 2020, Impacts of LNG export and market power on Australian electricity market dynamics, 2016-2019, Current Sustainable/Renewable Energy Reports, submitted, September 2020
 
 - Guangzheng Jiang, Qingtian L, Yuntao Tian, __Sandiford, M.__, Yizuo Shi, Changchun Zou, Feng Ma, Chenglong Deng, Lijuan He, Shengbiao Hu, Ground surface temperature history since LGM in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling Program (ICDP) SK-2e, submitted Geophysical Research Letters, June 2020
 
@@ -79,6 +78,7 @@ gs.id<-"qdYHZTgAAAAJ"
 
 
 
+1. McConnell, D., __Sandiford, M.__, 2020, Impacts of LNG export and market power on Australian electricity market dynamics, 2016-2019, Current Sustainable/Renewable Energy Reports, accepted, September 2020
 
 1. Sandiford, D., Moresi, L.N., __Sandiford, M.__, Farrington, R., Ting, Y., 2020, 
 The fingerprints of flexure in slab seismicity, 
@@ -228,7 +228,7 @@ Gondwana Research,
 http://dx.doi.org/10.1016/j.gr.2013.06.019,
 `r ( gs("Central Lhasa terrane"))`
 
-1.	Rawling, T.J., __Sandiford, M.__, Beardsmore, G.R., Quenette, S., Goyen, S.H., Harrison, B., 
+1.	Rawling, T.J., __Sandiford, M.__, Beardsmore, G.R., Quenette, S., Goyen, S.H., Harrison, B., 2013,
 Thermal insulation and geothermal targeting, with specific reference to coal-bearing basins, 
 Australian Journal of Earth Sciences, 60, 817-830, 
 http://dx.doi.org/10.1080/08120099.2013.864999, 
