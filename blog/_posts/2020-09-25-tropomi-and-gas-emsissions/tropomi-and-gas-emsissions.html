@@ -19,366 +19,39 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>mike sandiford: Citation metrics</title>
+  <title>Tropomi and fugitive methane emissions - recent insights</title>
+
+  <meta property="description" itemprop="description" content="The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data."/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-09-25"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-09-25"/>
+  <meta name="article:author" content="Mike Sandiford"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="mike sandiford: Citation metrics"/>
+  <meta property="og:title" content="Tropomi and fugitive methane emissions - recent insights"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="mike sandiford"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="mike sandiford: Citation metrics"/>
+  <meta property="twitter:title" content="Tropomi and fugitive methane emissions - recent insights"/>
+  <meta property="twitter:description" content="The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Citation metrics"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Tropomi and fugitive methane emissions - recent insights"]},{"type":"character","attributes":{},"value":["The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Mike Sandiford"]}]}]},{"type":"character","attributes":{},"value":["09-25-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["tropomi-and-gas-emsissions_files/bowser-1.9.3/bowser.min.js","tropomi-and-gas-emsissions_files/distill-2.2.21/template.v2.js","tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-1-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-100-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-1a-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-2-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-20-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-3-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-3a-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-dom-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-dry-gas-1.png","tropomi-and-gas-emsissions_files/figure-html5/fig-tight-oil-1.png","tropomi-and-gas-emsissions_files/header-attrs-2.3/header-attrs.js","tropomi-and-gas-emsissions_files/jquery-1.11.3/jquery.min.js","tropomi-and-gas-emsissions_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #455a64;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative;}
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  </style>
-
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -1264,59 +937,14 @@
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs/header-attrs.js"></script>
-  <script src="site_libs/jquery/jquery.min.js"></script>
-  <script src="site_libs/bowser/bowser.min.js"></script>
-  <script src="site_libs/webcomponents/webcomponents.js"></script>
-  <script src="site_libs/distill/template.v2.js"></script>
+  <script src="tropomi-and-gas-emsissions_files/header-attrs-2.3/header-attrs.js"></script>
+  <script src="tropomi-and-gas-emsissions_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="tropomi-and-gas-emsissions_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="tropomi-and-gas-emsissions_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="tropomi-and-gas-emsissions_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=qdYHZTgAAAAJ"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'qdYHZTgAAAAJ');
-  </script>
-  <style type="text/css">
-  .distill-site-nav {
-    color: rgba(5, 15, 15, 1);
-    background-color: rgba(50, 55, 55, .5 );
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: black;
-  }
-
-  .distill-site-header {
-  }
-
-  .distill-site-footer {
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  body{
-    font-size: 14pt;
-  }
-  /* Headers */
-  h1,h2,h3,h4,h5,h6{
-    font-size: 20pt;
-  }
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
 
 </head>
 
@@ -1325,80 +953,105 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Citation metrics","authors":[]}
+{"title":"Tropomi and fugitive methane emissions - recent insights","description":"The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data.","authors":[{"author":"Mike Sandiford","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-09-25T00:00:00.000+10:00","citationText":"Sandiford, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">mike sandiford</a>
-</div>
-<div class="nav-right">
-<a href="index.html">home</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-apropos
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="about.html">skeleton</a>
-<a href="context.html">context</a>
-<a href="cv.full.html">cv</a>
-</div>
-</div>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-academic
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="pubs.html">peer review</a>
-<a href="tech.html">technical</a>
-<a href="https://orcid.org/0000-0002-9757-745X" class="nav-image">
-<img src="mini-icon.png"/>
-</a>
-<a href="https://scholar.google.com/citations?user=qdYHZTgAAAAJ&amp;hl=en" class="nav-image">
-<img src="icons8-google-scholar-100.png"/>
-</a>
-<a href="https://www.scopus.com/authid/detail.uri?authorId=7005120626" class="nav-image">
-<img src="www.scopus.com.ico"/>
-</a>
-</div>
-</div>
-<a href="pop.html">engagement</a>
-<a href="./blog/_site/index.html">musings</a>
-<a href="https://github.com/msandifo/reprosci">
-<i class="fab fa-github" aria-hidden="true"></i>
-</a>
-<a href="https://twitter.com/reprosci">
-<i class="fab fa-twitter" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Citation metrics</h1>
-
+<h1>Tropomi and fugitive methane emissions - recent insights</h1>
+<p><p>The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data.</p></p>
 </div>
 
+<div class="d-byline">
+  Mike Sandiford  
+  
+<br/>09-25-2020
+</div>
 
 <div class="d-article">
-<h2 id="citation-metrics">Citation metrics</h2>
-<p>Google Scholar</p>
-<p>Total citations - 10060</p>
-<p>Hirsch-index - 62</p>
-<p>i10-index - 154</p>
+<h1 id="tropomi">Tropomi</h1>
+<h2 id="us-gas-production">US gas production</h2>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="cites_files/figure-html5/fig-margin1-1.png" width="624" style="display: block; margin: auto 0 auto auto;" /></p>
+<div class="figure"><span id="fig:fig-dom"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-dom-1.png" alt="US gas production, sourced from EIA" width="624" />
+<p class="caption">
+Figure 1: US gas production, sourced from EIA
+</p>
+</div>
+</div>
+<h2 id="the-bakken">The Bakken</h2>
+<p>The <a href="https://en.wikipedia.org/wiki/Bakken_Formation">Bakken in the Williston Basin</a> is an important U.S. unconventional (shale) hydrocarbon play. Gas flaring lights the fields at night they are clearly <a href="https://geology.com/articles/oil-fields-from-space/#bakken-formation">visible by satellite</a>.</p>
+<p><img src="https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg" alt="Bakken by satellite" /> In the Bakken, oil is the commodity that drives investment, with gas a by-product, hence so much flaring. It is one big tight oil producer, but a bit player in gas, partly because of remoteness.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig-tight-oil"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-tight-oil-1.png" alt="US tight oil production, EIA" width="624" />
+<p class="caption">
+Figure 2: US tight oil production, EIA
+</p>
+</div>
+</div>
+<p>The Bakken produced about 18.75% of U.S. tight oil across 2018 and 2010, whereas it produced only 2.7% of U.S dry gas production. The Bakken dominates hydocarbon production in North Dakota, which is <a href="https://www.eia.gov/state/rankings/#/series/46">third largest state oil producer</a></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig-dry-gas"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-dry-gas-1.png" alt="US dry gas production, EIA" width="624" />
+<p class="caption">
+Figure 3: US dry gas production, EIA
+</p>
+</div>
+</div>
+<p>Most Bakken production is in North Dakota, for which the North Dakota Industrial Commission <a href="https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls">publishes gas production data</a> as well as sales and flaring. Typically about 4-5% of production remains unnaccounted for in terms of sales and flaring.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig-bakken-1"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-1-1.png" alt="Bakken gas production, NDGG. EIA bakken production in black line" width="624" />
+<p class="caption">
+Figure 4: Bakken gas production, NDGG. EIA bakken production in black line
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig-bakken-1a"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-1a-1.png" alt="Bakken gas production,   EIA" width="624" />
+<p class="caption">
+Figure 5: Bakken gas production, EIA
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig-bakken-2"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-2-1.png" alt="Bakken" width="624" />
+<p class="caption">
+Figure 6: Bakken
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig-bakken-3"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-3-1.png" alt="Bakken" width="624" />
+<p class="caption">
+Figure 7: Bakken
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig-bakken-100"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-100-1.png" alt="Bakken" width="624" />
+<p class="caption">
+Figure 8: Bakken
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig-bakken-20"></span>
+<img src="tropomi-and-gas-emsissions_files/figure-html5/fig-bakken-20-1.png" alt="Bakken" width="624" />
+<p class="caption">
+Figure 9: Bakken
+</p>
+</div>
 </div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

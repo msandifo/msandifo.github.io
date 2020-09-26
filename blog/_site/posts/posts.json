@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/2020-09-25-tropomi-and-gas-emsissions/",
+    "title": "Tropomi and fugitive methane emissions - recent insights",
+    "description": "The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data.",
+    "author": [
+      {
+        "name": "Mike Sandiford",
+        "url": {}
+      }
+    ],
+    "date": "2020-09-25",
+    "categories": [],
+    "preview": "posts/2020-09-25-tropomi-and-gas-emsissions/tropomi-and-gas-emsissions_files/figure-html5/fig-dom-1.png",
+    "last_modified": "2020-09-26T20:56:28+10:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2020-09-05-gas-fired-recovery/",
     "title": "On the gas fired recovery",
     "description": "If gas is so crucial for industry why waste it  heating houses?",
@@ -12,8 +28,8 @@
     "date": "2020-09-05",
     "categories": [],
     "preview": "posts/2020-09-05-gas-fired-recovery/images/domestic.png",
-    "last_modified": "2020-09-07T12:24:56+10:00",
-    "input_file": "gas-fired-recovery.utf8.md"
+    "last_modified": "2020-09-25T09:43:57+10:00",
+    "input_file": {}
   },
   {
     "path": "posts/2020-02-13-eastern-australian-gas-market/",

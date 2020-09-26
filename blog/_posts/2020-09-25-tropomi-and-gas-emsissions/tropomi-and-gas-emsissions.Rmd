@@ -1,0 +1,239 @@
+---
+title: "Tropomi and fugitive methane emissions - recent insights"
+description: |
+    The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data.
+author:
+  - name: Mike Sandiford
+date: 09-25-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE, echo=FALSE, message=F, cache=F}
+knitr::opts_chunk$set(echo = FALSE,  message=FALSE)
+
+
+blog.dir<- getwd()
+lng.dir<-"/Volumes/data/Dropbox/msandifo/documents/programming/r/2020/LNG/"
+setwd(lng.dir)
+library(reproscir)
+library(tidyverse)
+library(ggplot2)
+library(hrbrthemes)
+library(magrittr)
+library(readxl)
+library(stringr)
+library(lubridate)
+library(scales)
+
+#extrafont::loadfonts()
+update=F
+source('r/funcs.R')
+source('r/units.R')
+source('r/data.R')
+source('r/bakken_data.R')
+
+plots=TRUE
+
+setwd(blog.dir)
+```
+
+# Tropomi
+
+
+
+## US gas production
+
+```{r fig-dom, echo=FALSE, fig.cap="US gas production, sourced from EIA",  cache=FALSE}
+ plot_data("eia.us.ng.withdrawals" ) + 
+  scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*12, name="million tonnes per year") )+labs(y="billion cubic feet per month")
+   
+```
+
+## The Bakken
+
+
+The [Bakken in the Williston Basin](https://en.wikipedia.org/wiki/Bakken_Formation) is an important  U.S. unconventional (shale) hydrocarbon play. Gas flaring lights the fields at night they are clearly [visible by satellite](https://geology.com/articles/oil-fields-from-space/\#bakken-formation).
+
+![Bakken by satellite](https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg)
+In the Bakken, oil is the commodity that drives investment, with gas a by-product, hence so much flaring. It is one big tight oil producer, but a bit player in gas, partly because of remoteness.
+
+```{r fig-tight-oil, echo=FALSE, fig.cap="US tight oil production, EIA",  cache=FALSE}
+reproscir::plot_data("eia.tightoil")
+```
+
+The Bakken produced about `r paste0(mean(bakken.oil$p[bakken.oil$year %in% 2018:2019]), "%")` of U.S. tight oil across 2018 and 2010, whereas it produced only `r paste0(mean(bakken.gas$p[bakken.gas$year %in% 2018:2019]), "%")` of U.S dry gas production. The Bakken dominates hydocarbon production in North Dakota, which is [third largest state oil producer](https://www.eia.gov/state/rankings/#/series/46)
+
+```{r fig-dry-gas, echo=FALSE, fig.cap="US dry gas production, EIA",  cache=FALSE}
+reproscir::plot_data("eia.drygas")  +
+  scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*365, name="million tonnes per year") )+labs(title="EIA shale gas production")
+```
+
+Most Bakken production is in North Dakota, for which the `r reproscir::read_data("north.dakota.gas", data = F, ver=F)$agency` [publishes gas production data](https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls) as well as sales and flaring. Typically about 4-5% of production remains unnaccounted for in terms of sales and flaring.
+ 
+ 
+```{r fig-bakken-1, echo=FALSE, fig.cap="Bakken gas production, NDGG. EIA bakken production in black line",  cache=FALSE}
+reproscir::read_data("eia.drygas")$data %>% subset(date > lubridate::ymd("2005/01/01"))%>% 
+  subset(field=="Bakken") %>%
+  ggplot(data=., aes(x=date,y=value))+
+  geom_area(data= bdg %>% subset(date > lubridate::ymd("2005/01/01") ),
+            aes(x=date,y=value/1e6/(365/12), fill=type), position = "stack",  
+            #converts Mcf per month to BCF per day
+            colour = "white",
+            size = .15)+
+  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+  geom_line()+
+  scale_y_continuous(sec.axis = sec_axis(~.*1e3* mmcf2mt * 365, name="million tonnes per year") )+
+  theme(
+    legend.position = c(.12, .8),
+    legend.direction = "vertical",
+    legend.background = element_rect(fill = mmt::add.alpha("white", .6), size =
+                                       0) ,
+    legend.title =  element_blank()
+  ) +
+  labs(
+    title = paste(ndg.i$legend,": Bakken"),
+    caption = paste0(ndg.i$link, "\n* assumed vented"),
+    #    subtitle="annualised production",
+    y = "billion cubic feet per day", #reproscir::read_data("eia.drygas")$type$units,
+    x = NULL
+  ) +
+  coord_cartesian(expand = c(0, 0))
+```
+```{r fig-bakken-1a, echo=FALSE, fig.cap="Bakken gas production,   EIA",  cache=FALSE}
+  
+  dg.eia<-read_data("eia.north.dakota.gas")$data%>% arrange(field); 
+    ggplot(dg.eia %>% subset(field %in% c("marketed.production","vented.flared") & date>lubridate::ymd("2006-01-01")),aes((date),value/1000/(365/12),fill=field)) +
+    geom_area(position=position_stack(reverse = TRUE),colour="grey80", size=.13)+
+    scale_fill_manual(values= c("black","grey80","red3","orange2"))+
+  labs(x=NULL,y="billion cubic feet per day")+
+    theme(legend.position=c(.15,.85))+scale_x_date(expand=c(.0,.0))+
+    geom_line(data=dg.eia%>%subset(field%in%c("gross.withdrawals")&date>lubridate::ymd("2006-01-01")),fill="white",show.legend=F)+
+     geom_line(data=dg.eia%>%subset(field%in%c("shale.gas")&date>lubridate::ymd("2006-01-01")),fill="white",col="red3",show.legend = F)+
+    scale_y_continuous(expand=c(0.0,0),sec.axis = sec_axis(~.*1e3* mmcf2mt * 365, name="million tonnes per year") )+
+
+  labs(caption=get_agency("eia.north.dakota.gas"), title=get_title("eia.north.dakota.gas"))
+
+```
+  
+```{r fig-bakken-2, echo=FALSE, fig.cap="Bakken",  cache=FALSE}
+ggplot(bdg %>% subset(date > lubridate::ymd("2005/01/01")),
+       aes(date, value , fill = type)) +
+  geom_area(position = position_fill(reverse = T),
+            colour = "white",
+            size = .15) +
+  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+  scale_y_continuous(label =  scales::percent_format(accuracy = 1)) +
+
+  theme(
+    legend.position = c(.86, .9),
+    legend.direction = "vertical",
+    legend.background = element_rect(fill = mmt::add.alpha("white", .7), size =
+                                       0) ,
+    legend.title =  element_blank()
+  ) +
+  labs(
+    title = paste(ndg.i$legend,": Bakken"),
+    caption = paste0(ndg.i$link), #, "\n* assumed vented"),
+ #   subtitle = "percentage production",
+    y = NULL,
+    x = NULL
+  ) +
+  coord_cartesian(ylim = c(0, .5),  expand = c(0, 0)) +
+  geom_hline(
+    yintercept = 1 - c(.8, .7, .9, .6),
+    colour = "white",
+    size = .2,
+    linetype = 2
+  )
+```
+
+
+```{r fig-bakken-3, echo=FALSE, fig.cap="Bakken",  cache=FALSE}
+fac<-     (bcf2mt*365)
+ggplot(
+  ndg.a %>% subset(date > lubridate::ymd("2009/01/01") &
+                     type != "sold"),
+  aes(date, value/1e6/(365/12) , fill = type)
+) +
+  geom_area(position = position_stack(reverse = T),
+            colour = "white",
+            size = .2) +
+  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+  #scale_y_continuous(label =  scales::percent_format()) +
+    scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt * 365, name="million tonnes per year") )+
+ theme(
+    legend.position = c(.15, .85),
+    legend.direction = "vertical",
+    legend.background = element_rect(fill = mmt::add.alpha("white", .6), size =
+                                       0) ,
+    legend.title =  element_blank()
+  ) +
+  labs(
+    title = ndg.i$legend,
+    caption = paste0(ndg.i$link, "\n* assumed vented"),
+    #subtitle = "annualised production",
+     y = "billion cubic feet per day",
+    x = NULL
+  ) +
+  coord_cartesian(expand = c(0, 0))+
+  annotate("line", x=ymd(c("2018-01-01", "2019-01-01")), y=c( 0.89, .89)/fac, col="white", size=1.2)+
+annotate("line", x=ymd(c("2018-01-01", "2019-01-01")), y=c( 0.89-.56, .89-.56)/fac, col="white", size=.5, linetype=2)+
+  annotate("line", x=ymd(c("2018-01-01", "2019-01-01")), y=c( 0.89+.56, .89+.56)/fac, col="white", size=.5, linetype=2)+
+annotate("text", x=ymd(c( "2019-02-01")), y=c(   .89)/fac, label="Schneising\net al., 2020", hjust=0, col="white", size=3)
+
+```
+
+
+```{r fig-bakken-100, echo=FALSE, fig.cap="Bakken",  cache=FALSE}
+
+ggplot( ndg.a.co2e %>% subset(date > lubridate::ymd("2009/01/01") &
+                     type %in% c(  "flared", "vented.100")),
+  aes(date, value  , fill = type)) +
+  geom_area(position = position_stack(reverse = T),
+            colour = "white",
+            size = .2) +
+  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+  #scale_y_continuous(label =  scales::percent_format()) +
+  theme(   legend.position = c(.2, .8),
+    legend.direction = "vertical",
+    legend.background = element_rect(fill = mmt::add.alpha("white", .6), size=0),
+    legend.title =  element_blank()
+  ) +
+  labs(
+    title =  "North Dakota flaring/venting @100 year CH4 GWP",
+    caption = paste0(ndg.i$link, "\n* assumed vented"),
+    #subtitle = "annualised production",
+    y = "CO2-e - million tonnes per year",
+    x = NULL
+  ) +
+  coord_cartesian(expand = c(0, 0))
+```
+
+
+```{r fig-bakken-20, echo=FALSE, fig.cap="Bakken",  cache=FALSE}
+
+
+ggplot( ndg.a.co2e %>% subset(date > lubridate::ymd("2009/01/01") &
+  type %in% c(  "flared", "vented.20")),
+  aes(date, value  , fill = type)) +
+  geom_area(position = position_stack(reverse = T),
+            colour = "white",
+            size = .2) +
+  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+  #scale_y_continuous(label =  scales::percent_format()) +
+  theme(   legend.position = c(.2, .8),
+           legend.direction = "vertical",
+           legend.background = element_rect(fill = mmt::add.alpha("white", .6), size=0),
+           legend.title =  element_blank()
+  ) +
+  labs(
+    title =  "North Dakota flaring/venting @20 year CH4 GWP",
+    caption = paste0(ndg.i$link, "\n* assumed vented"),
+    #subtitle = "annualised production",
+    y = "CO2-e - million tonnes per year",
+    x = NULL
+  ) +
+  coord_cartesian(expand = c(0, 0))
+```
