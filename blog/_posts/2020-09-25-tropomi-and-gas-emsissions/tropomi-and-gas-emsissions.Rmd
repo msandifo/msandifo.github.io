@@ -8,6 +8,7 @@ date: 09-25-2020
 output:
   distill::distill_article:
     self_contained: false
+bibliography: Bibliography.bib
 ---
 
 ```{r setup, include=FALSE, echo=FALSE, message=F, cache=F}
@@ -40,6 +41,19 @@ setwd(blog.dir)
 ```
 
 # Tropomi
+
+CH4 release from large oil and gas fields can now be monitored from space using the TROPOspheric Monitoring Instrument (TROPOMI) onboard the Sentinel-5 Precursor satellite.
+
+A recent study by Shneising et al.  @schneising2020 concluded 
+that 
+
+> the average emissions for the time period 2018/2019 from the five most productive basins in the United States, the Permian, Appalachia, Eagle Ford, Bakken, and Anadarko are estimated to be 3.16±1.13 Mtyr−1, 2.36 ± 0.88 Mt yr−1 , 1.52 ± 0.68 Mt yr−1 , 0.89 ± 0.56 Mt yr−1 , and 2.81 ± 0.77 Mt yr−1 , respectively. This corresponds to CH4 leakage rates relative to the associated production between 1.2% and 1.6% for the first four production regions, which are consistent with bottom-up estimates and likely fall below the break-even leakage rate for immediate climate benefit.
+ 
+Of interest here is that the emissions rates are refrenced with respect to the total energy production including both gas and oil. 
+
+In this study I look at the emissions rates in tems of total gas production, by comparing them with production data from publicly abvailable sources. So doing helps clarify the venting to flaring ration - a critical poorly defined parameter relevant to emission trajectories.   
+
+the primary focus here is on the Bakken and the Permian "basins".
 
 
 
