@@ -36,7 +36,13 @@ source('r/units.R')
 source('r/data.R')
 source('r/bakken_data.R')
 source('r/permian_flaring_rystad.R')
-
+do.plots=T
+setwd("~/Dropbox/msandifo/documents/programming/r/twitter/2018/007/")
+source('src/functions.R')
+#source('./src/downloads.R')
+if (file.exists('src/plots.R')) source('src/plots.R')
+ source("non_drake_scripts/full.R")
+do.plots=F
 plots=TRUE
 
 setwd(blog.dir)
@@ -65,16 +71,31 @@ The primary focus here is on the Bakken and the Permian "basins". I begin with s
 ## US shale gas  
 The advent of shale gas production in the mid 2000's has dramatically increased US gas production from ~2000 Bcf per month to a peak of ~3500 Bcf per month in late 2019, prior to the COVID-19 downturn (Fig. \@ref(fig:fig-dom)).
 
-```{r fig-dom, echo=FALSE, fig.cap="US gas production, sourced from EIA", height=10, cache=TRUE}
-cowplot::plot_grid(  plot_data("eia.us.ng.withdrawals" ) + 
-  scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*12, name="Mt CH4 per year") )+
-    labs(y="Bcf per month", title=NULL) + 
+```{r fig-dom, echo=FALSE, fig.cap="US gas production, sourced from EIA. b) Cape Grim Observatory CH~4~ concentration, ppb., source from CSIRO. c) desasonalised annualised growth rates, US gas procuction (blue), CGO CH~4~ (red)", fig.height=10, cache=TRUE}
+# cowplot::plot_grid( 
+#plot_data("eia.us.ng.withdrawals" ) + 
+#   scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*12, name="Mt CH4 per year") )+
+#     labs(y="Bcf per month", title=NULL) + 
+#     geom_vline(xintercept=c(2006,2017), size=.3, linetype=2),
+#  
+# reproscir::plot_data("cape.grim.ch4" ) + scale_y_continuous(sec.axis = sec_axis(~.*1, name=" ") ) + 
+#   labs(title=NULL)+
+#   geom_vline(xintercept=lubridate::ymd(c("2006-01-01","2017-01-01")), size=.3, linetype=2), 
+ cowplot::plot_grid( 
+   plot_data("eia.us.ng.withdrawals" ) + 
+    scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*12, name="Mt CH4 per year") )+
+     scale_x_continuous(limits=c(1985,2020.5))+
+     labs(y="Bcf per month", title=NULL) + 
+    geom_vline(xintercept=c(2006,2017), size=.3, linetype=2), 
+  p007$p1 +
+    labs(title=NULL, subtitle=NULL )+ 
+     scale_x_continuous(limits=c(1985,2020.5))+
+    scale_y_continuous(sec.axis   = sec_axis(~.*1, name=" ") )+
+    geom_vline(xintercept= c(2006,2017), size=.3, linetype=2),
+  p007$p3 +
+    labs(title=NULL, subtitle=NULL)+
     geom_vline(xintercept=c(2006,2017), size=.3, linetype=2),
- 
-reproscir::plot_data("cape.grim.ch4" ) + scale_y_continuous(sec.axis = sec_axis(~.*1, name=" ") ) + 
-  labs(title=NULL)+
-  geom_vline(xintercept=lubridate::ymd(c("2006-01-01","2017-01-01")), size=.3, linetype=2), 
-ncol=1, labels=c("a)","b)")
+ncol=1, labels=c("a)","b)", "c)")
 )
 ```
 
