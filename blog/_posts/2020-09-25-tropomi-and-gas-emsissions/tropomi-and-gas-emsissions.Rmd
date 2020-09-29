@@ -113,24 +113,64 @@ For example in the Bakken, in the Williston Basin, gas flaring is clearly  [visi
 
 ```{r fig-ry, echo=FALSE, fig.cap="Estimates of gas flaring in the Permian Basin by quarter (black) and Bakken by month (red). Permian flaring data sourced from [https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/). Bakken data from North Dakota Industrial Commision, https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls",  cache=TRUE}
 
-ggplot(pfr, aes(date, flare.mmcf))+
-  geom_line(size=.2)+
+ndg.q <- ndg.s %>% mutate(year=year(date), quarter=quarter(date)) %>% 
+  group_by (year, quarter) %>%
+  summarise(date=mean(date), flare.mmcf=mean(flare.mmcf))
+
+pfr <- pfr %>% mutate(quarter=quarter(date), year=year(date))
+pf.ndg <-full_join(pfr,ndg.q, by =c("year","quarter"))[, c(3,5,4,2,7)] %>%
+  rename(date=date.x, permian=flare.mmcf.x, bakken=flare.mmcf.y) %>%
+  pivot_longer(cols=c(permian, bakken))
+pf.ndg.y <- pf.ndg %>% group_by(year, name) %>%
+  summarise(date=mean(date), value=mean(value)) %>% subset(year<2020)
+
+ggplot(pf.ndg, aes(date, value, col=name))+
+  geom_line(size=.3)+
+    geom_label(data=pf.ndg.y %>% subset(year>2016  ), aes(label= paste0(round(value)," MMcf")),size=2.85, show.legend=F, hjust=-.05, vjust=-.1,  label.size=0 )+
+   geom_label(data=pf.ndg.y %>% subset(year>2016  ), aes(label= paste0(  round(value* mmcf2mt * 365,1)," Mt")), size=2.85, show.legend=F, hjust=-.05, vjust=.8,  label.size=0)+
+   geom_line(size=.3, alpha=.3)+
+   geom_point(data=pf.ndg.y %>% subset(year>2016  ), 
+                size=2.5, show.legend=F, colour="white")+
+
+   geom_point(data=pf.ndg.y %>% subset(year>2016  ), 
+                size=1.85, show.legend=F)+
+
 #  geom_point(shape=5, size=2.)+
-     geom_line(data=ndg.s, col="red3", linetype=1, size=.2)+
+  #   geom_line(data=ndg.q, col="red3", linetype=1, size=.2)+
 
 #  geom_point(size=.2)+
-   geom_hline(yintercept=ndg.s.y$flare.mmcf[ndg.s.y$year>2017], linetype=2, size=.15, col="red3")+
-  geom_hline(yintercept=pfr.y$flare.mmcf[pfr.y$year>2017], linetype=2, size=.15)+
+  #  geom_hline(yintercept=ndg.s.y$flare.mmcf[ndg.s.y$year>2017], linetype=2, size=.15, col="red3")+
+  # geom_hline(yintercept=pfr.y$flare.mmcf[pfr.y$year>2017], linetype=2, size=.15)+
     scale_y_continuous(sec.axis = sec_axis(~.* mmcf2mt * 365, name="million tonnes per year") )+
-  geom_text(data=pfr.y %>% subset(year>2017),
-            aes(x= ymd("2013-06-01"),label= paste("Permian :",round(flare.mmcf/10)*10, "MMcf/day,\n", round(flare.mmcf* mmcf2mt * 365, 1), "mill. tonnes,",year)),
-            vjust=-.3, size=2.)+
-    geom_text(data=ndg.s.y %>% subset(year>2017),
-            aes(x= ymd("2012-06-01"),label= paste("Bakken :", round(flare.mmcf/10)*10, "MMcf/day,\n", round( flare.mmcf* mmcf2mt * 365, 1), "mill. tonnes,",year)),
-            vjust=1.2, size=2., col="red2")+
+  theme(legend.position=c(.13,.8), legend.title = element_blank())+
+  # geom_text(data=pfr.y %>% subset(year>2017),
+  #           aes(x= ymd("2013-06-01"),label= paste("Permian :",round(flare.mmcf/10)*10, "MMcf/day,\n", round(flare.mmcf* mmcf2mt * 365, 1), "mill. tonnes,",year)),
+  #           vjust=-.3, size=2.6)+
+  #   geom_text(data=ndg.s.y %>% subset(year>2017),
+  #           aes(x= ymd("2012-06-01"),label= paste("Bakken :", round(flare.mmcf/10)*10, "MMcf/day,\n", round( flare.mmcf* mmcf2mt * 365, 1), "mill. tonnes,",year)),
+  #           vjust=1.2, size=2.6, col="red2")+
     labs(y="million cubic feet per day", x=NULL,
        title= "Permian/Bakken flaring and venting",
-       caption=NULL)#"source: https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/ ")
+       caption=NULL)
+
+# ggplot(pfr, aes(date, flare.mmcf))+
+#   geom_line(size=.2)+
+# #  geom_point(shape=5, size=2.)+
+#      geom_line(data=ndg.q, col="red3", linetype=1, size=.2)+
+# 
+# #  geom_point(size=.2)+
+#    geom_hline(yintercept=ndg.s.y$flare.mmcf[ndg.s.y$year>2017], linetype=2, size=.15, col="red3")+
+#   geom_hline(yintercept=pfr.y$flare.mmcf[pfr.y$year>2017], linetype=2, size=.15)+
+#     scale_y_continuous(sec.axis = sec_axis(~.* mmcf2mt * 365, name="million tonnes per year") )+
+#   geom_text(data=pfr.y %>% subset(year>2017),
+#             aes(x= ymd("2013-06-01"),label= paste("Permian :",round(flare.mmcf/10)*10, "MMcf/day,\n", round(flare.mmcf* mmcf2mt * 365, 1), "mill. tonnes,",year)),
+#             vjust=-.3, size=2.6)+
+#     geom_text(data=ndg.s.y %>% subset(year>2017),
+#             aes(x= ymd("2012-06-01"),label= paste("Bakken :", round(flare.mmcf/10)*10, "MMcf/day,\n", round( flare.mmcf* mmcf2mt * 365, 1), "mill. tonnes,",year)),
+#             vjust=1.2, size=2.6, col="red2")+
+#     labs(y="million cubic feet per day", x=NULL,
+#        title= "Permian/Bakken flaring and venting",
+#        caption=NULL)#"source: https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/ ")
 
 
 #knitr::include_graphics("https://www.rystadenergy.com/globalassets/news--events/press-releases/borr-drilling/permian-flaring-pr.jpg")
