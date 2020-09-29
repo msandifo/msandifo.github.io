@@ -55,7 +55,7 @@ that
  
 The @schneising2020 study is  important study as it compliments others which have attempted to address the emissions associated with shale gas production from "bottom up" methods  [@howarth; @howarth2014;@helmig2016;@howarth2019], with  widely varying estimates.
 
-It is important to note that  emission rates in the @schneising2020  study are referenced with respect to the total energy production including both gas and oil. As discussed further below, methane emissions are most egregious in basins where oil production drives investment, and in which a large proportion of the gas production id also flared. In these oil-rich basins, such as the Bakken and the Permian, the percentage of vented methane referenced against total gas production is necessarily very much higher than referenced against bulk energy as in @schneising2020. Moreover, both the gas flaring as direct venting contribute to the bulk "gas" emissions This is is significant, because it is way gas is used that is central to the purported "gas as a bridging fuel" debate [e.g., @howarth2014].
+It is important to note that  emission rates in the @schneising2020  study are referenced with respect to the total energy production including both gas and oil. As discussed further below, methane emissions are most egregious in basins where oil production drives investment, and in which a large proportion of the gas production id also flared. In oil-rich basins such as the Bakken and the Permian, the percentage of vented methane referenced against total gas production is necessarily very much higher than referenced against bulk energy as in @schneising2020. Moreover, it is the bulk  sum of the gas flaring as well as direct venting that is  relevant is central to the purported "gas as a bridging fuel" debate [e.g., @howarth2014].
 
 In this study I look at the emissions rates in several key US gas basins, in terms of total gas production, by comparing them with production data from publicly available sources. So doing helps clarify the venting to flaring ratio - a critical poorly defined parameter relevant to emission trajectories.   
 
@@ -81,19 +81,10 @@ ncol=1, labels=c("a)","b)")
 
 Now averaging around 500 million tones (CH~4~) (Fig. \@ref(fig:fig-dry-gas)) per year, shale gas production accounts for all the growth in production since 2006, and more .  
 
-```{r fig-dry-gas, echo=FALSE, fig.cap="US shale gas production by basin, EIA",  cache=TRUE}
-reproscir::plot_data("eia.drygas")  +
-  scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*365, name="million tonnes CH4 per year") )+ geom_vline(xintercept=lubridate::ymd(c("2006-01-01","2017-01-01")), size=.3, linetype=2)+
-  labs(title=NULL)
-```
 
 _to add_ - comments about correlation in US gas and CH~4~ growth rates
 
-```{r tab-ndg, echo=FALSE}
-#kableExtra::kable(ndg.y[c(2,3,1,4),], digits=2)
-kableExtra::kable(ndg.yc  )
 
-```
 A feature in many of the shale gas producing regions is the large extent of gas flaring.
 In the Permian Basin, [Rystad](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/) estimates an average of  over `r round(pfr.y$flare.mmcf[pfr.y$year==2019]/10)*10` Mmcf per day flaring across 2019  (Fig. \@ref(fig:fig-ry)). 
 For example in the Bakken, in the Williston Basin, gas flaring is clearly  [visible by satellite](https://en.wikipedia.org/wiki/Bakken_Formation). 
@@ -138,17 +129,12 @@ ggplot(pfr, aes(date, flare.mmcf))+
 
 Like many of the U.S. shale gas plays, oil is the principal commodity driving investment in the Bakken. In 2019, Bakken production accounted to ~ `r paste0(mean(bakken.oil$p[bakken.oil$year %in%  2019]) %>% round(1), "%")` of all U.S. tight oil, whereas it accounted for only `r paste0(mean(bakken.gas$p[bakken.gas$year %in%  2019])%>% round(1), "%")` of U.S shale gas production (cf. Figs \@ref(fig:fig-dry-gas) & \@ref(fig:fig-tight-oil)). 
 
-```{r fig-tight-oil, echo=FALSE, fig.cap="US tight oil production by formation, EIA.  The Permian includes the Wolfcamp, Spraberry, and Bone Spring Formations",  cache=TRUE}
-reproscir::plot_data("eia.tightoil")+
-  scale_y_continuous(sec.axis = sec_axis(~.*0.1364*365, name="million tonnes oil per year") )+
-  labs(title="EIA tight oil production by formation")
- 
-```
 
 
 The Bakken dominates hydocarbon production in North Dakota, which is [third largest state oil producer](https://www.eia.gov/state/rankings/#/series/46).
 
 With gas essentially a by-product,  a considerable flaring and venting at the well head.
+
 
 
 Monthly production, sales and flaring in [North Dakota](https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls) is reported by `r reproscir::read_data("north.dakota.gas", data = F, ver=F)$agency`. Typically about 4-5% of production remains unnaccounted for in terms of sales and flaring.
@@ -182,21 +168,8 @@ reproscir::read_data("eia.drygas")$data %>% subset(date > lubridate::ymd("2005/0
   ) +
   coord_cartesian(expand = c(0, 0))
 ```
-```{r fig-bakken-1a, echo=FALSE, fig.cap="Bakken gas production,   EIA",  cache=FALSE}
-  
-  dg.eia<-read_data("eia.north.dakota.gas")$data%>% arrange(field); 
-    ggplot(dg.eia %>% subset(field %in% c("marketed.production","vented.flared") & date>lubridate::ymd("2006-01-01")),aes((date),value/1000/(365/12),fill=field)) +
-    geom_area(position=position_stack(reverse = TRUE),colour="grey80", size=.13)+
-    scale_fill_manual(values= c("black","grey80","red3","orange2"))+
-  labs(x=NULL,y="billion cubic feet per day")+
-    theme(legend.position=c(.15,.85))+scale_x_date(expand=c(.0,.0))+
-    geom_line(data=dg.eia%>%subset(field%in%c("gross.withdrawals")&date>lubridate::ymd("2006-01-01")),fill="white",show.legend=F)+
-     geom_line(data=dg.eia%>%subset(field%in%c("shale.gas")&date>lubridate::ymd("2006-01-01")),fill="white",col="red3",show.legend = F)+
-    scale_y_continuous(expand=c(0.0,0),sec.axis = sec_axis(~.*1e3* mmcf2mt * 365, name="million tonnes per year") )+
 
-  labs(caption=get_agency("eia.north.dakota.gas"), title=get_title("eia.north.dakota.gas"))
 
-```
   
 ```{r fig-bakken-2, echo=FALSE, fig.cap="Bakken",  cache=FALSE}
 ggplot(bdg %>% subset(date > lubridate::ymd("2005/01/01")),
@@ -229,7 +202,13 @@ ggplot(bdg %>% subset(date > lubridate::ymd("2005/01/01")),
     linetype = 2
   )
 ```
+The table below shows the values of production, sales, venting and unaccounted production in million tonnes per year, as well as the proportion of flared and unaccounted production as a percentage of total production. 
 
+```{r tab-ndg, echo=FALSE}
+#kableExtra::kable(ndg.y[c(2,3,1,4),], digits=2)
+kableExtra::kable(ndg.yc  )
+
+```
 
 ```{r fig-bakken-3, echo=FALSE, fig.cap="Bakken",  cache=TRUE}
 fac<-     (bcf2mt*365)
@@ -318,4 +297,42 @@ ggplot( ndg.a.co2e %>% subset(date > lubridate::ymd("2009/01/01") &
     x = NULL
   ) +
   coord_cartesian(expand = c(0, 0))
+```
+
+
+# Appendices
+
+ Several other data sets are available. 
+ 
+ ## EIA
+ 
+ 
+
+```{r fig-dry-gas, echo=FALSE, fig.cap="US shale gas production by basin, EIA",  cache=TRUE}
+reproscir::plot_data("eia.drygas")  +
+  scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*365, name="million tonnes CH4 per year") )+ geom_vline(xintercept=lubridate::ymd(c("2006-01-01","2017-01-01")), size=.3, linetype=2)+
+  labs(title=NULL)
+```
+
+```{r fig-tight-oil, echo=FALSE, fig.cap="US tight oil production by formation, EIA.  The Permian includes the Wolfcamp, Spraberry, and Bone Spring Formations",  cache=TRUE}
+reproscir::plot_data("eia.tightoil")+
+  scale_y_continuous(sec.axis = sec_axis(~.*0.1364*365, name="million tonnes oil per year") )+
+  labs(title="EIA tight oil production by formation")
+ 
+```
+
+```{r fig-bakken-1a, echo=FALSE, fig.cap="Bakken gas production,   EIA",  cache=FALSE}
+  
+  dg.eia<-read_data("eia.north.dakota.gas")$data%>% arrange(field); 
+    ggplot(dg.eia %>% subset(field %in% c("marketed.production","vented.flared") & date>lubridate::ymd("2006-01-01")),aes((date),value/1000/(365/12),fill=field)) +
+    geom_area(position=position_stack(reverse = TRUE),colour="grey80", size=.13)+
+    scale_fill_manual(values= c("black","grey80","red3","orange2"))+
+  labs(x=NULL,y="billion cubic feet per day")+
+    theme(legend.position=c(.15,.85))+scale_x_date(expand=c(.0,.0))+
+    geom_line(data=dg.eia%>%subset(field%in%c("gross.withdrawals")&date>lubridate::ymd("2006-01-01")),fill="white",show.legend=F)+
+     geom_line(data=dg.eia%>%subset(field%in%c("shale.gas")&date>lubridate::ymd("2006-01-01")),fill="white",col="red3",show.legend = F)+
+    scale_y_continuous(expand=c(0.0,0),sec.axis = sec_axis(~.*1e3* mmcf2mt * 365, name="million tonnes per year") )+
+
+  labs(caption=get_agency("eia.north.dakota.gas"), title=get_title("eia.north.dakota.gas"))
+
 ```
