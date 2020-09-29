@@ -71,7 +71,7 @@ The primary focus here is on the Bakken and the Permian "basins". I begin with s
 ## US shale gas  
 The advent of shale gas production in the mid 2000's has dramatically increased US gas production from ~2000 Bcf per month to a peak of ~3500 Bcf per month in late 2019, prior to the COVID-19 downturn (Fig. \@ref(fig:fig-dom)).
 
-```{r fig-dom, echo=FALSE, fig.cap="US gas production, sourced from EIA. b) Cape Grim Observatory CH~4~ concentration, ppb., source from CSIRO. c) desasonalised annualised growth rates, US gas procuction (blue), CGO CH~4~ (red)", fig.height=10, cache=TRUE}
+```{r fig-dom, echo=FALSE, fig.cap="US gas production, sourced from EIA. b) Cape Grim Observatory CH~4~ concentration, ppb., source from CSIRO. c) desasonalised annualised growth rates, US gas procuction (red), CGO CH~4~ (blue).", fig.height=10, cache=TRUE}
 # cowplot::plot_grid( 
 #plot_data("eia.us.ng.withdrawals" ) + 
 #   scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*12, name="Mt CH4 per year") )+

@@ -6,14 +6,14 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-09-29T20:56:09+10:00"
+      "last_modified": "2020-09-30T07:14:46+10:00"
     },
     {
       "path": "index.html",
       "title": "what on earth ...",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-09-29T20:56:10+10:00"
+      "last_modified": "2020-09-30T07:14:47+10:00"
     }
   ],
   "collections": ["posts/posts.json"]
