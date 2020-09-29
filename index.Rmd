@@ -2,7 +2,6 @@
 title: "what on earth ..."
 description: |
   Some reflections on a life of science, some contributions and some anecdotes. 
-site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}

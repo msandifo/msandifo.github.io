@@ -35,11 +35,14 @@ source('r/funcs.R')
 source('r/units.R')
 source('r/data.R')
 source('r/bakken_data.R')
+source('r/permian_flaring_rystad.R')
 
 plots=TRUE
 
 setwd(blog.dir)
 ```
+
+![Bakken by satellite](https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg) 
 
 # Tropomi
 
@@ -76,7 +79,7 @@ ncol=1, labels=c("a)","b)")
 ```
 
 
-Now averaging around 50 million tones (CH_4_) per year, shale gas production accounts for all the growth in production since 2006, and more  (Fig. \@ref(fig:fig-dry-gas)).  
+Now averaging around 500 million tones (CH~4~) (Fig. \@ref(fig:fig-dry-gas)) per year, shale gas production accounts for all the growth in production since 2006, and more .  
 
 ```{r fig-dry-gas, echo=FALSE, fig.cap="US shale gas production by basin, EIA",  cache=TRUE}
 reproscir::plot_data("eia.drygas")  +
@@ -84,21 +87,47 @@ reproscir::plot_data("eia.drygas")  +
   labs(title=NULL)
 ```
 
-An intriguing feature of the The growth in US 
+_to add_ - comments about correlation in US gas and CH~4~ growth rates
 
+```{r tab-ndg, echo=FALSE}
+#kableExtra::kable(ndg.y[c(2,3,1,4),], digits=2)
+kableExtra::kable(ndg.yc  )
 
+```
 A feature in many of the shale gas producing regions is the large extent of gas flaring.
-In the Permian Basin, [Rystad](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/) estimates an average of  over 800 Mmcf per day flaring across the 12 month period Quarter 4 2018 to Quarter 3 2019  (Fig. \@ref(fig:fig-ry)). 
-For example in the [Bakken in the Williston Basin](https://en.wikipedia.org/wiki/Bakken_Formation) gas flaring lights are clearly  (Fig. \@ref(fig:fig-sat)).
+In the Permian Basin, [Rystad](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/) estimates an average of  over `r round(pfr.y$flare.mmcf[pfr.y$year==2019]/10)*10` Mmcf per day flaring across 2019  (Fig. \@ref(fig:fig-ry)). 
+For example in the Bakken, in the Williston Basin, gas flaring is clearly  [visible by satellite](https://en.wikipedia.org/wiki/Bakken_Formation). 
+<!-- (Fig. \@ref(fig:fig-sat)). -->
 
-```{r fig-ry, echo=FALSE, fig.cap="ERystad estimates of gas flaring in the Permian Basin, by quarter - sourced from [https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/)",  cache=TRUE}
-knitr::include_graphics("https://www.rystadenergy.com/globalassets/news--events/press-releases/borr-drilling/permian-flaring-pr.jpg")
+```{r fig-ry, echo=FALSE, fig.cap="Estimates of gas flaring in the Permian Basin by quarter (black) and Bakken by month (red). Permian flaring data sourced from [https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/). Bakken data from North Dakota Industrial Commision, https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls",  cache=TRUE}
+
+ggplot(pfr, aes(date, flare.mmcf))+
+  geom_line(size=.2)+
+#  geom_point(shape=5, size=2.)+
+     geom_line(data=ndg.s, col="red3", linetype=1, size=.2)+
+
+#  geom_point(size=.2)+
+   geom_hline(yintercept=ndg.s.y$flare.mmcf[ndg.s.y$year>2017], linetype=2, size=.15, col="red3")+
+  geom_hline(yintercept=pfr.y$flare.mmcf[pfr.y$year>2017], linetype=2, size=.15)+
+    scale_y_continuous(sec.axis = sec_axis(~.* mmcf2mt * 365, name="million tonnes per year") )+
+  geom_text(data=pfr.y %>% subset(year>2017),
+            aes(x= ymd("2013-06-01"),label= paste("Permian :",round(flare.mmcf/10)*10, "MMcf/day,\n", round(flare.mmcf* mmcf2mt * 365, 1), "mill. tonnes,",year)),
+            vjust=-.3, size=2.)+
+    geom_text(data=ndg.s.y %>% subset(year>2017),
+            aes(x= ymd("2012-06-01"),label= paste("Bakken :", round(flare.mmcf/10)*10, "MMcf/day,\n", round( flare.mmcf* mmcf2mt * 365, 1), "mill. tonnes,",year)),
+            vjust=1.2, size=2., col="red2")+
+    labs(y="million cubic feet per day", x=NULL,
+       title= "Permian/Bakken flaring and venting",
+       caption=NULL)#"source: https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/ ")
+
+
+#knitr::include_graphics("https://www.rystadenergy.com/globalassets/news--events/press-releases/borr-drilling/permian-flaring-pr.jpg")
 ```
 
 
-```{r fig-sat, echo=FALSE, fig.cap="Baken flareing  source from [https://geology.com/articles/oil-fields-from-space/#bakken-formation](https://geology.com/articles/oil-fields-from-space/#bakken-formation)",  cache=TRUE}
-knitr::include_graphics("https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg")
-```
+<!-- ```{r fig-sat, echo=FALSE, fig.cap="Baken flaring  source from [https://geology.com/articles/oil-fields-from-space/#bakken-formation](https://geology.com/articles/oil-fields-from-space/#bakken-formation)",  cache=TRUE} -->
+<!-- knitr::include_graphics("https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg") -->
+<!-- ``` -->
 
 <!-- ![Bakken by satellite](https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg) -->
 
@@ -107,7 +136,7 @@ knitr::include_graphics("https://geology.com/articles/oil-fields-from-space/bakk
 
 ## the Bakken
 
-Like many of the U.S. shale gas plays,  in the Bakken it is oil is the principal commodity driving investment in the Bakken. The Bakken produced about `r paste0(mean(bakken.oil$p[bakken.oil$year %in% 2018:2019]), "%")` of U.S. tight oil across 2018 and 2010, whereas it produced only `r paste0(mean(bakken.gas$p[bakken.gas$year %in% 2018:2019]), "%")` of U.S dry gas production (cf. Figs \@ref(fig:fig-dry-gas) & \@ref(fig:fig-tight-oil)). 
+Like many of the U.S. shale gas plays, oil is the principal commodity driving investment in the Bakken. In 2019, Bakken production accounted to ~ `r paste0(mean(bakken.oil$p[bakken.oil$year %in%  2019]) %>% round(1), "%")` of all U.S. tight oil, whereas it accounted for only `r paste0(mean(bakken.gas$p[bakken.gas$year %in%  2019])%>% round(1), "%")` of U.S shale gas production (cf. Figs \@ref(fig:fig-dry-gas) & \@ref(fig:fig-tight-oil)). 
 
 ```{r fig-tight-oil, echo=FALSE, fig.cap="US tight oil production by formation, EIA.  The Permian includes the Wolfcamp, Spraberry, and Bone Spring Formations",  cache=TRUE}
 reproscir::plot_data("eia.tightoil")+
@@ -223,17 +252,17 @@ ggplot(
     legend.title =  element_blank()
   ) +
   labs(
-    title = ndg.i$legend,
+    title = "North Dakota unsold production",
     caption = paste0(ndg.i$link, "\n* assumed vented"),
     #subtitle = "annualised production",
      y = "billion cubic feet per day",
     x = NULL
   ) +
   coord_cartesian(expand = c(0, 0))+
-  annotate("line", x=ymd(c("2018-01-01", "2019-01-01")), y=c( 0.89, .89)/fac, col="white", size=1.2)+
-annotate("line", x=ymd(c("2018-01-01", "2019-01-01")), y=c( 0.89-.56, .89-.56)/fac, col="white", size=.5, linetype=2)+
-  annotate("line", x=ymd(c("2018-01-01", "2019-01-01")), y=c( 0.89+.56, .89+.56)/fac, col="white", size=.5, linetype=2)+
-annotate("text", x=ymd(c( "2019-02-01")), y=c(   .89)/fac, label="Schneising\net al., 2020", hjust=0, col="white", size=3)
+  annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89, .89)/fac, col="white", size=1.2)+
+annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89-.56, .89-.56)/fac, col="white", size=.5, linetype=2)+
+  annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89+.56, .89+.56)/fac, col="white", size=.5, linetype=2)+
+annotate("text", x=ymd(c( "2017-11-01")), y=c(   .89)/fac, label="Schneising\net al., 2020", hjust=1, col="white", size=3)
 
 ```
 
