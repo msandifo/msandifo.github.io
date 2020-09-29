@@ -1,7 +1,7 @@
 ---
 title: "Tropomi and fugitive methane emissions - recent insights"
 description: |
-    The Tropomi sensor on Sentinel 5p offers new insights into fugitive meatane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the observations with gas production data.
+    The Tropomi sensor on Sentinel 5p offers new insights into fugitive methane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the new satellite constraints with gas production data.
 author:
   - name: Mike Sandiford
 date: 09-25-2020
@@ -55,9 +55,9 @@ that
  
 The @schneising2020 study is  important study as it compliments others which have attempted to address the emissions associated with shale gas production from "bottom up" methods  [@howarth; @howarth2014;@helmig2016;@howarth2019], with  widely varying estimates.
 
-It is important to note that  @schneising2020 emission rates are referenced with respect to the total energy production including both gas and oil. As discussed further below, the largest methane emissions are likley ot be in basins where oil production drives investment, which are known to  flare a legr proportion of the gas production. The oil-rich basins, which include the Bakken and the Permian, the percentage of vented methane referenced against total gas production is necessarily very much higher than referenced against bulk energy as in @schneising2020. This is is significant, because it is way gas is used that is central to the purported "gas as a transition fuel" debate [e.g., @howarth2014]
+It is important to note that  emission rates in the @schneising2020  study are referenced with respect to the total energy production including both gas and oil. As discussed further below, methane emissions are most egregious in basins where oil production drives investment, and in which a large proportion of the gas production id also flared. In these oil-rich basins, such as the Bakken and the Permian, the percentage of vented methane referenced against total gas production is necessarily very much higher than referenced against bulk energy as in @schneising2020. Moreover, both the gas flaring as direct venting contribute to the bulk "gas" emissions This is is significant, because it is way gas is used that is central to the purported "gas as a bridging fuel" debate [e.g., @howarth2014].
 
-In this study I look at the emissions rates in terms of total gas production, by comparing them with production data from publicly available sources. So doing helps clarify the venting to flaring ratio - a critical poorly defined parameter relevant to emission trajectories.   
+In this study I look at the emissions rates in several key US gas basins, in terms of total gas production, by comparing them with production data from publicly available sources. So doing helps clarify the venting to flaring ratio - a critical poorly defined parameter relevant to emission trajectories.   
 
 The primary focus here is on the Bakken and the Permian "basins". I begin with some scene setting relating to US shale gas production, and changes in atmospheric methane concentrations.
 
