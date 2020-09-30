@@ -14,5 +14,5 @@ magrittr
 readxl
 lubridate
 scales
-RColorBrewer
 ggtext
+RColorBrewer
