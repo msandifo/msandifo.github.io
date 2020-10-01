@@ -1,7 +1,7 @@
 ---
 title: "Tropomi and fugitive methane emissions - recent insights"
 description: |
-    The Tropomi sensor on Sentinel 5p offers new insights into fugitive methane emissions in US gas producing basins. Here I explore some of the implications of recent findings, integrating the new Tropomi constraints with gas production data and satellite-based flaring estimates.
+    The Tropomi sensor on Sentinel 5p offers new insights into fugitive methane emissions in US gas producing basins. But it is early days, and there is much to learn. Here I explore some of the implications of recent findings, integrating the new Tropomi constraints with gas production data including satellite-based flaring estimates.
 author:
   - name: Mike Sandiford
 date: 09-25-2020
