@@ -224,13 +224,19 @@ ggplot(bdg %>% subset(date > lubridate::ymd("2005/01/01")),
   )
 ```
 
-```{r fig-ndg-flare, echo=FALSE, fig.cap="Estimates of gas flaring in the  Bakken by quarter, data from North Dakota Industrial Commission, https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls. Diamonds are flaring estimates from VIIRS satellite analysis.",  cache=TRUE}
+```{r fig-ndg-flare, echo=FALSE, fig.cap="Estimates of gas flaring in the North Dakotan production by quarter, data from NDIC, https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls. Diamonds are flaring estimates from VIIRS satellite analysis, for the North Dakota flaring. Crossed square is the projected VIIRS flaring based on historic ratio for the priod 2013-2018.",  cache=TRUE}
 setwd("~/Dropbox/msandifo/documents/programming/r/2020/flare/")
+av.nd.viirs <- mean(tail(north.dakota.totals$mmcf/(pf.ndg.y %>% subset(name=="bakken" & year<2019 &year>2011))$value ,-1))  
+ex.nd.viirs <- data.frame(mmcf=(pf.ndg.y %>% subset(name=="bakken" & year==2019))$value*av.nd.viirs , date=ymd("2019-07-01"), name="bakken") 
 pf.p.001b + 
-   geom_line(data= north.dakota.totals, aes(date,mmcf), size=.2, linetype=2) +
- geom_point(data= north.dakota.totals, aes(date,mmcf), size=2, shape=5) 
+   geom_line(data= north.dakota.totals, aes(date,mmcf), size=.2, linetype=2) +  
+ geom_point(data= north.dakota.totals, aes(date,mmcf), size=2, shape=5) +
+ geom_point(data=ex.nd.viirs,aes(date,mmcf), size=3, shape=12)+
+  geom_text(data=ex.nd.viirs,
+            aes(date-60,mmcf, 
+                label=paste0("projected VIIRS\n", round(ex.nd.viirs$mmcf)," Mmcf, ", round(ex.nd.viirs$mmcf* mmcf2mt * 365,1)," Mt\n@ ",round(av.nd.viirs*100), "% NDIC")), size=2.3, hjust=1 )
 
-  # geom_point(data=  viirs.2012$total %>% mutate(year=ymd("2012-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2013$total %>% mutate(year=ymd("2013-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2014$total %>% mutate(year=ymd("2014-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2015$total %>% mutate(year=ymd("2015-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2016$total %>% mutate(year=ymd("2016-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2017$total %>% mutate(year=ymd("2017-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2018$total %>% mutate(year=ymd("2018-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)
+
 setwd(blog.dir)
 
 #knitr::include_graphics("https://www.rystadenergy.com/globalassets/news--events/press-releases/borr-drilling/permian-flaring-pr.jpg")
@@ -244,33 +250,23 @@ kableExtra::kable(ndg.yc  )
 
 ```
 
-```{r fig-bakken-3, echo=FALSE, fig.cap="Bakken",  cache=TRUE}
-fac<-     (bcf2mt*365)
-ggplot(
-  ndg.a %>% subset(date > lubridate::ymd("2009/01/01") &
-                     type != "sold"),
-  aes(date, value/1e6/(365/12) , fill = type)
-) +
-  geom_area(position = position_stack(reverse = T),
-            colour = "white",
-            size = .2) +
+```{r fig-bakken-3, echo=FALSE, fig.cap="Bakken unsold production. Dashed line shows  volumes adjusted  for historic VIIR estimates - see text for disussion.",  cache=TRUE}
+fac<-(bcf2mt*365)
+ndg.unsold <- ndg.a %>% subset(date > lubridate::ymd("2009/01/01") & type != "sold")
+ndg.unsold.total <- ndg.unsold%>% group_by(date) %>% summarise(value=sum(value)*1.27, type="all")
+ggplot(ndg.unsold, aes(date, value/1e6/(365/12) , fill = type)) +
+  geom_area(position = position_stack(reverse = T), colour = "white", size = .2) +
+  geom_line(data=ndg.unsold.total,  colour = "red4", size = .2, linetype=2) +
   scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
-  #scale_y_continuous(label =  scales::percent_format()) +
-    scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt * 365, name="million tonnes per year") )+
- theme(
-    legend.position = c(.15, .85),
+  scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt * 365, name="million tonnes per year") )+
+  theme(legend.position = c(.15, .85),
     legend.direction = "vertical",
-    legend.background = element_rect(fill = mmt::add.alpha("white", .6), size =
-                                       0) ,
-    legend.title =  element_blank()
-  ) +
-  labs(
-    title = "North Dakota unsold production",
+    legend.background = element_rect(fill = mmt::add.alpha("white", .6), size = 0) ,
+    legend.title =  element_blank()) +
+  labs(title = "North Dakota unsold production",
     caption = paste0(ndg.i$link, "\n* assumed vented"),
-    #subtitle = "annualised production",
      y = "billion cubic feet per day",
-    x = NULL
-  ) +
+    x = NULL) +
   coord_cartesian(expand = c(0, 0))+
   annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89, .89)/fac, col="white", size=1.2)+
 annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89-.56, .89-.56)/fac, col="white", size=.5, linetype=2)+
@@ -281,7 +277,9 @@ annotate("text", x=ymd(c( "2017-11-01")), y=c(   .89)/fac, label="Schneising\net
 
 ### VIIRS
 
-The estimates of flaring in the Bakken are significantly higher than the flaring volumes reported by the `r read_data("north.dakota.gas")$agency`.
+The estimates of flaring in the Bakken are consistently higher than the flaring volumes reported by the `r read_data("north.dakota.gas")$agency`, by a significant amount. For the period 2013 to 2018, the NVIIR estimates average `r round(mean(av.nd.viirs*100))`% 
+<!-- `r mean(tail(100*north.dakota.totals$mmcf/(pf.ndg.y %>% subset(name=="bakken" & year<2019 &year>2011))$value ,-1)) %>% round()`%  -->
+higher than the flared volumes reported by ..
 
 
 ## CO~2~-e emissions 
@@ -353,6 +351,8 @@ The Permian Basin covers parts of  Texas and New Mexico.
 ```
 
 
+
+
 ### Rystad flaring estimates
 
 [Rystad](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/) estimates an average of  over `r round(pfr.y$flare.mmcf[pfr.y$year==2019]/10)*10` Mmcf per day flaring across 2019  (Fig. \@ref(fig:fig-ry)). 
@@ -361,9 +361,19 @@ The Permian Basin covers parts of  Texas and New Mexico.
 
 ```{r fig-ry , echo=FALSE, fig.cap="Estimates of gas flaring in the Permian by quarter. data sourced from [https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/). Diamonds are flaring estimates from VIIRS satellite analysis.",  cache=TRUE}
 setwd("~/Dropbox/msandifo/documents/programming/r/2020/flare/")
+
+av.p.viirs <- mean(tail(permian.totals$mmcf/(pf.ndg.y %>% subset(name=="permian" & year<2019 &year>2011))$value ,-1))  
+ex.p.viirs <- data.frame(mmcf=(pf.ndg.y %>% subset(name=="permian" & year==2019))$value*av.p.viirs , date=ymd("2019-07-01"), name="permain") 
+
+
 pf.p.001p + 
     geom_line(data=  permian.totals, aes(date,mmcf), size=.2, linetype=2) +
-  geom_point(data= permian.totals, aes(date,mmcf), size=2, shape=5) 
+  geom_point(data= permian.totals, aes(date,mmcf), size=2, shape=5) +
+   geom_point(data=ex.p.viirs,aes(date,mmcf), size=3, shape=12)+
+  geom_text(data=ex.p.viirs,
+            aes(date-360,mmcf, 
+                label=paste0("projected VIIRS\n", round(ex.p.viirs$mmcf)," Mmcf, ", round(ex.p.viirs$mmcf* mmcf2mt * 365,1)," Mt\n@ ",round(av.p.viirs*100), "% Rystad")), size=2.3, hjust=1 )
+
 setwd(blog.dir)
 
 #knitr::include_graphics("https://www.rystadenergy.com/globalassets/news--events/press-releases/borr-drilling/permian-flaring-pr.jpg")
@@ -372,6 +382,8 @@ setwd(blog.dir)
 
 
 ### VIIRS flaring estimates
+
+The VIIRS  estimates of flaring in the Permian are similar to the flaring volumes reported by Rystad. For the period 2013 to 2018, the NVIIR estimates average `r round(mean(av.p.viirs*100))`%  Rystad.
 
 
 
