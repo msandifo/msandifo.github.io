@@ -79,7 +79,7 @@ that
 The @schneising2020 study compliments others which have attempted to address the emissions associated with shale gas production from a variety of methods  [@howarth; @howarth2014;@elvidge2015;@helmig2016;@howarth2019;@willyard2019], with varying success.
 
 @schneising2020 references methane emissions rates with respect to the total energy production including both gas and oil. As discussed further below, and as is clearly [visible by satellite](https://en.wikipedia.org/wiki/Bakken_Formation) in basins where oil production drives investment,  such as the Bakken and the Permian, a significant proportion of produced shale-gas methane is flared and or vented.
-In these oil-rich basins the percentage of vented methane referenced against total gas consumption (i.e., gas delivered to market) is necessarily very much higher than referenced against bulk energy production. Moreover, it is the bulk  sum of the gas flaring as well as direct venting that is  relevant to the "gas as a bridging fuel" debate [e.g., @howarth2014] and the cntral question of the "break even rate" in the quote from @schneising2020.
+In these oil-rich basins the percentage of vented methane referenced against total gas consumption (i.e., gas delivered to market) is necessarily very much higher than referenced against bulk energy production. Moreover, it is the bulk  sum of the gas flaring as well as direct venting that is  relevant to the "gas as a bridging fuel" debate [e.g., @howarth2014] and the central question of the "break even rate" in the quote from @schneising2020.
 
 Here, I look at the emissions rates in several key US gas basins, in terms of total gas production, by comparing them with production data from publicly available sources, including flaring. While data reporting on flaring in US basins is highly variable [e.g. @willyard2019], the new Tropomi data helps clarify the venting to flaring ratio - a critical poorly defined parameter relevant to emission trajectories for US shale gas production.   I begin with some scene setting relating to US shale gas production, and changes in atmospheric methane concentrations.
 
@@ -90,15 +90,6 @@ The advent of shale gas production in the mid 2000's has dramatically increased 
 ~2000 Bcf per month in 2006 to a peak of ~3500 Bcf per month by the end of 2019, prior to the COVID-19 downturn in early 2020 (Fig. \@ref(fig:fig-dom)).
 
 ```{r fig-dom, echo=FALSE, fig.cap="US gas production, sourced from EIA. b) Cape Grim Observatory CH~4~ concentration, ppb., source from CSIRO. c) desasonalised annualised growth rates, US gas procuction (red), CGO CH~4~ (blue).", fig.height=10, cache=TRUE}
-# cowplot::plot_grid( 
-#plot_data("eia.us.ng.withdrawals" ) + 
-#   scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*12, name="Mt CH4 per year") )+
-#     labs(y="Bcf per month", title=NULL) + 
-#     geom_vline(xintercept=c(2006,2017), size=.3, linetype=2),
-#  
-# reproscir::plot_data("cape.grim.ch4" ) + scale_y_continuous(sec.axis = sec_axis(~.*1, name=" ") ) + 
-#   labs(title=NULL)+
-#   geom_vline(xintercept=lubridate::ymd(c("2006-01-01","2017-01-01")), size=.3, linetype=2), 
  cowplot::plot_grid( 
    plot_data("eia.us.ng.withdrawals" ) + 
     scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt*12, name="Mt CH4 per year") )+
@@ -106,19 +97,26 @@ The advent of shale gas production in the mid 2000's has dramatically increased 
      labs(y="Bcf per month", title=NULL) + 
     geom_vline(xintercept=c(2006,2017), size=.3, linetype=2), 
   p007$p1 +
-    labs(title=NULL, subtitle=NULL )+ 
+    labs(title=NULL, subtitle=NULL, y= "CGO CH4 - ppb   " )+ 
      scale_x_continuous(limits=c(1985,2020.5))+
     scale_y_continuous(sec.axis   = sec_axis(~.*1, name=" ") )+
-    geom_vline(xintercept= c(2006,2017), size=.3, linetype=2),
+    geom_vline(xintercept= c(2006,2017), size=.3, linetype=2)+
+    theme(axis.text.y.right = element_text(color = "white"), legend.position="None"),
   p007$p3 +
-    labs(title=NULL, subtitle=NULL)+
-    geom_vline(xintercept=c(2006,2017), size=.3, linetype=2),
+    labs(title=NULL, subtitle=NULL, y="US gas growth rate     ")+
+   scale_y_continuous(labels = signif_scale, sec.axis = sec_axis(~./10,  
+           "CGO CH4 growth rate     ",  labels = signif_scale))+
+    geom_vline(xintercept=c(2006,2017), size=.3, linetype=2)+
+     theme(axis.text.y.right = element_text(color = "black"),
+          axis.title.y= element_text(  color = "black"),
+          axis.text.y= element_text(  color = "black"  ),                   
+          axis.title.y.right= element_text(angle = 90,   color = "black", size=12)),
 ncol=1, labels=c("a)","b)", "c)")
 )
 ```
 
 
-In 2019, annual shale gas production averaged around 500 million tones (CH~4~) (see appendix, Fig. A\@ref(fig:fig-dry-gas)) and accounted for all the growth in U.S. gas production since 2006.  Intriguingly, the onset odf US shale gas production correlates with an increase in the rate of increase of atmospheric methane emissions (Fig. \@ref(fig:fig-dom)b). Fig. \@ref(fig:fig-dom)c  shows that in detail the correspondence is quite remarkable, with the rate of increase in atmospheric methane tracking about 1/10^th^ the rate of increase in US gas production.
+In 2019, annual shale gas production averaged around 500 million tones (CH~4~) (see appendix, Fig. A\@ref(fig:fig-dry-gas)) and accounted for all the growth in U.S. gas production since 2006.  Intriguingly, the onset odf US shale gas production correlates with an increase in the rate of increase of atmospheric methane emissions (Fig. \@ref(fig:fig-dom)b). Fig. \@ref(fig:fig-dom)c  shows that in detail the correspondence is quite remarkable, with the rate of increase in atmospheric methane tracking about 1/10^th^ the rate of increase in US gas production. There relationships exposed by Fig. \@ref(fig:fig-dom)c raise a number of fascinating questions,  and  provide strong incentives for resolving just how much venting occurs in US shale gas basins,  and how the venting varies in time.   
 
 
 # Data sources
