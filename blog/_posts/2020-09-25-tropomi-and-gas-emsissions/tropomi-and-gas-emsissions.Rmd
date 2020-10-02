@@ -168,7 +168,8 @@ reproscir::read_data("eia.drygas")$data %>% subset(date > lubridate::ymd("2005/0
             #converts Mcf per month to BCF per day
             colour = "white",
             size = .15)+
-  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+ # scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+  scale_fill_manual(values=colorspace::sequential_hcl(8, "YlOrRd")[c(2,4,6) ])+
   geom_line()+
   scale_y_continuous(sec.axis = sec_axis(~.*1e3* mmcf2mt * 365, name="million tonnes per year") )+
   theme(
@@ -196,7 +197,9 @@ ggplot(bdg %>% subset(date > lubridate::ymd("2005/01/01")),
   geom_area(position = position_fill(reverse = T),
             colour = "white",
             size = .15) +
-  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+ # scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+  scale_fill_manual(values=colorspace::sequential_hcl(8, "YlOrRd")[c(2,4,6) ])+
+ 
   scale_y_continuous(label =  scales::percent_format(accuracy = 1)) +
 
   theme(
@@ -225,13 +228,15 @@ ggplot(bdg %>% subset(date > lubridate::ymd("2005/01/01")),
 ```{r fig-ndg-flare, echo=FALSE, fig.cap="Estimates of gas flaring in the North Dakotan production by quarter, data from NDIC, https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls. Diamonds are flaring estimates from VIIRS satellite analysis, for the North Dakota flaring. Crossed square is the projected VIIRS flaring based on historic ratio for the priod 2013-2018.",  cache=TRUE}
 setwd("~/Dropbox/msandifo/documents/programming/r/2020/flare/")
 av.nd.viirs <- mean(tail(north.dakota.totals$mmcf/(pf.ndg.y %>% subset(name=="bakken" & year<2019 &year>2011))$value ,-1))  
-ex.nd.viirs <- data.frame(mmcf=(pf.ndg.y %>% subset(name=="bakken" & year==2019))$value*av.nd.viirs , date=ymd("2019-07-01"), name="bakken") 
+ex.nd.viirs <- data.frame(mmcf=(pf.ndg.y %>% subset(name=="bakken" & year==2019))$value*av.nd.viirs , date=ymd("2019-07-01"), name="permian") 
 pf.p.001b + 
+   scale_colour_manual(values=rev(colorspace::sequential_hcl(8, "YlOrRd")[c(2,5)-1]))+
+ 
    geom_line(data= north.dakota.totals, aes(date,mmcf), size=.2, linetype=2) +  
  geom_point(data= north.dakota.totals, aes(date,mmcf), size=2, shape=5) +
  geom_point(data=ex.nd.viirs,aes(date,mmcf), size=3, shape=12)+
   geom_text(data=ex.nd.viirs,
-            aes(date-60,mmcf, 
+            aes(date-160,mmcf-20, 
                 label=paste0("projected VIIRS\n", round(ex.nd.viirs$mmcf)," Mmcf, ", round(ex.nd.viirs$mmcf* mmcf2mt * 365,1)," Mt\n@ ",round(av.nd.viirs*100), "% NDIC")), size=2.3, hjust=1 )
 
 
@@ -240,9 +245,9 @@ setwd(blog.dir)
 #knitr::include_graphics("https://www.rystadenergy.com/globalassets/news--events/press-releases/borr-drilling/permian-flaring-pr.jpg")
 ```
 
-The table below shows the values of production, sales, venting and unaccounted production in million tonnes per year, as well as the proportion of flared and unaccounted production as a percentage of total production. 
+Table \@ref(table:tab-ndg)  lists the values of production, sales, venting and unaccounted production in million tonnes per year, as well as the proportion of flared and unaccounted production as a percentage of total production. 
 
-```{r tab-ndg, echo=FALSE}
+```{r tab-ndg, echo=FALSE, tab.cap ="Yearly average North Dakota production data in million tonnes per year."}
 #kableExtra::kable(ndg.y[c(2,3,1,4),], digits=2)
 kableExtra::kable(ndg.yc  )
 
@@ -255,8 +260,9 @@ ndg.unsold.total <- ndg.unsold%>% group_by(date) %>% summarise(value=sum(value)*
 ggplot(ndg.unsold, aes(date, value/1e6/(365/12) , fill = type)) +
   geom_area(position = position_stack(reverse = T), colour = "white", size = .2) +
   geom_line(data=ndg.unsold.total,  colour = "red4", size = .2, linetype=2) +
-  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
-  scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt * 365, name="million tonnes per year") )+
+ # scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+   scale_fill_manual(values=colorspace::sequential_hcl(8, "YlOrRd")[c(2,4,6) ])+
+ scale_y_continuous(sec.axis = sec_axis(~.*bcf2mt * 365, name="million tonnes per year") )+
   theme(legend.position = c(.15, .85),
     legend.direction = "vertical",
     legend.background = element_rect(fill = mmt::add.alpha("white", .6), size = 0) ,
@@ -276,13 +282,37 @@ annotate("text", x=ymd(c( "2017-11-01")), y=c(   .89)/fac, label="Schneising\net
 ### VIIRS
 
 The estimates of flaring in the Bakken are consistently higher than the flaring volumes reported by the `r read_data("north.dakota.gas")$agency`, by a significant amount. For the period 2013 to 2018, the NVIIR estimates average `r round(mean(av.nd.viirs*100))`% 
-<!-- `r mean(tail(100*north.dakota.totals$mmcf/(pf.ndg.y %>% subset(name=="bakken" & year<2019 &year>2011))$value ,-1)) %>% round()`%  -->
-higher than the flared volumes reported by ..
+ 
 
+The distribution plots (Fig. \@ref(fig:fig-flare-cdf) ) show that the less 13.5% of sites account for 50%  of flaring volumes
 
+```{r fig-flare-cdf, echo=FALSE, fig.cap="Cumulative distribution of VIIRS production by sites for 2018.",  cache=TRUE}
+setwd("~/Dropbox/msandifo/documents/programming/r/2020/flare/")
+
+viirs.cum.df<- 
+  rbind(sub_VIIRS() %>% mutate( id = row_number(), index=id/max(id),bcm.sum=cumsum(bcm)/sum(bcm), name=paste0("bakken #", max(id))),
+        sub_VIIRS( lims=permian.lims) %>% mutate( id = row_number(), index=id/max(id),bcm.sum=cumsum(bcm)/sum(bcm), name=paste0("permian #", max(id))))
+prob.breaks <- c(.001, .01,.04,.1, .25, .5,.75,.875,.93,29/30,.99, .999)
+ggplot(viirs.cum.df, aes(index, 1-bcm.sum, colour=name))+
+  geom_line()+
+  scale_y_continuous(labels = scales::percent_format(acc=1) )+
+  scale_x_continuous(#labels = scales::percent_format(acc=1), 
+                     breaks = prob.breaks,
+                     labels=paste0(round((1-prob.breaks)*100,2), "%"),
+                     minor_breaks=NULL,
+                      lim=c(.25,.995),
+                     trans = scales::probability_trans(dist="norm"))+
+  labs(y="% total flaring", x= "% sites", title="VIIRS flaring sites, cumulative distribution")+
+  theme(legend.position= c(.85, .85), legend.title = element_blank())+
+  geom_vline(xintercept= c(7/8 ,29/30), size=.25, linetype=2)+
+  geom_hline(yintercept= c(.25,.1), size=.25, linetype=2)+
+  scale_colour_manual(values=colorspace::sequential_hcl(8, "YlOrRd")[c(2,5)-1])
+
+ setwd(blog.dir)
+```
 ## CO~2~-e emissions 
 
-For the Bakken, @s estimates total methane venting form all sources across 2018 and 2019 average 0.89±0.56 millions tonnes per year. As shown in Table that is simmilar to wht 1.02 million tonnes average of the "unaccounted" gas. Assuming that the "unaccounted" gas in the North Dakota is a proxy for the venting  then we can make an estimate of the CO~2~-equivalent budget summing the flared gas as  CO~2~, assuming 100% efficiency, and the methane venting at an appropriate time scale. Figs ... show the CO2-e  using global worming potential for CH~4~ appropriate to 20 yeras (x86 CO~2~ GWP) and 100 years (x 34 CO~2~ GWP)
+For the Bakken, @schneising2020 estimates total methane venting form all sources across 2018 and 2019 average 0.89±0.56 millions tonnes per year. As shown in Table that is simmilar to wht 1.02 million tonnes average of the "unaccounted" gas. Assuming that the "unaccounted" gas in the North Dakota is a proxy for the venting  then we can make an estimate of the CO~2~-equivalent budget summing the flared gas as  CO~2~, assuming 100% efficiency, and the methane venting at an appropriate time scale. Figs \@ref(fig:fig-bakken-100) & \@ref(fig:fig-bakken-20) show the CO2-e  using global worming potential for CH~4~ appropriate to 20 years (x86 CO~2~ GWP) and 20 years (x 34 CO~2~ GWP)
 
 As flaring is generally not 100% efficient,  
 
@@ -294,8 +324,9 @@ ggplot( ndg.a.co2e %>% subset(date > lubridate::ymd("2009/01/01") &
   geom_area(position = position_stack(reverse = T),
             colour = "white",
             size = .2) +
-  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
-  #scale_y_continuous(label =  scales::percent_format()) +
+ # scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+    scale_fill_manual(values=colorspace::sequential_hcl(8, "YlOrRd")[c(2,4,6) ]%>% rev())+
+#scale_y_continuous(label =  scales::percent_format()) +
   theme(   legend.position = c(.2, .8),
     legend.direction = "vertical",
     legend.background = element_rect(fill = mmt::add.alpha("white", .6), size=0),
@@ -321,7 +352,8 @@ ggplot( ndg.a.co2e %>% subset(date > lubridate::ymd("2009/01/01") &
   geom_area(position = position_stack(reverse = T),
             colour = "white",
             size = .2) +
-  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+#  scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+  scale_fill_manual(values=colorspace::sequential_hcl(8, "YlOrRd")[c(2,4,6) ] %>% rev())+
   #scale_y_continuous(label =  scales::percent_format()) +
   theme(   legend.position = c(.2, .8),
            legend.direction = "vertical",
@@ -382,6 +414,9 @@ setwd(blog.dir)
 ### VIIRS flaring estimates
 
 The VIIRS  estimates of flaring in the Permian are similar to the flaring volumes reported by Rystad. For the period 2013 to 2018, the NVIIR estimates average `r round(mean(av.p.viirs*100))`%  Rystad.
+
+
+# Disucssion
 
 
 
