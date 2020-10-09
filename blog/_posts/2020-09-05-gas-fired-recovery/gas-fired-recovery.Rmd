@@ -149,8 +149,7 @@ knitr::include_graphics('images/Balance.png')
 knitr::include_graphics('images/p001_01.png')
 ```
 ---
-
-\footnotesize
+# Footnotes {.appendix} 
 
 1. For example, the currently committed supply from Victoria's Gippsland Basin declines by 37% or about 330 TJ/day by 2024.
 2. The SANTOS Narrabri project will deliver about 190 TJ/day in new supply.

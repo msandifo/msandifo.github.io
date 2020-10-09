@@ -1,7 +1,7 @@
 ---
 title: "Tropomi and fugitive methane emissions - recent insights"
 description: |
-    The Tropomi sensor on Sentinel 5p offers new insights into fugitive methane emissions in gas producing basins. But it is early days, and there is much to learn. Here I explore some of the implications of recent findings, integrating the new Tropomi constraints with gas production data from US shakle gas basins including satellite-based flaring estimates.
+    The Tropomi sensor on Sentinel 5p offers new insights into fugitive methane emissions in gas producing basins. But it is early days, and there is much to learn. Here I explore some implications of recent findings, integrating the new Tropomi constraints with gas production data from US shakle gas basins including satellite-based flaring estimates.
 author:
   - name: Mike Sandiford
 date: 09-25-2020
@@ -64,24 +64,31 @@ plots=TRUE
 
 setwd(blog.dir)
 ```
-
-![Bakken by satellite](https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg) 
+<!-- ![Bakken by satellite](https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg)  -->
+ 
 
 # Tropomi
 
 Methane release from large oil and gas fields can now be monitored from space using the TROPOspheric Monitoring Instrument (TROPOMI) onboard the Sentinel-5 Precursor satellite.
 
-In a recently published study @schneising2020 concluded 
-that 
+In a recent study @schneising2020 concluded that 
 
 > the average [methane] emissions for the time period 2018/2019 from the five most productive basins in the United States, the Permian, Appalachia, Eagle Ford, Bakken, and Anadarko are estimated to be 3.16±1.13 Mt yr^−1^, 2.36 ± 0.88 Mt yr^−1^ , 1.52 ± 0.68 Mt yr^−1^ , 0.89 ± 0.56 Mt yr^−1^, and 2.81 ± 0.77 Mt yr^−1^ , respectively. This corresponds to CH4 leakage rates relative to the associated production between 1.2% and 1.6% for the first four production regions, which are consistent with bottom-up estimates and likely fall below the break-even leakage rate for immediate climate benefit.
  
-The @schneising2020 study compliments others which have attempted to address the emissions associated with shale gas production from a variety of methods  [@howarth; @howarth2014;@elvidge2015;@helmig2016;@howarth2019;@willyard2019], with varying success.
+The @schneising2020 study compliments a number of previous studies that have attempted to estimate the emissions associated with shale gas production using a variety of methods  [@howarth; @howarth2014;@elvidge2015;@helmig2016;@howarth2019;@willyard2019].
 
-@schneising2020 references methane emissions rates with respect to the total energy production including both gas and oil. As discussed further below, and as is clearly [visible by satellite](https://en.wikipedia.org/wiki/Bakken_Formation) in basins where oil production drives investment,  such as the Bakken and the Permian, a significant proportion of produced shale-gas methane is flared and or vented.
-In these oil-rich basins the percentage of vented methane referenced against total gas consumption (i.e., gas delivered to market) is necessarily very much higher than referenced against bulk energy production. Moreover, it is the bulk  sum of the gas flaring as well as direct venting that is  relevant to the "gas as a bridging fuel" debate [e.g., @howarth2014] and the central question of the "break even rate" in the quote from @schneising2020.
+@schneising2020 reference methane emissions rates with respect to the total energy production including both gas and oil. As discussed further below, and as is clearly [visible by satellite](https://en.wikipedia.org/wiki/Bakken_Formation) in basins where oil production drives investment,  such as the Bakken and the Permian, a significant proportion of produced shale-gas methane is flared and or vented.
+In such basins the percentage of vented methane referenced against total gas production is necessarily very much higher than referenced against bulk energy production. Moreover, the bulk sum of the gas flaring as well as direct venting is relevant to the "gas as a bridging fuel" debate [e.g., @howarth2014] and the central question of the "break even rate" in the quote from @schneising2020. In addressing the challenges of climate change, there is a moral imperative to ensure the utilisation of all exiting fossil production. The additional cost of supply for presently wasted gas is likely to be small compared to cost in the future of remediating climate impacts.
 
-Here, I look at the emissions rates in several key US gas basins, in terms of total gas production, by comparing them with production data from publicly available sources, including flaring. While data reporting on flaring in US basins is highly variable [e.g. @willyard2019], the new Tropomi data helps clarify the venting to flaring ratio - a critical poorly defined parameter relevant to emission trajectories for US shale gas production.   I begin with some scene setting relating to US shale gas production, and changes in atmospheric methane concentrations.
+ 
+```{r fig-viirs-texas-1,  fig.width=7, cache=TRUE, echo=FALSE, fig.cap="VIIRS nightlights in Texas and adjacent states, illustrating gas related flares in the Permian and Eagle Ford."} 
+
+knitr::include_graphics("../../images/texas.jpeg")
+
+```
+
+
+Here I look at the emissions rates in several key US gas basins, in terms of total gas production, by comparing them with production data from publicly available sources, including flaring. While data reporting on flaring in US basins is highly variable [e.g. @willyard2019], the new Tropomi data helps to clarify the venting to flaring ratio - a critical poorly defined parameter relevant to emission trajectories for US shale gas production.   I begin with some backround relating to US shale gas production and changes in atmospheric methane concentrations.
 
 
 # US shale gas  
@@ -89,6 +96,7 @@ Here, I look at the emissions rates in several key US gas basins, in terms of to
 The advent of shale gas production in the mid 2000's has dramatically increased US gas production from 
 ~2000 Bcf per month in 2006 to a peak of ~3500 Bcf per month by the end of 2019, prior to the COVID-19 downturn in early 2020 (Fig. \@ref(fig:fig-dom)).
 
+ 
 ```{r fig-dom, echo=FALSE, fig.cap="US gas production, sourced from EIA. b) Cape Grim Observatory CH~4~ concentration, ppb., source from CSIRO. c) desasonalised annualised growth rates, US gas procuction (red), CGO CH~4~ (blue).", fig.height=10, cache=TRUE}
  cowplot::plot_grid( 
    plot_data("eia.us.ng.withdrawals" ) + 
@@ -114,7 +122,7 @@ The advent of shale gas production in the mid 2000's has dramatically increased 
 ncol=1, labels=c("a)","b)", "c)")
 )
 ```
-
+ 
 
 In 2019, annual shale gas production averaged around 500 million tones (CH~4~) (see appendix, Fig. A\@ref(fig:fig-dry-gas)) and accounted for all the growth in U.S. gas production since 2006.  Intriguingly, the onset odf US shale gas production correlates with an increase in the rate of increase of atmospheric methane emissions (Fig. \@ref(fig:fig-dom)b). Fig. \@ref(fig:fig-dom)c  shows that in detail the correspondence is quite remarkable, with the rate of increase in atmospheric methane tracking about 1/10^th^ the rate of increase in US gas production. There relationships exposed by Fig. \@ref(fig:fig-dom)c raise a number of fascinating questions,  and  provide strong incentives for resolving just how much venting occurs in US shale gas basins,  and how the venting varies in time.   
 
@@ -122,28 +130,6 @@ In 2019, annual shale gas production averaged around 500 million tones (CH~4~) (
 # Data sources
 
 Production and consumption data for U.S. shale production is comprehensively reported by both state authorities, by the EIA.  Flaring data is more scattered, while venting data is generally not reported.  The [North Dakota Industrial Commission](`r read_data("north.dakota.gas")$url`)  reports production, sales and flaring in the Bakken. Estimates of flaring for the Permian are provided by independent consultants [Rystad](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/). Independent estimates of flaring based on analysis of  NASA/NOAA Visible Infrared Imaging Radiometer Suite (VIIRS)  [@elvidge2015]. At the time of writing, compilations of annual flaring volumes from  VIIRS analysis as part of the [global flares project](https://eogdata.mines.edu/download_global_flare.html) are complete for the years 2012-2018, with an accuracy estimated to be ±9.5% [@elvidge2015].
-
-
-
-
-<!-- ```{r fig-ry, echo=FALSE, fig.cap="Estimates of gas flaring in the Permian and Bakken by quarter. Permian flaring data sourced from [https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/](https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/). Bakken flaring data from North Dakota Industrial Commission, https://www.dmr.nd.gov/oilgas/stats/Gas1990ToPresent.xls. Diamonds are flaring estimates from VIIRS satellite analysis.",  cache=TRUE} -->
-<!-- setwd("~/Dropbox/msandifo/documents/programming/r/2020/flare/") -->
-<!-- pf.p.001b +  -->
-<!--   geom_point(data= bakken.totals, aes(date,mmcf), size=2, shape=5)  -->
-
-<!--   # geom_point(data=  viirs.2012$total %>% mutate(year=ymd("2012-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2013$total %>% mutate(year=ymd("2013-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2014$total %>% mutate(year=ymd("2014-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2015$total %>% mutate(year=ymd("2015-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2016$total %>% mutate(year=ymd("2016-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2017$total %>% mutate(year=ymd("2017-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5)+ geom_point(data=  viirs.2018$total %>% mutate(year=ymd("2018-07-01"), name="bakken"), aes(year,mmcf), size=3, shape=5) -->
-<!-- setwd(blog.dir) -->
-
-<!-- #knitr::include_graphics("https://www.rystadenergy.com/globalassets/news--events/press-releases/borr-drilling/permian-flaring-pr.jpg") -->
-<!-- ``` -->
-
-
-<!-- ```{r fig-sat, echo=FALSE, fig.cap="Baken flaring  source from [https://geology.com/articles/oil-fields-from-space/#bakken-formation](https://geology.com/articles/oil-fields-from-space/#bakken-formation)",  cache=TRUE} -->
-<!-- knitr::include_graphics("https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg") -->
-<!-- ``` -->
-
-<!-- ![Bakken by satellite](https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg) -->
-
 
 
 
@@ -167,22 +153,16 @@ reproscir::read_data("eia.drygas")$data %>% subset(date > lubridate::ymd("2005/0
             aes(x=date,y=value/1e6/(365/12), fill=type), position = "stack",  
             #converts Mcf per month to BCF per day
             colour = "white",
-            size = .15)+
- # scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
+            size = .35)+ # scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
   scale_fill_manual(values=colorspace::sequential_hcl(8, "YlOrRd")[c(2,4,6) ])+
   geom_line()+
   scale_y_continuous(sec.axis = sec_axis(~.*1e3* mmcf2mt * 365, name="million tonnes per year") )+
-  theme(
-    legend.position = c(.12, .8),
+  theme(    legend.position = c(.12, .8),
     legend.direction = "vertical",
-    legend.background = element_rect(fill = mmt::add.alpha("white", .6), size =
-                                       0) ,
-    legend.title =  element_blank()
-  ) +
-  labs(
-    title = paste(ndg.i$legend,": Bakken"),
-    caption = paste0(ndg.i$link, "\n* assumed vented"),
-    #    subtitle="annualised production",
+    legend.background = element_rect(fill = mmt::add.alpha("white", .6), size =  0) ,
+    legend.title =  element_blank()  ) +
+  labs(    title = paste(ndg.i$legend,": Bakken"),
+    caption = paste0(ndg.i$link, "\n* assumed vented"),    #    subtitle="annualised production",
     y = "billion cubic feet per day", #reproscir::read_data("eia.drygas")$type$units,
     x = NULL
   ) +
@@ -196,29 +176,22 @@ ggplot(bdg %>% subset(date > lubridate::ymd("2005/01/01")),
        aes(date, value , fill = type)) +
   geom_area(position = position_fill(reverse = T),
             colour = "white",
-            size = .15) +
+            size = .35) +
  # scale_fill_manual(values = c("grey30", "firebrick1", "green4")) +
   scale_fill_manual(values=colorspace::sequential_hcl(8, "YlOrRd")[c(2,4,6) ])+
- 
   scale_y_continuous(label =  scales::percent_format(accuracy = 1)) +
-
-  theme(
-    legend.position = c(.86, .9),
+  theme(    legend.position = c(.86, .9),
     legend.direction = "vertical",
-    legend.background = element_rect(fill = mmt::add.alpha("white", .7), size =
-                                       0) ,
-    legend.title =  element_blank()
-  ) +
+    legend.background = element_rect(fill = mmt::add.alpha("white", .7), size =0) ,
+    legend.title =  element_blank() ) +
   labs(
     title = paste(ndg.i$legend,": Bakken"),
     caption = paste0(ndg.i$link), #, "\n* assumed vented"),
  #   subtitle = "percentage production",
     y = NULL,
-    x = NULL
-  ) +
+    x = NULL ) +
   coord_cartesian(ylim = c(0, .5),  expand = c(0, 0)) +
-  geom_hline(
-    yintercept = 1 - c(.8, .7, .9, .6),
+  geom_hline(  yintercept = 1 - c(.8, .7, .9, .6),
     colour = "white",
     size = .2,
     linetype = 2
@@ -245,15 +218,14 @@ setwd(blog.dir)
 #knitr::include_graphics("https://www.rystadenergy.com/globalassets/news--events/press-releases/borr-drilling/permian-flaring-pr.jpg")
 ```
 
-Table \@ref(table:tab-ndg)  lists the values of production, sales, venting and unaccounted production in million tonnes per year, as well as the proportion of flared and unaccounted production as a percentage of total production. 
+Table \@ref(tab:tab-ndg) lists the values of production, sales, venting and unaccounted production in million tonnes per year, as well as the proportion of flared and unaccounted production as a percentage of total production. 
 
-```{r tab-ndg, echo=FALSE, tab.cap ="Yearly average North Dakota production data in million tonnes per year."}
+```{r  tab-ndg }
 #kableExtra::kable(ndg.y[c(2,3,1,4),], digits=2)
-kableExtra::kable(ndg.yc  )
-
+knitr::kable(ndg.yc , caption ="Yearly average North Dakota production data in million tonnes per year." )
 ```
 
-```{r fig-bakken-3, echo=FALSE, fig.cap="Bakken unsold production. Dashed line shows  volumes adjusted  for historic VIIR estimates - see text for disussion.",  cache=TRUE}
+```{r fig-bakken-3, echo=FALSE, fig.cap="NDGC North Dakota unsold production. Dashed line shows volumes adjusted  for historic VIIR flaring estimates at ~127% reported the level of gas flaring- see text for further disussion.",  cache=TRUE}
 fac<-(bcf2mt*365)
 ndg.unsold <- ndg.a %>% subset(date > lubridate::ymd("2009/01/01") & type != "sold")
 ndg.unsold.total <- ndg.unsold%>% group_by(date) %>% summarise(value=sum(value)*1.27, type="all")
@@ -272,10 +244,10 @@ ggplot(ndg.unsold, aes(date, value/1e6/(365/12) , fill = type)) +
      y = "billion cubic feet per day",
     x = NULL) +
   coord_cartesian(expand = c(0, 0))+
-  annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89, .89)/fac, col="white", size=1.2)+
-annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89-.56, .89-.56)/fac, col="white", size=.5, linetype=2)+
-  annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89+.56, .89+.56)/fac, col="white", size=.5, linetype=2)+
-annotate("text", x=ymd(c( "2017-11-01")), y=c(   .89)/fac, label="Schneising\net al., 2020", hjust=1, col="white", size=3)
+  annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89, .89)/fac, col="black", size=1.2)+
+annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89-.56, .89-.56)/fac, col="black", size=.5, linetype=2)+
+  annotate("line", x=ymd(c("2018-01-01", "2020-01-01")), y=c( 0.89+.56, .89+.56)/fac, col="black", size=.5, linetype=2)+
+annotate("text", x=ymd(c( "2017-11-01")), y=c(   .89)/fac, label="Schneising\net al., 2020", hjust=1, col="black", size=3)
 
 ```
 
@@ -416,15 +388,15 @@ setwd(blog.dir)
 The VIIRS  estimates of flaring in the Permian are similar to the flaring volumes reported by Rystad. For the period 2013 to 2018, the NVIIR estimates average `r round(mean(av.p.viirs*100))`%  Rystad.
 
 
-# Disucssion
+# Discussion
 
 
 
-# Appendices
+# Appendices  {.appendix} 
 
  Several other data sets are available. 
- 
- ## EIA
+  
+ ## EIA {.appendix} 
  
  
 
