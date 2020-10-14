@@ -69,7 +69,7 @@ gs.id<-"qdYHZTgAAAAJ"
 - Schofield, R., Utembe, S., Gionfriddo, C., Tate, M., Krabbenhoft, D., Adeloju, M., Dundek, M., Keywood, M., Dargaville, R., __Sandiford, M.__, Atmospheric mercury in the La Trobe Valley, Australia: case study June 2013, submitted to Elementa, 6th November, 2019.
 
 
-- Guangzheng Jiang, Qingtian L, Yuntao Tian, __Sandiford, M.__, Yizuo Shi, Changchun Zou, Feng Ma, Chenglong Deng, Lijuan He, Shengbiao Hu, Ground surface temperature history since LGM in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling Program (ICDP) SK-2e, submitted Geophysical Research Letters, June 2020
+<!-- - Guangzheng Jiang, Qingtian L, Yuntao Tian, __Sandiford, M.__, Yizuo Shi, Changchun Zou, Feng Ma, Chenglong Deng, Lijuan He, Shengbiao Hu, Ground surface temperature history since LGM in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling Program (ICDP) SK-2e, submitted Geophysical Research Letters, June 2020 -->
 
 
  
