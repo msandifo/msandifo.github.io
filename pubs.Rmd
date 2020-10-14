@@ -63,7 +63,7 @@ gs.id<-"qdYHZTgAAAAJ"
  
 <!-- - Sandiford, D., __Sandiford, M.__, Seismic magnitude potential of flat slabs Geology, submitted January, 2020 -->
 
-- Ward, J.F., Rosenbaum, G., Ubide, T., Wu, J., Caulfield, J.T., __Sandiford, M.,__ Derya Gürer, D., Geophysical and geochemical constraints on the formation of slab-related intraplate volcanism in East Asia, to be submitted to Earth-Science Reviews, Pacific-Asian Tectonics Special Issue
+- Ward, J.F., Rosenbaum, G., Ubide, T., Wu, J., Caulfield, J.T., __Sandiford, M.,__ Derya Gürer, D., Geophysical and geochemical constraints on the formation of Holocene intraplate volcanism in East Asia, submitted to Earth-Science Reviews, Pacific-Asian Tectonics Special Issue, October 2020
 
  
 - Schofield, R., Utembe, S., Gionfriddo, C., Tate, M., Krabbenhoft, D., Adeloju, M., Dundek, M., Keywood, M., Dargaville, R., __Sandiford, M.__, Atmospheric mercury in the La Trobe Valley, Australia: case study June 2013, submitted to Elementa, 6th November, 2019.
