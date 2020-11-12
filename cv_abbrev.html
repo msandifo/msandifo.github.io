@@ -90,8 +90,8 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2020-10-14"/>
-  <meta property="article:created" itemprop="dateCreated" content="2020-10-14"/>
+  <meta property="article:published" itemprop="datePublished" content="2020-11-13"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-11-13"/>
   <meta name="article:author" content="Mike Sandiford"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -108,7 +108,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date"]}},"value":[{"type":"character","attributes":{},"value":["Abbreviated Curriculum Vitae"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Mike Sandiford"]}]}]},{"type":"character","attributes":{},"value":["2020-10-14"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date"]}},"value":[{"type":"character","attributes":{},"value":["Abbreviated Curriculum Vitae"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Mike Sandiford"]}]}]},{"type":"character","attributes":{},"value":["2020-11-13"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -586,10 +586,14 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
         }]).on('autocomplete:selected', function(event, suggestion) {
           window.location.href = offsetURL(suggestion.path);
         });
+        // remove inline display style on autocompleter (we want to
+        // manage responsive display via css)
+        $('.algolia-autocomplete').css("display", "");
       })
       .catch(function(error) {
         console.log(error);
       });
+
   });
 
   </script>
@@ -615,9 +619,11 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 
   @media screen and (max-width: 768px) {
     .distill-site-nav .algolia-autocomplete {
-      visibility: hidden
+      display: none;
+      visibility: hidden;
     }
     .distill-site-nav.responsive .algolia-autocomplete {
+      display: inline-block;
       visibility: visible;
     }
     .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
@@ -729,6 +735,18 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 
   .pagedtable-footer {
     font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
   }
 
   .authors-affiliations .orcid-id {
@@ -1113,6 +1131,78 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
     word-wrap: break-word;
   }
 
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
 
   /* Anchor.js */
 
@@ -1180,6 +1270,211 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 
   .custom p {
     margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
   }
 
 
@@ -1310,6 +1605,12 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
     -ms-hyphens: none;
     hyphens: none;
   }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
 
   </style>
 
@@ -1528,6 +1829,10 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
         grid.children('h3:contains("Authors")').text('Author');
         grid.children('h3:contains("Affiliations")').text('Affiliation');
       }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
 
       // move appendix-bottom entries to the bottom
       $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
@@ -1754,7 +2059,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Abbreviated Curriculum Vitae","authors":[{"author":"Mike Sandiford","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-10-14T00:00:00.000+11:00","citationText":"Sandiford, 2020"}
+{"title":"Abbreviated Curriculum Vitae","authors":[{"author":"Mike Sandiford","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-11-13T00:00:00.000+11:00","citationText":"Sandiford, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1825,7 +2130,7 @@ academic
   
   Mike Sandiford
   
-<br/>2020-10-14
+<br/>2020-11-13
 </div>
 
 <div class="d-article">
@@ -1909,14 +2214,14 @@ academic
 <li>GipNet Siemic monitoring network, CI Sandiford &amp; Gibson, EIF, 2015-2019, $1,200,000</li>
 </ul>
 <h1 id="published-work">5. Published work</h1>
-<p><strong>Google Scholar</strong> Total citations - 10104 , Hirsch-index - 62 , i10-index - 155</p>
+<p><strong>Google Scholar</strong> Total citations - 10157 , Hirsch-index - 62 , i10-index - 155</p>
 <p><strong>Top five papers</strong></p>
 <ul>
-<li>Egholm, D., Knusden, M.F., <strong>Sandiford, M.</strong>, 2013, Lifespan of mountain ranges scaled by feedbacks between landsliding and erosion by rivers, Nature, 498, 475–478, <a href="doi:10:1038/nature12218" class="uri">doi:10:1038/nature12218</a> , # citations 99</li>
-<li><strong>Sandiford, M.</strong>, 2007, The tilting continent: a new constraint on the dynamic topographic field from Australia, Earth and Planetary Science Letters, 261, 152-163 doi: 10.1016/j.epsl.2007.06.023 , # citations 113</li>
+<li>Egholm, D., Knusden, M.F., <strong>Sandiford, M.</strong>, 2013, Lifespan of mountain ranges scaled by feedbacks between landsliding and erosion by rivers, Nature, 498, 475–478, <a href="doi:10:1038/nature12218" class="uri">doi:10:1038/nature12218</a> , # citations 100</li>
+<li><strong>Sandiford, M.</strong>, 2007, The tilting continent: a new constraint on the dynamic topographic field from Australia, Earth and Planetary Science Letters, 261, 152-163 doi: 10.1016/j.epsl.2007.06.023 , # citations 115</li>
 <li><strong>Sandiford, M.</strong>, McLaren, S., 2002, Tectonic feedback and the ordering of heat producing elements within the continental lithosphere, Earth and Planetary Science Letters, 2002, 204, 133-150 , # citations 165</li>
-<li>Coblentz, D., <strong>Sandiford, M.</strong>, Richardson, R, Zhou, S., Hillis, R., 1995, The origins of the Australian stress field, Earth and Planetary Science Letters, 133, 299-309. , # citations 172</li>
-<li><strong>Sandiford, M.</strong>, Powell, R., 1986, Deep crustal metamorphism during continental extension, ancient and modern examples. Earth and Planetary Science Letters, 79, 151-158. , # citations 409</li>
+<li>Coblentz, D., <strong>Sandiford, M.</strong>, Richardson, R, Zhou, S., Hillis, R., 1995, The origins of the Australian stress field, Earth and Planetary Science Letters, 133, 299-309. , # citations 173</li>
+<li><strong>Sandiford, M.</strong>, Powell, R., 1986, Deep crustal metamorphism during continental extension, ancient and modern examples. Earth and Planetary Science Letters, 79, 151-158. , # citations 411</li>
 </ul>
 <p><strong>Other Key papers (total of 170 peer-reviewed publications)</strong></p>
 <ul>
@@ -1926,7 +2231,7 @@ academic
 <li><strong>Sandiford, M.</strong>, 2003, Neotectonics of southeastern Australia: linking the Quaternary faulting record with seismicity and in situ stress, eds Hillis, R.R. Muller, D., Evolution and dynamics of the Australian Plate, Geological Society of Australia, Special Publication, 22, 101-113 , # citations 202</li>
 <li>Coblentz, D., <strong>Sandiford, M.</strong>, 1994, Tectonic stresses in the African plate: Constraints on the ambient stress state, Geology, 22, 831-834. , # citations 108</li>
 <li>Coblentz, D., Richardson, R.M., <strong>Sandiford, M.</strong>, 1994, On the gravitational potential of the Earth’s lithosphere, Tectonics, 13, 929-945. , # citations 111</li>
-<li>Turner, S., <strong>Sandiford, M.</strong>, Foden, J., 1992, Some geodynamic and compositional constraints on “post-orogenic” magmatism, Geology, 20, 931-934. , # citations 287</li>
+<li>Turner, S., <strong>Sandiford, M.</strong>, Foden, J., 1992, Some geodynamic and compositional constraints on “post-orogenic” magmatism, Geology, 20, 931-934. , # citations 288</li>
 <li><strong>Sandiford, M.</strong>, Powell, R., 1991, Some remarks on high temperature-low pressure metamorphism in convergent orogens, Journal of Metamorphic geology, 9, 333-340. , # citations 196</li>
 <li><strong>Sandiford, M.</strong>, 1989, Horizontal structures in granulite terrains : a record of mountain building or mountain collapse? Geology, 17, 449 - 452. , # citations 141</li>
 </ul>

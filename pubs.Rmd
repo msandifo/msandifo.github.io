@@ -78,7 +78,8 @@ gs.id<-"qdYHZTgAAAAJ"
 
 
 
-1. McConnell, D., __Sandiford, M.__, 2020, Impacts of LNG export and market power on Australian electricity market dynamics, 2016-2019, Current Sustainable/Renewable Energy Reports, accepted, September 2020
+1. McConnell, D., __Sandiford, M.__, 2020, 
+Impacts of LNG export and market power on Australian electricity market dynamics, 2016-2019, Current Sustainable/Renewable Energy Reports,  Published online 9 November 2020, https://doi.org/10.1007/s40518-020-00164-2
 
 1. Sandiford, D., Moresi, L.N., __Sandiford, M.__, Farrington, R., Ting, Y., 2020, 
 The fingerprints of flexure in slab seismicity, 
