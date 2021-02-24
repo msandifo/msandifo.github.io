@@ -28,7 +28,7 @@ library(lubridate)
 library(scales)
 
 #extrafont::loadfonts()
-lng.dir<-"/Volumes/data/Dropbox/msandifo/documents/programming/r/2020/LNG/"
+lng.dir<-"~/Dropbox/msandifo/documents/programming/r/2020/LNG/"
 setwd(lng.dir)
 update=F
 source('r/funcs.R')

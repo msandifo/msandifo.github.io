@@ -1,0 +1,41 @@
+---
+title: "lessons from the past"
+description: |
+  A short description of the post.
+author:
+  - name: Mike Sandiford
+    url: {}
+date: 12-18-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+Who could imagine what the last Vicmanians thought confronted with the terrible reality their land was drowning? The Vicmanians occupied what is now Bass Strait for the first 30,000 years or so of human occupation of Australia. Prior to 10,000 years ago, sea levels were lower than today and Bass Straight was largely exposed. At the height of the last ice age, about 18,000 years ago, sea levels were  130 metres lower. Between then and 10,000 years ago the sea rose to present heights. Around 13,000 years ago, when sea level was 65 lower and rising fast,  the last land bridge was submerged thus creating Bass Straight. The last Vicmanians were confronted with a fateful choice. Those that chose to stay south, the first true Tasmanians, forever separated from their northern cousins of the Kulin nations.
+
+At more than 2 metres per century sea level rise, the last land bridge must have been severed within an individual lifetime. There was likely a short period when the bridge was shallow enough to bridge at low tide, but with time risks would have became too great, and the tribes were finally separated. Who knows exactly, for the most of the archeological record is now hidden, submerged beneath the sea.  
+
+We now understand that changes in sea level go had in hand with the amount of CO2 in the atmosphere. Between 18,000 and 10,000 years ago, the concentration of CO2 rose from about 200 to 280 ppm (parts per million) at the rate of about 1 ppm every 100 years. We know this because we can measure it in tiny ancient air bubbles trapped in the great ice sheets of Antarctica and Greenland. These trapped bubbles tell a remarkable story of how our planet changes through time, and how it will change into the future. Over the last 50 years atmospheric CO2 has been rising at rate of well over 100 ppm per century. That is more than 100 times the rate of increase when the last Vicmanians witnessed the drowning of their land. And what does it mean? To those of us versed in reading the past record of our planet it can only mean one thing. We are now committing to future rises in sea levels.
+
+Some ask why haven't sea levels already risen significantly, since CO2 levels are already way outside the range of the last few million years. The reason is that sea level rise is a function of ice melting. As CO2 increases, the atmosphere heats, and the ice begins to melt. We have increased CO2 so rapidly that the atmosphere has not yet had time to heat the ice. But we know it is happening. Seas are getting warmer and expanding, ice is beginning to melt, and sea levels are beginning to rise.
+
+In most places seas are still only rising at rates that are barely perceptible to the human experience, but to see what the future holds, we can look back in time. The last time in geological history we had as much CO2 in the atmosphere as today, there was virtually no ice on the planet and sea levels were very 60-70 metres higher. We can see this in southern Australia in the Muarray Basin, when five million years ago, the sea extended hundreds of kilometres inland as far as Kerang in northern Victoria. Then Australian geography was very different, as it will inevitably become once again if atmospheric CO2 levels remain above 400 ppm.
+
+The undeniable message from the rocks is that higher CO2 levels go hand-in-hand with higher sea level.
+And the story of the Vicmanians points to how fast sea levels might rise in the future. When the last land bridge broke about 13,000 years ago when CO2 was rising at just 1% present rates, sea levels were rising by at least 2 metres per century, and possibly as much as 4 metres. Our problem is that we are now committed to sea level rises of at least that magnitude. The history of our planet, the only history relevant to this story, tells us so. It is written in the rocks.
+
+One reason we have such a fragmentary record of the first Australians, is that much of the evidence of the first 30,000 years of their occupation of this continent now submerged beneath the sea, along now drowned former coastal fringes. And  so we must imagine that just like the first Australians, much of the evidence for our current occupation will also be submerged by the rising seas. With the CO2 we are putting into the atmosphere we are committing the melting of the ice. Once the ice is gone sea levels will be 60-70 metres higher, and with it the drowning of all the great cities of today. At 2 metres per century we are talking just 3,000 years hence. The story of the rocks tells us so.
+
+Climate change is one of the most crucial issues of our time. Climate projections point to a range of possibilities. There is uncertainty - forward modeling provides just an informed estimate of potential realities. Many are alarmed. Others cannot see or accept that changes are already happening, and are skeptical. Where is the sea level rise, they ask? We who read the story of the rocks know there is nothing new in such change, and future change is expected as part of an ongoing cycle. We attribute that change to different causes and still have important lessons to learn.
+
+But we should not be confused. Our planet has never had so much CO2 in the atmosphere with so much ice on the land. The most important history, the history of our planet, tells us something must give. Just when, we do not precisely know, but the record of Earth’s past is unambiguous. Our seas must rise and we will have to adapt.
+
+The cause of our problem is simple. We have taken for granted a fundamental service provided by our natural environment. For 10,000 years we have lived with an equable climate, at least when compared with the preceding 100,00 years. We have assumed the climate is a given. We have built our great cities along the sea front, congregated in ports based around our ocean going transport systems. When we did so, we did not understand that sea levels could change. Now we understand sea levels have changed in the past and surely will in the future. We also now understand that change is imminent because the CO2 we are injecting into the atmosphere is compromising this most basic of natural services. Because of the CO2, our climate can no longer balance the amount of ice and water on the planet required to maintain stable sea levels at these historical levels.
+
+Understanding the services that the natural environment provides is essential to adaptation to future change, and this includes the services provided by our crust. Within the story of the last Vicmanian is a powerful lesson that tells us of own predicament. It is a story that should align all of us, and especially geoscientists, with a new sense of purpose. We need now more than ever to understand the nature and capacity all the services provided by our natural environment on which we have become so crucially dependent, including those provided by the crust on which we reside.
+
+[1] This is adapted from a set of pieces written in 2009, exploring ideas that might help motivate the next generation of geoscientists.

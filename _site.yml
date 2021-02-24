@@ -14,8 +14,6 @@ navbar:
           href: about.html
         - text: context
           href: context.html
-        - text: cv
-          href: cv.full.html
     - text: "academic"
       menu:
         - text: "peer review"
