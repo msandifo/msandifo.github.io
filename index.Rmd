@@ -11,14 +11,26 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/website.html
 
 ```
-- I am a geologist, husband, father, sailor, ...
-- a Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne
-- a fellow of the Australian Academy of Science 
-- my principal research interests are in [earth dynamics](pdfs/2010_JMG_a.pdf), energetics and [landscapes](pdfs/2013_nature12218.pdf)  
-- I have travelled and worked in some of the most remote regions of our planet (inc. Antarctica, Tibet, remote Australia) 
-- I have the privilege of working in communities that have lived for millennia in some of the most dynamic parts of our planet such as [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)
+- geologist, husband, father, sailor, ...
+- Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne
+- former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au)
+- fellow of the [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford) 
+- research interests --- [earth dynamics](pdfs/peer/2010_JMG_a.pdf), energetics and [landscapes](pdfs/peer/2013_nature12218.pdf)  
+- the privilege of working in communities that have lived for millennia in some of the most dynamic and remote parts of our planet such as [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)
 
-- I have regularly contributed to the [popular press](https://theconversation.com/columns/mike-sandiford-228) on [geological](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy issues](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/)
+- regular [popular press](https://theconversation.com/columns/mike-sandiford-228) contributor on [geological](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) issues
+
+
+---
+
+### [Recent publications](pubs.html)
+
+- [environment](pdfs/peer/2021_Elementa.pdf) - Mercury levels in the Latrobe Valley from burning coal 
+- [dynamics](pdfs/peer/2020_Tectonics.pdf) - stress distribution and dynamics of subducting slabs 
+- [earthquakes](pdfs/peer/2020_BSSA.pdf) - Australia's largest earthquake in almost 30 years
+- [groundwater](pdfs/peer/2020_Hydrogeol.pdf) - new insights into Australia's iconic Great Artesian Basin
+- [techniques](pdfs/peer/2020_GTE.pdf) - measuring shallow heat flow using heat needles 
+- [ecomonics](pdfs/peer/2020_CSR.pdf) - market power in the Australian energy system
 
 
 
