@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # current 
 
-- Redmond Barry Distinguished Emeritus Professor, University  of Melbourne, 2021
+- Redmond Barry Distinguished Professor Emeritus, University  of Melbourne, 2021
 
 
 # previous
