@@ -11,13 +11,14 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/website.html
 
 ```
-- geologist, husband, father, sailor, ...
-- interests in earth dymamics, energetics and landscapes 
-- travelled and worked in many remote regions (inc. Antarctica, Tibet, Timor, many parts of remote Australia) 
-- a privilege to have work among communities that have lived for millennia in some of the most dynamic parts of our planet.
-- Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne
-- fellow of the Australian Academy of Science 
-- regular contributor to popular press on geological and energy issues
+- I am geologist, husband, father, sailor, ...
+- a Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne
+- a fellow of the Australian Academy of Science 
+- with research interests in [earth dynamics](pdfs/2010_JMG_a.pdf), energetics and [landscapes](pdfs/2013_nature12218.pdf)  
+- who has travelled and worked in some of the most remote regions of our planet (inc. Antarctica, Tibet, remote Australia) 
+- experiencing the privilege of working in communities that have lived for millennia in some of the most dynamic parts of our planet such as [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and (Bhutan)[https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332]
+
+- and hwo regularly contributes to [popular press](https://theconversation.com/columns/mike-sandiford-228) on [geological](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy issues](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/)
 
 
 
