@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE metadata SYSTEM "http://www.esri.com/metadata/esriprof80.dtd">-->
+<metadata xml:lang="en"><Esri><CreaDate>20110516</CreaDate><CreaTime>10093100</CreaTime><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20100826" Time="035543">CalculateField "older ls" confident dArea VB "'=========================
+'polygon_Return_Area.cal
+'Author: Ianko Tchoukanski
+'http://www.ian-ko.com
+'=========================
+Dim pMxDoc As IMxDocument
+Dim pGeometry As IGeometry
+Dim pMap As IMap
+Dim pArea As IArea
+Dim dArea As Double
+Dim dC As Double
+Dim sOutMeasure As String
+Dim bSrefFromMap As Boolean
+'=======================
+'Adjust the parameters below
+'bSrefFromMap = True ==&gt; the area will be calculated in the projection of the Map
+'bSrefFromMap = False ==&gt; the area will be calculated in the projection of the data
+bSrefFromMap = False
+'unmark the desired output units
+sOutMeasure = "Acres"
+sOutMeasure = "Square Kilometers"
+sOutMeasure = "Square Meters"
+'sOutMeasure = "Square Miles"
+'=======================
+If (IsNull([Shape])) Then
+  dArea = -1
+Else
+  Set pGeometry = [Shape]
+  If (pGeometry.IsEmpty) Then
+    dArea = -1
+  Else
+    If (bSrefFromMap) Then
+      Set pMxDoc = ThisDocument
+      Set pMap = pMxDoc.FocusMap
+      pGeometry.Project pMap.SpatialReference
+      Select Case pMap.MapUnits
+        Case 3 'Feet
+          Select Case sOutMeasure
+            Case "Acres"
+              dC = 0.00002295684
+            Case "Square Kilometers"
+              dC = 0.0000000930787
+            Case "Square Meters"
+              dC = 0.092903
+            Case "Square Miles"
+              dC = 0.0000000359375
+            Case Else
+              dC = 1
+          End Select
+        Case 9 'Meters
+          Select Case sOutMeasure
+            Case "Acres"
+              dC = 0.0002471
+            Case "Square Kilometers"
+              dC = 0.000001
+            Case "Square Meters"
+              dC = 1
+            Case "Square Miles"
+              dC = 0.0000003861022
+            Case Else
+              dC = 1
+          End Select
+        Case Else
+          dC = 1
+      End Select
+    Else
+      dC = 1
+    End If
+    Set pArea = pGeometry
+    dArea = pArea.Area * dC
+  End If
+End If
+
+
+
+" "older ls"</Process><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20100826" Time="040236">CalculateField "older ls" AREA dArea VB "'=========================
+'polygon_Return_Area.cal
+'Author: Ianko Tchoukanski
+'http://www.ian-ko.com
+'=========================
+Dim pMxDoc As IMxDocument
+Dim pGeometry As IGeometry
+Dim pMap As IMap
+Dim pArea As IArea
+Dim dArea As Double
+Dim dC As Double
+Dim sOutMeasure As String
+Dim bSrefFromMap As Boolean
+'=======================
+'Adjust the parameters below
+'bSrefFromMap = True ==&gt; the area will be calculated in the projection of the Map
+'bSrefFromMap = False ==&gt; the area will be calculated in the projection of the data
+bSrefFromMap = False
+'unmark the desired output units
+sOutMeasure = "Acres"
+sOutMeasure = "Square Kilometers"
+sOutMeasure = "Square Meters"
+'sOutMeasure = "Square Miles"
+'=======================
+If (IsNull([Shape])) Then
+  dArea = -1
+Else
+  Set pGeometry = [Shape]
+  If (pGeometry.IsEmpty) Then
+    dArea = -1
+  Else
+    If (bSrefFromMap) Then
+      Set pMxDoc = ThisDocument
+      Set pMap = pMxDoc.FocusMap
+      pGeometry.Project pMap.SpatialReference
+      Select Case pMap.MapUnits
+        Case 3 'Feet
+          Select Case sOutMeasure
+            Case "Acres"
+              dC = 0.00002295684
+            Case "Square Kilometers"
+              dC = 0.0000000930787
+            Case "Square Meters"
+              dC = 0.092903
+            Case "Square Miles"
+              dC = 0.0000000359375
+            Case Else
+              dC = 1
+          End Select
+        Case 9 'Meters
+          Select Case sOutMeasure
+            Case "Acres"
+              dC = 0.0002471
+            Case "Square Kilometers"
+              dC = 0.000001
+            Case "Square Meters"
+              dC = 1
+            Case "Square Miles"
+              dC = 0.0000003861022
+            Case Else
+              dC = 1
+          End Select
+        Case Else
+          dC = 1
+      End Select
+    Else
+      dC = 1
+    End If
+    Set pArea = pGeometry
+    dArea = pArea.Area * dC
+  End If
+End If
+
+
+
+" "older ls"</Process><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\AddField" Date="20100826" Time="040517">AddField "older ls" area_calc SHORT # # # # NON_NULLABLE NON_REQUIRED # "older ls"</Process><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20100826" Time="040625">CalculateField "older ls" area_calc dArea VB "'=========================
+'polygon_Return_Area.cal
+'Author: Ianko Tchoukanski
+'http://www.ian-ko.com
+'=========================
+Dim pMxDoc As IMxDocument
+Dim pGeometry As IGeometry
+Dim pMap As IMap
+Dim pArea As IArea
+Dim dArea As Double
+Dim dC As Double
+Dim sOutMeasure As String
+Dim bSrefFromMap As Boolean
+'=======================
+'Adjust the parameters below
+'bSrefFromMap = True ==&gt; the area will be calculated in the projection of the Map
+'bSrefFromMap = False ==&gt; the area will be calculated in the projection of the data
+bSrefFromMap = False
+'unmark the desired output units
+sOutMeasure = "Acres"
+sOutMeasure = "Square Kilometers"
+sOutMeasure = "Square Meters"
+'sOutMeasure = "Square Miles"
+'=======================
+If (IsNull([Shape])) Then
+  dArea = -1
+Else
+  Set pGeometry = [Shape]
+  If (pGeometry.IsEmpty) Then
+    dArea = -1
+  Else
+    If (bSrefFromMap) Then
+      Set pMxDoc = ThisDocument
+      Set pMap = pMxDoc.FocusMap
+      pGeometry.Project pMap.SpatialReference
+      Select Case pMap.MapUnits
+        Case 3 'Feet
+          Select Case sOutMeasure
+            Case "Acres"
+              dC = 0.00002295684
+            Case "Square Kilometers"
+              dC = 0.0000000930787
+            Case "Square Meters"
+              dC = 0.092903
+            Case "Square Miles"
+              dC = 0.0000000359375
+            Case Else
+              dC = 1
+          End Select
+        Case 9 'Meters
+          Select Case sOutMeasure
+            Case "Acres"
+              dC = 0.0002471
+            Case "Square Kilometers"
+              dC = 0.000001
+            Case "Square Meters"
+              dC = 1
+            Case "Square Miles"
+              dC = 0.0000003861022
+            Case Else
+              dC = 1
+          End Select
+        Case Else
+          dC = 1
+      End Select
+    Else
+      dC = 1
+    End If
+    Set pArea = pGeometry
+    dArea = pArea.Area * dC
+  End If
+End If
+
+
+
+" "older ls"</Process><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\DeleteField" Date="20100826" Time="041822">DeleteField "older ls" area_calc "older ls"</Process><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\AddField" Date="20100826" Time="042244">AddField "older ls" Area1 DOUBLE # # # # NON_NULLABLE NON_REQUIRED # "older ls"</Process></lineage></DataProperties><MetaID>{D28FC3DA-0D88-47A7-993E-2598C8B1C558}</MetaID></Esri><idinfo><citation><citeinfo><onlink Sync="TRUE">\\625CW-PCLAB15\E\LANDSLIDE PROJECT\PAPER 1\QC INVENTORY\older lsCopy</onlink></citeinfo></citation></idinfo><distInfo><distributor><distorTran><onLineSrc><linkage Sync="TRUE">file://\\625CW-PCLAB15\E\LANDSLIDE PROJECT\PAPER 1\QC INVENTORY\older lsCopy</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc></distorTran></distributor></distInfo><dataqual><lineage><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">E:\LANDSLIDE PROJECT\PAPER 1\QC INVENTORY\older ls</srcused><procdate Sync="TRUE">20110516</procdate><proctime Sync="TRUE">10093100</proctime></procstep></lineage></dataqual></metadata>
