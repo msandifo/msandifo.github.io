@@ -26,7 +26,7 @@ title: "Technical reports "
 *  [Seismicity and induced earthquakes](http://www.chiefscientist.nsw.gov.au/__data/assets/pdf_file/0017/31616/Seismicity-and-induced-earthquakes_Gibson-and-Sandiford.pdf), Gibson, G. \& __Sandiford, M.__,, NSW Chief Scientist CSG Review, 2014,  33 p.,
 
 
-* Landslide occurrence in East Timor, Melbourne Energy Institute Technical paper series, Soares, S., Mills, C., Sandiford, M., dos Reis, J., 2011, 38 pp.
+* [Landslide occurrence in East Timor](pdfs/TECHNICAL REPORT_June21.pdf), Melbourne Energy Institute Technical paper series, Soares, S., Mills, C., Sandiford, M., dos Reis, J., 2011, 38 pp.
 
  *	 Victoria's unique geothermal option, __Sandiford, M.__, 2010, Victorian supplement 2010-Victoria's Energy Resources, 12-13.
 *	 A slow divorce: tectonic signals in an ancient continent, __Sandiford, M.__, 2010, The Australian Geologist, 157, 29-31.
