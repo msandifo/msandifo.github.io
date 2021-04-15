@@ -1,7 +1,7 @@
 ---
 title: "what on earth ..."
-description: |
-  Some reflections on a life of science, some contributions and some anecdotes. 
+description: "Some reflections on a life of science, some contributions and some anecdotes.
+  \n"
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +11,11 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/website.html
 
 ```
-geologist, husband, father, sailor, Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne, former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au), fellow of the [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford), research interests --- [earth dynamics](pdfs/peer/2010_JMG_a.pdf), energetics and [landscapes](pdfs/peer/2013_nature12218.pdf), a privilege of working in communities that have lived for millennia in some of the most dynamic and remote parts of our planet such as [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332), regular [popular press](https://theconversation.com/columns/mike-sandiford-228) contributor on [geological](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) issues
+geologist, husband, father, sailor, Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne, former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au), fellow of the [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford), research interests in [earth dynamics](pdfs/peer/2010_JMG_a.pdf), [energetics](pdfs/peer/2002_EPSL_a.pdf) and [landscapes](pdfs/peer/2013_nature12218.pdf).
+
+High among my many privileges is to have worked in communities that have lived for millennia in some of the most dynamic and remote parts of our planet such as [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)
+
+I occasionally contribute to  [public discourse](https://theconversation.com/columns/mike-sandiford-228) on [geological](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) issues.
 
 ---
 
