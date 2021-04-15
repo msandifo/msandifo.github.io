@@ -1,6 +1,6 @@
 ---
 title: "what on earth ..."
-description: "Some reflections on a life of science, some contributions and some anecdotes.
+description: "reflections on a life of science, some contributions, some anecdotes.
   \n"
 ---
 
@@ -11,17 +11,16 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/website.html
 
 ```
-geologist, husband, father, sailor, Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne, former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au), fellow of the [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford)
+geologist, husband, father, sailor, Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne, former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au), fellow [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford)
 
-research interests include [earth dynamics](pdfs/peer/2010_JMG_a.pdf), [earth energetics](pdfs/peer/2002_EPSL_a.pdf), [landscape evolution](pdfs/peer/2013_nature12218.pdf) and [energy systems](pdfs/peer/2015_AppEnergy.pdf) ...
+research interests include [earth dynamics](pdfs/peer/2020_Tectonics.pdf), [earth energetics](pdfs/peer/2002_EPSL_b.pdf), [landscape evolution](pdfs/peer/2013_nature12218.pdf), [continental evolution](pdfs/peer/2010_JMG_a.pdf) and [energy systems](pdfs/peer/2015_AppEnergy.pdf)
 
-of many privileges I have especially enjoyed working among communities that have lived for millennia in some of the most dynamic and remote parts of our planet such as [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)
+of many privileges afforded, high is my work among communities that have lived for millennia in some of the most dynamic and remote parts of our planet such as [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Tibet](https://theconversation.com/raising-tibet-58483),  [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)
 
-occasional [contributions](https://theconversation.com/columns/mike-sandiford-228) on [geological](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) policy issues
+occasional [reflections](https://theconversation.com/columns/mike-sandiford-228) on [geological](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) policy issues
 
----
 
-### [Recent commentary](pubs.html)
+### [recent commentary](pop.html)
 
 - reflections on the purpose of Geology- [Motivations 1](https://geo-down-under.geoscience.education/the-last-vicmanian/),  [Motivations 2](https://geo-down-under.geoscience.education/children-of-the-revolution/), [Motivations 3](https://geo-down-under.geoscience.education/earth-system-services/)
 - [fugitive emissions due to unconventional gas](https://msandifo.github.io/blog/_site/posts/2020-09-25-tropomi-and-gas-emsissions/)
@@ -29,17 +28,16 @@ occasional [contributions](https://theconversation.com/columns/mike-sandiford-22
 - [on the "gas fired recovery"](https://msandifo.github.io/blog/_site/posts/2020-09-05-gas-fired-recovery/)
 
 
+ 
 
----
+### [recent publications](pubs.html)
 
-### [Recent publications](pubs.html)
-
-- [environment](pdfs/peer/2021_Elementa.pdf) - Mercury levels in the Latrobe Valley from burning coal 
-- [dynamics](pdfs/peer/2020_Tectonics.pdf) - stress distribution and dynamics of subducting slabs 
-- [earthquakes](pdfs/peer/2020_BSSA.pdf) - Australia's largest earthquake in almost 30 years
-- [groundwater](pdfs/peer/2020_Hydrogeol.pdf) - new insights into Australia's iconic Great Artesian Basin
-- [techniques](pdfs/peer/2020_GTE.pdf) - measuring thermal diffusivity using heat needles 
-- [economics](pdfs/peer/2020_CSR.pdf) - on market power in the Australian energy system
+- [environment](pdfs/peer/2021_Elementa.pdf) - on Mercury pollution from electricity generation in the Latrobe Valley 
+- [dynamics](pdfs/peer/2020_Tectonics.pdf) - on stress distribution and dynamics of subducting slabs 
+- [earthquakes](pdfs/peer/2020_BSSA.pdf) - on Australia's largest earthquake in almost 30 years
+- [groundwater](pdfs/peer/2020_Hydrogeol.pdf) - some novel insights into the iconic Great Artesian Basin
+- [techniques](pdfs/peer/2020_GTE.pdf) - on the measuring thermal diffusivity in soils  
+- [economics](pdfs/peer/2020_CSR.pdf) - on the impact of market power in the Australian energy system
 
 
 

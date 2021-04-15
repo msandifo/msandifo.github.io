@@ -31,11 +31,20 @@ body{
 }
 
 p {
-  line-height: 24px;   /* within paragraph */
-  margin-bottom: 1px; 
-   
+  line-height: 1.5;   /* within paragraph */
+   display: block;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: 0;
   }
+  
+ 
 /* Headers */
 h1,h2,h3,h4,h5,h6{
-  font-size: 16pt;
+  font-size: 1.5;
+  
 }
+
+ 
