@@ -32,8 +32,8 @@ geologist, husband, father, sailor, Redmond Barry Distinguished Professor (emeri
 - [dynamics](pdfs/peer/2020_Tectonics.pdf) - stress distribution and dynamics of subducting slabs 
 - [earthquakes](pdfs/peer/2020_BSSA.pdf) - Australia's largest earthquake in almost 30 years
 - [groundwater](pdfs/peer/2020_Hydrogeol.pdf) - new insights into Australia's iconic Great Artesian Basin
-- [techniques](pdfs/peer/2020_GTE.pdf) - measuring shallow heat flow using heat needles 
-- [ecomonics](pdfs/peer/2020_CSR.pdf) - market power in the Australian energy system
+- [techniques](pdfs/peer/2020_GTE.pdf) - measuring thermal diffusivity using heat needles 
+- [economics](pdfs/peer/2020_CSR.pdf) - on market power in the Australian energy system
 
 
 

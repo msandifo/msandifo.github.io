@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -53,35 +54,35 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #545454; font-weight: bold; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #a1024a; } /* BaseN */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007faa; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #008000; } /* Char */
-code span.cn { color: #d91e18; } /* Constant */
-code span.co { color: #545454; } /* Comment */
-code span.cv { color: #545454; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #aa5d00; } /* DataType */
-code span.dv { color: #a1024a; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #a1024a; } /* Float */
-code span.fu { color: #4254a7; } /* Function */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
-code span.in { color: #545454; font-weight: bold; } /* Information */
-code span.kw { color: #007faa; font-weight: bold; } /* Keyword */
-code span.op { color: #696969; } /* Operator */
-code span.ot { color: #007faa; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #008000; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #008000; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #008000; } /* VerbatimString */
-code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warning */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
@@ -2044,8 +2045,12 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.4/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.7/header-attrs.js"></script>
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
   <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
@@ -2106,12 +2111,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ![Bakken by satellite](https://geology.com/articles/oil-fields-from-space/bakken-shale.jpg)  -->
 <h1 id="tropomi">Tropomi</h1>
 <p>Methane release from large oil and gas fields can now be monitored from space using the TROPOspheric Monitoring Instrument (TROPOMI) onboard the Sentinel-5 Precursor satellite.</p>
-<p>In a recent study <span class="citation" data-cites="schneising2020">Schneising et al. (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span> concluded that</p>
+<p>In a recent study <span class="citation" data-cites="schneising2020"><a href="#ref-schneising2020" role="doc-biblioref">Schneising et al.</a> (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span> concluded that</p>
 <blockquote>
 <p>the average [methane] emissions for the time period 2018/2019 from the five most productive basins in the United States, the Permian, Appalachia, Eagle Ford, Bakken, and Anadarko are estimated to be 3.16±1.13 Mt yr<sup>−1</sup>, 2.36 ± 0.88 Mt yr<sup>−1</sup> , 1.52 ± 0.68 Mt yr<sup>−1</sup> , 0.89 ± 0.56 Mt yr<sup>−1</sup>, and 2.81 ± 0.77 Mt yr<sup>−1</sup> , respectively. This corresponds to CH4 leakage rates relative to the associated production between 1.2% and 1.6% for the first four production regions, which are consistent with bottom-up estimates and likely fall below the break-even leakage rate for immediate climate benefit.</p>
 </blockquote>
-<p>The <span class="citation" data-cites="schneising2020">Schneising et al. (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span> study compliments a number of previous studies that have attempted to estimate the emissions associated with shale gas production using a variety of methods <span class="citation" data-cites="howarth howarth2014 elvidge2015 helmig2016 howarth2019 willyard2019">(Elvidge et al., <a href="#ref-elvidge2015" role="doc-biblioref">2015</a>; Helmig et al., <a href="#ref-helmig2016" role="doc-biblioref">2016</a>; Howarth, <a href="#ref-howarth2014" role="doc-biblioref">2014</a>, <a href="#ref-howarth2019" role="doc-biblioref">2019</a>; Howarth et al., <a href="#ref-howarth" role="doc-biblioref">2011</a>; Willyard &amp; Schade, <a href="#ref-willyard2019" role="doc-biblioref">2019</a>)</span>.</p>
-<p><span class="citation" data-cites="schneising2020">Schneising et al. (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span> reference methane emissions rates with respect to the total energy production including both gas and oil. As discussed further below, and as is clearly <a href="https://en.wikipedia.org/wiki/Bakken_Formation">visible by satellite</a> in basins where oil production drives investment, such as the Bakken and the Permian, a significant proportion of produced shale-gas methane is flared and or vented. In such basins the percentage of vented methane referenced against total gas production is necessarily very much higher than referenced against bulk energy production. Moreover, the bulk sum of the gas flaring as well as direct venting is relevant to the “gas as a bridging fuel” debate <span class="citation" data-cites="howarth2014">(e.g., Howarth, <a href="#ref-howarth2014" role="doc-biblioref">2014</a>)</span> and the central question of the “break even rate” in the quote from <span class="citation" data-cites="schneising2020">Schneising et al. (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span>. In addressing the challenges of climate change, there is a moral imperative to ensure the utilisation of all exiting fossil production. The additional cost of supply for presently wasted gas is likely to be small compared to cost in the future of remediating climate impacts.</p>
+<p>The <span class="citation" data-cites="schneising2020"><a href="#ref-schneising2020" role="doc-biblioref">Schneising et al.</a> (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span> study compliments a number of previous studies that have attempted to estimate the emissions associated with shale gas production using a variety of methods <span class="citation" data-cites="howarth howarth2014 elvidge2015 helmig2016 howarth2019 willyard2019">(<a href="#ref-elvidge2015" role="doc-biblioref">Elvidge et al., 2015</a>; <a href="#ref-helmig2016" role="doc-biblioref">Helmig et al., 2016</a>; <a href="#ref-howarth" role="doc-biblioref">R. W. Howarth et al., 2011</a>; <a href="#ref-howarth2014" role="doc-biblioref">Robert W. Howarth, 2014</a>; <a href="#ref-howarth2019" role="doc-biblioref">Robert W. Howarth, 2019</a>; <a href="#ref-willyard2019" role="doc-biblioref">Willyard &amp; Schade, 2019</a>)</span>.</p>
+<p><span class="citation" data-cites="schneising2020"><a href="#ref-schneising2020" role="doc-biblioref">Schneising et al.</a> (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span> reference methane emissions rates with respect to the total energy production including both gas and oil. As discussed further below, and as is clearly <a href="https://en.wikipedia.org/wiki/Bakken_Formation">visible by satellite</a> in basins where oil production drives investment, such as the Bakken and the Permian, a significant proportion of produced shale-gas methane is flared and or vented. In such basins the percentage of vented methane referenced against total gas production is necessarily very much higher than referenced against bulk energy production. Moreover, the bulk sum of the gas flaring as well as direct venting is relevant to the “gas as a bridging fuel” debate <span class="citation" data-cites="howarth2014">(e.g., <a href="#ref-howarth2014" role="doc-biblioref">Robert W. Howarth, 2014</a>)</span> and the central question of the “break even rate” in the quote from <span class="citation" data-cites="schneising2020"><a href="#ref-schneising2020" role="doc-biblioref">Schneising et al.</a> (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span>. In addressing the challenges of climate change, there is a moral imperative to ensure the utilisation of all exiting fossil production. The additional cost of supply for presently wasted gas is likely to be small compared to cost in the future of remediating climate impacts.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:fig-viirs-texas-1"></span>
 <img src="../../images/texas.jpeg" alt="VIIRS nightlights in Texas and adjacent states, illustrating gas related flares in the Permian and Eagle Ford." width="1450" />
@@ -2120,7 +2125,7 @@ Figure 1: VIIRS nightlights in Texas and adjacent states, illustrating gas relat
 </p>
 </div>
 </div>
-<p>Here I look at the emissions rates in several key US gas basins, in terms of total gas production, by comparing them with production data from publicly available sources, including flaring. While data reporting on flaring in US basins is highly variable <span class="citation" data-cites="willyard2019">(e.g. Willyard &amp; Schade, <a href="#ref-willyard2019" role="doc-biblioref">2019</a>)</span>, the new Tropomi data helps to clarify the venting to flaring ratio - a critical poorly defined parameter relevant to emission trajectories for US shale gas production. I begin with some backround relating to US shale gas production and changes in atmospheric methane concentrations.</p>
+<p>Here I look at the emissions rates in several key US gas basins, in terms of total gas production, by comparing them with production data from publicly available sources, including flaring. While data reporting on flaring in US basins is highly variable <span class="citation" data-cites="willyard2019">(e.g. <a href="#ref-willyard2019" role="doc-biblioref">Willyard &amp; Schade, 2019</a>)</span>, the new Tropomi data helps to clarify the venting to flaring ratio - a critical poorly defined parameter relevant to emission trajectories for US shale gas production. I begin with some backround relating to US shale gas production and changes in atmospheric methane concentrations.</p>
 <h1 id="us-shale-gas">US shale gas</h1>
 <p>The advent of shale gas production in the mid 2000’s has dramatically increased US gas production from ~2000 Bcf per month in 2006 to a peak of ~3500 Bcf per month by the end of 2019, prior to the COVID-19 downturn in early 2020 (Fig. <a href="#fig:fig-dom">2</a>).</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2133,9 +2138,9 @@ Figure 2: US gas production, sourced from EIA. b) Cape Grim Observatory CH<sub>4
 </div>
 <p>In 2019, annual shale gas production averaged around 500 million tones (CH<sub>4</sub>) (see appendix, Fig. A<a href="#fig:fig-dry-gas">12</a>) and accounted for all the growth in U.S. gas production since 2006. Intriguingly, the onset odf US shale gas production correlates with an increase in the rate of increase of atmospheric methane emissions (Fig. <a href="#fig:fig-dom">2</a>b). Fig. <a href="#fig:fig-dom">2</a>c shows that in detail the correspondence is quite remarkable, with the rate of increase in atmospheric methane tracking about 1/10<sup>th</sup> the rate of increase in US gas production. There relationships exposed by Fig. <a href="#fig:fig-dom">2</a>c raise a number of fascinating questions, and provide strong incentives for resolving just how much venting occurs in US shale gas basins, and how the venting varies in time.</p>
 <h1 id="data-sources">Data sources</h1>
-<p>Production and consumption data for U.S. shale production is comprehensively reported by both state authorities, by the EIA. Flaring data is more scattered, while venting data is generally not reported. The <a href="">North Dakota Industrial Commission</a> reports production, sales and flaring in the Bakken. Estimates of flaring for the Permian are provided by independent consultants <a href="https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/">Rystad</a>. Independent estimates of flaring based on analysis of NASA/NOAA Visible Infrared Imaging Radiometer Suite (VIIRS) <span class="citation" data-cites="elvidge2015">(Elvidge et al., <a href="#ref-elvidge2015" role="doc-biblioref">2015</a>)</span>. At the time of writing, compilations of annual flaring volumes from VIIRS analysis as part of the <a href="https://eogdata.mines.edu/download_global_flare.html">global flares project</a> are complete for the years 2012-2018, with an accuracy estimated to be ±9.5% <span class="citation" data-cites="elvidge2015">(Elvidge et al., <a href="#ref-elvidge2015" role="doc-biblioref">2015</a>)</span>.</p>
+<p>Production and consumption data for U.S. shale production is comprehensively reported by both state authorities, by the EIA. Flaring data is more scattered, while venting data is generally not reported. The <a href="">North Dakota Industrial Commission</a> reports production, sales and flaring in the Bakken. Estimates of flaring for the Permian are provided by independent consultants <a href="https://www.rystadenergy.com/newsevents/news/press-releases/a-downturn-silver-lining-permian-gas-flaring-has-decreased-and-is-expected-to-fall-further-in-2020/">Rystad</a>. Independent estimates of flaring based on analysis of NASA/NOAA Visible Infrared Imaging Radiometer Suite (VIIRS) <span class="citation" data-cites="elvidge2015">(<a href="#ref-elvidge2015" role="doc-biblioref">Elvidge et al., 2015</a>)</span>. At the time of writing, compilations of annual flaring volumes from VIIRS analysis as part of the <a href="https://eogdata.mines.edu/download_global_flare.html">global flares project</a> are complete for the years 2012-2018, with an accuracy estimated to be ±9.5% <span class="citation" data-cites="elvidge2015">(<a href="#ref-elvidge2015" role="doc-biblioref">Elvidge et al., 2015</a>)</span>.</p>
 <h1 id="the-bakken">the Bakken</h1>
-<p>Like many of the U.S. shale gas plays, oil is the principal commodity driving investment in the Bakken. In 2019, Bakken production accounted to ~ 18.2% of all U.S. tight oil, whereas it accounted for only 2.8% of U.S shale gas production (cf. Figs <a href="#fig:fig-dry-gas">12</a> &amp; <a href="#fig:fig-tight-oil">13</a>).</p>
+<p>Like many of the U.S. shale gas plays, oil is the principal commodity driving investment in the Bakken. In 2019, Bakken production accounted to ~ 18.3% of all U.S. tight oil, whereas it accounted for only 2.7% of U.S shale gas production (cf. Figs <a href="#fig:fig-dry-gas">12</a> &amp; <a href="#fig:fig-tight-oil">13</a>).</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:fig-viirs-bakken"></span>
 <img src="tropomi-and-gas-emsissions_files/figure-html5/fig-viirs-bakken-1.png" alt="Distribution and volumes gas flaring in the  Permian and Bakken for 2018, from VIIRS, in units of Mmcf per day" width="624" />
@@ -2190,6 +2195,7 @@ Figure 6: Estimates of gas flaring in the North Dakotan production by quarter, d
 <col style="width: 5%" />
 <col style="width: 5%" />
 <col style="width: 5%" />
+<col style="width: 5%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -2209,6 +2215,7 @@ Figure 6: Estimates of gas flaring in the North Dakotan production by quarter, d
 <th style="text-align: left;">2018</th>
 <th style="text-align: left;">2019</th>
 <th style="text-align: left;">2020</th>
+<th style="text-align: left;">2021</th>
 </tr>
 </thead>
 <tbody>
@@ -2222,13 +2229,14 @@ Figure 6: Estimates of gas flaring in the North Dakotan production by quarter, d
 <td style="text-align: left;">3.25</td>
 <td style="text-align: left;">5.39</td>
 <td style="text-align: left;">7.26</td>
-<td style="text-align: left;">9.67</td>
+<td style="text-align: left;">9.66</td>
 <td style="text-align: left;">12.18</td>
 <td style="text-align: left;">12.69</td>
 <td style="text-align: left;">14.35</td>
 <td style="text-align: left;">17.95</td>
 <td style="text-align: left;">22.12</td>
-<td style="text-align: left;">19.66</td>
+<td style="text-align: left;">20.55</td>
+<td style="text-align: left;">22.07</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">sold</td>
@@ -2246,7 +2254,8 @@ Figure 6: Estimates of gas flaring in the North Dakotan production by quarter, d
 <td style="text-align: left;">11.85</td>
 <td style="text-align: left;">13.92</td>
 <td style="text-align: left;">16.75</td>
-<td style="text-align: left;">16.35</td>
+<td style="text-align: left;">17.45</td>
+<td style="text-align: left;">19.55</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">flared</td>
@@ -2262,9 +2271,10 @@ Figure 6: Estimates of gas flaring in the North Dakotan production by quarter, d
 <td style="text-align: left;">2.22</td>
 <td style="text-align: left;">1.46</td>
 <td style="text-align: left;">1.86</td>
-<td style="text-align: left;">3.09</td>
-<td style="text-align: left;">4.27</td>
-<td style="text-align: left;">2.37</td>
+<td style="text-align: left;">3.1</td>
+<td style="text-align: left;">4.28</td>
+<td style="text-align: left;">2.07</td>
+<td style="text-align: left;">1.38</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">unaccounted</td>
@@ -2280,9 +2290,10 @@ Figure 6: Estimates of gas flaring in the North Dakotan production by quarter, d
 <td style="text-align: left;">0.55</td>
 <td style="text-align: left;">0.55</td>
 <td style="text-align: left;">0.64</td>
-<td style="text-align: left;">0.94</td>
-<td style="text-align: left;">1.1</td>
-<td style="text-align: left;">0.94</td>
+<td style="text-align: left;">0.93</td>
+<td style="text-align: left;">1.09</td>
+<td style="text-align: left;">1.03</td>
+<td style="text-align: left;">1.14</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">flared %</td>
@@ -2299,8 +2310,9 @@ Figure 6: Estimates of gas flaring in the North Dakotan production by quarter, d
 <td style="text-align: left;">11.5%</td>
 <td style="text-align: left;">12.9%</td>
 <td style="text-align: left;">17%</td>
-<td style="text-align: left;">19.3%</td>
-<td style="text-align: left;">11.8%</td>
+<td style="text-align: left;">19.4%</td>
+<td style="text-align: left;">10%</td>
+<td style="text-align: left;">6.27</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">unacc. %</td>
@@ -2318,7 +2330,8 @@ Figure 6: Estimates of gas flaring in the North Dakotan production by quarter, d
 <td style="text-align: left;">4.4%</td>
 <td style="text-align: left;">5.2%</td>
 <td style="text-align: left;">5%</td>
-<td style="text-align: left;">4.8%</td>
+<td style="text-align: left;">5%</td>
+<td style="text-align: left;">5.15</td>
 </tr>
 </tbody>
 </table>
@@ -2343,7 +2356,7 @@ Figure 8: Cumulative distribution of VIIRS production by sites for 2018.
 </div>
 </div>
 <h2 id="co2-e-emissions">CO<sub>2</sub>-e emissions</h2>
-<p>For the Bakken, <span class="citation" data-cites="schneising2020">Schneising et al. (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span> estimates total methane venting form all sources across 2018 and 2019 average 0.89±0.56 millions tonnes per year. As shown in Table that is simmilar to wht 1.02 million tonnes average of the “unaccounted” gas. Assuming that the “unaccounted” gas in the North Dakota is a proxy for the venting then we can make an estimate of the CO<sub>2</sub>-equivalent budget summing the flared gas as CO<sub>2</sub>, assuming 100% efficiency, and the methane venting at an appropriate time scale. Figs <a href="#fig:fig-bakken-100">9</a> &amp; <a href="#fig:fig-bakken-20">10</a> show the CO2-e using global worming potential for CH<sub>4</sub> appropriate to 20 years (x86 CO<sub>2</sub> GWP) and 20 years (x 34 CO<sub>2</sub> GWP)</p>
+<p>For the Bakken, <span class="citation" data-cites="schneising2020"><a href="#ref-schneising2020" role="doc-biblioref">Schneising et al.</a> (<a href="#ref-schneising2020" role="doc-biblioref">2020</a>)</span> estimates total methane venting form all sources across 2018 and 2019 average 0.89±0.56 millions tonnes per year. As shown in Table that is simmilar to wht 1.02 million tonnes average of the “unaccounted” gas. Assuming that the “unaccounted” gas in the North Dakota is a proxy for the venting then we can make an estimate of the CO<sub>2</sub>-equivalent budget summing the flared gas as CO<sub>2</sub>, assuming 100% efficiency, and the methane venting at an appropriate time scale. Figs <a href="#fig:fig-bakken-100">9</a> &amp; <a href="#fig:fig-bakken-20">10</a> show the CO2-e using global worming potential for CH<sub>4</sub> appropriate to 20 years (x86 CO<sub>2</sub> GWP) and 20 years (x 34 CO<sub>2</sub> GWP)</p>
 <p>As flaring is generally not 100% efficient,</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:fig-bakken-100"></span>
@@ -2413,27 +2426,27 @@ Figure 14: Bakken gas production, EIA
 </div>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<div id="refs" class="references hanging-indent" role="doc-bibliography">
-<div id="ref-elvidge2015">
-<p>Elvidge, C., Zhizhin, M., Baugh, K., Hsu, F.-C., &amp; Ghosh, T. (2015). Methods for global survey of natural gas flaring from visible infrared imaging radiometer suite data. <em>Energies</em>, <em>9</em>(1), 14.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-elvidge2015" class="csl-entry" role="doc-biblioentry">
+Elvidge, C., Zhizhin, M., Baugh, K., Hsu, F.-C., &amp; Ghosh, T. (2015). Methods for global survey of natural gas flaring from visible infrared imaging radiometer suite data. <em>Energies</em>, <em>9</em>(1), 14.
 </div>
-<div id="ref-helmig2016">
-<p>Helmig, D., Rossabi, S., Hueber, J., Tans, P., Montzka, S. A., Masarie, K., et al. (2016). Reversal of global atmospheric ethane and propane trends largely due to us oil and natural gas production. <em>Nature Geoscience</em>, <em>9</em>(7), 490–495.</p>
+<div id="ref-helmig2016" class="csl-entry" role="doc-biblioentry">
+Helmig, D., Rossabi, S., Hueber, J., Tans, P., Montzka, S. A., Masarie, K., et al. (2016). Reversal of global atmospheric ethane and propane trends largely due to US oil and natural gas production. <em>Nature Geoscience</em>, <em>9</em>(7), 490–495.
 </div>
-<div id="ref-howarth2014">
-<p>Howarth, R. W. (2014). A bridge to nowhere: Methane emissions and the greenhouse gas footprint of natural gas. <em>Energy Science &amp;Amp; Engineering</em>, <em>2</em>(2), 47–60.</p>
+<div id="ref-howarth2014" class="csl-entry" role="doc-biblioentry">
+Howarth, Robert W. (2014). A bridge to nowhere: Methane emissions and the greenhouse gas footprint of natural gas. <em>Energy Science &amp;Amp; Engineering</em>, <em>2</em>(2), 47–60.
 </div>
-<div id="ref-howarth2019">
-<p>Howarth, R. W. (2019). Ideas and perspectives: Is shale gas a major driver of recent increase in global atmospheric methane. <em>Biogeosciences</em>, <em>16</em>(15), 3033–3046.</p>
+<div id="ref-howarth2019" class="csl-entry" role="doc-biblioentry">
+Howarth, Robert W. (2019). Ideas and perspectives: Is shale gas a major driver of recent increase in global atmospheric methane. <em>Biogeosciences</em>, <em>16</em>(15), 3033–3046.
 </div>
-<div id="ref-howarth">
-<p>Howarth, R. W., Santoro, R., &amp; A, I. (2011). Methane and the greenhouse-gas footprint of natural gas from shale formations. <em>Climatic Change</em>, <em>106</em>.</p>
+<div id="ref-howarth" class="csl-entry" role="doc-biblioentry">
+Howarth, R. W., Santoro, R., &amp; A, I. (2011). Methane and the greenhouse-gas footprint of natural gas from shale formations. <em>Climatic Change</em>, <em>106</em>.
 </div>
-<div id="ref-schneising2020">
-<p>Schneising, O., Buchwitz, M., Reuter, M., Vanselow, S., Bovensmann, H., &amp; Burrows, J. P. (2020). Remote sensing of methane leakage from natural gas and petroleum systems revisited. <em>Atmospheric Chemistry and Physics</em>, <em>20</em>(15), 9169–9182.</p>
+<div id="ref-schneising2020" class="csl-entry" role="doc-biblioentry">
+Schneising, O., Buchwitz, M., Reuter, M., Vanselow, S., Bovensmann, H., &amp; Burrows, J. P. (2020). Remote sensing of methane leakage from natural gas and petroleum systems revisited. <em>Atmospheric Chemistry and Physics</em>, <em>20</em>(15), 9169–9182.
 </div>
-<div id="ref-willyard2019">
-<p>Willyard, K., &amp; Schade, G. (2019). Flaring in two texas shale areas: Comparison of bottom-up with top-down volume estimates for 2012 to 2015. <em>Sci Total Environ</em>, <em>691</em>, 243–251.</p>
+<div id="ref-willyard2019" class="csl-entry" role="doc-biblioentry">
+Willyard, K., &amp; Schade, G. (2019). Flaring in two texas shale areas: Comparison of bottom-up with top-down volume estimates for 2012 to 2015. <em>Sci Total Environ</em>, <em>691</em>, 243–251.
 </div>
 </div>
 <!--radix_placeholder_article_footer-->
