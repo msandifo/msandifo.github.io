@@ -12,5 +12,5 @@ readxl
 magrittr
 lubridate
 ggthemes
-xml2
 rvest
+aemo.data

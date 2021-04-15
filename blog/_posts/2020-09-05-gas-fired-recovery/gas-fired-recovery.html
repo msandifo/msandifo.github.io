@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -115,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["gas-fired-recovery_files/anchor-4.2.2/anchor.min.js","gas-fired-recovery_files/bowser-1.9.3/bowser.min.js","gas-fired-recovery_files/bowser/bowser.min.js","gas-fired-recovery_files/distill-2.2.21/template.v2.js","gas-fired-recovery_files/distill/template.v2.js","gas-fired-recovery_files/header-attrs-2.3/header-attrs.js","gas-fired-recovery_files/header-attrs-2.4/header-attrs.js","gas-fired-recovery_files/header-attrs-2.6/header-attrs.js","gas-fired-recovery_files/header-attrs/header-attrs.js","gas-fired-recovery_files/jquery-1.11.3/jquery.min.js","gas-fired-recovery_files/jquery/jquery.min.js","gas-fired-recovery_files/webcomponents-2.0.0/webcomponents.js","gas-fired-recovery_files/webcomponents/webcomponents.js","images/aus_domestic_balance_0.png","images/Balance.png","images/domestic.png","images/p001_01.png","images/vic.prod.png"]}
+  {"type":"character","attributes":{},"value":["gas-fired-recovery_files/anchor-4.2.2/anchor.min.js","gas-fired-recovery_files/anchor/anchor.min.js","gas-fired-recovery_files/bowser-1.9.3/bowser.min.js","gas-fired-recovery_files/bowser/bowser.min.js","gas-fired-recovery_files/distill-2.2.21/template.v2.js","gas-fired-recovery_files/distill/template.v2.js","gas-fired-recovery_files/header-attrs-2.3/header-attrs.js","gas-fired-recovery_files/header-attrs-2.4/header-attrs.js","gas-fired-recovery_files/header-attrs-2.6/header-attrs.js","gas-fired-recovery_files/header-attrs/header-attrs.js","gas-fired-recovery_files/jquery-1.11.3/jquery.min.js","gas-fired-recovery_files/jquery/jquery.min.js","gas-fired-recovery_files/popper/popper.min.js","gas-fired-recovery_files/tippy/tippy-bundle.umd.min.js","gas-fired-recovery_files/tippy/tippy-light-border.css","gas-fired-recovery_files/tippy/tippy.css","gas-fired-recovery_files/tippy/tippy.umd.min.js","gas-fired-recovery_files/webcomponents-2.0.0/webcomponents.js","gas-fired-recovery_files/webcomponents/webcomponents.js","images/aus_domestic_balance_0.png","images/Balance.png","images/domestic.png","images/p001_01.png","images/vic.prod.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -307,6 +308,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     text-decoration: underline;
   }
 
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
   @media(min-width: 768px) {
 
   d-article pre,
@@ -461,6 +467,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   div.hanging-indent{
     margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
   }
 
 
@@ -1128,7 +1145,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       var layout = $(this).attr('data-layout');
 
       // apply layout to markdown level block elements
-      var elements = $(this).children().not('div.sourceCode, pre, script');
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
       elements.each(function(i, el) {
         var layout_div = $('<div class="' + layout + '"></div>');
         if (layout_div.hasClass('shaded')) {
@@ -1243,6 +1260,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // move appendix-bottom entries to the bottom
       $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
       $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
 
       // clear polling timer
       clearInterval(tid);
@@ -1403,8 +1434,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="gas-fired-recovery_files/header-attrs-2.6/header-attrs.js"></script>
+  <script src="gas-fired-recovery_files/header-attrs-2.7/header-attrs.js"></script>
   <script src="gas-fired-recovery_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="gas-fired-recovery_files/popper-2.6.0/popper.min.js"></script>
+  <link href="gas-fired-recovery_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="gas-fired-recovery_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="gas-fired-recovery_files/tippy-6.2.7/tippy.umd.min.js"></script>
   <script src="gas-fired-recovery_files/anchor-4.2.2/anchor.min.js"></script>
   <script src="gas-fired-recovery_files/bowser-1.9.3/bowser.min.js"></script>
   <script src="gas-fired-recovery_files/webcomponents-2.0.0/webcomponents.js"></script>
@@ -1444,10 +1479,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="marginfigure"><code>  \linebreak \begin{flushright}
+   \it{... and so, if gas is critical for industrial recovery, why waste it heating houses?}
+     \end {flushright}
+   </code></pre>
 </div>
 <p><em>“Over half of Australians still rely on gas as a source of energy, but few realise that there’s a more cost-effective, energy-efficient option – heat pumps”</em> <a href="https://discover.agl.com.au/your-home/heat-pumps-why-are-they-more-efficient/">AGL</a></p>
-<p><a href="https://msandifo.github.io/pdfs/20200907_gas_briefing.pdf">click here for pdf version</a></p>
+<p><a href="https://msandifo.github.io/pdfs/misc/20200907_gas_briefing.pdf">click here for pdf version</a></p>
 <hr />
 <!-- \noindent _"so, if gas is critical for industrial recovery, why waste it heating houses?"_ our view -->
 <!-- --- -->
@@ -1477,7 +1515,7 @@ Figure 2: East Coast gas production by region less allocations to the Curtis Isl
 </p>
 </div>
 </div>
-<p>In 2019, total east coast gas production averaged ~5180 TJ/day of which 3320 TJ/day was allocated to LNG exports (64%) and about 310 TJ/day (6%) to LNG processing at Curtis Island, leaving a balance of about 1550 TJ/day <!-- ^[cf. ~1760 TJ/day across 2010-2014]   --> (30%) for the domestic market. CSG production in Queensland accounted for 77% of total production (~4010 TJ/day), of which 9% (~380 TJ/day) was allocated to the domestic market. This compares to the average of 550 TJ/day from CSG in the period 2010-2013, prior to the first LNG exports in 2015. In effect, notwithstanding the impact of the ADGSM, some 180 TJ/day has been diverted from Queensland domestic supply to LNG export. Of the domestic allocation industry uses ~45%, domestic and commercial heating ~32%, power generation ~23%. In Victoria, 55% of demand is for domestic and commercial heating, 30% for industry and 15% for power.</p>
+<p>In 2019, total east coast gas production averaged ~5180 TJ/day of which 9.745^{4} TJ/day was allocated to LNG exports (1880%) and about -9.381^{4} TJ/day (-1810%) to LNG processing at Curtis Island, leaving a balance of about 1550 TJ/day <!-- ^[cf. ~1760 TJ/day across 2010-2014]   --> (30%) for the domestic market. CSG production in Queensland accounted for 77% of total production (~4010 TJ/day), of which 9% (~380 TJ/day) was allocated to the domestic market. This compares to the average of 550 TJ/day from CSG in the period 2010-2013, prior to the first LNG exports in 2015. In effect, notwithstanding the impact of the ADGSM, some 180 TJ/day has been diverted from Queensland domestic supply to LNG export. Of the domestic allocation industry uses ~45%, domestic and commercial heating ~32%, power generation ~23%. In Victoria, 55% of demand is for domestic and commercial heating, 30% for industry and 15% for power.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:fvid-prod"></span>
 <img src="images/vic.prod.png" alt="Victorian gas production showing strong seasonality averaging about 910 TJ/day." width="1050" />
@@ -1514,8 +1552,8 @@ Figure 4: Victorian gas allocation to domestic and commercial sectors mainly for
 <li>Victorian gas production ~910 TJ/day</li>
 <li>total east coast industrial gas demand, excluding LNG ~720 TJ/day</li>
 <li>Victorian domestic and commercial gas heating ~360 TJ/day</li>
-<li>LNG exports ~3320 TJ/day</li>
-<li>LNG processing ~310 TJ/day
+<li>LNG exports ~9.745^{4} TJ/day</li>
+<li>LNG processing ~-9.381^{4} TJ/day
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:shadow-price-1"></span>
 <img src="images/p001_01.png" alt="Wholesale electricity prices doubled as LNG exports increased across 2016, adding 14 billion to the traded value substantially due to the practice of shadowing the gas price." width="100%" />
@@ -1536,7 +1574,7 @@ Figure 5: Wholesale electricity prices doubled as LNG exports increased across 2
 <li><em>Peak day adequacy</em> issues are forecast in AEMO’s March 2020 <a href="https://aemo.com.au/en/energy-systems/gas/gas-forecasting-and-planning/victorian-gas-planning-report">Victorian Gas Planning Report Update</a></li>
 <li>the exercise of market power through <em>shadowing the gas price</em> impacted the wholesale electricity price in 2017 by as much as ~$14 billion <a href="https://msandifo.github.io/pdfs/20200907_gas_competition.pdf">see preprint</a></li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

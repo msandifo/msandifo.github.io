@@ -27,9 +27,15 @@
 }
 
 body{
-  font-size: 14pt;
+  font-size: 12pt;
 }
+
+p {
+  line-height: 24px;   /* within paragraph */
+  margin-bottom: 1px; 
+   
+  }
 /* Headers */
 h1,h2,h3,h4,h5,h6{
-  font-size: 20pt;
+  font-size: 16pt;
 }

@@ -21,11 +21,11 @@ options(htmltools.dir.version = FALSE)
 
 #extrafont::loadfonts()
 
-update=FALSE
+update=TRUE
 plots=FALSE
 do_save=FALSE
 blog.dir<- getwd()
-gas.dir<-"/Volumes/data/Dropbox/msandifo/documents/programming/r/2020/gasbb/"
+gas.dir<-"~/Dropbox/msandifo/documents/programming/r/2020/gasbb/"
 setwd(gas.dir)
 source("r/setup.R")
 plots=TRUE
@@ -71,7 +71,7 @@ setwd(blog.dir)
 
 \noindent _"Over half of Australians still rely on gas as a source of energy, but few realise that there’s a more cost-effective, energy-efficient option – heat pumps"_ [AGL](https://discover.agl.com.au/your-home/heat-pumps-why-are-they-more-efficient/)
 
-[click here for pdf version](https://msandifo.github.io/pdfs/20200907_gas_briefing.pdf)
+[click here for pdf version](https://msandifo.github.io/pdfs/misc/20200907_gas_briefing.pdf)
 
 ---
 
