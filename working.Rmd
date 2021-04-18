@@ -6,13 +6,9 @@
 - Sandiford,. M., Tropomi and fugitive methane emissions - recent insights
 
 - Macumber, P.G.,  Sandiford, M., Palaeohydrology, stratigraphy, tectonics and aquifer recharge in western Victoria: Implications for regional variations in groundwater salinity. in progress
-
 - Li, G.,  Yang,H., Sandiford, M.,  Kohn, B.,  Xu, Z.,  Dong, H.,  Pliocene reorganisation of the Yarlung-Siang-Brahmaputra River system, eastern Himalaya revealed by thermochronology and geodynamic modelling
-
-- Guangzheng Jiang, Qingtian L, Yuntao Tian,  Sandiford, M., Yizuo Shi, Changchun Zou, Feng Ma, Chenglong Deng, Lijuan He, Shengbiao Hu, Ground surface temperature history since LGM in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling Program (ICDP) SK-2e 
-
-- Chen, Y.,  Saygin, E.,  Kennett, B., Qashqai, M.T.,  Hauser, J., Lumley, D., and Sandiford,M., Next-generation velocity model of the Australian crust from synchronous and asynchronous ambient noise imaging
-
+<!-- - Guangzheng Jiang, Qingtian L, Yuntao Tian,  Sandiford, M., Yizuo Shi, Changchun Zou, Feng Ma, Chenglong Deng, Lijuan He, Shengbiao Hu, Ground surface temperature history since LGM in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling Program (ICDP) SK-2e  -->
+<!-- - Chen, Y.,  Saygin, E.,  Kennett, B., Qashqai, M.T.,  Hauser, J., Lumley, D., and Sandiford,M., Next-generation velocity model of the Australian crust from synchronous and asynchronous ambient noise imaging -->
 
 - Jansen, J.D.,  Sandiford, M.,  Fujioka, T.,  Cohen, T.,  Struck, M.,  Anderson, S.P.,  Anderson,R.S., Wilcken, K., Egholm,  D.L.,  Geomorphic imprints of dynamic topography and intraplate tectonism in central Australia, Earth and Planetary Science Letters, submitted February, 2021
 
