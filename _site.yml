@@ -18,7 +18,9 @@ navbar:
       menu:
         - text: "peer review"
           href: pubs.html
-        - text: "technical"
+        - text: "working papers"
+          href: working.html
+        - text: "technical reports"
           href: tech.html
         - image: ./icons/mini-icon.png
           href: https://orcid.org/0000-0002-9757-745X
