@@ -8,11 +8,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # current 
 
-- Redmond Barry Distinguished Professor Emeritus, University  of Melbourne, 2021
+- Redmond Barry Distinguished Professor Emeritus, University of Melbourne, 2021
 
 
 # previous
-- Redmond Barry Distinguished Emeritus Professor, University  of Melbourne, 2016-2021
+- Redmond Barry Distinguished Professor, University  of Melbourne, 2016-2021
 - Chair of Geology, University of Melbourne, 2010-2021
 - Inaugural Director,  Melbourne Energy Institute, University of Melbourne, 2009-2016
 - ARC Professorial Fellow, University of Melbourne, 2000-2004 & 2005-2009
