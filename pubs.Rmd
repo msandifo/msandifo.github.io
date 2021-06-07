@@ -63,6 +63,9 @@ gs.id<-"qdYHZTgAAAAJ"
 ## reverse chronology 
  #google cites
 
+1.  Rosenbaum, G., Caulfield, J., Ubide, T., Ward, J., Sandiford, D., Sandiford, M.,  Spatially and Geochemically Anomalous arc Magmatism: Insights from the Andean arc and relationships to slab structure, G-cubed, accepted June, 2021 `r ( gs("Insights from the Andean arc"))`
+
+
 1. Ward, J.F., Rosenbaum, G., Ubide, T., Wu, J., Caulfield, J.T., Sandiford, M., Derya Gürer, D., 2021, Geophysical and geochemical constraints on the origin of Holocene intraplate volcanism in East Asia,  Earth-Science Reviews, Pacific-Asian Tectonics Special Issue, accpted April, 2021, https://doi.org/10.1016/j.earscirev.2021.103624, `r ( gs("Holocene intraplate volcanism in East Asia"))`
 
 1. Schofield, R., Utembe, S., Gionfriddo, C., Tate, M., Krabbenhoft, D., Adeloju, M., Dundek, M., Keywood, M., Dargaville, R., Sandiford, M., 2021, Atmospheric mercury in the La Trobe Valley, Australia: case study June 2013, Elementa  Science of the  Anthropocene, 9, (1),
