@@ -203,7 +203,7 @@ Journal of Geology, 123, 39–54,
 http://dx.doi.org/10.1086/680207,
 `r ( gs("Renbu"))`
 
-1.	Morell, K.D., __Sandifordy, M.__, Rajendran, C.P., Rajendran, K., Fink, D., Alimanovic, A., Sanwal, J., 2015,
+1.	Morell, K.D., Sandiford, M., Rajendran, C.P., Rajendran, K., Fink, D., Alimanovic, A., Sanwal, J., 2015,
 Geomorphology reveals active decollement geometry in the central Himalayan seismic gap, Lithosphere, 7, 247-256,
 http://dx.doi.org/10.1130/L407.1, 
 `r ( gs("geometry in the central"))`
