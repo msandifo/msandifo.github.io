@@ -68,13 +68,16 @@ gs.id<-"qdYHZTgAAAAJ"
 
 1. Ward, J.F., Rosenbaum, G., Ubide, T., Wu, J., Caulfield, J.T., Sandiford, M., Gürer, D., 2021, Geophysical and geochemical constraints on the origin of Holocene intraplate volcanism in East Asia,  Earth-Science Reviews, Pacific-Asian Tectonics Special Issue, online April 2021, https://doi.org/10.1016/j.earscirev.2021.103624, `r ( gs("Holocene intraplate volcanism in East Asia"))`
 
+1.  Hoffman, N., Dodds, K.,  Ross, A.,   Jones, A.,  Attanayake, J., Gibson, G.,   Sandiford, M.,  Silver, J.,  Deutscher, N., Rayner, P., 2021, 
+Shallow water monitoring technologies and trials at the CarbonNet Pelican CO2 storage site
+Proceedings of the 15th Greenhouse Gas Control Technologies Conference, SSRN, 3811999, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3811999#
+
 1. Schofield, R., Utembe, S., Gionfriddo, C., Tate, M., Krabbenhoft, D., Adeloju, M., Dundek, M., Keywood, M., Dargaville, R., Sandiford, M., 2021, Atmospheric mercury in the La Trobe Valley, Australia: case study June 2013, Elementa  Science of the  Anthropocene, 9, (1),
 https://doi.org/10.1525/elementa.2021.00072, `r ( gs("Atmospheric mercury"))`
 
 
 1. McConnell, D., Sandiford, M., 2020, 
-Impacts of LNG export and market power on Australian electricity market dynamics, 2016-2019, 2020, Current Sustainable/Renewable Energy Reports,    7, 176–185,  
-https://doi.org/10.1007/s40518-020-00164-2, `r ( gs("LNG"))`
+Impacts of LNG export and market power on Australian electricity market dynamics, 2016-2019, 2020, Current Sustainable/Renewable Energy Reports,    7, 176–185,  https://doi.org/10.1007/s40518-020-00164-2, `r ( gs("LNG"))`
 
 1. Sandiford, D., Moresi, L.N., Sandiford, M., Farrington, R., Ting, Y., 2020, 
 The fingerprints of flexure in slab seismicity, 
