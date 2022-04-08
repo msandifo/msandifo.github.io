@@ -31,11 +31,11 @@ occasional [reflections](https://theconversation.com/columns/mike-sandiford-228)
  
 
 ### [recent publications](pubs.html)
-- [geomporph](pdfs/peer/2022_EPSL.pdf) - elasticity, gravity and the Finke Gorge
-- [geochem](pdfs/peer/2021_GGG.pdf) - anamolous arc magmas
+- [geomorph](pdfs/peer/2022_EPSL.pdf) - elasticity, gravity and the Finke Gorge
+- [geochem](pdfs/peer/2021_GGG.pdf) - anomalous arc magmas
 - [volcanism](pdfs/peer/2021_ESR.pdf) - Holocene intraplate volcanism in East Asia
 - [environment](pdfs/peer/2021_Elementa.pdf) - on Mercury pollution from electricity generation in the Latrobe Valley 
-- [dynamics](pdfs/peer/2020_Tectonics.pdf) - on stress distribution and dynamics of subducting slabs 
+- [geodynamics](pdfs/peer/2020_Tectonics.pdf) - on stress distribution and dynamics of subducting slabs 
 - [earthquakes](pdfs/peer/2020_BSSA.pdf) - on Australia's largest earthquake in almost 30 years
 - [groundwater](pdfs/peer/2020_Hydrogeol.pdf) - some novel insights into the iconic Great Artesian Basin
 - [techniques](pdfs/peer/2020_GTE.pdf) - on the measuring thermal diffusivity in soils  
