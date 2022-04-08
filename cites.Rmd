@@ -65,6 +65,7 @@ Google Scholar
 ```{r fig-margin1, fig.margin = TRUE,  echo=FALSE ,   fig.align="right"} 
 #library(scholar)
 library(ggplot2)
+ 
 #gs.id<-"qdYHZTgAAAAJ"
  
 #my.cites=get_citation_history(gs.id)
