@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/website.html
 
 ```
-geologist, husband, father, sailor, Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne, former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au), fellow [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford)
+geologist, (eternal husband to Bridget), father, sailor, Redmond Barry Distinguished Professor (emeritus) at the University of Melbourne, former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au), fellow [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford)
 
 research interests include [earth dynamics](pdfs/peer/2020_Tectonics.pdf), [earth energetics](pdfs/peer/2002_EPSL_b.pdf), [landscape evolution](pdfs/peer/2013_nature12218.pdf), [continental evolution](pdfs/peer/2010_JMG_a.pdf) and [energy systems](pdfs/peer/2015_AppEnergy.pdf)
 
@@ -31,7 +31,9 @@ occasional [reflections](https://theconversation.com/columns/mike-sandiford-228)
  
 
 ### [recent publications](pubs.html)
-
+- [geomporph](pdfs/peer/2022_EPSL.pdf) - elasticity, gravity and the Finke Gorge
+- [geochem](pdfs/peer/2021_GGG.pdf) - anamolous arc magmas
+- [volcanism](pdfs/peer/2021_ESR.pdf) - Holocene intraplate volcanism in East Asia
 - [environment](pdfs/peer/2021_Elementa.pdf) - on Mercury pollution from electricity generation in the Latrobe Valley 
 - [dynamics](pdfs/peer/2020_Tectonics.pdf) - on stress distribution and dynamics of subducting slabs 
 - [earthquakes](pdfs/peer/2020_BSSA.pdf) - on Australia's largest earthquake in almost 30 years
