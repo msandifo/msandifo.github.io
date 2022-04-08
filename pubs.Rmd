@@ -754,6 +754,6 @@ library(ggplot2)
 #gs.id<-"qdYHZTgAAAAJ"
  
 #my.cites=get_citation_history(gs.id)
-ggplot(my.cites, aes (year, cites))+geom_bar(stat="identity" ) +ylab("google scholar cites")+theme_classic()
+#ggplot(my.cites, aes (year, cites))+geom_bar(stat="identity" ) +ylab("google scholar cites")+theme_classic()
 ```
 
