@@ -61,7 +61,13 @@ gs.id<-"qdYHZTgAAAAJ"
  
  
 ## reverse chronology 
- #google cites
+ 
+#google cites
+ 
+ 1. Jansen, J.D.  Sandiford, M.,  Fujioka, T., Cohen, T.J., Struck, M.,  Anderson, S.P. 2022, Geomorphic imprints of lithospheric flexure in central Australia, Earth and Planetary Science Letters 584, 117456
+ 
+ 1. JF Ward, G Rosenbaum, T Ubide, J Wu, JT Caulfield, M Sandiford,  2021, Geophysical and geochemical constraints on the origin of Holocene intraplate volcanism in East Asia, 
+Earth-Science Reviews 218, 103624
 
 1.  Rosenbaum, G., Caulfield, J., Ubide, T., Ward, J., Sandiford, D., Sandiford, M.,  Spatially and Geochemically Anomalous arc Magmatism: Insights from the Andean arc and relationships to slab structure, Gechemistry, Geophysics, Geosystems, online June 2021, https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2021GC009688,  `r ( gs("Insights from the Andean arc"))`
 
