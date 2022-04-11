@@ -1,6 +1,6 @@
 ---
 title: "what on earth ..."
-description: "reflections on a life of science, some contributions, some anecdotes.
+description: "reflections on a life with science, some contributions, some anecdotes.
   \n"
 ---
 
@@ -24,7 +24,7 @@ investigation:-
 
 
 
-privilege:- to have worked among communities that have lived for millennia in some of the most dynamic and remote parts of our planet including [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Tibet](https://theconversation.com/raising-tibet-58483),  [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332), and some places to remote for community (Enderby Land, Northern Victoria Land); to have known love and  so much more. 
+privilege:- to have worked among communities that have lived for millennia the most dynamic and remote parts of our planet ( [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Tibet](https://theconversation.com/raising-tibet-58483),  [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)), and some places beyond  (Enderby Land, Northern Victoria Land); to have known love and  much more. 
 
 [reflection](https://theconversation.com/columns/mike-sandiford-228):-  [earth](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy policy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) 
 
@@ -43,15 +43,15 @@ fellow [Australian Academy of Science](https://www.science.org.au/profile/michae
  
 
 ### [recent publications](pubs.html)
-- [geomorph](pdfs/peer/2022_EPSL.pdf) - elasticity, gravity and the Finke Gorge
-- [geochem](pdfs/peer/2021_GGG.pdf) - anomalous arc magmas
-- [volcanism](pdfs/peer/2021_ESR.pdf) - Holocene intraplate volcanism in East Asia
-- [environment](pdfs/peer/2021_Elementa.pdf) - on Mercury pollution from electricity generation in the Latrobe Valley 
-- [geodynamics](pdfs/peer/2020_Tectonics.pdf) - on stress distribution and dynamics of subducting slabs 
-- [earthquakes](pdfs/peer/2020_BSSA.pdf) - on Australia's largest earthquake in almost 30 years
+- [geomorph](pdfs/peer/2022_EPSL.pdf) - elasticity, gravity and the Finke Gorge 
+- [geochem](pdfs/peer/2021_GGG.pdf) - anomalous arc magmas 
+- [volcanism](pdfs/peer/2021_ESR.pdf) - Holocene intraplate volcanism in East Asia 
+- [environment](pdfs/peer/2021_Elementa.pdf) - Mercury levels, electricity generation in the Latrobe Valley 
+- [geodynamics](pdfs/peer/2020_Tectonics.pdf) - stress distribution and dynamics of subducting slabs 
+- [earthquakes](pdfs/peer/2020_BSSA.pdf) - Australia's largest earthquake in almost 30 years
 - [groundwater](pdfs/peer/2020_Hydrogeol.pdf) - some novel insights into the iconic Great Artesian Basin
-- [techniques](pdfs/peer/2020_GTE.pdf) - on the measuring thermal diffusivity in soils  
-- [economics](pdfs/peer/2020_CSR.pdf) - on the impact of market power in the Australian energy system
+- [techniques](pdfs/peer/2020_GTE.pdf) - measuring thermal diffusivity in soils  
+- [economics](pdfs/peer/2020_CSR.pdf) - market power in the Australian energy system
 
 
 
