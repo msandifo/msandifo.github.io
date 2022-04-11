@@ -12,8 +12,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+![](./images/bhutan_2.jpeg)
 orbit:- 
 eternal husband [[Bridget Robinson](pdfs/personal/bid_celebration.pdf)], father,  sailor,  geologist 
+
 
 
 
