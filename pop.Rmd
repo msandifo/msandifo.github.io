@@ -4,9 +4,9 @@ title: "engagement"
 
 ## the Conversation
 
-Some 58 essays on the academic website [the Conversation]( https://theconversation.com/profiles/mike-sandiford-228/articles). 
+including 50+ essays on the academic website [the Conversation]( https://theconversation.com/profiles/mike-sandiford-228/articles). 
 
-including ...
+some of my favourites...
 
 * [A precarious geological bargain](https://theconversation.com/a-precarious-geological-bargain-57903), April 2016.
 * [Travelling with Timor Leste](./blog/_site/posts/2016-04-16-travelling-with-timor-leste/index.html), April 2016.
