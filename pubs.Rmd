@@ -3,6 +3,9 @@ title: "Peer reviewed publications"
 ---
  
 ```{r setup, include=FALSE}
+
+library(showtext)
+showtext_auto() 
 library(tufte)
 knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
 options(htmltools.dir.version = FALSE)
@@ -778,6 +781,6 @@ library(ggplot2)
 #gs.id<-"qdYHZTgAAAAJ"
  
 #my.cites=get_citation_history(gs.id)
-#ggplot(my.cites, aes (year, cites))+geom_bar(stat="identity" ) +ylab("google scholar cites")+theme_classic()
+ ggplot(my.cites, aes (year, cites))+geom_bar(stat="identity" ) +ylab("google scholar cites")+theme_classic()
 ```
 
