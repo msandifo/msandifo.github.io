@@ -66,6 +66,9 @@ gs.id<-"qdYHZTgAAAAJ"
 ## reverse chronology 
  
 #google cites
+
+1. Sandiford, M. 2022, The net-zero opportunity for Australian minerals.  in The Superpower Transformation, ed. Garnaut, R., Latrobe University Press/Black Inc., p149-169.
+ 
  
  1. Jansen, J.D.,  Sandiford, M.,  Fujioka, T., Cohen, T.J., Struck, M.,  Anderson, S.P., 2022, Geomorphic imprints of lithospheric flexure in central Australia, Earth and Planetary Science Letters 584, 117456, https://doi.org/10.1016/j.epsl.2022.117456, `r ( gs(" imprints of lithospheric flexure"))`
  
