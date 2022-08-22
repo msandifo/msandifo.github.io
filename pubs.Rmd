@@ -67,6 +67,8 @@ gs.id<-"qdYHZTgAAAAJ"
  
 #google cites
 
+1. Chen, Y., Saygin, E., Kennett, B.L.N., Qashqai, M., Hauser, J., Lumley, D.,  Sandiford, M. 2022. Next-generation seismic model of the Australian crust and implications for mineral resources and continental rifting, Nature Communications, in-review.
+
 1. Sandiford, M. 2022, The net-zero opportunity for Australian minerals.  in The Superpower Transformation, ed. Garnaut, R., Latrobe University Press/Black Inc., p149-169.
  
  
