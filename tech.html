@@ -785,6 +785,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1857,15 +1858,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2215,66 +2222,24 @@ academic
 <div class="d-article">
 <h1 id="technical-reports">Technical reports</h1>
 <ul>
-<li><p><a
-href="https://www.researchgate.net/profile/Graeme_Beardsmore/publication/333773876_Victorian_Geothermal_Assessment_Report_2016/links/5d0322c092851c874c650614/Victorian-Geothermal-Assessment-Report-2016.pdf">Victorian
-geothermal Assessment Report</a>, Beardmore, G, Dumetriscu, I.,
-Harrison, B., Sandiford, M., Webster, R., Melbourne Energy Insitute,
-November 2016. 62 p., <a
-href="http://dx.doi.org/10.13140/RG.2.2.28610.43200"
-class="uri">http://dx.doi.org/10.13140/RG.2.2.28610.43200</a></p></li>
-<li><p><a
-href="https://www.science.org.au/files/userfiles/support/reports-and-plans/2016/future-science-energy-report.pdf">Energy
-for Australia in the 21st Century: The central role of electricity</a>,
-Australian Academy of Science, <strong>Sandiford, M.</strong>, Watt, M.,
-Vassallo, A. (working group chairs), September 2016, 61 p.</p></li>
-<li><p><a
-href="http://climatecollege.unimelb.edu.au/risk-migratory-methane-emissions-resulting-development-queensland-coal-seam-gas">The
-risk of migratory emissions from the devlopment of Queensland Coal seam
-gas</a>. Lafleur, D., <strong>Sandiford, M.</strong>, Melbourne Energy
-Institute, September 2016, 30 p.</p></li>
-<li><p><a
-href="https://www.tai.org.au/content/review-current-and-future-methane-emissions-australian-unconventional-oil-and-gas-production">A
-review of current and future methane emissions from Australian
-unconventional oil and gas production</a>, Lafleur, D., Forcey. T.,
-Saddler, H., <strong>Sandiford, M.</strong>, Melbourne Energy Institute,
-September 2016, 89 p.</p></li>
-<li><p>Winds of Change - An analysis of recent changes in the South
-Australian electricity market, McConnell, D., <strong>Sandiford,
-M.</strong>, Melbourne Energy Institute, August 2016, 55 p., <a
-href="doi:10.4225/49/57A0A5C1373F9"
-class="uri">doi:10.4225/49/57A0A5C1373F9</a></p></li>
-<li><p><a
-href="https://www.carltonconnect.com.au/wp-content/uploads/2016/01/SBMI-Position-Analysis.pdf">The
-Sedimentary Basin Management Initiative</a>, Howard, W.,
-<strong>Sandiford, M.</strong>, Elliott, S., Talberg A., Lafleur D.,
-Bice S., Rawling, T., Carlton Connect Initiative, 26 p.</p></li>
-<li><p><a
-href="http://www.chiefscientist.nsw.gov.au/__data/assets/pdf_file/0015/31614/Multi-basin-usage-and-cumulative-impact-background-paper_Rawling-and-Sandiford.pdf">Multi
-basin usage/cumulative impacts</a>, Rawling T. &amp; <strong>Sandiford,
-M.</strong>, NSW Chief Scientist CSG Review, 2014, 38 p. </p></li>
-<li><p><a
-href="http://www.chiefscientist.nsw.gov.au/__data/assets/pdf_file/0017/31616/Seismicity-and-induced-earthquakes_Gibson-and-Sandiford.pdf">Seismicity
-and induced earthquakes</a>, Gibson, G. &amp; <strong>Sandiford,
-M.</strong>,, NSW Chief Scientist CSG Review, 2014, 33 p.,</p></li>
-<li><p><a
-href="tech/timor_landslides/TECHNICAL%20REPORT_June21.pdf">Landslide
-occurrence in East Timor</a>, Melbourne Energy Institute Technical paper
-series, Soares, S., Mills, C., Sandiford, M., dos Reis, J., 2011, 38
-pp.</p></li>
-<li><p>Victoria’s unique geothermal option, <strong>Sandiford,
-M.</strong>, 2010, Victorian supplement 2010-Victoria’s Energy
-Resources, 12-13.</p></li>
-<li><p>A slow divorce: tectonic signals in an ancient continent,
-<strong>Sandiford, M.</strong>, 2010, The Australian Geologist, 157,
-29-31.</p></li>
+<li><p><a href="https://www.researchgate.net/profile/Graeme_Beardsmore/publication/333773876_Victorian_Geothermal_Assessment_Report_2016/links/5d0322c092851c874c650614/Victorian-Geothermal-Assessment-Report-2016.pdf">Victorian geothermal Assessment Report</a>, Beardmore, G, Dumetriscu, I., Harrison, B., Sandiford, M., Webster, R., Melbourne Energy Insitute, November 2016. 62 p., <a href="http://dx.doi.org/10.13140/RG.2.2.28610.43200" class="uri">http://dx.doi.org/10.13140/RG.2.2.28610.43200</a></p></li>
+<li><p><a href="https://www.science.org.au/files/userfiles/support/reports-and-plans/2016/future-science-energy-report.pdf">Energy for Australia in the 21st Century: The central role of electricity</a>, Australian Academy of Science, <strong>Sandiford, M.</strong>, Watt, M., Vassallo, A. (working group chairs), September 2016, 61 p.</p></li>
+<li><p><a href="http://climatecollege.unimelb.edu.au/risk-migratory-methane-emissions-resulting-development-queensland-coal-seam-gas">The risk of migratory emissions from the devlopment of Queensland Coal seam gas</a>. Lafleur, D., <strong>Sandiford, M.</strong>, Melbourne Energy Institute, September 2016, 30 p.</p></li>
+<li><p><a href="https://www.tai.org.au/content/review-current-and-future-methane-emissions-australian-unconventional-oil-and-gas-production">A review of current and future methane emissions from Australian unconventional oil and gas production</a>, Lafleur, D., Forcey. T., Saddler, H., <strong>Sandiford, M.</strong>, Melbourne Energy Institute, September 2016, 89 p.</p></li>
+<li><p>Winds of Change - An analysis of recent changes in the South Australian electricity market, McConnell, D., <strong>Sandiford, M.</strong>, Melbourne Energy Institute,
+August 2016, 55 p., <a href="doi:10.4225/49/57A0A5C1373F9" class="uri">doi:10.4225/49/57A0A5C1373F9</a></p></li>
+<li><p><a href="https://www.carltonconnect.com.au/wp-content/uploads/2016/01/SBMI-Position-Analysis.pdf">The Sedimentary Basin Management Initiative</a>, Howard, W., <strong>Sandiford, M.</strong>, Elliott, S., Talberg A., Lafleur D., Bice S., Rawling, T., Carlton Connect Initiative, 26 p.</p></li>
+<li><p><a href="http://www.chiefscientist.nsw.gov.au/__data/assets/pdf_file/0015/31614/Multi-basin-usage-and-cumulative-impact-background-paper_Rawling-and-Sandiford.pdf">Multi basin usage/cumulative impacts</a>, Rawling T. &amp; <strong>Sandiford, M.</strong>, NSW Chief Scientist CSG Review, 2014, 38 p. </p></li>
+<li><p><a href="http://www.chiefscientist.nsw.gov.au/__data/assets/pdf_file/0017/31616/Seismicity-and-induced-earthquakes_Gibson-and-Sandiford.pdf">Seismicity and induced earthquakes</a>, Gibson, G. &amp; <strong>Sandiford, M.</strong>,, NSW Chief Scientist CSG Review, 2014, 33 p.,</p></li>
+<li><p><a href="tech/timor_landslides/TECHNICAL%20REPORT_June21.pdf">Landslide occurrence in East Timor</a>, Melbourne Energy Institute Technical paper series, Soares, S., Mills, C., Sandiford, M., dos Reis, J., 2011, 38 pp.</p></li>
+<li><p>Victoria’s unique geothermal option, <strong>Sandiford, M.</strong>, 2010, Victorian supplement 2010-Victoria’s Energy Resources, 12-13.</p></li>
+<li><p>A slow divorce: tectonic signals in an ancient continent, <strong>Sandiford, M.</strong>, 2010, The Australian Geologist, 157, 29-31.</p></li>
 </ul>
 <h1 id="data-sets">Data sets</h1>
 <ul>
-<li><a href="tech/timor_landslides/INVENTORY_2005.zip">Landslide
-occurrence in East Timor - Arc-gis (zipfile)</a></li>
+<li><a href="tech/timor_landslides/INVENTORY_2005.zip">Landslide occurrence in East Timor - Arc-gis (zipfile)</a></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

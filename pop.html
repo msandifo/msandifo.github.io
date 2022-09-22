@@ -785,6 +785,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1857,15 +1858,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2214,46 +2221,23 @@ academic
 
 <div class="d-article">
 <h2 id="the-conversation">the Conversation</h2>
-<p>including 50+ essays on the academic website <a
-href="https://theconversation.com/profiles/mike-sandiford-228/articles">the
-Conversation</a>.</p>
+<p>including 50+ essays on the academic website <a href="https://theconversation.com/profiles/mike-sandiford-228/articles">the Conversation</a>.</p>
 <p>some of my favourites…</p>
 <ul>
-<li><p><a
-href="https://theconversation.com/a-precarious-geological-bargain-57903">A
-precarious geological bargain</a>, April 2016.</p></li>
-<li><p><a
-href="./blog/_site/posts/2016-04-16-travelling-with-timor-leste/index.html">Travelling
-with Timor Leste</a>, April 2016.</p></li>
-<li><p><a
-href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-1-71789">Anatomy
-of an energy crisis - a pictorial guide, Part 1</a>, February
-2017.</p></li>
-<li><p><a
-href="https://theconversation.com/the-australian-gas-market-enters-the-red-zone-as-predicted-74314">The
-Australian gas market enters the “red zone”, as predicted</a>, March
-2017</p></li>
+<li><p><a href="https://theconversation.com/a-precarious-geological-bargain-57903">A precarious geological bargain</a>, April 2016.</p></li>
+<li><p><a href="./blog/_site/posts/2016-04-16-travelling-with-timor-leste/index.html">Travelling with Timor Leste</a>, April 2016.</p></li>
+<li><p><a href="https://theconversation.com/the-anatomy-of-an-energy-crisis-a-pictorial-guide-part-1-71789">Anatomy of an energy crisis - a pictorial guide, Part 1</a>, February 2017.</p></li>
+<li><p><a href="https://theconversation.com/the-australian-gas-market-enters-the-red-zone-as-predicted-74314">The Australian gas market enters the “red zone”, as predicted</a>, March 2017</p></li>
 </ul>
 <h2 id="national-press-op-eds">national press op-eds</h2>
 <ul>
-<li><p><a
-href="https://www.theaustralian.com.au/national-affairs/opinion/cherry-picking-contrarian-geologists-tend-to-obscure-scientific-truth/news-story/62a61871190090050dd59e2f2e0d7b59">Cherry-picking
-contrarian geologists tend to obscure scientific truth</a>, The
-Australian, December 2011.</p></li>
-<li><p><a
-href="https://www.theaustralian.com.au/opinion/geology-points-to-dangers-ahead/news-story/7f24189edbb3f05b1d680d6dd6d5de69">Geology
-points to dangers ahead</a>, The Australian, May 2009</p></li>
-<li><p><a
-href="https://www.theage.com.au/business/fossil-fuels-will-run-out-of-gas-when-the-solar-revolution-arrives-20110321-1c3qe.html">Fossil
-fuels will run out of gas when the solar revolution arrives</a>, The
-Age, March 2011</p></li>
-<li><p><a
-href="https://www.theage.com.au/politics/federal/do-renewable-energy-by-the-numbers-and-it-all-adds-up-20100623-yywm.html">Do
-renewable energy by the numbers, and it all adds up</a>, The Age, June
-2010</p></li>
+<li><p><a href="https://www.theaustralian.com.au/national-affairs/opinion/cherry-picking-contrarian-geologists-tend-to-obscure-scientific-truth/news-story/62a61871190090050dd59e2f2e0d7b59">Cherry-picking contrarian geologists tend to obscure scientific truth</a>, The Australian, December 2011.</p></li>
+<li><p><a href="https://www.theaustralian.com.au/opinion/geology-points-to-dangers-ahead/news-story/7f24189edbb3f05b1d680d6dd6d5de69">Geology points to dangers ahead</a>, The Australian, May 2009</p></li>
+<li><p><a href="https://www.theage.com.au/business/fossil-fuels-will-run-out-of-gas-when-the-solar-revolution-arrives-20110321-1c3qe.html">Fossil fuels will run out of gas when the solar revolution arrives</a>, The Age,
+March 2011</p></li>
+<li><p><a href="https://www.theage.com.au/politics/federal/do-renewable-energy-by-the-numbers-and-it-all-adds-up-20100623-yywm.html">Do renewable energy by the numbers, and it all adds up</a>, The Age, June 2010</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

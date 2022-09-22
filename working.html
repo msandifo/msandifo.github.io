@@ -785,6 +785,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1857,15 +1858,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2214,29 +2221,15 @@ academic
 
 <div class="d-article">
 <ul>
-<li><p>McConnell, D, Sandiford, M. Fast markets, and the value of
-aligning settlement and dispatch</p></li>
-<li><p>Sandiford,. M., Tropomi and fugitive methane emissions - recent
-insights</p></li>
-<li><p>Macumber, P.G., Sandiford, M., Palaeohydrology, stratigraphy,
-tectonics and aquifer recharge in western Victoria: Implications for
-regional variations in groundwater salinity. in progress</p></li>
-<li><p>Li, G., Yang,H., Sandiford, M., Kohn, B., Xu, Z., Dong, H.,
-Pliocene reorganisation of the Yarlung-Siang-Brahmaputra River system,
-eastern Himalaya revealed by thermochronology and geodynamic modelling
+<li><p>McConnell, D, Sandiford, M. Fast markets, and the value of aligning settlement and dispatch</p></li>
+<li><p>Sandiford,. M., Tropomi and fugitive methane emissions - recent insights</p></li>
+<li><p>Macumber, P.G., Sandiford, M., Palaeohydrology, stratigraphy, tectonics and aquifer recharge in western Victoria: Implications for regional variations in groundwater salinity. in progress</p></li>
+<li><p>Li, G., Yang,H., Sandiford, M., Kohn, B., Xu, Z., Dong, H., Pliocene reorganisation of the Yarlung-Siang-Brahmaputra River system, eastern Himalaya revealed by thermochronology and geodynamic modelling
 <!-- - Guangzheng Jiang, Qingtian L, Yuntao Tian,  Sandiford, M., Yizuo Shi, Changchun Zou, Feng Ma, Chenglong Deng, Lijuan He, Shengbiao Hu, Ground surface temperature history since LGM in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling Program (ICDP) SK-2e  --></p></li>
-<li><p>Chen, Y., Saygin, E., Kennett, B., Qashqai, M.T., Hauser, J.,
-Lumley, D., and Sandiford,M., Next-generation velocity model of the
-Australian crust from synchronous and asynchronous ambient noise
-imaging</p></li>
-<li><p>Jansen, J.D., Sandiford, M., Fujioka, T., Cohen, T., Struck, M.,
-Anderson, S.P., Anderson,R.S., Wilcken, K., Egholm, D.L., Geomorphic
-imprints of dynamic topography and intraplate tectonism in central
-Australia, Earth and Planetary Science Letters, submitted February,
-2021</p></li>
+<li><p>Chen, Y., Saygin, E., Kennett, B., Qashqai, M.T., Hauser, J., Lumley, D., and Sandiford,M., Next-generation velocity model of the Australian crust from synchronous and asynchronous ambient noise imaging</p></li>
+<li><p>Jansen, J.D., Sandiford, M., Fujioka, T., Cohen, T., Struck, M., Anderson, S.P., Anderson,R.S., Wilcken, K., Egholm, D.L., Geomorphic imprints of dynamic topography and intraplate tectonism in central Australia, Earth and Planetary Science Letters, submitted February, 2021</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
