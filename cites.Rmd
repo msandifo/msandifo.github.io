@@ -20,7 +20,7 @@ gs.id<-"qdYHZTgAAAAJ"
  
  
  tc.articles <- 37
- tc.readers <- 420000
+ tc.readers <- 960000
 # library(RSelenium)
 # appURL <- "https://theconversation.com/profiles/mike-sandiford-228/dashboard"
 # pJS <- phantom() # start phantomjs

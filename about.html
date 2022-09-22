@@ -785,6 +785,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1857,15 +1858,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2064,7 +2071,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2215,18 +2222,14 @@ academic
 <div class="d-article">
 <h1 id="current">current</h1>
 <ul>
-<li>Redmond Barry Distinguished Professor Emeritus, University of
-Melbourne, 2021</li>
+<li>Redmond Barry Distinguished Professor Emeritus, University of Melbourne, 2021</li>
 </ul>
 <h1 id="previous">previous</h1>
 <ul>
-<li>Redmond Barry Distinguished Professor, University of Melbourne,
-2016-2021</li>
+<li>Redmond Barry Distinguished Professor, University of Melbourne, 2016-2021</li>
 <li>Chair of Geology, University of Melbourne, 2010-2021</li>
-<li>Inaugural Director, Melbourne Energy Institute, University of
-Melbourne, 2009-2016</li>
-<li>ARC Professorial Fellow, University of Melbourne, 2000-2004 &amp;
-2005-2009</li>
+<li>Inaugural Director, Melbourne Energy Institute, University of Melbourne, 2009-2016</li>
+<li>ARC Professorial Fellow, University of Melbourne, 2000-2004 &amp; 2005-2009</li>
 <li>Lecturer/Reader, University of Adelaide, 1987-2000</li>
 <li>CSIRO Postdoctoral fellow, Cambridge University, 1986-1987</li>
 <li>Postdoctoral fellow, University of Melbourne, 1985</li>
@@ -2241,8 +2244,7 @@ Melbourne, 2009-2016</li>
 <li>Tectonophysics, Co Editor-in-Chief, 2004-2009</li>
 <li>Geology, Editorial Board, 1999-2001, 2009-2001</li>
 <li>Australian Journal of Earth Science, Editorial Board, 2005-2008</li>
-<li>EON Research Centre, RWTH Aachen Germany, Science Advisory Board,
-2011-2012</li>
+<li>EON Research Centre, RWTH Aachen Germany, Science Advisory Board, 2011-2012</li>
 <li>AuScope-AGOS Science advisor, 2009-2013</li>
 <li>AuScope Science advisory board (Chair), 2007-2012</li>
 <li>PMD*CRC Science advisory board, 2000-2002</li>
@@ -2254,14 +2256,12 @@ Melbourne, 2009-2016</li>
 <li>Mawson Medal, 2005, Australian Academy of Science</li>
 <li>Carey Medal, 2014, Geological Society of Australia</li>
 <li>Hobbs Medal, 2012, Geological Society of Australia</li>
-<li>Stillwell Medal, 2004, 2005, 2009, Geological Society of
-Australia</li>
+<li>Stillwell Medal, 2004, 2005, 2009, Geological Society of Australia</li>
 </ul>
 <div itemscope="" itemtype="https://schema.org/Person">
 <a itemprop="sameAs" content="https://orcid.org/0000-0002-9757-745X" href="https://orcid.org/0000-0002-9757-745X" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-9757-745X</a>
 </div>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -788,6 +788,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1860,15 +1861,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2211,80 +2218,42 @@ academic
 <h1>what on earth …</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>reflections on a life with science, some contributions, some
-anecdotes.</p></p>
+<p><p>reflections on a life with science, some contributions, some anecdotes.</p></p>
 </div>
 
 
 <div class="d-article">
-<p><img src="images/bhutan_2.jpeg" /> orbit:- eternal husband [<a
-href="pdfs/personal/bid_celebration.pdf">Bridget Robinson</a>], father,
-sailor, geologist</p>
-<p>investigation:- <a href="pdfs/peer/2020_Tectonics.pdf">earth
-dynamics</a>, <a href="pdfs/peer/2002_EPSL_b.pdf">earth energetics</a>,
-<a href="pdfs/peer/2013_nature12218.pdf">landscape evolution</a>, <a
-href="pdfs/peer/2010_JMG_a.pdf">continental evolution</a> and <a
-href="pdfs/peer/2015_AppEnergy.pdf">energy systems</a></p>
-<p>privilege:- to have worked among communities that have lived for
-millennia the most dynamic and remote parts of our planet ( <a
-href="https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/">Timor</a>,
-<a href="https://theconversation.com/raising-tibet-58483">Tibet</a>, <a
-href="https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/">Xinjiang</a>
-and <a
-href="https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332">Bhutan</a>),
-and some places beyond (Enderby Land, Northern Victoria Land); to have
-known love and much more.</p>
-<p><a
-href="https://theconversation.com/columns/mike-sandiford-228">reflection</a>:-
-<a
-href="https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/">earth</a>
-and <a
-href="https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/">energy
-policy</a></p>
-<p>notification: Redmond Barry Distinguished Professor Emeritus
-(University of Melbourne),
+<p><img src="images/bhutan_2.jpeg" />
+orbit:-
+eternal husband [<a href="pdfs/personal/bid_celebration.pdf">Bridget Robinson</a>],
+father [Dan, Erin, Anna] and grandfather [Heath, Rosa, Monty …],
+sailor,
+geologist</p>
+<p>investigation:-
+<a href="pdfs/peer/2020_Tectonics.pdf">earth dynamics</a>, <a href="pdfs/peer/2002_EPSL_b.pdf">earth energetics</a>, <a href="pdfs/peer/2013_nature12218.pdf">landscape evolution</a>, <a href="pdfs/peer/2010_JMG_a.pdf">continental evolution</a> and <a href="pdfs/peer/2015_AppEnergy.pdf">energy systems</a></p>
+<p>privilege:- to have worked among communities that have lived for millennia the most dynamic and remote parts of our planet ( <a href="https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/">Timor</a>, <a href="https://theconversation.com/raising-tibet-58483">Tibet</a>, <a href="https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/">Xinjiang</a> and <a href="https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332">Bhutan</a>), and some places beyond (Enderby Land, Northern Victoria Land); to have known love and much more.</p>
+<p><a href="https://theconversation.com/columns/mike-sandiford-228">reflection</a>:- <a href="https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/">earth</a> and <a href="https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/">energy policy</a></p>
+<p>notification: Redmond Barry Distinguished Professor Emeritus (University of Melbourne),
 <!-- former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au),  -->
-fellow <a
-href="https://www.science.org.au/profile/michael-sandiford">Australian
-Academy of Science</a></p>
+fellow <a href="https://www.science.org.au/profile/michael-sandiford">Australian Academy of Science</a></p>
 <h3 id="recent-commentary"><a href="pop.html">recent commentary</a></h3>
 <ul>
-<li><p>reflections on the purpose of Geology- <a
-href="https://geo-down-under.geoscience.education/the-last-vicmanian/">Motivations
-1</a>, <a
-href="https://geo-down-under.geoscience.education/children-of-the-revolution/">Motivations
-2</a>, <a
-href="https://geo-down-under.geoscience.education/earth-system-services/">Motivations
-3</a></p></li>
-<li><p><a
-href="https://msandifo.github.io/blog/_site/posts/2020-09-25-tropomi-and-gas-emsissions/">fugitive
-emissions due to unconventional gas</a></p></li>
-<li><p><a
-href="https://msandifo.github.io/blog/_site/posts/2020-09-05-gas-fired-recovery/">on
-the “gas fired recovery”</a></p></li>
+<li><p>reflections on the purpose of Geology- <a href="https://geo-down-under.geoscience.education/the-last-vicmanian/">Motivations 1</a>, <a href="https://geo-down-under.geoscience.education/children-of-the-revolution/">Motivations 2</a>, <a href="https://geo-down-under.geoscience.education/earth-system-services/">Motivations 3</a></p></li>
+<li><p><a href="https://msandifo.github.io/blog/_site/posts/2020-09-25-tropomi-and-gas-emsissions/">fugitive emissions due to unconventional gas</a></p></li>
+<li><p><a href="https://msandifo.github.io/blog/_site/posts/2020-09-05-gas-fired-recovery/">on the “gas fired recovery”</a></p></li>
 </ul>
-<h3 id="recent-publications"><a href="pubs.html">recent
-publications</a></h3>
+<h3 id="recent-publications"><a href="pubs.html">recent publications</a></h3>
 <ul>
-<li><a href="pdfs/peer/2022_EPSL.pdf">geomorph</a> - elasticity, gravity
-and the Finke Gorge</li>
-<li><a href="pdfs/peer/2021_GGG.pdf">geochem</a> - anomalous arc
-magmas</li>
-<li><a href="pdfs/peer/2021_ESR.pdf">volcanism</a> - Holocene intraplate
-volcanism in East Asia</li>
-<li><a href="pdfs/peer/2021_Elementa.pdf">environment</a> - Mercury
-levels, electricity generation in the Latrobe Valley</li>
-<li><a href="pdfs/peer/2020_Tectonics.pdf">geodynamics</a> - stress
-distribution and dynamics of subducting slabs</li>
-<li><a href="pdfs/peer/2020_BSSA.pdf">earthquakes</a> - Australia’s
-largest earthquake in almost 30 years</li>
-<li><a href="pdfs/peer/2020_Hydrogeol.pdf">groundwater</a> - some novel
-insights into the iconic Great Artesian Basin</li>
-<li><a href="pdfs/peer/2020_GTE.pdf">techniques</a> - measuring thermal
-diffusivity in soils<br />
+<li><a href="pdfs/peer/2022_EPSL.pdf">geomorph</a> - elasticity, gravity and the Finke Gorge</li>
+<li><a href="pdfs/peer/2021_GGG.pdf">geochem</a> - anomalous arc magmas</li>
+<li><a href="pdfs/peer/2021_ESR.pdf">geomagma</a> - Holocene intraplate volcanism in East Asia</li>
+<li><a href="pdfs/peer/2021_Elementa.pdf">geoenviro</a> - Mercury levels, electricity generation in the Latrobe Valley</li>
+<li><a href="pdfs/peer/2020_Tectonics.pdf">geodynamics</a> - stress distribution and dynamics of subducting slabs</li>
+<li><a href="pdfs/peer/2020_BSSA.pdf">geophys</a> - Australia’s largest earthquake in almost 30 years</li>
+<li><a href="pdfs/peer/2020_Hydrogeol.pdf">geohydro</a> - some novel insights into the iconic Great Artesian Basin</li>
+<li><a href="pdfs/peer/2020_GTE.pdf">geomethods</a> - measuring thermal diffusivity in soils<br />
 </li>
-<li><a href="pdfs/peer/2020_CSR.pdf">economics</a> - market power in the
-Australian energy system</li>
+<li><a href="pdfs/peer/2020_CSR.pdf">economics</a> - market power in the Australian energy system</li>
 </ul>
 <!-- ### Tampa^[written while working in the Pilbara at the time of the Tampa crisis. It was an event that had a profound impact on me - a "geological fault line" of shame on the Australian psyche that demonstrated our diminished humanity. We continue to live in the shadow of this awful event, for which we owe the world an apology.] -->
 <!-- Who are we who\ -->
@@ -2297,8 +2266,7 @@ Australian energy system</li>
 <!-- say our sorry\ -->
 <!-- and be not afraid?  -->
 <!-- Of being. -->
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -109,11 +109,10 @@ https://doi.org/10.1525/elementa.2021.00072,
 
 1. McConnell, D., Sandiford, M., 
 2020, 
-Impacts of LNG export and market power on Australian electricity market dynamics, 2016-2019, 
-2020, 
-Current Sustainable/Renewable Energy Reports,  
+Impacts of LNG export and market power on Australian electricity market dynamics, 2016-2019, 2020, 
+Current Sustainable/Renewable Energy Reports, 
 7, 
-176–185,  
+176–185, 
 https://doi.org/10.1007/s40518-020-00164-2, 
 `r ( gs("LNG"))`
 

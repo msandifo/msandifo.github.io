@@ -93,8 +93,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2022-08-23"/>
-  <meta property="article:created" itemprop="dateCreated" content="2022-08-23"/>
+  <meta property="article:published" itemprop="datePublished" content="2022-09-22"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-09-22"/>
   <meta name="article:author" content="Mike Sandiford"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -111,7 +111,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date"]}},"value":[{"type":"character","attributes":{},"value":["Abbreviated Curriculum Vitae"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Mike Sandiford"]}]}]},{"type":"character","attributes":{},"value":["2022-08-23"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date"]}},"value":[{"type":"character","attributes":{},"value":["Abbreviated Curriculum Vitae"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Mike Sandiford"]}]}]},{"type":"character","attributes":{},"value":["2022-09-22"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -789,6 +789,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1861,15 +1862,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2148,7 +2155,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Abbreviated Curriculum Vitae","authors":[{"author":"Mike Sandiford","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-08-23T00:00:00.000+10:00","citationText":"Sandiford, 2022"}
+{"title":"Abbreviated Curriculum Vitae","authors":[{"author":"Mike Sandiford","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-09-22T00:00:00.000+10:00","citationText":"Sandiford, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2219,153 +2226,41 @@ academic
   
   Mike Sandiford
   
-<br/>2022-08-23
+<br/>2022-09-22
 </div>
 
 <div class="d-article">
-<p>full c.v. - <a
-href="http://jaeger.earthsci.unimelb.edu.au/msandifo/cv/cv.full.pdf"
-class="uri">http://jaeger.earthsci.unimelb.edu.au/msandifo/cv/cv.full.pdf</a></p>
+<p>full c.v. - <a href="http://jaeger.earthsci.unimelb.edu.au/msandifo/cv/cv.full.pdf" class="uri">http://jaeger.earthsci.unimelb.edu.au/msandifo/cv/cv.full.pdf</a></p>
 <h1 id="contextual-statement">Contextual statement</h1>
-<h2 id="contributions-to-his-discipline">Contributions to his
-discipline</h2>
-<p>Professor Sandiford is an Australian geoscientists, recongnised for
-his scientific contributions across the geological and geophysical
-sciences.</p>
-<p>His research has focused on the linkages between the thermal and
-mechanical structure of the continents. His most notable contributions
-include:</p>
+<h2 id="contributions-to-his-discipline">Contributions to his discipline</h2>
+<p>Professor Sandiford is an Australian geoscientists, recongnised for his scientific contributions across the geological and geophysical sciences.</p>
+<p>His research has focused on the linkages between the thermal and mechanical structure of the continents. His most notable contributions include:</p>
 <ul>
-<li>demonstrating how the feedbacks between primary tectonic processes
-(such as deformation, magmatism, erosion and sedimentation) serve to
-order the chemical structure of the continental crust in ways that
-determine its long-term thermal and mechanical character (e.g. Sandiford
-&amp; McLaren 2002).</li>
-<li>demonstrating the role of gravitational body forces in the evolution
-of the Earth’s major mountain belts (Sandiford &amp; Powell 1990;
-Sandiford 1988).</li>
-<li>demonstrating how tectonic stress is sourced at the global scale
-(Coblentz et al. 1993) in ways that explains the observed natural
-variability in stress state in our tectonic plates (Coblentz et
-al. 1995; Coblentz &amp; Sandiford 1995).</li>
-<li>demonstrating the links between intraplate earthquakes and
-geomorphic records (Sandiford 2003) in ways that allows the development
-of geologically constrained models for earthquake hazard (Quigley et
-al. 2007).</li>
-<li>demonstrating the geomorphic response to dynamic processes deep in
-the Earth’s mantle and how it explains many previously enigmatic
-landscape features such as Australia’s unique record of continental
-tilting (Sandiford 2007), as well as emblematic landscapes such as the
-Lake Eyre Basin (Sandiford &amp; Quigley 2008).</li>
-<li>linking earthquakes, landslides and river incision in a new
-fundamental theoretical perspective (Egholm et al. 2013) that has
-application to understanding natural hazard vulnerability in settings
-such as the Indian Himalaya (Morrell et al., 2015) and Timor (Sandiford,
-2008).</li>
+<li>demonstrating how the feedbacks between primary tectonic processes (such as deformation, magmatism, erosion and sedimentation) serve to order the chemical structure of the continental crust in ways that determine its long-term thermal and mechanical character (e.g. Sandiford &amp; McLaren 2002).</li>
+<li>demonstrating the role of gravitational body forces in the evolution of the Earth’s major mountain belts (Sandiford &amp; Powell 1990; Sandiford 1988).</li>
+<li>demonstrating how tectonic stress is sourced at the global scale (Coblentz et al. 1993) in ways that explains the observed natural variability in stress state in our tectonic plates (Coblentz et al. 1995; Coblentz &amp; Sandiford 1995).</li>
+<li>demonstrating the links between intraplate earthquakes and geomorphic records (Sandiford 2003) in ways that allows the development of geologically constrained models for earthquake hazard (Quigley et al. 2007).</li>
+<li>demonstrating the geomorphic response to dynamic processes deep in the Earth’s mantle and how it explains many previously enigmatic landscape features such as Australia’s unique record of continental tilting (Sandiford 2007), as well as emblematic landscapes such as the Lake Eyre Basin (Sandiford &amp; Quigley 2008).</li>
+<li>linking earthquakes, landslides and river incision in a new fundamental theoretical perspective (Egholm et al. 2013) that has application to understanding natural hazard vulnerability in settings such as the Indian Himalaya (Morrell et al., 2015) and Timor (Sandiford, 2008).</li>
 </ul>
-<p>Professor Sandiford’s has also worked on human energy systems helping
-to quantify the impact of distributed energy technologies in mature
-energy markets (McConnell et al. 2013).</p>
-<p>The impact of Professor Sandiford’s research is evident his <a
-href="#citation-metrics">citation metrics</a> (Google scholar H-index =
-67). He is a Fellow of the Australian Academy of Sciences. He has
-received several honorific awards including the Australian Academy of
-Sciences Mawson Medal - a career award for “outstanding contributions to
-earth science in Australia”. He has an strong record of grant success
-including some $4.4 million in competitive research programs funding and
-$2.5 million in non-competitive funding since 2000 <a href="#fn1"
-class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. In
-2016, the University of Melbourne awarded him the title Redmond Barry
-Distinguished Professor.</p>
-<p>Beyond the academy, Professor Sandiford’s work on the the thermal
-structure of the Australian continent contributed the key motivation for
-the search for geothermal energy in South Australia. His work on active
-tectonics and earthquake occurrence has been used in hazard assessment
-and has been used by Geoscience Australia to develop new approaches
-groundwater resource management. His work on tectonic stress has been
-used in unconventional resource development and assessment of storage
-potential for energy wastes. His work on the geomorphic evolution of the
-continent has seen application in biodiversity assessments. Finally, his
-work on trends in Australian energy consumption has impacted government
-policy settings.</p>
-<h2 id="national-geoscience-leadership">National geoscience
-leadership</h2>
-<p>In his role as Chair of the Science Advisory Board of AuScope <a
-href="#fn2" class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a>, Professor Sandiford has played a
-key role in shaping the national geoscience research agenda. In 2009, he
-conceived and led the successful $23 million Education Investment Fund
-(EIF) round 3 bid for the Australian Geophysical Observing System, which
-saw $7.5 million invested at the University of Melbourne. In 2012, he
-was instrumental in putting together the University’s $11 million
-component of the successful $51 million CCSNET EIF bid. Professor
-Sandiford was one of two geoscience representatives on the
-Environmentally Sustainable Australia working group as part of National
-Research Infrastructure Council (NRIC) framework that contributed to the
-“2011 strategic roadmap for the Australian research infrastructure -
-exposure draft”. In 2011, he led a group of geoscientists to produce the
-“Australian Earth Observatory - Infrastructure Roadmap” on behalf of
-AuScope. As the Australian representative on the Exploration
-Technologies Reference Group for the International Partnership for
-Geothermal Technologies, he contributed to the “IPGT Exploration
-Whitepaper” released in June 2011.</p>
-<h2 id="promotion-of-interdisciplinary-energy-research">Promotion of
-interdisciplinary energy research</h2>
-<p>In his role as inaugural director of the Energy Institute (2010-2016)
-Professor Sandiford was responsible for coordination and facilitation of
-energy research across the University of Melbourne. In this role he has
-been responsible for building teams and seeding new interdisciplinary
-programs in areas as diverse as renewable energy integration, energy
-market design, direct geothermal utilization, geological carbon storage,
-and sedimentary basin management. The programs he has have helped
-initiate have secured more than $34 million in external funding.</p>
-<p>In his role as Director, Professor Sandiford’s counsel has been
-sought by senior politicians and their advisors, including Victorian
-Minister for Energy Lily d’Ambrosio and SA State Premier Jay Weatherill
-and Federal Minister for the Environment Greg Hunt, as well as industry
-participants such as AGL, Tas Hydro, PacHydro and the Clean Energy
-Council.</p>
+<p>Professor Sandiford’s has also worked on human energy systems helping to quantify the impact of distributed energy technologies in mature energy markets (McConnell et al. 2013).</p>
+<p>The impact of Professor Sandiford’s research is evident his <a href="#citation-metrics">citation metrics</a> (Google scholar H-index = 67). He is a Fellow of the Australian Academy of Sciences. He has received several honorific awards including the Australian Academy of Sciences Mawson Medal - a career award for “outstanding contributions to earth science in Australia”. He has an strong record of grant success including some $4.4 million in competitive research programs funding and $2.5 million in non-competitive funding since 2000 <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. In 2016, the University of Melbourne awarded him the title Redmond Barry Distinguished Professor.</p>
+<p>Beyond the academy, Professor Sandiford’s work on the the thermal structure of the Australian continent contributed the key motivation for the search for geothermal energy in South Australia. His work on active tectonics and earthquake occurrence has been used in hazard assessment and has been used by Geoscience Australia to develop new approaches groundwater resource management. His work on tectonic stress has been used in unconventional resource development and assessment of storage potential for energy wastes. His work on the geomorphic evolution of the continent has seen application in biodiversity assessments. Finally, his work on trends in Australian energy consumption has impacted government policy settings.</p>
+<h2 id="national-geoscience-leadership">National geoscience leadership</h2>
+<p>In his role as Chair of the Science Advisory Board of AuScope <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, Professor Sandiford has played a key role in shaping the national geoscience research agenda. In 2009, he conceived and led the successful $23 million Education Investment Fund (EIF) round 3 bid for the Australian Geophysical Observing System, which saw $7.5 million invested at the University of Melbourne. In 2012, he was instrumental in putting together the University’s $11 million component of the successful $51 million CCSNET EIF bid. Professor Sandiford was one of two geoscience representatives on the Environmentally Sustainable Australia working group as part of National Research Infrastructure Council (NRIC) framework that contributed to the “2011 strategic roadmap for the Australian research infrastructure - exposure draft”. In 2011, he led a group of geoscientists to produce the “Australian Earth Observatory - Infrastructure Roadmap” on behalf of AuScope. As the Australian representative on the Exploration Technologies Reference Group for the International Partnership for Geothermal Technologies, he contributed to the “IPGT Exploration Whitepaper” released in June 2011.</p>
+<h2 id="promotion-of-interdisciplinary-energy-research">Promotion of interdisciplinary energy research</h2>
+<p>In his role as inaugural director of the Energy Institute (2010-2016) Professor Sandiford was responsible for coordination and facilitation of energy research across the University of Melbourne. In this role he has been responsible for building teams and seeding new interdisciplinary programs in areas as diverse as renewable energy integration, energy market design, direct geothermal utilization, geological carbon storage, and sedimentary basin management. The programs he has have helped initiate have secured more than $34 million in external funding.</p>
+<p>In his role as Director, Professor Sandiford’s counsel has been sought by senior politicians and their advisors, including Victorian Minister for Energy Lily d’Ambrosio and SA State Premier Jay Weatherill and Federal Minister for the Environment Greg Hunt, as well as industry participants such as AGL, Tas Hydro, PacHydro and the Clean Energy Council.</p>
 <h2 id="science-and-development">Science and development</h2>
-<p>Since 2002, Professor Sandiford has lead significant geological
-programs in developing regions across Asia, including in Timor-Leste,
-India, Bhutan, Indonesia and Tibet, supported in part by Australian
-Government Department of Foreign Affairs and Trade aid prorgrams. He has
-initiated a Graduate Program in Asian Geoscience which has been
-instrumental in developing geoscience capability in host countries such
-as Timor Leste. Outcomes include the production of the first detailed
-geological maps of Timor Leste since its independence, as part of an
-ongoing program that aims to map the country at a scale of 1:50,000. In
-2013, at the invitation of the Indian Government Department of Science
-and Technology, he particpated in a review the 2012 Kedarnath landslide
-disaster in which as many as 20,000 people may have perished (&gt; 5000
-confirmed). In 2011 he co-edited an international publication focused on
-the 2008 Wenchuan Earthquake in China, in which about 88,000 people
-perished and more than one million were displaced. He has worked closely
-with colleagues from IISc in Bangalore, India, to document the record of
-great Himalayan earthquakes in the central Himalaya using novel proxies
-in a program funded jointly by the Australian and the Indian
-Governments. He is currently working with the Government of Bhutan to
-document the record of great earthquakes in the eastern sector of the
-Himalaya.</p>
+<p>Since 2002, Professor Sandiford has lead significant geological programs in developing regions across Asia, including in Timor-Leste, India, Bhutan, Indonesia and Tibet, supported in part by Australian Government Department of Foreign Affairs and Trade aid prorgrams. He has initiated a Graduate Program in Asian Geoscience which has been instrumental in developing geoscience capability in host countries such as Timor Leste. Outcomes include the production of the first detailed geological maps of Timor Leste since its independence, as part of an ongoing program that aims to map the country at a scale of 1:50,000. In 2013, at the invitation of the Indian Government Department of Science and Technology, he particpated in a review the 2012 Kedarnath landslide disaster in which as many as 20,000 people may have perished (&gt; 5000 confirmed). In 2011 he co-edited an international publication focused on the 2008 Wenchuan Earthquake in China, in which about 88,000 people perished and more than one million were displaced. He has worked closely with colleagues from IISc in Bangalore, India, to document the record of great Himalayan earthquakes in the central Himalaya using novel proxies in a program funded jointly by the Australian and the Indian Governments. He is currently working with the Government of Bhutan to document the record of great earthquakes in the eastern sector of the Himalaya.</p>
 <h2 id="public-engagement">Public engagement</h2>
-<p>Professor Sandiford has contributed extensively to the national
-debate on environmental and energy policy issues, having contributed
-over 70 commentaries to major national newspapers (including op-eds in
-both the Fairfax - the Age and Sydney Morning Herald - and the Murdoch
-press - the Australian) and on-line venues (the Conversation,
-RenewEconomy, Business Spectator) . The broad reach of his commentary is
-reflected in the statistics for his column on the Conversation website -
-Energy and the Earth - for which the readership stands at more than
-930,000 individual reads.</p>
-<h1 id="education-and-employment-history">1. Education and Employment
-History</h1>
+<p>Professor Sandiford has contributed extensively to the national debate on environmental and energy policy issues, having contributed over 70 commentaries to major national newspapers (including op-eds in both the Fairfax - the Age and Sydney Morning Herald - and the Murdoch press - the Australian) and on-line venues (the Conversation, RenewEconomy, Business Spectator) . The broad reach of his commentary is reflected in the statistics for his column on the Conversation website - Energy and the Earth - for which the readership stands at more than 930,000 individual reads.</p>
+<h1 id="education-and-employment-history">1. Education and Employment History</h1>
 <ul>
 <li>Chair of Geology, University of Melbourne 2010+</li>
-<li>Director, Melbourne Energy Institute, University of Melbourne
-2009+</li>
+<li>Director, Melbourne Energy Institute, University of Melbourne 2009+</li>
 <li>ARC Professorial fellow, University of Melbourne 2000-2009</li>
-<li>Lecturer/Senior Lecturer/Reader, University of Adelaide
-1987-2000</li>
+<li>Lecturer/Senior Lecturer/Reader, University of Adelaide 1987-2000</li>
 <li>CSIRO postdoctoral fellow, University of Cambridge 1986-1987</li>
 <li>PhD, University of Melbourne 1985</li>
 <li>BSc(Hons), University of Melbourne 1978</li>
@@ -2375,14 +2270,10 @@ History</h1>
 <li>Carey Medal, 2014 Geological Society of Australia</li>
 <li>Hobbs Medal, 2012 Geological Society of Australia</li>
 <li>Mawson Medal, 2005 Australian Academy of Sciences</li>
-<li>Stillwell Medal(s), 2003, 2005 and 2009 Geological Society of
-Australia</li>
-<li>Elected Fellow, Australian Academy of Sciences, 2013 Australian
-Academy of Sciences</li>
-<li>Elected Fellow, Geological Society of Australia, 2011 Geological
-Society of Australia</li>
-<li>Distinguished Visiting Professor, Paris, France, 2008 Ecole Normale
-Supérieure</li>
+<li>Stillwell Medal(s), 2003, 2005 and 2009 Geological Society of Australia</li>
+<li>Elected Fellow, Australian Academy of Sciences, 2013 Australian Academy of Sciences</li>
+<li>Elected Fellow, Geological Society of Australia, 2011 Geological Society of Australia</li>
+<li>Distinguished Visiting Professor, Paris, France, 2008 Ecole Normale Supérieure</li>
 <li>ARC Professorial Fellow, 2005-2009 Australian Research Council</li>
 <li>ARC Professorial Fellow, 2000-2004 Australian Research Council</li>
 <li>CSIRO Postdoctoral Fellowship, 1986-1987 Cambridge University</li>
@@ -2391,15 +2282,11 @@ Supérieure</li>
 <ul>
 <li>IMAGE project review, Pisa Italy, 2015 EU Commission</li>
 <li>Review of Geosciences, 2015 Victoria University, New Zealand,</li>
-<li>Department Science and Technology, Indian Government Review of
-Kedarnath landslide disaster, Uttrakhand, India, May 2014.</li>
-<li>EON Research Centre, Science Advisory Board, 2011-2012 RWTH Aachen
-Germany</li>
-<li>Strategic Roadmap for Australian Research Infrastructure, 2011
-Department Industry, Australian Government</li>
+<li>Department Science and Technology, Indian Government Review of Kedarnath landslide disaster, Uttrakhand, India, May 2014.</li>
+<li>EON Research Centre, Science Advisory Board, 2011-2012 RWTH Aachen Germany</li>
+<li>Strategic Roadmap for Australian Research Infrastructure, 2011 Department Industry, Australian Government</li>
 <li>SUNConnect Advisory Board, 2011</li>
-<li>International Partnership for Geothermal Technology, Exploration
-technologies working group, 2010-2012</li>
+<li>International Partnership for Geothermal Technology, Exploration technologies working group, 2010-2012</li>
 <li>Geology, Editorial Board, 1999-2001 and 2009-2011</li>
 <li>AuScope-AGOS EIF Science Advisor, 2009-2013</li>
 <li>ARC College of Experts, 2009-2011 Australian Research Council</li>
@@ -2408,103 +2295,55 @@ technologies working group, 2010-2012</li>
 <li>Tectonophysics, Co Editor-in-Chief, 2004-2009</li>
 <li>PMD*CRC Science Advisory Board, 2000-2002</li>
 </ul>
-<h1 id="research-funding-since-2000">4. Research funding (since
-2000)</h1>
+<h1 id="research-funding-since-2000">4. Research funding (since 2000)</h1>
 <p><strong>Total funding </strong> $17,091,000</p>
 <ul>
-<li>Competitive Research Program Grants (inc. ARC DP, ARC Linkage,AISRF,
-NDG) $4,416,000</li>
-<li>Infrastructure grants at University of Melbourne (EIF, MNRF)
-$8,343,000</li>
-<li>Infrastructure grants at other universities (ARC LIEF)
-$1,875,000</li>
+<li>Competitive Research Program Grants (inc. ARC DP, ARC Linkage,AISRF, NDG) $4,416,000</li>
+<li>Infrastructure grants at University of Melbourne (EIF, MNRF) $8,343,000</li>
+<li>Infrastructure grants at other universities (ARC LIEF) $1,875,000</li>
 <li>Other non-competitive funding - $2,457,000</li>
 </ul>
 <p>Current grants</p>
 <ul>
-<li>Indo-Australian plate Active tectonics program, CI Sandiford, ARC
-Discovery, $400,000</li>
-<li>Geodynamic groundwater, CI Sandiford, Geoscience Australia,
-2014-2016 $405,000</li>
-<li>GipNet Siemic monitoring network, CI Sandiford &amp; Gibson, EIF,
-2015-2019, $1,200,000</li>
+<li>Indo-Australian plate Active tectonics program, CI Sandiford, ARC Discovery, $400,000</li>
+<li>Geodynamic groundwater, CI Sandiford, Geoscience Australia, 2014-2016 $405,000</li>
+<li>GipNet Siemic monitoring network, CI Sandiford &amp; Gibson, EIF, 2015-2019, $1,200,000</li>
 </ul>
 <h1 id="published-work">5. Published work</h1>
-<p><strong>Google Scholar</strong> Total citations - 11353 ,
-Hirsch-index - 67 , i10-index - 163</p>
+<p><strong>Google Scholar</strong>
+Total citations - 11428 , Hirsch-index - 67 , i10-index - 166</p>
 <p><strong>Top five papers</strong></p>
 <ul>
-<li>Egholm, D., Knusden, M.F., <strong>Sandiford, M.</strong>, 2013,
-Lifespan of mountain ranges scaled by feedbacks between landsliding and
-erosion by rivers, Nature, 498, 475–478, <a
-href="doi:10:1038/nature12218" class="uri">doi:10:1038/nature12218</a> ,
-# citations 133</li>
-<li><strong>Sandiford, M.</strong>, 2007, The tilting continent: a new
-constraint on the dynamic topographic field from Australia, Earth and
-Planetary Science Letters, 261, 152-163 doi: 10.1016/j.epsl.2007.06.023
-, # citations 139</li>
-<li><strong>Sandiford, M.</strong>, McLaren, S., 2002, Tectonic feedback
-and the ordering of heat producing elements within the continental
-lithosphere, Earth and Planetary Science Letters, 2002, 204, 133-150 , #
-citations 179</li>
-<li>Coblentz, D., <strong>Sandiford, M.</strong>, Richardson, R, Zhou,
-S., Hillis, R., 1995, The origins of the Australian stress field, Earth
-and Planetary Science Letters, 133, 299-309. , # citations 181</li>
-<li><strong>Sandiford, M.</strong>, Powell, R., 1986, Deep crustal
-metamorphism during continental extension, ancient and modern examples.
-Earth and Planetary Science Letters, 79, 151-158. , # citations 448</li>
+<li>Egholm, D., Knusden, M.F., <strong>Sandiford, M.</strong>, 2013, Lifespan of mountain ranges scaled by feedbacks between landsliding and erosion by rivers, Nature, 498, 475–478, <a href="doi:10:1038/nature12218" class="uri">doi:10:1038/nature12218</a>
+, # citations 137</li>
+<li><strong>Sandiford, M.</strong>, 2007, The tilting continent: a new constraint on the dynamic topographic field from Australia, Earth and Planetary Science Letters, 261, 152-163 doi: 10.1016/j.epsl.2007.06.023 , # citations 140</li>
+<li><strong>Sandiford, M.</strong>, McLaren, S., 2002, Tectonic feedback and the ordering of heat producing elements within the continental lithosphere, Earth and Planetary Science Letters, 2002, 204, 133-150
+, # citations 179</li>
+<li>Coblentz, D., <strong>Sandiford, M.</strong>, Richardson, R, Zhou, S., Hillis, R., 1995, The origins of the Australian stress field, Earth and Planetary Science Letters, 133, 299-309. , # citations 181</li>
+<li><strong>Sandiford, M.</strong>, Powell, R., 1986, Deep crustal metamorphism during continental extension, ancient and modern examples. Earth and Planetary Science Letters, 79, 151-158. , # citations 450</li>
 </ul>
-<p><strong>Other Key papers (total of 170 peer-reviewed
-publications)</strong></p>
+<p><strong>Other Key papers (total of 170 peer-reviewed publications)</strong></p>
 <ul>
-<li>Morell, K.D., <strong>Sandiford, M.</strong>, Rajendran, C.P.,
-Rajendran, K., Fink, D., Alimanovic, A., Sanwal, J., 2015, Geomorphology
-reveals active decollement geometry in the central Himalayan seismic
-gap, Lithosphere, 7, 247-256, <a href="doi:10.1130/L407.1"
-class="uri">doi:10.1130/L407.1</a> , # citations 45</li>
-<li>McConnell, D., Hearps, P., Eales, D., <strong>Sandiford,
-M.</strong>, Dunn, R., Wright, M., Bateman, L., 2013, Retrospective
-modeling of the merit-order effect on wholesale electricity prices from
-distributed photovoltaic generation in the Australian National
-Electricity Market, Energy Policy, 58,17-27, <a
-href="doi:10.1016/j.enpol.2013.01.052"
-class="uri">doi:10.1016/j.enpol.2013.01.052</a> , # citations 127</li>
-<li><strong>Sandiford, M.</strong>, 2008, Seismic moment release during
-slab rupture beneath the Banda Sea, Geophysical Journal International,
-174, 659–671 doi: 10.1111/j.1365-246X.2008.03838.x , # citations 36</li>
-<li><strong>Sandiford, M.</strong>, 2003, Neotectonics of southeastern
-Australia: linking the Quaternary faulting record with seismicity and in
-situ stress, eds Hillis, R.R. Muller, D., Evolution and dynamics of the
-Australian Plate, Geological Society of Australia, Special Publication,
-22, 101-113<br />
+<li>Morell, K.D., <strong>Sandiford, M.</strong>, Rajendran, C.P., Rajendran, K., Fink, D., Alimanovic, A., Sanwal, J., 2015, Geomorphology reveals active decollement geometry in the central Himalayan seismic gap, Lithosphere, 7, 247-256, <a href="doi:10.1130/L407.1" class="uri">doi:10.1130/L407.1</a> , # citations 47</li>
+<li>McConnell, D., Hearps, P., Eales, D., <strong>Sandiford, M.</strong>, Dunn, R., Wright, M., Bateman, L., 2013, Retrospective modeling of the merit-order effect on wholesale electricity prices from distributed photovoltaic generation in the Australian National Electricity Market, Energy Policy, 58,17-27, <a href="doi:10.1016/j.enpol.2013.01.052" class="uri">doi:10.1016/j.enpol.2013.01.052</a> , # citations 128</li>
+<li><strong>Sandiford, M.</strong>, 2008, Seismic moment release during slab rupture beneath the Banda Sea, Geophysical Journal International, 174, 659–671 doi: 10.1111/j.1365-246X.2008.03838.x
+, # citations 36</li>
+<li><strong>Sandiford, M.</strong>, 2003, Neotectonics of southeastern Australia: linking the Quaternary faulting record with seismicity and in situ stress, eds Hillis, R.R. Muller, D., Evolution and dynamics of the Australian Plate, Geological Society of Australia, Special Publication, 22, 101-113<br />
 </li>
-<li>Coblentz, D., <strong>Sandiford, M.</strong>, 1994, Tectonic
-stresses in the African plate: Constraints on the ambient stress state,
-Geology, 22, 831-834. , # citations 118</li>
-<li>Coblentz, D., Richardson, R.M., <strong>Sandiford, M.</strong>,
-1994, On the gravitational potential of the Earth’s lithosphere,
-Tectonics, 13, 929-945. , # citations 119</li>
-<li>Turner, S., <strong>Sandiford, M.</strong>, Foden, J., 1992, Some
-geodynamic and compositional constraints on “post-orogenic” magmatism,
-Geology, 20, 931-934. , # citations 326</li>
-<li><strong>Sandiford, M.</strong>, Powell, R., 1991, Some remarks on
-high temperature-low pressure metamorphism in convergent orogens,
-Journal of Metamorphic geology, 9, 333-340. , # citations 199</li>
-<li><strong>Sandiford, M.</strong>, 1989, Horizontal structures in
-granulite terrains : a record of mountain building or mountain collapse?
-Geology, 17, 449 - 452. , # citations 145</li>
+<li>Coblentz, D., <strong>Sandiford, M.</strong>, 1994, Tectonic stresses in the African plate: Constraints on the ambient stress state, Geology, 22, 831-834. , # citations 119</li>
+<li>Coblentz, D., Richardson, R.M., <strong>Sandiford, M.</strong>, 1994, On the gravitational potential of the Earth’s lithosphere, Tectonics, 13, 929-945. , # citations 120</li>
+<li>Turner, S., <strong>Sandiford, M.</strong>, Foden, J., 1992, Some geodynamic and compositional constraints on “post-orogenic” magmatism, Geology, 20, 931-934. , # citations 330</li>
+<li><strong>Sandiford, M.</strong>, Powell, R., 1991, Some remarks on high temperature-low pressure metamorphism in convergent orogens, Journal of Metamorphic geology, 9, 333-340. , # citations 200</li>
+<li><strong>Sandiford, M.</strong>, 1989, Horizontal structures in granulite terrains : a record of mountain building or mountain collapse? Geology, 17, 449 - 452. , # citations 145</li>
 </ul>
 <p><strong>Selected Invited and Keynote talks</strong></p>
 <ul>
-<li>EEC Eenergy Efficiency Council, National conference 2013, Melbourne,
-December 2013</li>
-<li>3rd International Student Energy Summit, ISES 2013, Trondheim,
-Norway. June 2013.</li>
+<li>EEC Eenergy Efficiency Council, National conference 2013, Melbourne, December 2013</li>
+<li>3rd International Student Energy Summit, ISES 2013, Trondheim, Norway. June 2013.</li>
 <li>24th IGC, Brisbane Global Geoscience Initiative, August 2012</li>
 <li>IUGG, Melbourne, July, 2011</li>
 <li>NGRI Jubilee Celebrations, October, 2011, Hyderabad, India</li>
-<li>International Himalayn geodynamics, Wadia Institute, November,
-2011</li>
+<li>International Himalayn geodynamics, Wadia Institute, November, 2011</li>
 <li>IISC Bangalore, india, April, 2010</li>
 <li>GLADE, California, July, 2010</li>
 <li>SOTA, Greece, September, 2010</li>
@@ -2520,71 +2359,47 @@ Norway. June 2013.</li>
 <h1 id="supervision-and-mentoring">6. Supervision and mentoring</h1>
 <p><strong>PhD supervsion</strong></p>
 <ul>
-<li>Dr Shoahua Zhou, 1990, current position Senior Petroleum Engineering
-Consultant, Saudi Aramco</li>
-<li>Dr Jo Arnold, 1993, current position Consultant, Magill Conulting,
-Adelaide</li>
-<li>Dr Ian Scrimgeour, 1993, current position Director, Northern
-territory Geological Survey</li>
-<li>Dr Jon Teasdale, 1997, current position Global strategist, Shell,
-Amsterdam</li>
-<li>Dr Bruce Schaefer, 1998, current position Senior Lecturer, Macquarie
-University</li>
-<li>Dr Eike Paul, 1999, current position, Head of Geology RSE,
-Vienna</li>
-<li>Dr Sandra McLaren, 2001, current position Lecturer, University of
-Melbourne</li>
-<li>Dr Narelle Neumann, 2002, current position Principal Scientist,
-Geoscience Australia</li>
-<li>Dr Victor Tokarev, 2003, current position Senior Exploration
-Geologist, Santos, Adelaide</li>
-<li>Dr Mark Quigley, 2007, current position Assoc. Professor, University
-of Melbourne</li>
-<li>Dr Kim Ely, 2009, current position Research fellow, Stonybrook
-University, USA</li>
-<li>Dr Sara Jakica, 2011, current position Multi-client business
-manager, HiSeis, Perth</li>
-<li>Dr Jaeryul Shin, 2012, lecturer, Kyungpook National University,
-Korea</li>
+<li>Dr Shoahua Zhou, 1990, current position Senior Petroleum Engineering Consultant, Saudi Aramco</li>
+<li>Dr Jo Arnold, 1993, current position Consultant, Magill Conulting, Adelaide</li>
+<li>Dr Ian Scrimgeour, 1993, current position Director, Northern territory Geological Survey</li>
+<li>Dr Jon Teasdale, 1997, current position Global strategist, Shell, Amsterdam</li>
+<li>Dr Bruce Schaefer, 1998, current position Senior Lecturer, Macquarie University</li>
+<li>Dr Eike Paul, 1999, current position, Head of Geology RSE, Vienna</li>
+<li>Dr Sandra McLaren, 2001, current position Lecturer, University of Melbourne</li>
+<li>Dr Narelle Neumann, 2002, current position Principal Scientist, Geoscience Australia</li>
+<li>Dr Victor Tokarev, 2003, current position Senior Exploration Geologist, Santos, Adelaide</li>
+<li>Dr Mark Quigley, 2007, current position Assoc. Professor, University of Melbourne</li>
+<li>Dr Kim Ely, 2009, current position Research fellow, Stonybrook University, USA</li>
+<li>Dr Sara Jakica, 2011, current position Multi-client business manager, HiSeis, Perth</li>
+<li>Dr Jaeryul Shin, 2012, lecturer, Kyungpook National University, Korea</li>
 <li>Dr Ben Harrison, 2015,</li>
 <li>Dr Steven Geroe, 2015, (PhD in Melbourne School of Law)</li>
 <li>Dr Dimitri Lafleur, 2017, current position, CSIRO</li>
-<li>Dr Dylan McConnell, 2020, current position, University of
-Melbourne</li>
+<li>Dr Dylan McConnell, 2020, current position, University of Melbourne</li>
 <li>Dr Tamarah King, 2020, current position, Cambridge University</li>
 </ul>
 <p><strong>Postdoctoral supervision</strong></p>
 <ul>
-<li>Prof Simon Turner, current position Laureate Professor, Macquarie
-University</li>
-<li>Dr David Coblentz, current position Senior fellow, Geodynamics,
-LANL, New Mexico, USA</li>
-<li>Prof Kurt Stuwe, current position Professor, Graz University,
-Austria</li>
+<li>Prof Simon Turner, current position Laureate Professor, Macquarie University</li>
+<li>Dr David Coblentz, current position Senior fellow, Geodynamics, LANL, New Mexico, USA</li>
+<li>Prof Kurt Stuwe, current position Professor, Graz University, Austria</li>
 <li>Dr Geoff Fraser, current position Geoscience Australia</li>
-<li>Dr Peter Haines, current position Geological Survey Western
-Australia</li>
-<li>Prof Martin Hand, current position Porfessor University of
-Adelaide</li>
-<li>Dr Sandra Mclaren, current position, Lecturer, University of
-Melbourne</li>
+<li>Dr Peter Haines, current position Geological Survey Western Australia</li>
+<li>Prof Martin Hand, current position Porfessor University of Adelaide</li>
+<li>Dr Sandra Mclaren, current position, Lecturer, University of Melbourne</li>
 <li>Prof David Egholm, current position Aarhus University, Denmark</li>
 <li>Dr Simon Bodorkos, current position Geoscience Australia</li>
-<li>Dr Steve Boger, current position Senior Lecturer, University of
-Melbourne</li>
-<li>Dr Kristin Morell, current position Assoc. Professor, University of
-Califonia, Santa Barbara, US.</li>
+<li>Dr Steve Boger, current position Senior Lecturer, University of Melbourne</li>
+<li>Dr Kristin Morell, current position Assoc. Professor, University of Califonia, Santa Barbara, US.</li>
 <li>Dr Tim Rawling, current position CEO, AuScope, Melbourne</li>
 <li>Dr Guangwei Li, current position, Academic, Nanjing University</li>
-<li>Dr Januka Attanayake, current position Research Fellow, University
-of Melbourne</li>
+<li>Dr Januka Attanayake, current position Research Fellow, University of Melbourne</li>
 </ul>
 <h1 id="international-development">7. International development</h1>
 <p><strong>DFAT sponsored Masters students</strong></p>
 <ul>
 <li>Phuntsho Pelgay, Bhutan, 2014-2015, Earthquake hazard in Bhutan</li>
-<li>Yolgi Alawendra, Indondesia, 2012-2013, Geothermal potential of the
-Central Sumatra Basin</li>
+<li>Yolgi Alawendra, Indondesia, 2012-2013, Geothermal potential of the Central Sumatra Basin</li>
 </ul>
 <p><strong>Geological mapping in Timor Leste</strong></p>
 <ul>
@@ -2594,110 +2409,59 @@ Central Sumatra Basin</li>
 <li>1:250,000 Landslide distribution map, Timor-Leste (West), 2010</li>
 </ul>
 <h1 id="public-engagement-1">8. Public engagement</h1>
-<p><strong>Columns</strong> <a
-href="https://theconversation.com/columns/mike-sandiford-228">Energy an
-the Earth</a> on <a href="https://theconversation.com">the
-Conversation</a> (2012+). Total 53 Posts viewed more than 703,000
-times.</p>
+<p><strong>Columns</strong> <a href="https://theconversation.com/columns/mike-sandiford-228">Energy an the Earth</a> on <a href="https://theconversation.com">the Conversation</a> (2012+). Total 53 Posts viewed more than 703,000 times.</p>
 <p><strong>National Press - Selected op-eds</strong></p>
 <ul>
-<li>Cherry-picking contrarian geologists tend to obscure scientific
-truth, December 31 2011, <a
-href="http://www.theaustralian.com.au/national-affairs/opinion/cherry-picking-contrarian-geologists-tend-to-obscure-scientific-truth/story-e6frgd0x-1226233605954">the
-Australian</a></li>
-<li>The scale of the effect we have on the planet is yet to sink in, May
-23rd 2011, <a
-href="http://www.theage.com.au/it-pro/the-scale-of-the-effect-we-have-on-the-planet-is-yet-to-sink-in-20110522-1eyqk">the
-Age</a></li>
-<li>Fossil fuels will run out of gas when the solar revolution arrives,
-March 22nd 2011, <a
-href="http://www.smh.com.au/business/fossil-fuels-will-run-out-of-gas-when-the-solar-revolution-arrives-20110321-1c3qe.html">the
-Sydney Morning Herald</a></li>
-<li>Solar and wind power crucial for climate future, February 18th 2011,
-the Canberra Times</li>
-<li>Do renewable energy by the numbers, and it all adds up, June 24th
-2010, <a
-href="http://www.theage.com.au/it-pro/do-renewable-energy-by-the-numbers-and-it-all-adds-up-20100623-yywm">the
-Age</a></li>
-<li>Geology points to dangers ahead, May 6th 2009, <a
-href="http://www.theaustralian.com.au/opinion/geology-points-to-dangers-ahead/story-e6frg6zo-1225710269931">the
-Australian</a></li>
+<li>Cherry-picking contrarian geologists tend to obscure scientific truth, December 31 2011,
+<a href="http://www.theaustralian.com.au/national-affairs/opinion/cherry-picking-contrarian-geologists-tend-to-obscure-scientific-truth/story-e6frgd0x-1226233605954">the Australian</a></li>
+<li>The scale of the effect we have on the planet is yet to sink in, May 23rd 2011,
+<a href="http://www.theage.com.au/it-pro/the-scale-of-the-effect-we-have-on-the-planet-is-yet-to-sink-in-20110522-1eyqk">the Age</a></li>
+<li>Fossil fuels will run out of gas when the solar revolution arrives, March 22nd 2011,
+<a href="http://www.smh.com.au/business/fossil-fuels-will-run-out-of-gas-when-the-solar-revolution-arrives-20110321-1c3qe.html">the Sydney Morning Herald</a></li>
+<li>Solar and wind power crucial for climate future, February 18th 2011, the Canberra Times</li>
+<li>Do renewable energy by the numbers, and it all adds up, June 24th 2010,
+<a href="http://www.theage.com.au/it-pro/do-renewable-energy-by-the-numbers-and-it-all-adds-up-20100623-yywm">the Age</a></li>
+<li>Geology points to dangers ahead, May 6th 2009,
+<a href="http://www.theaustralian.com.au/opinion/geology-points-to-dangers-ahead/story-e6frg6zo-1225710269931">the Australian</a></li>
 </ul>
-<p><strong>National Press - Selected TV &amp; Radio
-interviews</strong></p>
+<p><strong>National Press - Selected TV &amp; Radio interviews</strong></p>
 <ul>
-<li>Power system can’t take the heat, <a
-href="http://www.abc.net.au/am/content/2013/s3926465.htm">ABC radio
-National AM with Michael Brisenden</a>, 16th January 2014.</li>
-<li>Fractured future, May 5th 2005 <a
-href="http://www.abc.net.au/catalyst/stories/s1360803.htm">ABC TV
-Catalyst</a></li>
-<li>Australia moves north, ABC Radio National Late Night Live with
-Phillip Adams, 10th February 2004</li>
-<li>Australian Earthquakes, ABC Radio National Breakfast with Peter
-Thompson, 5th June 2003</li>
-<li>Earthquake Study ABC Radio National Breakfast with Peter Thompson,
-20th December 2002</li>
-<li>Geothermal power operating in South Australia, <a
-href="http://www.abc.net.au/radionational/programs/scienceshow/geothermal-power-operating-in-south-australia/4723534">ABC
-Science show</a>, June 1 2013,</li>
-<li>Researcher delves into Earth’s crust, <a
-href="http://www.abc.net.au/pm/content/2005/s1290603.htm">ABC Radio
-National PM</a>, January 27, 2005 *Good and bad of fracking, <a
-href="http://www.abc.net.au/news/2013-08-19/fracking-mining-gippsland-otway-sandiford/4896242">ABC
-Radio, Country Hour</a>, 19 Aug 2013</li>
+<li>Power system can’t take the heat, <a href="http://www.abc.net.au/am/content/2013/s3926465.htm">ABC radio National AM with Michael Brisenden</a>, 16th January 2014.</li>
+<li>Fractured future, May 5th 2005 <a href="http://www.abc.net.au/catalyst/stories/s1360803.htm">ABC TV Catalyst</a></li>
+<li>Australia moves north, ABC Radio National Late Night Live with Phillip Adams, 10th February 2004</li>
+<li>Australian Earthquakes,
+ABC Radio National Breakfast with Peter Thompson, 5th June 2003</li>
+<li>Earthquake Study
+ABC Radio National Breakfast with Peter Thompson, 20th December 2002</li>
+<li>Geothermal power operating in South Australia, <a href="http://www.abc.net.au/radionational/programs/scienceshow/geothermal-power-operating-in-south-australia/4723534">ABC Science show</a>, June 1 2013,</li>
+<li>Researcher delves into Earth’s crust, <a href="http://www.abc.net.au/pm/content/2005/s1290603.htm">ABC Radio National PM</a>, January 27, 2005
+*Good and bad of fracking, <a href="http://www.abc.net.au/news/2013-08-19/fracking-mining-gippsland-otway-sandiford/4896242">ABC Radio, Country Hour</a>, 19 Aug 2013</li>
 </ul>
 <p><strong>Public lectures</strong></p>
 <ul>
-<li><a
-href="http://www.wheelercentre.com/events/coal-fired-power-will-soon-be-obsolete">Intelligence
-Squared debates - Will coal-fired power soon be obsolete</a>, Melbourne,
-October 18th 2014, Wheeler Centre</li>
+<li><a href="http://www.wheelercentre.com/events/coal-fired-power-will-soon-be-obsolete">Intelligence Squared debates - Will coal-fired power soon be obsolete</a>, Melbourne, October 18th 2014, Wheeler Centre</li>
 <li>Womad Earthstation, October 2011, Adelaide, October</li>
 <li>Geological Society of Australia Public Lecturer, 2004</li>
-<li>Mawson lecture, Why oz quakes?, February 2004, Geological Society of
-Australia, Hobart Tasmania</li>
+<li>Mawson lecture, Why oz quakes?, February 2004, Geological Society of Australia, Hobart Tasmania</li>
 </ul>
 <p><strong>Independent commentary</strong></p>
 <ul>
-<li>Finding majesty in the earth’s dynamics, July 14 2014, <a
-href="http://www.theage.com.au/national/education/voice/finding-majesty-in-the-earths-dynamics-20140708-3bkll.html">the
-Age</a></li>
-<li>River deep, mountain high, July 8, 2013, <a
-href="http://www.smh.com.au/national/education/voice/river-deep-mountain-high-20130704-2pecq.html">Sydney
-Morning Herald</a></li>
-<li>River deep, mountain high: New study reveals clues to lifecycle of
-world’s iconic mountains, June 27 2013, <a
-href="http://www.sciencedaily.com/releases/2013/06/130627102631.htm">Science
-daily</a></li>
-<li>Predicting the quake, April 18 2005, <a
-href="http://www.theage.com.au/news/Education-News/Predicting-the-quake/2005/04/15/1113509921667.html?from=moreStories">the
-Age</a></li>
-<li>Asian earthquake risk suggested before tsunami disaster, January 26
-2005, <a
-href="https://www.newscientist.com/article/mg18524843-900-asian-earthquake-risk-suggested-before-tsunami-disaster/">New
-Scientist</a></li>
-<li>Australia’s quake-ridden past is uncovered, June 7 2003, <a
-href="https://www.newscientist.com/article/mg17823982-300-australias-quake-ridden-past-is-uncovered/">New
-Scientist</a></li>
-<li>Brown coal phase-out may be scrapped, August 9 2012, <a
-href="http://www.abc.net.au/environment/articles/2012/08/09/3564105.htm">ABC
-Environment</a></li>
+<li>Finding majesty in the earth’s dynamics, July 14 2014, <a href="http://www.theage.com.au/national/education/voice/finding-majesty-in-the-earths-dynamics-20140708-3bkll.html">the Age</a></li>
+<li>River deep, mountain high, July 8, 2013, <a href="http://www.smh.com.au/national/education/voice/river-deep-mountain-high-20130704-2pecq.html">Sydney Morning Herald</a></li>
+<li>River deep, mountain high: New study reveals clues to lifecycle of world’s iconic mountains, June 27 2013, <a href="http://www.sciencedaily.com/releases/2013/06/130627102631.htm">Science daily</a></li>
+<li>Predicting the quake, April 18 2005, <a href="http://www.theage.com.au/news/Education-News/Predicting-the-quake/2005/04/15/1113509921667.html?from=moreStories">the Age</a></li>
+<li>Asian earthquake risk suggested before tsunami disaster, January 26 2005,
+<a href="https://www.newscientist.com/article/mg18524843-900-asian-earthquake-risk-suggested-before-tsunami-disaster/">New Scientist</a></li>
+<li>Australia’s quake-ridden past is uncovered, June 7 2003,
+<a href="https://www.newscientist.com/article/mg17823982-300-australias-quake-ridden-past-is-uncovered/">New Scientist</a></li>
+<li>Brown coal phase-out may be scrapped, August 9 2012, <a href="http://www.abc.net.au/environment/articles/2012/08/09/3564105.htm">ABC Environment</a></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>this is in addition to the ~$23 million he has generated
-for his discipline, and ~$34 million for the University’s
-interdisciplinary energy programs<a href="#fnref1" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p> Auscope administers the federal government’s National
-Collaborative Research Infrastructure Strategy (NCRIS) program for the
-Earth Sciences<a href="#fnref2" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>this is in addition to the ~$23 million he has generated for his discipline, and ~$34 million for the University’s interdisciplinary energy programs<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p> Auscope administers the federal government’s National Collaborative Research Infrastructure Strategy (NCRIS) program for the Earth Sciences<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--radix_placeholder_article_footer-->

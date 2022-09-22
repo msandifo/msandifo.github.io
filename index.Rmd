@@ -14,7 +14,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](./images/bhutan_2.jpeg)
 orbit:- 
-eternal husband [[Bridget Robinson](pdfs/personal/bid_celebration.pdf)], father,  sailor,  geologist 
+eternal husband [[Bridget Robinson](pdfs/personal/bid_celebration.pdf)], \n
+father [Dan, Erin, Anna] and grandfather [Heath, Rosa, Monty ...],  \n
+sailor,  \n
+geologist 
 
 
 
@@ -45,14 +48,13 @@ fellow [Australian Academy of Science](https://www.science.org.au/profile/michae
 ### [recent publications](pubs.html)
 - [geomorph](pdfs/peer/2022_EPSL.pdf) - elasticity, gravity and the Finke Gorge 
 - [geochem](pdfs/peer/2021_GGG.pdf) - anomalous arc magmas 
-- [volcanism](pdfs/peer/2021_ESR.pdf) - Holocene intraplate volcanism in East Asia 
-- [environment](pdfs/peer/2021_Elementa.pdf) - Mercury levels, electricity generation in the Latrobe Valley 
+- [geomagma](pdfs/peer/2021_ESR.pdf) - Holocene intraplate volcanism in East Asia 
+- [geoenviro](pdfs/peer/2021_Elementa.pdf) - Mercury levels, electricity generation in the Latrobe Valley 
 - [geodynamics](pdfs/peer/2020_Tectonics.pdf) - stress distribution and dynamics of subducting slabs 
-- [earthquakes](pdfs/peer/2020_BSSA.pdf) - Australia's largest earthquake in almost 30 years
-- [groundwater](pdfs/peer/2020_Hydrogeol.pdf) - some novel insights into the iconic Great Artesian Basin
-- [techniques](pdfs/peer/2020_GTE.pdf) - measuring thermal diffusivity in soils  
+- [geophys](pdfs/peer/2020_BSSA.pdf) - Australia's largest earthquake in almost 30 years
+- [geohydro](pdfs/peer/2020_Hydrogeol.pdf) - some novel insights into the iconic Great Artesian Basin
+- [geomethods](pdfs/peer/2020_GTE.pdf) - measuring thermal diffusivity in soils  
 - [economics](pdfs/peer/2020_CSR.pdf) - market power in the Australian energy system
-
 
 
 
