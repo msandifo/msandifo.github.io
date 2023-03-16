@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](./images/bhutan_2.jpeg)
 orbit:- 
-eternal husband [[Bridget Robinson](pdfs/personal/bid_celebration.pdf)], \n
+eternal husband [[Bridget Robinson](pdfs/personal/seeingmagic.pdf)], \n
 father [Dan, Erin, Anna] and grandfather [Heath, Rosa, Monty ...],  \n
 sailor,  \n
 geologist 
