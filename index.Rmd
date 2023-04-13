@@ -13,7 +13,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ![](./images/bhutan_2.jpeg)
-orbit:- 
+
+_orb_:- 
 eternal husband [[Bridget Robinson](pdfs/personal/seeingmagic.pdf)], \n
 father [Dan, Erin, Anna] and grandfather [Heath, Rosa, Monty ...],  \n
 sailor,  \n
@@ -22,16 +23,16 @@ geologist
 
 
 
-investigation:-
+_investigation_:-
 [earth dynamics](pdfs/peer/2020_Tectonics.pdf), [earth energetics](pdfs/peer/2002_EPSL_b.pdf), [landscape evolution](pdfs/peer/2013_nature12218.pdf), [continental evolution](pdfs/peer/2010_JMG_a.pdf) and [energy systems](pdfs/peer/2015_AppEnergy.pdf)
 
 
 
-privilege:- to have worked among communities that have lived for millennia the most dynamic and remote parts of our planet ( [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Tibet](https://theconversation.com/raising-tibet-58483),  [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)), and some places beyond  (Enderby Land, Northern Victoria Land); to have known love and  much more. 
+_privilege_:- to have worked among communities that for millennia have lived in the most dynamic and remote parts of our planet ( [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Tibet](https://theconversation.com/raising-tibet-58483),  [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)), and some places beyond  (Enderby Land, Northern Victoria Land); to have known love and  much more. 
 
-[reflection](https://theconversation.com/columns/mike-sandiford-228):-  [earth](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy policy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) 
+[_reflection_](https://theconversation.com/columns/mike-sandiford-228):-  [earth](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy policy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) 
 
-notification: Redmond Barry Distinguished Professor Emeritus (University of Melbourne), 
+_sidenote_: Redmond Barry Distinguished Professor Emeritus (University of Melbourne), 
 <!-- former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au),  -->
 fellow [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford)
 
