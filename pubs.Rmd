@@ -67,14 +67,16 @@ gs.id<-"qdYHZTgAAAAJ"
  
 #google cites
 
-1. Jiang, G.,  Tian, Y.,  Lv, Q., Sandiford, M.,  Shi, Y., Zou, C.,  Ma, F.,  Deng, C., He, L.,  Hu, S., 2023, Ground surface temperature history since the Last Glacial Maximum in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling, Geophysical Reserach Letters,  50, e2023GL103055,  https://doi.org/10.1029/2023GL103055
+1. Attanayke, J., Jones, A., Gibson. G., Sandiford, M., Tao, M., Pre-commercial baseline passive seismic monitoring around CarbonNet’s Pelican site in the Gippsland Basin, Victoria – The first five years, International Journal of Greenhouse Gas Control, submitted October,2022.  
 
-1. Chen, Y., Saygin, E., Kennett, B.L.N., Qashqai, M., Hauser, J., Lumley, D.,  Sandiford, M. 2023. Next-generation seismic model of the Australian crust and implications for mineral resources and continental rifting, Nature Communications, 14:1192, 1-13,  https://doi.org/10.1038/s41467-023-36514-z.
+1. Jiang, G.,  Tian, Y.,  Lv, Q., Sandiford, M.,  Shi, Y., Zou, C.,  Ma, F.,  Deng, C., He, L.,  Hu, S., 2023, Ground surface temperature history since the Last Glacial Maximum in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling, Geophysical Reserach Letters,  50, e2023GL103055,  https://doi.org/10.1029/2023GL103055, `r ( gs("Ground surface temperature history"))` 
+
+1. Chen, Y., Saygin, E., Kennett, B.L.N., Qashqai, M., Hauser, J., Lumley, D.,  Sandiford, M. 2023. Next-generation seismic model of the Australian crust and implications for mineral resources and continental rifting, Nature Communications, 14:1192, 1-13,  https://doi.org/10.1038/s41467-023-36514-z, `r ( gs("Next-generation seismic"))`
 
 1. Sandiford, M. 2022, The net-zero opportunity for Australian minerals.  in The Superpower Transformation, ed. Garnaut, R., Latrobe University Press/Black Inc., p149-169.
  
  
- 1. Jansen, J.D.,  Sandiford, M.,  Fujioka, T., Cohen, T.J., Struck, M.,  Anderson, S.P., 2022, Geomorphic imprints of lithospheric flexure in central Australia, Earth and Planetary Science Letters 584, 117456, https://doi.org/10.1016/j.epsl.2022.117456, `r ( gs(" imprints of lithospheric flexure"))`
+ 1. Jansen, J.D.,  Sandiford, M.,  Fujioka, T., Cohen, T.J., Struck, M.,  Anderson, S.P., 2022, Geomorphic imprints of lithospheric flexure in central Australia, Earth and Planetary Science Letters 584, 117456, https://doi.org/10.1016/j.epsl.2022.117456, `r ( gs("Geomorphic imprints of lithospheric flexure"))`
  
 
 
