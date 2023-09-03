@@ -67,7 +67,8 @@ gs.id<-"qdYHZTgAAAAJ"
  
 #google cites
 
-1. Attanayke, J., Jones, A., Gibson. G., Sandiford, M., Tao, M., Pre-commercial baseline passive seismic monitoring around CarbonNet’s Pelican site in the Gippsland Basin, Victoria – The first five years, International Journal of Greenhouse Gas Control, submitted October,2022.  
+1. Attanayke, J., Jones, A., Gibson. G., Sandiford, M., 2023, Pre-commercial baseline passive seismic monitoring around CarbonNet's Pelican Site in the offshore Gippsland Basin, Victoria—The first five years,   International Journal of Greenhouse Gas Control
+128,  103962, https://doi.org/10.1016/j.ijggc.2023.103962, `r ( gs("Pre-commercial baseline passive"))` 
 
 1. Jiang, G.,  Tian, Y.,  Lv, Q., Sandiford, M.,  Shi, Y., Zou, C.,  Ma, F.,  Deng, C., He, L.,  Hu, S., 2023, Ground surface temperature history since the Last Glacial Maximum in Northeast Asia: Reconstructions from the borehole geotherms of the International Continental Scientific Drilling, Geophysical Reserach Letters,  50, e2023GL103055,  https://doi.org/10.1029/2023GL103055, `r ( gs("Ground surface temperature history"))` 
 
