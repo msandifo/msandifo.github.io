@@ -93,8 +93,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2023-10-04"/>
-  <meta property="article:created" itemprop="dateCreated" content="2023-10-04"/>
+  <meta property="article:published" itemprop="datePublished" content="2023-12-08"/>
+  <meta property="article:created" itemprop="dateCreated" content="2023-12-08"/>
   <meta name="article:author" content="Mike Sandiford"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -111,7 +111,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date"]}},"value":[{"type":"character","attributes":{},"value":["Abbreviated Curriculum Vitae"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Mike Sandiford"]}]}]},{"type":"character","attributes":{},"value":["2023-10-04"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date"]}},"value":[{"type":"character","attributes":{},"value":["Abbreviated Curriculum Vitae"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Mike Sandiford"]}]}]},{"type":"character","attributes":{},"value":["2023-12-08"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -830,9 +830,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: none !important;
   }
 
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
+    border-top: none;
   }
 
   d-appendix {
@@ -927,6 +939,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
   }
 
   d-article pre {
@@ -1688,6 +1705,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // create d-title
     $('.d-title').changeElementType('d-title');
 
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
@@ -1765,8 +1788,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('.distill-force-highlighting-css').parent().remove();
 
     // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
 
     // load distill framework
     load_distill_framework();
@@ -1792,12 +1816,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
         if (orcid_id) {
           var a = $('<a></a>');
           a.attr('href', 'https://orcid.org/' + orcid_id);
           var img = $('<img></img>');
           img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
           img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
           a.append(img);
           $(this).append(a);
@@ -2155,7 +2180,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Abbreviated Curriculum Vitae","authors":[{"author":"Mike Sandiford","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2023-10-04T00:00:00.000+11:00","citationText":"Sandiford, 2023"}
+{"title":"Abbreviated Curriculum Vitae","authors":[{"author":"Mike Sandiford","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2023-12-08T00:00:00.000+11:00","citationText":"Sandiford, 2023"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2217,6 +2242,7 @@ academic
 
 <div class="d-title">
 <h1>Abbreviated Curriculum Vitae</h1>
+
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2226,7 +2252,7 @@ academic
   
   Mike Sandiford
   
-<br/>2023-10-04
+<br/>2023-12-08
 </div>
 
 <div class="d-article">
@@ -2311,28 +2337,28 @@ academic
 </ul>
 <h1 id="published-work">5. Published work</h1>
 <p><strong>Google Scholar</strong>
-Total citations - 12134 , Hirsch-index - 69 , i10-index - 168</p>
+Total citations - 12226 , Hirsch-index - 69 , i10-index - 171</p>
 <p><strong>Top five papers</strong></p>
 <ul>
 <li>Egholm, D., Knusden, M.F., <strong>Sandiford, M.</strong>, 2013, Lifespan of mountain ranges scaled by feedbacks between landsliding and erosion by rivers, Nature, 498, 475–478, <a href="doi:10:1038/nature12218" class="uri">doi:10:1038/nature12218</a>
-, # citations 162</li>
-<li><strong>Sandiford, M.</strong>, 2007, The tilting continent: a new constraint on the dynamic topographic field from Australia, Earth and Planetary Science Letters, 261, 152-163 doi: 10.1016/j.epsl.2007.06.023 , # citations 154</li>
+, # citations 165</li>
+<li><strong>Sandiford, M.</strong>, 2007, The tilting continent: a new constraint on the dynamic topographic field from Australia, Earth and Planetary Science Letters, 261, 152-163 doi: 10.1016/j.epsl.2007.06.023 , # citations 158</li>
 <li><strong>Sandiford, M.</strong>, McLaren, S., 2002, Tectonic feedback and the ordering of heat producing elements within the continental lithosphere, Earth and Planetary Science Letters, 2002, 204, 133-150
-, # citations 183</li>
+, # citations 184</li>
 <li>Coblentz, D., <strong>Sandiford, M.</strong>, Richardson, R, Zhou, S., Hillis, R., 1995, The origins of the Australian stress field, Earth and Planetary Science Letters, 133, 299-309. , # citations 190</li>
-<li><strong>Sandiford, M.</strong>, Powell, R., 1986, Deep crustal metamorphism during continental extension, ancient and modern examples. Earth and Planetary Science Letters, 79, 151-158. , # citations 454</li>
+<li><strong>Sandiford, M.</strong>, Powell, R., 1986, Deep crustal metamorphism during continental extension, ancient and modern examples. Earth and Planetary Science Letters, 79, 151-158. , # citations 453</li>
 </ul>
 <p><strong>Other Key papers (total of 170 peer-reviewed publications)</strong></p>
 <ul>
 <li>Morell, K.D., <strong>Sandiford, M.</strong>, Rajendran, C.P., Rajendran, K., Fink, D., Alimanovic, A., Sanwal, J., 2015, Geomorphology reveals active decollement geometry in the central Himalayan seismic gap, Lithosphere, 7, 247-256, <a href="doi:10.1130/L407.1" class="uri">doi:10.1130/L407.1</a> , # citations 52</li>
-<li>McConnell, D., Hearps, P., Eales, D., <strong>Sandiford, M.</strong>, Dunn, R., Wright, M., Bateman, L., 2013, Retrospective modeling of the merit-order effect on wholesale electricity prices from distributed photovoltaic generation in the Australian National Electricity Market, Energy Policy, 58,17-27, <a href="doi:10.1016/j.enpol.2013.01.052" class="uri">doi:10.1016/j.enpol.2013.01.052</a> , # citations 137</li>
+<li>McConnell, D., Hearps, P., Eales, D., <strong>Sandiford, M.</strong>, Dunn, R., Wright, M., Bateman, L., 2013, Retrospective modeling of the merit-order effect on wholesale electricity prices from distributed photovoltaic generation in the Australian National Electricity Market, Energy Policy, 58,17-27, <a href="doi:10.1016/j.enpol.2013.01.052" class="uri">doi:10.1016/j.enpol.2013.01.052</a> , # citations 141</li>
 <li><strong>Sandiford, M.</strong>, 2008, Seismic moment release during slab rupture beneath the Banda Sea, Geophysical Journal International, 174, 659–671 doi: 10.1111/j.1365-246X.2008.03838.x
 , # citations 36</li>
-<li><strong>Sandiford, M.</strong>, 2003, Neotectonics of southeastern Australia: linking the Quaternary faulting record with seismicity and in situ stress, eds Hillis, R.R. Muller, D., Evolution and dynamics of the Australian Plate, Geological Society of Australia, Special Publication, 22, 101-113 , # citations 234</li>
+<li><strong>Sandiford, M.</strong>, 2003, Neotectonics of southeastern Australia: linking the Quaternary faulting record with seismicity and in situ stress, eds Hillis, R.R. Muller, D., Evolution and dynamics of the Australian Plate, Geological Society of Australia, Special Publication, 22, 101-113 , # citations 236</li>
 <li>Coblentz, D., <strong>Sandiford, M.</strong>, 1994, Tectonic stresses in the African plate: Constraints on the ambient stress state, Geology, 22, 831-834. , # citations 126</li>
-<li>Coblentz, D., Richardson, R.M., <strong>Sandiford, M.</strong>, 1994, On the gravitational potential of the Earth’s lithosphere, Tectonics, 13, 929-945. , # citations 129</li>
-<li>Turner, S., <strong>Sandiford, M.</strong>, Foden, J., 1992, Some geodynamic and compositional constraints on “post-orogenic” magmatism, Geology, 20, 931-934. , # citations 354</li>
-<li><strong>Sandiford, M.</strong>, Powell, R., 1991, Some remarks on high temperature-low pressure metamorphism in convergent orogens, Journal of Metamorphic geology, 9, 333-340. , # citations 203</li>
+<li>Coblentz, D., Richardson, R.M., <strong>Sandiford, M.</strong>, 1994, On the gravitational potential of the Earth’s lithosphere, Tectonics, 13, 929-945. , # citations 132</li>
+<li>Turner, S., <strong>Sandiford, M.</strong>, Foden, J., 1992, Some geodynamic and compositional constraints on “post-orogenic” magmatism, Geology, 20, 931-934. , # citations 358</li>
+<li><strong>Sandiford, M.</strong>, Powell, R., 1991, Some remarks on high temperature-low pressure metamorphism in convergent orogens, Journal of Metamorphic geology, 9, 333-340. , # citations 204</li>
 <li><strong>Sandiford, M.</strong>, 1989, Horizontal structures in granulite terrains : a record of mountain building or mountain collapse? Geology, 17, 449 - 452. , # citations 146</li>
 </ul>
 <p><strong>Selected Invited and Keynote talks</strong></p>

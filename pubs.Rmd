@@ -67,6 +67,13 @@ gs.id<-"qdYHZTgAAAAJ"
  
 #google cites
 
+1.  Ruetenik, G., Jansen, J.D., Sandiford, M., Surface uplift due to time-varying elastic thickness in continental interiors, submitted to Geophysical Research Letters, December, 2023. 
+
+1. Li, G., Yang, H.,  Sandiford, M.,  Kohn, B.,  Xu, Z.,  Dong, H.,  Cai, D., 
+Interaction of surface processes and crustal flow in the Eastern Himalayan Syntaxis, Journal of Geological Sciences London, accepted December, 2023
+
+1.  Ward, J., Rosenbaum,G., Ubide, T., Sandiford, M.,  Slab segmentation, anomalous arc volcanism, and giant porphyry copper deposits in Indonesia, Earth and Planetary Science Letters, accepted December 2023.
+
 1. Attanayke, J., Jones, A., Gibson. G., Sandiford, M., 2023, Pre-commercial baseline passive seismic monitoring around CarbonNet's Pelican Site in the offshore Gippsland Basin, Victoria—The first five years,   International Journal of Greenhouse Gas Control
 128,  103962, https://doi.org/10.1016/j.ijggc.2023.103962, `r ( gs("Pre-commercial baseline passive"))` 
 
@@ -644,7 +651,7 @@ https://doi.org/10.1046/j.1365-2117.2003.00196.x,
 1.	Sandiford, M., Hand, M.,McLaren, S., 2001, Tectonic feedback, intraplate orogeny and the geochemical structure of the crust: a central Australian perspective, In Continental Reactivation and Reworking, (eds, Miller, J., Holdsworth, R., Buick, I., Hand, M.), Geological Society Special Publication No. 184, 195-218
 `r ( gs("Tectonic feedback, intraplate orogeny and the geochemical structure"))
 `
-1.	McLaren, S., Sandiford, M., 2001, Long-term thermal consequences of tetconic activity at Mount Isa, Australia: Implications for polyphase tectonism in the Proterozoic.In Continental Reactivation and Reworking, (eds, Miller, J., Holdsworth, R., Buick, I., Hand, M.), Geological Society Special Publication No. 184, 219-236
+1.	McLaren, S., Sandiford, M., 2001, Long-term thermal consequences of tectonic activity at Mount Isa, Australia: Implications for polyphase tectonism in the Proterozoic.In Continental Reactivation and Reworking, (eds, Miller, J., Holdsworth, R., Buick, I., Hand, M.), Geological Society Special Publication No. 184, 219-236
 `r ( gs("implications for polyphase tectonism"))
 `
 
@@ -769,7 +776,7 @@ https://doi.org/10.1046/j.1365-2117.2003.00196.x,
 1.	Grew, E.S., Sandiford, M., 1984, A staurolite-talc assemblage in tourmaline-phlogopite- chlorite schist from Northern Victoria Land, Antarctica and its petrogenetic significance. Contributions to Mineralogy and Petrology, 87, 337-350. `r (gs("A staurolite-talc assemblage in tourmaline-phlogopite-chlorite schist"))` 
 1.	Grew, E.S., Manton, W.I., Sandiford, M., 1983, Geochronologic studies in East Antarctica: age of pegmatites in Casey Bay, Enderby Land. Antarctic Journal of the United States, 17, 1-2. `r ( gs("Casey"))` 
 1.	Grew, E.S., Sandiford, M., 1983, Field studies of the Wilson and Rennick Groups, Rennick Glacier area, northern Victoria Land. Antarctic Journal of the United States, 17, 7-8. `r ( gs("Rennick"))` 
-1.	Sandiford, M., Wilson, C.J.L. 1983, The Geology of the Fyfe Hills- Khmara Bay Region, Enderby Land, in Oliver, R.L., James, P.R. and Jago, J.B. Antarctic earth sciences, Australian Academy of Sciences, Canberra, 16-19
+1.	Sandiford, M., Wilson, C.J.L. 1983, The Geology of the Fyfe Hills- Khmara Bay Region, Enderby Land, in Oliver, R.L., James, P.R. and Jago, J.B. Antarctic earth sciences, Australian Academy of Sciences, Canberra, 16-19. 
 `r ( gs("The Geology of the Fyfe Hills"))` 
 
 
