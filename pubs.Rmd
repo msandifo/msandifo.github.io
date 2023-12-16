@@ -70,7 +70,7 @@ gs.id<-"qdYHZTgAAAAJ"
 1.  Ruetenik, G., Jansen, J.D., Sandiford, M., Surface uplift due to time-varying elastic thickness in continental interiors, submitted to Geophysical Research Letters, December, 2023. 
 
 1. Li, G., Yang, H.,  Sandiford, M.,  Kohn, B.,  Xu, Z.,  Dong, H.,  Cai, D., 
-Interaction of surface processes and crustal flow in the Eastern Himalayan Syntaxis, Journal of Geological Sciences London, accepted December, 2023
+Interaction of surface processes and crustal flow in the Eastern Himalayan Syntaxis, Journal of Geological Society London, accepted December, 2023
 
 1.  Ward, J., Rosenbaum,G., Ubide, T., Sandiford, M.,  Slab segmentation, anomalous arc volcanism, and giant porphyry copper deposits in Indonesia, Earth and Planetary Science Letters, accepted December 2023.
 
