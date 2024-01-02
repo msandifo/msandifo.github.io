@@ -47,6 +47,9 @@ fellow [Australian Academy of Science](https://www.science.org.au/profile/michae
  
 
 ### [recent publications](pubs.html)
+- [tectonics](pdfs/peer/2024_EPSL.pdf) - slab segemantion and volcanism in Indonesia
+- [geothermal](pdfs/peer/2023_GRL.pdf) - thermal history of a Chinese deep boreholes
+- [critical minerals](pdfs/peer/2022_STI.pdf) - the net zero opportunity for Australian minerals
 - [geomorph](pdfs/peer/2022_EPSL.pdf) - elasticity, gravity and the Finke Gorge 
 - [geochem](pdfs/peer/2021_GGG.pdf) - anomalous arc magmas 
 - [geomagma](pdfs/peer/2021_ESR.pdf) - Holocene intraplate volcanism in East Asia 
