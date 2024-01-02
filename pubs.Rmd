@@ -72,7 +72,7 @@ gs.id<-"qdYHZTgAAAAJ"
 1. Li, G., Yang, H.,  Sandiford, M.,  Kohn, B.,  Xu, Z.,  Dong, H.,  Cai, D., 
 Interaction of surface processes and crustal flow in the Eastern Himalayan Syntaxis, Journal of Geological Society London, accepted December, 2023
 
-1.  Ward, J., Rosenbaum,G., Ubide, T., Sandiford, M.,  Slab segmentation, anomalous arc volcanism, and giant porphyry copper deposits in Indonesia, Earth and Planetary Science Letters, accepted December 2023.
+1.  Ward, J., Rosenbaum,G., Ubide, T., Sandiford, M., 2024,  Slab segmentation, anomalous arc volcanism, and giant porphyry copper deposits in Indonesia, Earth and Planetary Science Letters,  626, 118532, https://doi.org/10.1016/j.epsl.2023.118532.
 
 1. Attanayke, J., Jones, A., Gibson. G., Sandiford, M., 2023, Pre-commercial baseline passive seismic monitoring around CarbonNet's Pelican Site in the offshore Gippsland Basin, Victoria—The first five years,   International Journal of Greenhouse Gas Control
 128,  103962, https://doi.org/10.1016/j.ijggc.2023.103962, `r ( gs("Pre-commercial baseline passive"))` 
@@ -81,7 +81,7 @@ Interaction of surface processes and crustal flow in the Eastern Himalayan Synta
 
 1. Chen, Y., Saygin, E., Kennett, B.L.N., Qashqai, M., Hauser, J., Lumley, D.,  Sandiford, M. 2023. Next-generation seismic model of the Australian crust and implications for mineral resources and continental rifting, Nature Communications, 14:1192, 1-13,  https://doi.org/10.1038/s41467-023-36514-z, `r ( gs("Next-generation seismic"))`
 
-1. Sandiford, M. 2022, The net-zero opportunity for Australian minerals.  in The Superpower Transformation, ed. Garnaut, R., Latrobe University Press/Black Inc., p149-169.
+1. Sandiford, M. 2022, The net-zero opportunity for Australian minerals. in The Superpower Transformation, ed. Garnaut, R., Latrobe University Press/Black Inc., p149-169.
  
  
  1. Jansen, J.D.,  Sandiford, M.,  Fujioka, T., Cohen, T.J., Struck, M.,  Anderson, S.P., 2022, Geomorphic imprints of lithospheric flexure in central Australia, Earth and Planetary Science Letters 584, 117456, https://doi.org/10.1016/j.epsl.2022.117456, `r ( gs("Geomorphic imprints of lithospheric flexure"))`

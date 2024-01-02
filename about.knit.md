@@ -1,0 +1,48 @@
+---
+title: "skeletons"
+---
+
+
+
+# current 
+
+- Redmond Barry Distinguished Professor Emeritus, University of Melbourne, 2021
+
+
+# previous
+- Redmond Barry Distinguished Professor, University  of Melbourne, 2016-2021
+- Chair of Geology, University of Melbourne, 2010-2021
+- Inaugural Director,  Melbourne Energy Institute, University of Melbourne, 2009-2016
+- ARC Professorial Fellow, University of Melbourne, 2000-2004 & 2005-2009
+- Lecturer/Reader, University of Adelaide, 1987-2000
+- CSIRO Postdoctoral fellow, Cambridge University, 1986-1987
+- Postdoctoral fellow, University of Melbourne, 1985 
+
+# beginnings
+
+- PhD, University of Melbourne, 1985
+- BSc(Hons), University of Melbourne, 1978
+
+# service
+
+- Tectonophysics, Co Editor-in-Chief, 2004-2009
+- Geology, Editorial Board, 1999-2001, 2009-2001
+- Australian Journal of Earth Science, Editorial Board, 2005-2008
+- EON Research Centre, RWTH Aachen Germany,  Science Advisory Board, 2011-2012
+- AuScope-AGOS Science advisor, 2009-2013
+- AuScope Science advisory board (Chair), 2007-2012 
+- PMD*CRC Science advisory board, 2000-2002
+
+# recognition
+
+- Fellow of the Australian Academy of Sciences, 2013
+- Fellow of the Geological Society of Australia, 2011
+- Mawson Medal, 2005, Australian Academy of Science
+- Carey Medal, 2014, Geological Society of Australia
+- Hobbs Medal, 2012, Geological Society of Australia
+- Stillwell Medal, 2004, 2005, 2009, Geological Society of Australia
+
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-9757-745X" href="https://orcid.org/0000-0002-9757-745X" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-9757-745X</a></div>
+```{.r .distill-force-highlighting-css}
+```
