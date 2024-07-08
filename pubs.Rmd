@@ -67,7 +67,7 @@ gs.id<-"qdYHZTgAAAAJ"
  
 #google cites
 
-1.  Ruetenik, G., Jansen, J.D., Sandiford, M., 2024, Surface uplift due to time-varying elastic thickness in continental interiors, Geophysical Research Letters, accepted July, 2024. 
+1.  Ruetenik, G., Jansen, J.D., Sandiford, M., 2024, Surface uplift due to time-varying elastic thickness in continental interiors, Geophysical Research Letters, accepted June, 2024. https://doi.org/10.1029/2023GL107719 
 
 1. Li, G., Yang, H.,  Sandiford, M.,  Kohn, B.,  Xu, Z.,  Dong, H.,  Cai, D., 2024, 
 Interaction of surface processes and crustal flow in the Eastern Himalayan Syntaxis, Journal of Geological Society London, 181, 
