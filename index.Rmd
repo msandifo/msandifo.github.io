@@ -23,16 +23,16 @@ geologist
 
 
 
-_investigations_:-
+_focus_:-
 [earth dynamics](pdfs/peer/2020_Tectonics.pdf), [earth energetics](pdfs/peer/2002_EPSL_b.pdf), [landscape evolution](pdfs/peer/2013_nature12218.pdf), [continental evolution](pdfs/peer/2010_JMG_a.pdf) and [energy systems](pdfs/peer/2015_AppEnergy.pdf)
 
 
 
 _privilege_:- to have worked among communities that for millennia have lived in the most dynamic and remote parts of our planet ( [Timor](https://msandifo.github.io/blog/_site/posts/2016-04-16-travelling-with-timor-leste/), [Tibet](https://theconversation.com/raising-tibet-58483),  [Xinjiang](https://msandifo.github.io/blog/_site/posts/2020-02-03-a-precarious-geological-bargain/) and [Bhutan](https://theconversation.com/the-will-of-government-is-key-to-energy-access-58332)), and some places beyond  (Enderby Land, Northern Victoria Land); to have known love and  much more. 
 
-[_reflections_](https://theconversation.com/columns/mike-sandiford-228):-  [earth](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy policy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) 
+[_reflection_](https://theconversation.com/columns/mike-sandiford-228):-  [earth](https://msandifo.github.io/blog/_site/posts/2020-02-04-cherrypickingcontrarian/) and [energy policy ](https://msandifo.github.io/blog/_site/posts/2020-02-04-renewableenergybythenumbers/) 
 
-_sidenotes_: Redmond Barry Distinguished Professor Emeritus (University of Melbourne), 
+_sidenote_:- Redmond Barry Distinguished Professor Emeritus (University of Melbourne), 
 <!-- former Chair of Geology in the School of Earth Sciences and founding Director of the [Melbourne Energy Institute](https://energy.unimelb.edu.au),  -->
 fellow [Australian Academy of Science](https://www.science.org.au/profile/michael-sandiford)
 
@@ -47,11 +47,11 @@ fellow [Australian Academy of Science](https://www.science.org.au/profile/michae
  
 
 ### [recent publications](pubs.html)
-- [tectonics](pdfs/peer/2024_EPSL.pdf) - slab segemantion and volcanism in Indonesia
+- [tectonics](pdfs/peer/2024_GRL.pdf) - topographic effects of time dependant elastic rigidity
+- [gechem](pdfs/peer/2024_EPSL.pdf) - slab segemention and volcanism in Indonesia
 - [geothermal](pdfs/peer/2023_GRL.pdf) - thermal history of a Chinese deep boreholes
 - [critical minerals](pdfs/peer/2022_STI.pdf) - the net zero opportunity for Australian minerals
 - [geomorph](pdfs/peer/2022_EPSL.pdf) - elasticity, gravity and the Finke Gorge 
-- [geochem](pdfs/peer/2021_GGG.pdf) - anomalous arc magmas 
 - [geomagma](pdfs/peer/2021_ESR.pdf) - Holocene intraplate volcanism in East Asia 
 - [geoenviro](pdfs/peer/2021_Elementa.pdf) - Mercury levels, electricity generation in the Latrobe Valley 
 - [geodynamics](pdfs/peer/2020_Tectonics.pdf) - stress distribution and dynamics of subducting slabs 
